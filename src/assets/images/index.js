@@ -30,6 +30,10 @@ import verified from "./verified.svg";
 import card1 from "./card1.svg";
 import card2 from "./card2.svg";
 import card3 from "./card3.svg";
+import facebook from './facebook.svg'
+import instagram from './instagram.svg'
+import twitter from './twitter.svg'
+import linkedin from './linkedin.svg'
 
 export const images = {
   aeroplane,
@@ -64,4 +68,8 @@ export const images = {
   card1,
   card2,
   card3,
+  facebook,
+  instagram,
+  twitter,
+  linkedin
 };
