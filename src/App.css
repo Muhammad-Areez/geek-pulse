@@ -628,8 +628,8 @@ p {
 /* Blogs Section ends */
 
 /* Footer Starts */
-.footer-main{
-  background:#100a3e ;
+.footer-main {
+  background: #100a3e;
   border-radius: 40px 40px 0px 0px;
   height: 720px;
   position: relative;
@@ -638,39 +638,39 @@ p {
   flex-direction: column;
   justify-content: space-between;
 }
-.footer-main .matrix-img{
+.footer-main .matrix-img {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
 }
-.footer-main ul{
+.footer-main ul {
   list-style: none;
   padding: 0;
 }
-.footer-logo-div{
+.footer-logo-div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.footer-logo-div .footer-logo{
+.footer-logo-div .footer-logo {
   width: 400px;
   margin-bottom: 25px;
 }
-.footer-logo-div h5{
+.footer-logo-div h5 {
   font-size: 18px;
   color: #fff;
   font-family: BricolageGrotesque-Medium;
   line-height: 27px;
   letter-spacing: -0.54;
 }
-.footer-logo-div ul{
+.footer-logo-div ul {
   margin-top: 10px;
   display: flex;
-  gap:22px;
+  gap: 22px;
 }
-.footer-logo-div ul img{
+.footer-logo-div ul img {
   height: 20px;
   width: auto;
   object-fit: contain;
@@ -684,7 +684,7 @@ p {
 }
 .footer-main ul li,
 .footer-main ul li a,
-.footer-main ul li p{
+.footer-main ul li p {
   color: #fff;
   font-family: BricolageGrotesque-Medium;
   font-size: 18px;
@@ -692,20 +692,90 @@ p {
   letter-spacing: -0.54px;
   text-align: left;
 }
-.footer-links-div{
+.footer-links-div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.footer-links-div h4{
+.footer-links-div h4 {
   margin-bottom: 30px;
 }
-.footer-links-div ul{
+.footer-links-div ul {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
+.footer_bottom h3 {
+  font-family: "BricolageGrotesque-Medium";
+  color: #fff;
+  font-size: 48px;
+  text-align: start;
+}
+.searchField {
+  background: #fff;
+  width: 430px;
+  border-radius: 32px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  float: right;
+  gap: 10px;
+}
+.searchField input {
+  background: transparent;
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  font-family: "BricolageGrotesque-Medium";
+  color: #403b65;
+  font-weight: 500;
+}
+.searchField input::placeholder {
+  color: #403b65;
+}
+.searchField .cta {
+  z-index: 111;
+  background: #8186ff;
+}
+.footer-links-div a:hover {
+  color: #8085ff !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-logo-div a:hover {
+  color: #8085ff;
+}
+
+.footer-logo-div a {
+  transition: transform 0.3s ease;
+}
 /* Footer Ends */
+/* Contact Us Section starts */
+.contactus_section .matrix-img {
+  height: 100%;
+  top: 40%;
+}
+.contact_heading {
+  font-size: 150px;
+  z-index: 111;
+  color: #fff;
+  font-family: SpaceGrotesk-Bold;
+}
+.contactus_section {
+  margin-bottom: 25px;
+}
+.contactus_section .logo-container {
+  height: 450px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {

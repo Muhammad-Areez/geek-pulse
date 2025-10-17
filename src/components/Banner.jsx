@@ -31,7 +31,7 @@ const Banner = () => {
                 <h2>ULTRA </h2>
                 <div><span>2.0</span></div>
               </div>
-              <h1>Pulvinar tincidunt nec eget mauris et. Proin  lectus metus turpis nec.</h1>
+              <h1>The Cosmos in your palm. Experience flavor beyond the stars.</h1>
             </div>
             <div className="banner-list-main">
               <ul>
@@ -39,19 +39,19 @@ const Banner = () => {
                   <div>
                     <img src={images.bannerIcon1}/>
                   </div>
-                  <p>Over-charging protection</p>
+                  <p>Dynamic Display</p>
                 </li>
                 <li>
                   <div>
                     <img src={images.bannerIcon2}/>
                   </div>
-                  <p>Upto 20,000 puffs</p>
+                  <p>Dual Core</p>
                 </li>
                 <li>
                   <div>
                     <img src={images.bannerIcon2}/>
                   </div>
-                  <p>Upto 30,000 puffs in Plus</p>
+                  <p>Cosmos In Your Hands</p>
                 </li>
               </ul>
             </div>

@@ -34,6 +34,7 @@ import facebook from './facebook.svg'
 import instagram from './instagram.svg'
 import twitter from './twitter.svg'
 import linkedin from './linkedin.svg'
+import matrix2 from "./matrix2.svg";
 
 export const images = {
   aeroplane,
@@ -71,5 +72,6 @@ export const images = {
   facebook,
   instagram,
   twitter,
-  linkedin
+  linkedin,
+  matrix2,
 };
