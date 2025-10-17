@@ -33,11 +33,6 @@ function HomePage() {
       </section>
       <section>
         <Container className="position-relative">
-          <ContentSec />
-        </Container>
-      </section>
-      <section>
-        <Container className="position-relative">
           <GeekPrime />
         </Container>
       </section>

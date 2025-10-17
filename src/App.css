@@ -334,6 +334,19 @@ img {
   align-items: center;
   border-radius: 20px;
   overflow: hidden;
+  width: 100%;
+}
+.logo-section h3{
+  color: #FFFFFF60;
+  font-family: BricolageGrotesque-Medium;
+  line-height: 60px;
+  letter-spacing: -1.44px;
+  font-size: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
 }
 .logo-section .matrix-img {
   position: absolute;
