@@ -334,6 +334,19 @@ img {
   align-items: center;
   border-radius: 20px;
   overflow: hidden;
+  width: 100%;
+}
+.logo-section h3 {
+  color: #ffffff60;
+  font-family: BricolageGrotesque-Medium;
+  line-height: 60px;
+  letter-spacing: -1.44px;
+  font-size: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
 }
 .logo-section .matrix-img {
   position: absolute;
@@ -755,27 +768,166 @@ p {
 /* Footer Ends */
 /* Contact Us Section starts */
 .contactus_section .matrix-img {
-  height: 100%;
+  height: 420px;
   top: 40%;
 }
 .contact_heading {
-  font-size: 150px;
+  font-size: 150px !important;
   z-index: 111;
-  color: #fff;
-  font-family: SpaceGrotesk-Bold;
+  color: #fff !important;
+  font-family: SpaceGrotesk-Bold !important;
 }
-.contactus_section {
-  margin-bottom: 25px;
+.contact_form_section{
+  margin: 5rem 0;
 }
 .contactus_section .logo-container {
   height: 450px;
   border-radius: 0px 0px 20px 20px;
 }
+.contact_form_section .heading {
+  font-size: 45px;
+  text-align: start;
+  font-family: "SpaceGrotesk-Bold";
+  color: #000;
+}
 
+.contact_form_section .title {
+  font-size: 24px;
+  font-family: "SpaceGrotesk-Bold";
+  text-align: start;
+  margin: 10px 0;
+}
+.contactIcon {
+  width: 72px;
+  height: 72px;
+  background: #8186ff;
+  border-radius: 12px;
+  justify-content: center;
+}
+.contactIcon img {
+  max-width: 20px;
+}
+.contactInfo {
+  gap: 10px;
+}
+.contactText h5 {
+  font-size: 20px;
+  font-family: "SpaceGrotesk-Bold";
+  color: #000;
+  margin-bottom: 2px;
+  text-align: start;
+}
+.contactText a {
+  font-family: "Poppins-Medium";
+  font-size: 15px;
+  color: #737373;
+  text-align: start !important;
+}
+.always-float > label {
+  transform: scale(0.85) translateY(-1.5rem);
+  opacity: 1;
+}
+.contact-form input#floatingInput {
+  border: 1px solid #d4d4d4;
+  height: 55px;
+  font-size: 16px;
+  color: #706f6f;
+  font-family: "Inter-Regular";
+}
+.contact-form input#floatingInput:focus {
+  border: 1px solid #100a3e;
+  outline: none;
+  box-shadow: none;
+}
+.contact-form .cta {
+  background: #8085ff;
+  float: left;
+  width: 130px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: Geist-Bold;
+}
+.contact-form label {
+  color: #706f6f;
+  font-family: "Inter-Medium";
+  font-size: 12px;
+}
+.faq_wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+}
 
+.faq_item {
+  background: #fff;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  padding: 1.2rem 1.5rem;
+  cursor: pointer;
+  /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08); */
+  transition: all 0.3s ease;
+  /* border: 1px solid #eee; */
+}
 
+.faq_item:hover {
+  border-color: #dcdcdc;
+}
 
+.faq_question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.faq_question h5 {
+  font-size: 22px;
+  color: #000;
+  font-family: "Poppins-SemiBold";
+}
+
+.icon {
+  font-size: 0.9rem;
+  color: #666;
+  transition: transform 0.3s ease;
+  color: #5b5ef5;
+}
+
+.icon.rotate {
+  transform: rotate(180deg);
+}
+
+.faq_answer {
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.faq_answer p {
+  margin-top: 0.8rem;
+  font-size: 18px;
+  color: #616161;
+  font-family: "Inter-Regular";
+  line-height: 27px;
+  text-align: start;
+}
+
+.faq_item.active {
+  background: #fdfdfd;
+  border: 1px solid #e5e5e5;
+}
+.faqs_section .heading {
+  font-size: 45px;
+  font-family: "SpaceGrotesk-Medium";
+}
+.faqs_section{
+  margin: 5rem 0;
+}
+/* Contact Us Section ends */
+/*Basic Edition Section Starts*/
+.slide-2 {
+  padding-top: 150px;
+  background: url(../src/assets/images/banner-slide2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {

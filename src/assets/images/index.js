@@ -30,11 +30,21 @@ import verified from "./verified.svg";
 import card1 from "./card1.svg";
 import card2 from "./card2.svg";
 import card3 from "./card3.svg";
-import facebook from './facebook.svg'
-import instagram from './instagram.svg'
-import twitter from './twitter.svg'
-import linkedin from './linkedin.svg'
+import facebook from "./facebook.svg";
+import instagram from "./instagram.svg";
+import twitter from "./twitter.svg";
+import linkedin from "./linkedin.svg";
 import matrix2 from "./matrix2.svg";
+import phoneIcon from "./phone.png";
+import mailIcon from "./mail.png";
+import basic1 from "./basic1.svg";
+import basic2 from "./basic2.svg";
+import basic3 from "./basic3.svg";
+import basic4 from "./basic4.svg";
+import basic5 from "./basic5.svg";
+import basic6 from "./basic6.svg";
+import basic7 from "./basic7.svg";
+import Xicon from "./xicon.svg";
 
 export const images = {
   aeroplane,
@@ -74,4 +84,15 @@ export const images = {
   twitter,
   linkedin,
   matrix2,
+  phoneIcon,
+  mailIcon,
+  basic1,
+  basic2,
+  basic3,
+  basic4,
+  basic5,
+  basic6,
+
+  basic7,
+  Xicon,
 };
