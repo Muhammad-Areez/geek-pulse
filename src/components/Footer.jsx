@@ -101,14 +101,14 @@ export const Footer = () => {
           </div>
         </Col>
       </Row>
-      <Row>
+      <Row className="footer_bottom">
         <Col md={6}>
             <h3>Subscribe to get 10% OFF on your first order!</h3>
         </Col>
         <Col md={6}>
-            <div>
-                <input type="text" />
-                <button>Subscribe</button>
+            <div className="searchField">
+                <input type="search" placeholder="Enter your email" />
+                <button className="cta">Subscribe</button>
             </div>
         </Col>
       </Row>

@@ -24,10 +24,11 @@ const GeekPrime = () => {
                 <span>2.0</span>
               </div>
             </div>
-            <h1>Reliable Company for a Vapor Cigarette</h1>
+            <h1>The Cosmos In Your Palm</h1>
             <p className="para">
-              Lorem ipsum dolor sit amet consectetur fauscet ut viverra leo
-              felis urna libero risus viverra ullamcorper ut id venenatis orci.
+              Enter the cosmos of flavor with Ultra 2.0. A fusion of technology,
+              taste, and celestial design. Every puff is a journey through the
+              stars.
             </p>
           </div>
           <div className="banner-list-main">
@@ -36,25 +37,25 @@ const GeekPrime = () => {
                 <div>
                   <img src={images.bannerIcon1} />
                 </div>
-                <p>Over-charging protection</p>
+                <p>Dynamic Display</p>
               </li>
               <li>
                 <div>
                   <img src={images.bannerIcon2} />
                 </div>
-                <p>Upto 20,000 puffs</p>
+                <p>Dual Core</p>
               </li>
               <li>
                 <div>
                   <img src={images.bannerIcon3} />
                 </div>
-                <p>5% nikotine</p>
+                <p>Dual Mesh Coil</p>
               </li>
               <li>
                 <div>
                   <img src={images.bannerIcon4} />
                 </div>
-                <p>short circuit protection</p>
+                <p>Cosmos Ui</p>
               </li>
             </ul>
           </div>

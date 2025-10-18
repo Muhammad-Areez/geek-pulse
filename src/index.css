@@ -400,6 +400,7 @@ a:hover {
 body {
   margin: 0;
   place-items: center;
+  padding-top: 5px;
   min-width: 320px;
   background-color: #fff;
   min-height: 100vh;

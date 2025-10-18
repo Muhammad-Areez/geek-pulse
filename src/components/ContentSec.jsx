@@ -39,12 +39,10 @@ const ContentSec = () => {
         <img src={images.matrix} className="matrix-img" />
 
         <p ref={textRef} className="content-text">
-          Lorem ipsum dolor sit amet consectetur. Commodo ac ullamcorper
-          lobortis in ultrices sed sapien nisl varius. Ut risus lorem
-          pellentesque orci massa dolor faucibus viverra viverra. Nisi fermentum
-          risus elit lorem faucibus magna. Mattis tellus pulvinar tincidunt nec
-          eget mauris et. Proin dolor lectus metus turpis nec. Et risus placerat
-          tempus amet nisl. Nec sit risus curabitur pellentesque.
+          Geek Pulse is redefining disposables, merging futuristic technology,
+          premium flavors, and sleek design to ignite the next era of vaping
+          innovation. Driven by curiosity and crafted for those who crave more,
+          our mission is to take vaping beyond the ordinary
         </p>
       </div>
     </section>
