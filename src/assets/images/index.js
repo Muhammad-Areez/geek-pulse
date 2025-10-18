@@ -45,7 +45,44 @@ import basic5 from "./basic5.svg";
 import basic6 from "./basic6.svg";
 import basic7 from "./basic7.svg";
 import Xicon from "./xicon.svg";
-
+import versionIcon1 from "./versionIcon1.svg";
+import versionIcon2 from "./versionIcon2.svg";
+import versionIcon3 from "./versionIcon3.svg";
+import versionIcon4 from "./versionIcon4.svg";
+import versionIcon5 from "./versionIcon5.svg";
+import versionIcon6 from "./versionIcon6.svg";
+import versionIcon7 from "./versionIcon7.svg";
+import basicdevice1 from "./basic1.png";
+import basicdevice2 from "./basic2.png";
+import basicdevice3 from "./basic3.png";
+import basicdevice4 from "./basic4.png";
+import basicdevice5 from "./basic5.png";
+import basicdevice6 from "./basic6.png";
+import basicdevice7 from "./basic7.png";
+import basicdevice8 from "./basic8.png";
+import basicdevice9 from "./basic9.png";
+import basicbox1 from "./basicbox1.png";
+import basicbox2 from "./basicbox2.png";
+import basicbox3 from "./basicbox3.png";
+import basicbox4 from "./basicbox4.png";
+import basicbox5 from "./basicbox5.png";
+import basicbox6 from "./basicbox6.png";
+import basicbox7 from "./basicbox7.png";
+import basicbox8 from "./basicbox8.png";
+import basicbox9 from "./basicbox9.png";
+import basicbox10 from "./basicbox10.png";
+import basicbox11 from "./basicbox11.png";
+import basicbox12 from "./basicbox12.png";
+import basicbox13 from "./basicbox13.png";
+import basicbox14 from "./basicbox14.png";
+import basicbox15 from "./basicbox15.png";
+import basicbox16 from "./basicbox16.png";
+import basicbox17 from "./basicbox17.png";
+import basicbox18 from "./basicbox18.png";
+import basicbox19 from "./basicbox19.png";
+import basicbox20 from "./basicbox20.png";
+import basicbox21 from "./basicbox21.png";
+import arrow from "./arrow.svg";
 export const images = {
   aeroplane,
   bannerIcon1,
@@ -92,7 +129,44 @@ export const images = {
   basic4,
   basic5,
   basic6,
-
   basic7,
   Xicon,
+  versionIcon1,
+  versionIcon2,
+  versionIcon3,
+  versionIcon4,
+  versionIcon5,
+  versionIcon6,
+  versionIcon7,
+  basicdevice1,
+  basicdevice2,
+  basicdevice3,
+  basicdevice4,
+  basicdevice5,
+  basicdevice6,
+  basicdevice7,
+  basicdevice8,
+  basicdevice9,
+  basicbox1,
+  basicbox2,
+  basicbox3,
+  basicbox4,
+  basicbox5,
+  basicbox6,
+  basicbox7,
+  basicbox8,
+  basicbox9,
+  basicbox10,
+  basicbox11,
+  basicbox12,
+  basicbox13,
+  basicbox14,
+  basicbox15,
+  basicbox16,
+  basicbox17,
+  basicbox18,
+  basicbox19,
+  basicbox20,
+  basicbox21,
+  arrow,
 };
