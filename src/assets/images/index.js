@@ -30,22 +30,22 @@ import verified from "./verified.svg";
 import card1 from "./card1.svg";
 import card2 from "./card2.svg";
 import card3 from "./card3.svg";
-import facebook from './facebook.svg'
-import instagram from './instagram.svg'
-import twitter from './twitter.svg'
-import linkedin from './linkedin.svg'
-import retroMatrix from './retro-matrix.svg'
-import retroBanner1 from './retro-banner1.svg'
-import retroBanner2 from './retro-banner2.svg'
-import retroBanner3 from './retro-banner3.svg'
-import retroBanner4 from './retro-banner4.svg'
-import retroSec from './retro-sec.svg'
-import retroSecBg from './retro-sec-bg.svg'
-
-import facebook from "./facebook.svg";
+// import facebook from './facebook.svg'
 import instagram from "./instagram.svg";
 import twitter from "./twitter.svg";
 import linkedin from "./linkedin.svg";
+import retroMatrix from "./retro-matrix.svg";
+import retroBanner1 from "./retro-banner1.svg";
+import retroBanner2 from "./retro-banner2.svg";
+import retroBanner3 from "./retro-banner3.svg";
+import retroBanner4 from "./retro-banner4.svg";
+import retroSec from "./retro-sec.svg";
+import retroSecBg from "./retro-sec-bg.svg";
+
+import facebook from "./facebook.svg";
+// import instagram from "./instagram.svg";
+// import twitter from "./twitter.svg";
+// import linkedin from "./linkedin.svg";
 import matrix2 from "./matrix2.svg";
 import phoneIcon from "./phone.png";
 import mailIcon from "./mail.png";
@@ -95,6 +95,32 @@ import basicbox19 from "./basicbox19.png";
 import basicbox20 from "./basicbox20.png";
 import basicbox21 from "./basicbox21.png";
 import arrow from "./arrow.svg";
+import frozenLogo from "./frozenLogo.svg";
+import frozenImg from "./frozenImg.svg";
+import frozendevice1 from "./frozendevice1.png";
+import frozendevice2 from "./frozendevice2.png";
+import frozendevice3 from "./frozendevice3.png";
+import frozendevice4 from "./frozendevice4.png";
+import frozendevice5 from "./frozendevice5.png";
+import frozendevice6 from "./frozendevice6.png";
+import frozenbox1 from "./frozenbox1.png";
+import frozenbox2 from "./frozenbox2.png";
+import frozenbox3 from "./frozenbox3.png";
+import frozenbox4 from "./frozenbox4.png";
+import frozenbox5 from "./frozenbox5.png";
+import frozenbox6 from "./frozenbox6.png";
+import smoothiedevice1 from "./smoothiedevice1.svg";
+import smoothiedevice2 from "./smoothiedevice2.svg";
+import smoothiedevice3 from "./smoothiedevice3.svg";
+import smoothiedevice4 from "./smoothiedevice4.svg";
+import smootieBg1 from "./smootieBg1.svg";
+import smootieBg2 from "./smootieBg2.svg";
+import smootieBg3 from "./smootieBg3.svg";
+import smootieBg4 from "./smootieBg4.svg";
+import smootieBg5 from "./smootieBg5.svg";
+import smootieBg6 from "./smootieBg6.svg";
+
+
 export const images = {
   aeroplane,
   bannerIcon1,
@@ -188,4 +214,28 @@ export const images = {
   basicbox20,
   basicbox21,
   arrow,
+  frozenLogo,
+  frozenImg,
+  frozendevice1,
+  frozendevice2,
+  frozendevice3,
+  frozendevice4,
+  frozendevice5,
+  frozendevice6,
+  frozenbox1,
+  frozenbox2,
+  frozenbox3,
+  frozenbox4,
+  frozenbox5,
+  frozenbox6,
+  smoothiedevice1,
+  smoothiedevice2,
+  smoothiedevice3,
+  smoothiedevice4,
+  smootieBg1,
+  smootieBg2,
+  smootieBg3,
+  smootieBg4,
+  smootieBg5,
+  smootieBg6,
 };

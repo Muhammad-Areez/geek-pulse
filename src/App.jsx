@@ -3,15 +3,18 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ContactUs from "./pages/ContactUs";
 import BasicEdition from "./pages/BasicEdition";
+import FrozenEdition from "./pages/FrozenEdition";
+import SmoothieEdition from "./pages/SmoothieEdition";
 
 function App() {
-
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/basic-edition" element={<BasicEdition />} />
+        <Route path="/frozen-edition" element={<FrozenEdition />} />
+        <Route path="/smoothie-edition" element={<SmoothieEdition />} />
       </Routes>
     </Router>
   );
