@@ -5,12 +5,15 @@ const Warning = ({
   backgroundColor = "#8186FF",
   textColor = "#fff",
   message,
+  borderRadius,
 }) => {
   return (
     <section
       className="d_flex warningSection "
       style={{
         backgroundColor,
+        borderRadius: borderRadius ? borderRadius : "40px 40px 0px 0px",
+        margin: borderRadius? "0px" : "20px 0px 0px 0px"
       }}
     >
       <img src={warnIcon} alt="Warning Icon" />
