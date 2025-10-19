@@ -1,20 +1,18 @@
-import React from "react";
-import { images } from "../assets/images";
-
-const Version = ({ featureColor = "#8085ff", showContext = true }) => {
-  const versionFeatures = [
+const Version = ({
+  featureColor = "#8085ff",
+  showContext = true,
+  features = [
     { icon: images.versionIcon1, text: "VPU Inside" },
     { icon: images.versionIcon2, text: "Dual Mesh Coil" },
     { icon: images.versionIcon3, text: "Dual Core" },
-    { icon: images.versionIcon4, text: "Regular 40K Puffs" },
+    { icon: images.versionIcon4, text: "Regular 40K<br />Pulse Mode 30K" }, // 👈 line break directly added here
     { icon: images.versionIcon5, text: "50 ML" },
     { icon: images.versionIcon6, text: "5% Nicotine" },
     { icon: images.versionIcon7, text: "Quick Charge" },
-  ];
-
+  ],
+}) => {
   return (
     <section className="version_section">
-      {/* Conditionally render heading */}
       {showContext && (
         <div className="context">
           <div className="d_flex">
@@ -26,24 +24,12 @@ const Version = ({ featureColor = "#8085ff", showContext = true }) => {
       )}
 
       <div className="version_details">
-        {versionFeatures.map((item, index) => (
+        {features.map((item, index) => (
           <div className="features" key={index}>
-            <div
-              className="d_flex icons"
-              style={{
-                background: featureColor, 
-              }}
-            >
-              <img
-                src={item.icon}
-                alt={item.text}
-                // style={{
-                //   filter:
-                //     "brightness(0) saturate(100%) invert(12%) sepia(63%) saturate(850%) hue-rotate(179deg) brightness(92%) contrast(92%)",
-                // }}
-              />
+            <div className="d_flex icons" style={{ background: featureColor }}>
+              <img src={item.icon} alt={item.text} />
             </div>
-            {item.text}
+            <span dangerouslySetInnerHTML={{ __html: item.text }}></span>
           </div>
         ))}
       </div>

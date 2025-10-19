@@ -125,7 +125,12 @@ import smootieBg3 from "./smootieBg3.svg";
 import smootieBg4 from "./smootieBg4.svg";
 import smootieBg5 from "./smootieBg5.svg";
 import smootieBg6 from "./smootieBg6.svg";
-
+import bgFruite1 from "./bgFruite1.svg";
+import bgFruite2 from "./bgFruite2.svg";
+import fruite1 from "./fruite1.svg";
+import fruite2 from "./fruite2.svg";
+import fruite3 from "./fruite3.svg";
+import fruite4 from "./fruite4.svg";
 
 export const images = {
   aeroplane,
@@ -253,4 +258,11 @@ export const images = {
   smootieBg5,
   smootieBg6,
   retroSimperBg,
+  bgFruite1,
+  bgFruite2,
+  fruite1,
+  fruite2,
+  fruite3,
+  fruite4,
+
 };

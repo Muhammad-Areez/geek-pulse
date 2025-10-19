@@ -4,31 +4,41 @@ import Header from "../components/Header";
 import OurProducts from "../components/OurProducts";
 import { Footer } from "../components/Footer";
 import Version from "../components/Version";
-import FrozenProducts from "../components/FrozenProducts";
 import SmoothieBanner from "../components/SmoothieBanner";
-// import bgImg from "../assets/images/bgImg.svg"
+import SmoothieProducts from "../components/SmoothieProducts";
+import { images } from "../assets/images";
 function SmoothieEdition() {
   return (
     <>
       <div className="smoothie_section">
-        <Container className="position-relative">
-          <Warning backgroundColor="#012243" />
-          <Header />
-          <SmoothieBanner />
-        </Container>
-        <section className="smoothieVersions"> 
+        <Warning backgroundColor="#012243" borderRadius="0px" />
+        <Header />
+        <SmoothieBanner />
+        <section className="smoothieVersions">
           <Container>
             <Version
               showContext={false}
+              features={[
+                { icon: images.versionIcon1, text: "E-CPU Inside" },
+                { icon: images.versionIcon2, text: "Dual Mesh Coil" },
+                { icon: images.versionIcon3, text: "Dual Core" },
+                {
+                  icon: images.versionIcon4,
+                  text: "Regular 40K<br />Pulse Mode 30K",
+                },
+                { icon: images.versionIcon5, text: "50 ML" },
+                { icon: images.versionIcon6, text: "5% Nicotine" },
+                { icon: images.versionIcon7, text: "Quick Charge" },
+              ]}
             />
           </Container>
         </section>
-        <section className="frozenProductsSection">
-          <FrozenProducts />
+        <section className="smoothieProductsSection">
+          <SmoothieProducts />
         </section>
         <section className="ourProducts_section">
           <div className="position-relative">
-            <OurProducts addBg={true} headingText="Simper Products" />
+            <OurProducts addBg={true} headingText="Similar Products" />
           </div>
         </section>
       </div>
