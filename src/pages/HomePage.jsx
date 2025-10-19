@@ -21,9 +21,8 @@ function HomePage() {
       </Container>
 
       <section className="ourProducts_section">
-        <h2 className="heading my-3">The Pulse Collection</h2>
         <Container className="position-relative">
-          <OurProducts />
+          <OurProducts headingText="The Pulse Collection"/>
         </Container>
       </section>
       <section className="mb-3">
@@ -46,7 +45,7 @@ function HomePage() {
           <Blogs />
         </Container>
       </section>
-      <Footer/>
+      <Footer isHomePage/>
     </>
   );
 }

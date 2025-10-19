@@ -13,7 +13,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 const OurProducts = ({
   showHeading = true,
   headingText = "Our Products",
-  addBg = false, // ✅ just a boolean to apply background CSS
+  addBg = false,
 }) => {
   return (
     <div className= {`ourproducts ${addBg ? "with-bg" : ""}`}>

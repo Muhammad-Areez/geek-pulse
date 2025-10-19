@@ -45,6 +45,7 @@ import retroProduct3 from './retro-product3.svg'
 import retroProductVector1 from './retro-product-vector1.svg'
 import retroProductVector2 from './retro-product-vector2.svg'
 import retroProductVector3 from './retro-product-vector3.svg'
+import retroSimperBg from './retro-simper-bg.svg'
 
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
@@ -251,4 +252,5 @@ export const images = {
   smootieBg4,
   smootieBg5,
   smootieBg6,
+  retroSimperBg,
 };

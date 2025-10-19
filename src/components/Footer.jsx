@@ -2,9 +2,12 @@ import { Col, Container, Row } from "react-bootstrap";
 import { images } from "../assets/images";
 import { Link } from "react-router-dom";
 
-export const Footer = () => {
+export const Footer = ({
+  isHomePage = false,
+  background = '#100a3e'
+}) => {
   return (
-    <Container className="footer-main">
+    <Container className={`footer-main ${!isHomePage &&'footer-main-sec'}`} style={{background: background }}>
       <img src={images.matrix} className="matrix-img" />
       <Row className="footer-row">
         <Col md={5} className="column">

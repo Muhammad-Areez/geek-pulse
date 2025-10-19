@@ -405,7 +405,7 @@ a:hover {
 }
 
 html{
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -415,7 +415,7 @@ body {
   min-width: 320px;
   background-color: #fff;
   min-height: 100vh;
-  /* overflow-x: hidden !important; */
+  width: 100%;
 }
 
 .main{
