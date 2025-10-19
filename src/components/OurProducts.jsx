@@ -1,5 +1,4 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import retro from "../assets/images/Retro-editions.png";
 import frozen from "../assets/images/Frozen-editions.png";
@@ -7,60 +6,39 @@ import seasonal from "../assets/images/Seasonal-editions.png";
 import basic from "../assets/images/Basic-editions.png";
 import cosmo from "../assets/images/Cosmo-editions.png";
 import smoothie from "../assets/images/Smoothie-editions.png";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-// import required modules
 import { Pagination, Autoplay } from "swiper/modules";
-const OurProducts = () => {
-  return (
-    <Swiper
-      className="mySwiper"
-      slidesPerView={1}
-      spaceBetween={10}
-      breakpoints={{
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
 
-        1024: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        1200: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-      }}
-      modules={[Pagination]}
-      pagination={{ clickable: true }}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
-    >
-      <SwiperSlide>
-        <img src={retro} alt="Retro Editions" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={frozen} alt="Frozen Editions" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={seasonal} alt="Seasonal Editions" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={basic} alt="Basic Editions" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={cosmo} alt="Cosmo Editions" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={smoothie} alt="Smoothie Editions" />
-      </SwiperSlide>
-    </Swiper>
+const OurProducts = ({
+  showHeading = true,
+  headingText = "Our Products",
+  addBg = false, // ✅ just a boolean to apply background CSS
+}) => {
+  return (
+    <div className= {`ourproducts ${addBg ? "with-bg" : ""}`}>
+      {showHeading && <h2 className="heading my-3">{headingText}</h2>}
+
+      <Swiper
+        className="mySwiper"
+        slidesPerView={1}
+        spaceBetween={10}
+        breakpoints={{
+          768: { slidesPerView: 2, spaceBetween: 20 },
+          1024: { slidesPerView: 2, spaceBetween: 30 },
+          1200: { slidesPerView: 2, spaceBetween: 20 },
+        }}
+        modules={[Pagination, Autoplay]}
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 2500, disableOnInteraction: false }}
+      >
+        {[retro, frozen, seasonal, basic, cosmo, smoothie].map((img, i) => (
+          <SwiperSlide key={i}>
+            <img src={img} alt={`Product ${i + 1}`} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 };
 
