@@ -251,7 +251,7 @@ img {
   left: 0;
   border-radius: 0px 0px 40px 40px;
 }
-.banner-overflow{
+.banner-overflow {
   overflow: hidden;
 }
 .moon-img {
@@ -658,7 +658,8 @@ p {
   top: 0;
   left: 0;
 }
-.footer-row, .footer_bottom{
+.footer-row,
+.footer_bottom {
   position: relative;
   z-index: 2;
 }
@@ -728,7 +729,7 @@ p {
   font-size: 48px;
   text-align: start;
 }
-.search-div{
+.search-div {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1240,11 +1241,11 @@ img.basic3-img {
 .retro-edition-main {
   width: 100%;
 }
-.retro-edition-hero{
-  background: #8C03A1;
+.retro-edition-hero {
+  background: #8c03a1;
   max-height: 92vh;
   min-height: 900px;
-  background-image: url(./assets/images/retro-matrix.svg) ;
+  background-image: url(./assets/images/retro-matrix.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1291,15 +1292,15 @@ img.basic3-img {
   width: auto;
   z-index: 3;
 }
-.retro-sec{
+.retro-sec {
   width: 100%;
 }
-.retro-sec .row{
+.retro-sec .row {
   width: 100%;
   margin: 0 !important;
 }
-.retro-sec .col-md-6{
-  padding:0 !important
+.retro-sec .col-md-6 {
+  padding: 0 !important;
 }
 .retro-sec-left {
   width: 100%;
@@ -1317,20 +1318,21 @@ img.basic3-img {
   width: 100%;
   border-radius: 0px;
 }
-.retro-sec-left .star-vector1, .retro-sec-left .star-vector2{
+.retro-sec-left .star-vector1,
+.retro-sec-left .star-vector2 {
   width: 86px;
   height: auto;
   position: absolute;
 }
-.retro-sec-left .star-vector1{
+.retro-sec-left .star-vector1 {
   top: 40px;
   left: 12%;
 }
-.retro-sec-left .star-vector2{
+.retro-sec-left .star-vector2 {
   bottom: 60px;
   right: 12%;
 }
-.retro-sec-right{
+.retro-sec-right {
   width: 100%;
   height: 100%;
   text-align: left;
@@ -1345,7 +1347,7 @@ img.basic3-img {
   height: 60px;
   width: auto;
 }
-.retro-sec-right h3{
+.retro-sec-right h3 {
   font-family: Rubik-Bold;
   font-size: 50px;
   line-height: 53px;
@@ -1353,7 +1355,7 @@ img.basic3-img {
   text-transform: uppercase;
   color: #fff;
 }
-.retro-products{
+.retro-products {
   background: url(./assets/images/retro-product-bg.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -1364,17 +1366,17 @@ img.basic3-img {
   align-items: center;
   overflow: hidden;
 }
-.retro-products h3{
+.retro-products h3 {
   font-family: Rubik-ExtraBold;
   font-size: 440px;
   line-height: 420px;
-  color: #90B23E;
+  color: #90b23e;
 }
-.retro-product-row{
+.retro-product-row {
   display: flex;
   justify-content: center;
 }
-.retro-product-card{
+.retro-product-card {
   margin-top: 30px;
   background: white;
   padding: 25px;
@@ -1390,7 +1392,7 @@ img.basic3-img {
   left: 70px;
   top: 30px;
 }
-.retro-product-card h5{
+.retro-product-card h5 {
   font-size: 32px;
   font-family: Rubik-ExtraBold;
   color: #000;
@@ -1399,7 +1401,7 @@ img.basic3-img {
   width: 50%;
   max-height: 650px;
 }
-.retro-product-img-main{
+.retro-product-img-main {
   position: relative;
 }
 .retro-product-card .retro-product-img{
@@ -1407,7 +1409,7 @@ img.basic3-img {
   z-index: 2;
   width: 100%;
   filter: drop-shadow(3px 4px 12px rgba(0, 0, 0, 0.39))
-          drop-shadow(13px 18px 22px rgba(0, 0, 0, 0.34));
+    drop-shadow(13px 18px 22px rgba(0, 0, 0, 0.34));
 }
 .retro-box-img{
   width: 100%;
@@ -1423,30 +1425,30 @@ img.basic3-img {
   right: 0;
   z-index: 2;
 }
-.retro-product-vector2{
+.retro-product-vector2 {
   position: absolute;
   bottom: 90px;
   left: 0;
   z-index: 2;
 }
-.retro-product-vector3{
+.retro-product-vector3 {
   position: absolute;
   bottom: 90px;
   right: 0;
   z-index: 2;
 }
-.retro-simper-main{
+.retro-simper-main {
   padding: 50px 0px;
   position: relative;
 }
-.retro-simper-bg{
-  position:absolute;
+.retro-simper-bg {
+  position: absolute;
   width: 100%;
   height: calc(100% + 100px);
   top: 0;
   left: 0;
 }
-.retro-simper-cont{
+.retro-simper-cont {
   background: url(./assets/images/retro-simper-inner-bg.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -1509,7 +1511,7 @@ img.basic3-img {
   /* overflow: hidden; */
   perspective: 1000px;
 }
-.frozenBg .row{
+.frozenBg .row {
   width: 100% !important;
 }
 .frozen-product-name {
@@ -1522,7 +1524,6 @@ img.basic3-img {
   margin-top: 10px;
   text-align: center;
 }
-
 .frozen-product-card {
   border-radius: 12px;
   width: 100%;
@@ -1540,7 +1541,6 @@ img.basic3-img {
   justify-content: center;
   align-items: center;
 }
-
 .frozen-product-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 6px 18px rgba(173, 216, 230, 0.35);
@@ -1601,6 +1601,7 @@ element.style {
   position: relative;
   perspective: 1000px;
   min-height: 1050px !important;
+  border-radius: 0px !important;
 }
 .slide-4 .heading {
   color: #fff;
@@ -1674,7 +1675,7 @@ img.smoothiedevice3 {
   height: 425px;
   position: absolute;
   bottom: 15%;
-  right: 22%;
+  right: 26%;
 }
 
 img.smoothiedevice4 {
@@ -1682,7 +1683,7 @@ img.smoothiedevice4 {
   height: 425px;
   position: absolute;
   bottom: 3%;
-  right: 4%;
+  right: 8%;
 }
 .smoothieVersions {
   background: #fe3074;
@@ -1691,6 +1692,126 @@ img.smoothiedevice4 {
 
 .smoothieVersions .features {
   color: #fff;
+}
+.smoothieBg {
+  padding-top: 150px;
+  background: url(../src/assets/images/sbg2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  /* overflow: hidden; */
+  perspective: 1000px;
+}
+.smoothie-card-1 {
+  background: linear-gradient(180deg, #ebbd0a, #facf0d);
+}
+.smoothie-card-2 {
+  background: linear-gradient(180deg, #ff371a, #6381c0);
+}
+.smoothie-card-3 {
+  background: linear-gradient(180deg, #314fd3, #4a65ec);
+}
+.smoothie-card-4 {
+  background: linear-gradient(180deg, #f39405, #f6a000);
+}
+.smoothie-product-card {
+  border-radius: 12px;
+  width: 100%;
+  height: 600px;
+  padding: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  justify-content: center;
+  border-radius: 8px;
+  align-items: center;
+  position: relative;
+}
+.smoothie-product-name {
+  font-family: "SpaceGrotesk-Bold";
+  color: #fff;
+  font-size: 36px;
+  z-index: 111111;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center;
+}
+.bgFruite1 {
+  position: absolute;
+  left: 0;
+  z-index: -111;
+}
+.bgFruite2 {
+  position: absolute;
+  right: 0;
+  bottom: 20%;
+  z-index: -1;
+}
+.bgFruite3 {
+  position: absolute;
+  left: 10%;
+  bottom: 20%;
+  z-index: -11;
+}
+.floatingShadow {
+  width: 350px;
+  height: 70px;
+  background: radial-gradient(
+    circle,
+    rgb(255, 255, 255) 0%,
+    rgba(232, 232, 232, 0.34) 40%,
+    rgba(255, 255, 255, 0.581) 80%
+  );
+  margin: 0 auto;
+  border-radius: 90%;
+  filter: blur(10px);
+  position: relative;
+  top: -18%;
+  z-index: 1;
+}
+.smoothie-product-card:hover {
+  transform: translateY(-5px);
+}
+.smoothieDevice {
+  width: 80%;
+  position: relative;
+  z-index: -2;
+  transition: transform 0.5s ease;
+}
+.fruiteImg {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+.smoothieProductsSection .title {
+  color: #fff;
+  font-size: 48px;
+  font-family: "BricolageGrotesque-Medium";
+  letter-spacing: -1.44px;
+  line-height: 60px;
+  text-align: start;
+}
+.smoothie_section .ourproducts.with-bg {
+  background: linear-gradient(180deg, #fd7e4d, #ff9444);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.smoothie_section .ourProducts_section {
+  padding: 0 !important;
+}
+.smoothie_section .ourProducts_section .heading {
+  color: #fff;
+  font-family: "SpaceGrotesk-Bold";
+  text-transform: uppercase;
 }
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {

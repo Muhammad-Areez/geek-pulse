@@ -15,11 +15,11 @@ function FrozenEdition() {
   return (
     <>
       <div className="frozen_section">
-        <Container className="FrozenBanner position-relative">
-          <Warning backgroundColor="#012243" />
+        <section className="FrozenBanner position-relative">
+          <Warning backgroundColor="#012243" borderRadius="0px"/>
           <Header />
           <FrozenBanner />
-        </Container>
+        </section>
         <section>
           <Container>
             <Version
