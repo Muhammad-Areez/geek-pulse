@@ -50,18 +50,7 @@ import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
 import twitter from "./twitter.svg";
 import linkedin from "./linkedin.svg";
-import retroMatrix from "./retro-matrix.svg";
-import retroBanner1 from "./retro-banner1.svg";
-import retroBanner2 from "./retro-banner2.svg";
-import retroBanner3 from "./retro-banner3.svg";
-import retroBanner4 from "./retro-banner4.svg";
-import retroSec from "./retro-sec.svg";
-import retroSecBg from "./retro-sec-bg.svg";
 
-import facebook from "./facebook.svg";
-// import instagram from "./instagram.svg";
-// import twitter from "./twitter.svg";
-// import linkedin from "./linkedin.svg";
 import matrix2 from "./matrix2.svg";
 import phoneIcon from "./phone.png";
 import mailIcon from "./mail.png";
