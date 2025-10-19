@@ -106,9 +106,11 @@ export const Footer = () => {
             <h3>Subscribe to get 10% OFF on your first order!</h3>
         </Col>
         <Col md={6}>
-            <div className="searchField">
-                <input type="search" placeholder="Enter your email" />
-                <button className="cta">Subscribe</button>
+            <div className="search-div">
+              <div className="searchField">
+                  <input type="search" placeholder="Enter your email" />
+                  <button className="cta">Subscribe</button>
+              </div>
             </div>
         </Col>
       </Row>

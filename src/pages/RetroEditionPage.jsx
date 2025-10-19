@@ -1,4 +1,4 @@
-import { Col, Row } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
 import { images } from "../assets/images"
 import GlitchText from "../components/GlitchText"
 import Header from "../components/Header"
@@ -35,15 +35,43 @@ function RetroEditionPage () {
                 <Row>
                     <Col md={6}>
                         <div className="retro-sec-left">
-                            <img src={images.retroSec}/>
+                            <img src={images.starVector} className="star-vector1" />
+                            <img src={images.starVector} className="star-vector2" />
+                            <img src={images.retroSec} className="box-img"/>
                         </div>
                     </Col>
                     <Col md={6}>
                         <div className="retro-sec-right">
-
+                            <h3>Turn back time with a modern twist. The Retro Edition brings nostalgic vibes to the future of vaping, bold design, vibrant colours, and three classic flavours that hit just right. It’s a tribute to the golden era, reimagined for today’s generation of Pulse lovers.</h3>
                         </div>
                     </Col>
                 </Row>
+            </section>
+            <section className="retro-products">
+                <h3>PRODUCT</h3>
+                <Container>
+                    <Row className="retro-product-row">
+                        <Col md={3}>
+                            <div className="retro-product-card">
+                                <h5>Groove Grape</h5>
+                                <img src={images.retroProductVector1} alt="vector"/>
+                                <img src={images.retroProductVector2} alt="vector"/>
+                                <img src={images.retroProduct1} alt="product"/>
+                            </div>
+                        </Col>
+                        <Col md={3}>
+                            <div className="retro-product-card">
+                                <h5>Neon Grape Soda</h5>
+                                <img src={images.retroProduct2} alt="product"/>
+                            </div>
+                        </Col>
+                        <Col md={3}>
+                            <div className="retro-product-card">
+                                <h5>Strawberry Rollerpink</h5>
+                                <img src={images.retroProduct3} alt="product"/>
+                            </div></Col>
+                    </Row>
+                </Container>
             </section>
         </div>
     )

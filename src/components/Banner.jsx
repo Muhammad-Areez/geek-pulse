@@ -17,7 +17,7 @@ const Banner = () => {
         // onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide className="banner-slide slide-1">
-          <div className="banner-vectors">
+          <div className="banner-vectors banner-overflow">
             <img src={images.matrix} className="matrix-img"/>
             <img src={images.moon} className="moon-img"/>
             <img src={images.aeroplane} className="aeroplane-img"/>
