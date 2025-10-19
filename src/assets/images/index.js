@@ -53,6 +53,7 @@ import retroBox1 from './retro-box1.png'
 import retroBox2 from './retro-box2.png'
 import retroBox3 from './retro-box3.png'
 import pizzaIcon from './pizza-icon.png'
+import cosmosBg from './cosmos-bg.webp'
 
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
@@ -278,5 +279,6 @@ export const images = {
   fruite2,
   fruite3,
   fruite4,
+  cosmosBg
 
 };

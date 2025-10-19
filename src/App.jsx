@@ -6,6 +6,7 @@ import BasicEdition from "./pages/BasicEdition";
 import RetroEditionPage from "./pages/RetroEditionPage"
 import FrozenEdition from "./pages/FrozenEdition";
 import SmoothieEdition from "./pages/SmoothieEdition";
+import CosmosEdition from "./pages/CosmosEdition";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/retro-edition" element={<RetroEditionPage />} />
         <Route path="/frozen-edition" element={<FrozenEdition />} />
         <Route path="/smoothie-edition" element={<SmoothieEdition />} />
+        <Route path="/cosmos-edition" element={<CosmosEdition />} />
       </Routes>
     </Router>
   );

@@ -112,7 +112,7 @@ export const Footer = ({
             <div className="search-div">
               <div className="searchField">
                   <input type="search" placeholder="Enter your email" />
-                  <button className="cta">Subscribe</button>
+                  <button className="cta" style={{background: background !== "#100a3e" ? '#55BD04' : '#8186FF'}}>Subscribe</button>
               </div>
             </div>
         </Col>
