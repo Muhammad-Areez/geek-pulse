@@ -1314,10 +1314,12 @@ img.basic3-img {
   align-items: center;
 }
 .retro-sec-left .box-img{
-  height: 617px;
+  width: 100%;
+  border-radius: 0px;
 }
 .retro-sec-left .star-vector1, .retro-sec-left .star-vector2{
   width: 86px;
+  height: auto;
   position: absolute;
 }
 .retro-sec-left .star-vector1{
@@ -1335,8 +1337,13 @@ img.basic3-img {
   padding-inline: 7%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background: #B50C73;
+  flex-direction: column;
+}
+.retro-sec-right img{
+  height: 60px;
+  width: auto;
 }
 .retro-sec-right h3{
   font-family: Rubik-Bold;
@@ -1372,6 +1379,16 @@ img.basic3-img {
   background: white;
   padding: 25px;
   position: relative;
+  transition: all 250ms ease-in-out;
+  overflow: hidden;
+}
+.retro-product-card:hover{
+  border-radius: 40px;
+}
+.retro-product-card:hover .retro-box-img{
+  transform: scale(1) rotate(35deg);
+  left: 70px;
+  top: 30px;
 }
 .retro-product-card h5{
   font-size: 32px;
@@ -1386,24 +1403,37 @@ img.basic3-img {
   position: relative;
 }
 .retro-product-card .retro-product-img{
+  position: relative;
+  z-index: 2;
   width: 100%;
   filter: drop-shadow(3px 4px 12px rgba(0, 0, 0, 0.39))
           drop-shadow(13px 18px 22px rgba(0, 0, 0, 0.34));
+}
+.retro-box-img{
+  width: 100%;
+  position: absolute;
+  top: 55px;
+  left: 0px;
+  transform: rotate(0deg) scale(0.01);
+  transition: all 0.5s ease;
 }
 .retro-product-vector1{
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 2;
 }
 .retro-product-vector2{
   position: absolute;
   bottom: 90px;
   left: 0;
+  z-index: 2;
 }
 .retro-product-vector3{
   position: absolute;
   bottom: 90px;
   right: 0;
+  z-index: 2;
 }
 .retro-simper-main{
   padding: 50px 0px;
@@ -1425,6 +1455,18 @@ img.basic3-img {
   position: relative;
   z-index: 2;
   border: 5px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.retro-simper-cont h4{
+  color: #F4E9DD;
+  font-size: 72px;
+  line-height: 71px;
+  letter-spacing: 0.2px;
+  font-family: Rubik-ExtraBold;
+  margin-bottom: 40px;
 }
 /* Retro Edition Page Ends */
 /* Frozen Edition Page Starts */

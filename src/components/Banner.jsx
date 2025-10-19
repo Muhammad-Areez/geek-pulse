@@ -1,12 +1,70 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import aeroplane from "../assets/images/aeroplane.svg";
 import halfmoon from "../assets/images/halfmoon.svg";
 import { Col } from "react-bootstrap";
 import { images } from "../assets/images";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Banner = () => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const airplane = document.querySelector('.aeroplane-img');
+    const device1 = document.querySelector('.banner-device-img1');
+    const device2 = document.querySelector('.banner-device-img2');
+    const moon = document.querySelector('.moon-img');
+
+    if (airplane) {
+      gsap.set(airplane, { x: 400, y: -400 });
+
+      gsap.to(airplane, {
+        scrollTrigger: {
+          trigger: ".banner-section",
+          start: "top center",
+          end: "bottom center",
+          scrub: 1,
+        },
+        x:-400,
+        y: 300,
+        rotation: -10,
+        ease: "power1.inOut",
+      });
+    }
+
+    if (device1) {
+      gsap.to(device1, {
+        y: -10,
+        duration: 2,
+        ease: "power1.inOut",
+        yoyo: true,
+        repeat: -1,
+      });
+    }
+
+    if (device2) {
+      gsap.to(device2, {
+        y: -15,
+        duration: 2.5,
+        ease: "power1.inOut",
+        yoyo: true,
+        repeat: -1,
+        delay: 0.5,
+      });
+    }
+
+    if (moon) {
+      gsap.to(moon, {
+        rotation: 360,
+        duration: 60,
+        ease: "none",
+        repeat: -1,
+      });
+    }
+  }, []);
+
   return (
     <section className="banner-section">
       <Swiper
@@ -58,7 +116,7 @@ const Banner = () => {
           </Col>
           <Col md={6}></Col>
         </SwiperSlide>
-        
+
       </Swiper>
     </section>
   );

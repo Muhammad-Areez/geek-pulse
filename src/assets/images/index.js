@@ -36,6 +36,9 @@ import retroBanner2 from './retro-banner2.svg'
 import retroBanner3 from './retro-banner3.svg'
 import retroBanner4 from './retro-banner4.svg'
 import retroSec from './retro-sec.svg'
+import retroSec1 from './retro-sec1.png'
+import retroSec2 from './retro-sec2.png'
+import retroSec3 from './retro-sec3.png'
 import retroSecBg from './retro-sec-bg.svg'
 import starVector from './star-vector.svg'
 import retroProductsBg from './retro-product-bg.svg'
@@ -46,6 +49,10 @@ import retroProductVector1 from './retro-product-vector1.svg'
 import retroProductVector2 from './retro-product-vector2.svg'
 import retroProductVector3 from './retro-product-vector3.svg'
 import retroSimperBg from './retro-simper-bg.svg'
+import retroBox1 from './retro-box1.png'
+import retroBox2 from './retro-box2.png'
+import retroBox3 from './retro-box3.png'
+import pizzaIcon from './pizza-icon.png'
 
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
@@ -170,6 +177,9 @@ export const images = {
   retroBanner3,
   retroBanner4,
   retroSec,
+  retroSec1,
+  retroSec2,
+  retroSec3,
   retroSecBg,
   matrix2,
   phoneIcon,
@@ -253,4 +263,8 @@ export const images = {
   smootieBg5,
   smootieBg6,
   retroSimperBg,
+  retroBox1,
+  retroBox2,
+  retroBox3,
+  pizzaIcon,
 };

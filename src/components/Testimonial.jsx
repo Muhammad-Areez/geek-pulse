@@ -3,6 +3,7 @@ import { images } from "../assets/images";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
+import { Container } from "react-bootstrap";
 
 const Testimonial = () => {
   const reviews = [
@@ -40,6 +41,7 @@ const Testimonial = () => {
 
   return (
     <div className="testimonial-section relative">
+      <Container>
       <div className="bulletHeading">
         <h4 className="title">Testimonials</h4>
       </div>
@@ -48,6 +50,7 @@ const Testimonial = () => {
         <h2 className="heading">Reviews From Customers</h2>
         <button className="cta">View More</button>
       </div>
+      </Container>
 
       <div className="swiperWrapper relative">
         {/* Soft fade on both sides */}
@@ -57,7 +60,6 @@ const Testimonial = () => {
         <Swiper
           slidesPerView={1.2}
           spaceBetween={20}
-          centeredSlides={true}
           loop={true}
           autoplay={{
             delay: 2500,

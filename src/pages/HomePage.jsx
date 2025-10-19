@@ -36,9 +36,9 @@ function HomePage() {
         </Container>
       </section>
       <section className="testimonial_section">
-        <Container>
-          <Testimonial />
-        </Container>
+        {/* <Container>
+        </Container> */}
+        <Testimonial />
       </section>
       <section className="blog_section">
         <Container>

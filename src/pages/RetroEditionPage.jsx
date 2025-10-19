@@ -13,7 +13,8 @@ import cosmo from "../assets/images/Cosmo-editions.png";
 import smoothie from "../assets/images/Smoothie-editions.png";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay, EffectCoverflow } from "swiper/modules";
+import { motion } from "framer-motion";
 
 function RetroEditionPage() {
     return (
@@ -21,10 +22,26 @@ function RetroEditionPage() {
             <Warning backgroundColor="#F46CFE" borderRadius="0px" />
             <Header />
             <section className="retro-edition-hero">
-                <img src={images.retroBanner1} />
-                <img src={images.retroBanner2} />
-                <img src={images.retroBanner3} />
-                <img src={images.retroBanner4} />
+                <motion.img
+                    src={images.retroBanner1}
+                    animate={{ y: [0, -10, 0] }}
+                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                />
+                <motion.img
+                    src={images.retroBanner2}
+                    animate={{ y: [0, 10, 0] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                />
+                <motion.img
+                    src={images.retroBanner3}
+                    animate={{ y: [0, -15, 0] }}
+                    transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
+                />
+                <motion.img
+                    src={images.retroBanner4}
+                    animate={{ y: [0, 12, 0] }}
+                    transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
+                />
                 <GlitchText
                     speed={2}
                     enableShadows={true}
@@ -42,21 +59,185 @@ function RetroEditionPage() {
                     EDITION
                 </GlitchText>
             </section>
-            <section className="retro-sec">
-                <Row>
-                    <Col md={6}>
-                        <div className="retro-sec-left">
-                            <img src={images.starVector} className="star-vector1" />
-                            <img src={images.starVector} className="star-vector2" />
-                            <img src={images.retroSec} className="box-img" />
+            <section>
+                <Swiper
+                    slidesPerView={1}
+                    spaceBetween={20}
+                    loop={true}
+                    modules={[Autoplay]}
+                    autoplay={{ delay: 2500, disableOnInteraction: false }}
+                    className="retro-sec-slider"
+                    speed={1000}
+                >
+                    <SwiperSlide>
+                        <div className="retro-sec">
+                            <Row>
+                                <Col md={6}>
+                                    <div className="retro-sec-left">
+                                        <motion.img
+                                            src={images.starVector}
+                                            className="star-vector1"
+                                            alt="star"
+                                            animate={{ rotate: 360 }}
+                                            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                                        />
+                                        <motion.img
+                                            src={images.starVector}
+                                            className="star-vector2"
+                                            alt="star"
+                                            animate={{ rotate: -360 }}
+                                            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                                        />
+                                        <motion.img
+                                            src={images.retroSec3}
+                                            className="box-img"
+                                            alt="retro"
+                                            initial={{ y: 100, opacity: 0 }}
+                                            whileInView={{ y: 0, opacity: 1 }}
+                                            transition={{ duration: 0.8, ease: "easeOut" }}
+                                            viewport={{ once: true }}
+                                        />
+                                    </div>
+                                </Col>
+                                <Col md={6}>
+                                    <div className="retro-sec-right">
+                                        <motion.h3
+                                            initial={{ x: 100, opacity: 0 }}
+                                            whileInView={{ x: 0, opacity: 1 }}
+                                            transition={{ duration: 0.8, ease: "easeOut" }}
+                                            viewport={{ once: true }}
+                                        >
+                                            Turn back time with a modern twist. The Retro Edition brings
+                                            nostalgic vibes to the future of vaping, bold design, vibrant
+                                            colours, and three classic flavours that hit just right. It’s
+                                            a tribute to the golden era, reimagined for today’s generation
+                                            of Pulse lovers.
+                                        </motion.h3>
+                                        <motion.img
+                                            src={images.pizzaIcon}
+                                            initial={{ x: 100, opacity: 0 }}
+                                            whileInView={{ x: 0, opacity: 1 }}
+                                            transition={{ duration: 0.8, ease: "easeOut" }}
+                                            viewport={{ once: true }}
+                                        />
+                                    </div>
+                                </Col>
+                            </Row>
                         </div>
-                    </Col>
-                    <Col md={6}>
-                        <div className="retro-sec-right">
-                            <h3>Turn back time with a modern twist. The Retro Edition brings nostalgic vibes to the future of vaping, bold design, vibrant colours, and three classic flavours that hit just right. It’s a tribute to the golden era, reimagined for today’s generation of Pulse lovers.</h3>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="retro-sec">
+                            <Row>
+                                <Col md={6}>
+                                    <div className="retro-sec-left">
+                                        <motion.img
+                                            src={images.starVector}
+                                            className="star-vector1"
+                                            alt="star"
+                                            animate={{ rotate: 360 }}
+                                            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                                        />
+                                        <motion.img
+                                            src={images.starVector}
+                                            className="star-vector2"
+                                            alt="star"
+                                            animate={{ rotate: -360 }}
+                                            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                                        />
+                                        <motion.img
+                                            src={images.retroSec2}
+                                            className="box-img"
+                                            alt="retro"
+                                            initial={{ y: 100, opacity: 0 }}
+                                            whileInView={{ y: 0, opacity: 1 }}
+                                            transition={{ duration: 0.8, ease: "easeOut" }}
+                                            viewport={{ once: true }}
+                                        />
+                                    </div>
+                                </Col>
+                                <Col md={6}>
+                                    <div className="retro-sec-right" style={{background:'#F46CFE'}}>
+                                        <motion.h3
+                                            initial={{ x: 100, opacity: 0 }}
+                                            whileInView={{ x: 0, opacity: 1 }}
+                                            transition={{ duration: 0.8, ease: "easeOut" }}
+                                            viewport={{ once: true }}
+                                        >
+                                            Turn back time with a modern twist. The Retro Edition brings
+                                            nostalgic vibes to the future of vaping, bold design, vibrant
+                                            colours, and three classic flavours that hit just right. It’s
+                                            a tribute to the golden era, reimagined for today’s generation
+                                            of Pulse lovers.
+                                        </motion.h3>
+                                        <motion.img
+                                            src={images.pizzaIcon}
+                                            initial={{ x: 100, opacity: 0 }}
+                                            whileInView={{ x: 0, opacity: 1 }}
+                                            transition={{ duration: 0.8, ease: "easeOut" }}
+                                            viewport={{ once: true }}
+                                        />
+                                    </div>
+                                </Col>
+                            </Row>
                         </div>
-                    </Col>
-                </Row>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="retro-sec">
+                            <Row>
+                                <Col md={6}>
+                                    <div className="retro-sec-left">
+                                        <motion.img
+                                            src={images.starVector}
+                                            className="star-vector1"
+                                            alt="star"
+                                            animate={{ rotate: 360 }}
+                                            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                                        />
+                                        <motion.img
+                                            src={images.starVector}
+                                            className="star-vector2"
+                                            alt="star"
+                                            animate={{ rotate: -360 }}
+                                            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                                        />
+                                        <motion.img
+                                            src={images.retroSec1}
+                                            className="box-img"
+                                            alt="retro"
+                                            initial={{ y: 100, opacity: 0 }}
+                                            whileInView={{ y: 0, opacity: 1 }}
+                                            transition={{ duration: 0.8, ease: "easeOut" }}
+                                            viewport={{ once: true }}
+                                        />
+                                    </div>
+                                </Col>
+                                <Col md={6}>
+                                    <div className="retro-sec-right" style={{background:"#01004C"}}>
+                                        <motion.h3
+                                            initial={{ x: 100, opacity: 0 }}
+                                            whileInView={{ x: 0, opacity: 1 }}
+                                            transition={{ duration: 0.8, ease: "easeOut" }}
+                                            viewport={{ once: true }}
+                                        >
+                                            Turn back time with a modern twist. The Retro Edition brings
+                                            nostalgic vibes to the future of vaping, bold design, vibrant
+                                            colours, and three classic flavours that hit just right. It’s
+                                            a tribute to the golden era, reimagined for today’s generation
+                                            of Pulse lovers.
+                                        </motion.h3>
+                                        <motion.img
+                                            src={images.pizzaIcon}
+                                            initial={{ x: 100, opacity: 0 }}
+                                            whileInView={{ x: 0, opacity: 1 }}
+                                            transition={{ duration: 0.8, ease: "easeOut" }}
+                                            viewport={{ once: true }}
+                                        />
+                                    </div>
+                                </Col>
+                            </Row>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
             </section>
             <section className="retro-products">
                 <h3>PRODUCT</h3>
@@ -64,29 +245,77 @@ function RetroEditionPage() {
                     <Row className="retro-product-row">
                         <Col md={3}>
                             <div className="retro-product-card">
-                                <h5>Groove Grape</h5>
+                                <motion.h5
+                                    initial={{ x: -100, opacity: 0 }}
+                                    whileInView={{ x: 0, opacity: 1 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }}
+                                    viewport={{ once: true }}
+                                >
+                                    Groove Grape
+                                </motion.h5>
                                 <div className="retro-product-img-main">
                                     <img src={images.retroProductVector1} alt="vector" className="retro-product-vector1" />
                                     <img src={images.retroProductVector2} alt="vector" className="retro-product-vector2" />
-                                    <img src={images.retroProduct1} alt="product" className="retro-product-img" />
+                                    <motion.img
+                                        src={images.retroProduct1}
+                                        alt="product"
+                                        className="retro-product-img"
+                                        initial={{ y: 100, opacity: 0 }}
+                                        whileInView={{ y: 0, opacity: 1 }}
+                                        transition={{ duration: 0.8, ease: "easeOut" }}
+                                        viewport={{ once: true }}
+                                    />
+                                    <img src={images.retroBox2} alt="box" className="retro-box-img" />
                                 </div>
                             </div>
                         </Col>
                         <Col md={3}>
                             <div className="retro-product-card">
-                                <h5>Neon Grape Soda</h5>
+                                <motion.h5
+                                    initial={{ x: -100, opacity: 0 }}
+                                    whileInView={{ x: 0, opacity: 1 }}
+                                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                                    viewport={{ once: true }}
+                                >
+                                    Neon Grape Soda
+                                </motion.h5>
                                 <div className="retro-product-img-main">
                                     <img src={images.retroProductVector3} alt="vector" className="retro-product-vector1" />
-                                    <img src={images.retroProduct2} alt="product" className="retro-product-img" />
+                                    <motion.img
+                                        src={images.retroProduct2}
+                                        alt="product"
+                                        className="retro-product-img"
+                                        initial={{ y: 100, opacity: 0 }}
+                                        whileInView={{ y: 0, opacity: 1 }}
+                                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                                        viewport={{ once: true }}
+                                    />
+                                    <img src={images.retroBox3} alt="box" className="retro-box-img" />
                                 </div>
                             </div>
                         </Col>
                         <Col md={3}>
                             <div className="retro-product-card">
-                                <h5>Strawberry Rollerpink</h5>
+                                <motion.h5
+                                    initial={{ x: -100, opacity: 0 }}
+                                    whileInView={{ x: 0, opacity: 1 }}
+                                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+                                    viewport={{ once: true }}
+                                >
+                                    Strawberry Rollerpink
+                                </motion.h5>
                                 <div className="retro-product-img-main">
                                     <img src={images.retroProductVector1} alt="vector" className="retro-product-vector3" />
-                                    <img src={images.retroProduct3} alt="product" className="retro-product-img" />
+                                    <motion.img
+                                        src={images.retroProduct3}
+                                        alt="product"
+                                        className="retro-product-img"
+                                        initial={{ y: 100, opacity: 0 }}
+                                        whileInView={{ y: 0, opacity: 1 }}
+                                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+                                        viewport={{ once: true }}
+                                    />
+                                    <img src={images.retroBox1} alt="box" className="retro-box-img" />
                                 </div>
                             </div>
                         </Col>
@@ -94,27 +323,58 @@ function RetroEditionPage() {
                 </Container>
             </section>
             <section className="retro-simper-main">
-                <img src={images.retroSimperBg} alt="bg" className="retro-simper-bg"/>
+                <img src={images.retroSimperBg} alt="bg" className="retro-simper-bg" />
                 <Container className="retro-simper-cont">
-                <Swiper
-        className="mySwiper"
-        slidesPerView={1}
-        spaceBetween={10}
-        breakpoints={{
-          768: { slidesPerView: 2, spaceBetween: 20 },
-          1024: { slidesPerView: 2, spaceBetween: 30 },
-          1200: { slidesPerView: 2, spaceBetween: 20 },
-        }}
-        modules={[Pagination, Autoplay]}
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 2500, disableOnInteraction: false }}
-      >
-        {[retro, frozen, seasonal, basic, cosmo, smoothie].map((img, i) => (
-          <SwiperSlide key={i}>
-            <img src={img} alt={`Product ${i + 1}`} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+                    <motion.h4
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{ staggerChildren: 0.1 }}
+                        style={{ display: 'inline-block' }}
+                    >
+                        {"SIMPLER PRODUCTS".split("").map((char, index) => (
+                            <motion.span
+                                key={index}
+                                variants={{
+                                    hidden: { opacity: 0, y: 20 },
+                                    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+                                }}
+                                style={{ display: 'inline-block' }}
+                            >
+                                {char === " " ? "\u00A0" : char}
+                            </motion.span>
+                        ))}
+                    </motion.h4>
+                    <Swiper
+                        className="mySwiper"
+                        effect="coverflow"
+                        slidesPerView={1}
+                        spaceBetween={100}
+                        centeredSlides={true}
+                        initialSlide={1}
+                        loop={true}
+                        coverflowEffect={{
+                            rotate: 0,
+                            stretch: 0,
+                            depth: 300,
+                            modifier: 1,
+                            slideShadows: false,
+                        }}
+                        breakpoints={{
+                            768: { slidesPerView: 2, spaceBetween: 150 },
+                            1024: { slidesPerView: 2, spaceBetween: 150 },
+                            1200: { slidesPerView: 2, spaceBetween: 150 },
+                        }}
+                        modules={[EffectCoverflow, Autoplay]}
+                        pagination={{ clickable: true }}
+                        autoplay={{ delay: 2500, disableOnInteraction: false }}
+                    >
+                        {[retro, frozen, seasonal, basic, cosmo, smoothie].map((img, i) => (
+                            <SwiperSlide key={i}>
+                                <img src={img} alt={`Product ${i + 1}`} />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </Container>
             </section>
             <Footer

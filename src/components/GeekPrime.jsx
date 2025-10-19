@@ -1,9 +1,19 @@
 import React from "react";
 
 import { Col } from "react-bootstrap";
+import { motion } from "framer-motion";
 import { images } from "../assets/images";
 
 const GeekPrime = () => {
+  const slideUpVariant = {
+    hidden: { opacity: 0, y: 100 },
+    visible: (delay = 0) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay, duration: 0.8, ease: "easeOut" },
+    }),
+  };
+
   return (
     <section className="prime_section">
       {/* <Swiper
@@ -14,8 +24,23 @@ const GeekPrime = () => {
         // onSwiper={(swiper) => console.log(swiper)}
       > */}
       <div className="primeBox">
-        <img src={images.primeImage2} className="banner-device-img1" />
-        <img src={images.primeImage1} className="banner-device-img2" />
+        <motion.img
+          src={images.primeImage2}
+          className="banner-device-img1"
+          variants={slideUpVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        />
+        <motion.img
+          src={images.primeImage1}
+          className="banner-device-img2"
+          variants={slideUpVariant}
+          initial="hidden"
+          whileInView="visible"
+          custom={0.2}
+          viewport={{ once: true }}
+        />
         <Col md={6}>
           <div className="banner-text-div">
             <div>
