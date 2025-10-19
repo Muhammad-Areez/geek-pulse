@@ -67,7 +67,7 @@ const SmoothieProducts = () => {
                       y: 0,
                       filter: "blur(0px)",
                       transition: {
-                        duration: 0.8,
+                        duration: 0.3,
                         ease: "easeOut",
                       },
                     },
@@ -91,7 +91,7 @@ const SmoothieProducts = () => {
                       scale: 1.05,
                       y: -10,
                       filter: "drop-shadow(0 20px 25px rgba(255,182,193,0.6))",
-                      transition: { duration: 0.6, ease: "easeOut" },
+                      transition: { duration: 0.3, ease: "easeOut" },
                     },
                   }}
                   animate={{
@@ -99,7 +99,7 @@ const SmoothieProducts = () => {
                     scale: [1, 1.02, 1, 1.01, 1],
                   }}
                   transition={{
-                    duration: 4,
+                    duration: 2,
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}

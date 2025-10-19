@@ -7,6 +7,8 @@ import Version from "../components/Version";
 import SmoothieBanner from "../components/SmoothieBanner";
 import SmoothieProducts from "../components/SmoothieProducts";
 import { images } from "../assets/images";
+
+
 function SmoothieEdition() {
   return (
     <>

@@ -1314,7 +1314,7 @@ img.basic3-img {
   justify-content: center;
   align-items: center;
 }
-.retro-sec-left .box-img{
+.retro-sec-left .box-img {
   width: 100%;
   border-radius: 0px;
 }
@@ -1340,10 +1340,10 @@ img.basic3-img {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background: #B50C73;
+  background: #b50c73;
   flex-direction: column;
 }
-.retro-sec-right img{
+.retro-sec-right img {
   height: 60px;
   width: auto;
 }
@@ -1384,10 +1384,10 @@ img.basic3-img {
   transition: all 250ms ease-in-out;
   overflow: hidden;
 }
-.retro-product-card:hover{
+.retro-product-card:hover {
   border-radius: 40px;
 }
-.retro-product-card:hover .retro-box-img{
+.retro-product-card:hover .retro-box-img {
   transform: scale(1) rotate(35deg);
   left: 70px;
   top: 30px;
@@ -1404,14 +1404,14 @@ img.basic3-img {
 .retro-product-img-main {
   position: relative;
 }
-.retro-product-card .retro-product-img{
+.retro-product-card .retro-product-img {
   position: relative;
   z-index: 2;
   width: 100%;
   filter: drop-shadow(3px 4px 12px rgba(0, 0, 0, 0.39))
     drop-shadow(13px 18px 22px rgba(0, 0, 0, 0.34));
 }
-.retro-box-img{
+.retro-box-img {
   width: 100%;
   position: absolute;
   top: 55px;
@@ -1419,7 +1419,7 @@ img.basic3-img {
   transform: rotate(0deg) scale(0.01);
   transition: all 0.5s ease;
 }
-.retro-product-vector1{
+.retro-product-vector1 {
   position: absolute;
   top: 0;
   right: 0;
@@ -1462,8 +1462,8 @@ img.basic3-img {
   align-items: center;
   flex-direction: column;
 }
-.retro-simper-cont h4{
-  color: #F4E9DD;
+.retro-simper-cont h4 {
+  color: #f4e9dd;
   font-size: 72px;
   line-height: 71px;
   letter-spacing: 0.2px;
@@ -1529,15 +1529,13 @@ img.basic3-img {
   width: 100%;
   height: 600px;
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 0 12px #cccc;
   padding: 20px;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
-  /* display: flex;
-  flex-direction: column; */
+  position: relative;
   justify-content: center;
   align-items: center;
 }
@@ -1549,12 +1547,23 @@ img.basic3-img {
 .frozenDevice {
   width: 85%;
   height: auto;
+  position: relative;
+  z-index: 2;
   transform-origin: center;
 }
 
-element.style {
-  transform: translateX(6.41449px) translateY(3.20724px);
+.frozenBox {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: auto;
+  z-index: 1;
+  transform-origin: center;
+  perspective: 1000px;
 }
+
 .floatingShadow {
   width: 400px;
   height: 70px;
@@ -1571,6 +1580,7 @@ element.style {
   top: -18%;
   z-index: 0;
 }
+
 .frozen_section .heading {
   font-family: "BERNIER Distressed";
   font-size: 115px;
@@ -1647,7 +1657,6 @@ img.smootieBg5 {
   top: 40%;
   right: 0;
 }
-
 img.smootieBg6 {
   width: 1300px;
   height: 240px;
@@ -1661,7 +1670,6 @@ img.smoothiedevice1 {
   bottom: 3%;
   left: 8%;
 }
-
 img.smoothiedevice2 {
   width: 325px;
   height: 425px;
@@ -1669,7 +1677,6 @@ img.smoothiedevice2 {
   bottom: 15%;
   left: 27%;
 }
-
 img.smoothiedevice3 {
   width: 325px;
   height: 425px;
@@ -1677,7 +1684,6 @@ img.smoothiedevice3 {
   bottom: 15%;
   right: 26%;
 }
-
 img.smoothiedevice4 {
   width: 325px;
   height: 425px;
@@ -1689,7 +1695,6 @@ img.smoothiedevice4 {
   background: #fe3074;
   padding: 5px;
 }
-
 .smoothieVersions .features {
   color: #fff;
 }
@@ -1783,9 +1788,9 @@ img.smoothiedevice4 {
 .fruiteImg {
   position: absolute;
   top: 10%;
-  left: 10%;
+  left: 0%;
   transform: translate(-50%, -50%);
-  width: 85%;
+  width: 100%;
   height: 100%;
   z-index: 1;
   pointer-events: none;
@@ -1813,6 +1818,155 @@ img.smoothiedevice4 {
   font-family: "SpaceGrotesk-Bold";
   text-transform: uppercase;
 }
+/* Seasonal Edition Page Starts */
+.slide-5 {
+  padding-top: 150px;
+  background: url(../src/assets/images/seasonalBg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  perspective: 1000px;
+  background-position: center;
+  min-height: 1050px !important;
+  border-radius: 0px !important;
+}
+.slide-5 .heading {
+  color: #fff;
+  font-size: 218px;
+  font-family: LondrinaSolid-Regular;
+  line-height: 189px;
+  letter-spacing: -4.21px;
+  text-transform: uppercase;
+}
+img.seasonalBg1 {
+  width: 280px;
+  position: absolute;
+  top: 40%;
+  height: 330px;
+  right: 0%;
+}
+img.seasonalBg2 {
+  width: 265px;
+  position: absolute;
+  bottom: 8%;
+  height: 340px;
+  left: 0%;
+}
+img.seasonalBox1 {
+  position: absolute;
+  height: 650px;
+  width: 400px;
+  left: 30%;
+  bottom: -5%;
+}
+img.seasonalBannerDevice1 {
+  position: absolute;
+  height: 380px;
+  width: 300px;
+  right: 36%;
+  bottom: -3%;
+}
+.seasonal_flavours {
+  background: #f7ead3;
+  position: relative;
+  padding: 20px;
+  height: 900px;
+}
+.seasonal_flavours .heading {
+  font-family: "LondrinaSolid-Regular";
+  letter-spacing: 0px;
+  margin: 0 20px;
+  font-size: 70px;
+  line-height: 77px;
+  text-transform: uppercase;
+}
+.seasonal_flavours .heading span {
+  color: #df6d28;
+}
+img.flower1 {
+  position: absolute;
+  right: 0%;
+  height: 300px;
+  width: 200px;
+  top: 3%;
+}
+img.flower2 {
+  position: absolute;
+  left: 0%;
+  height: 400px;
+  width: 400px;
+  top: 25%;
+}
+.seasonalDevices img {
+  height: 560px;
+  width: 350px;
+  z-index: 111111;
+  position: absolute;
+}
+img.seasonalDevice1 {
+  left: 15%;
+  top: 26%;
+}
+img.seasonalDevice2 {
+  left: 30%;
+  top: 26%;
+}
+img.seasonalDevice3 {
+  right: 31%;
+  top: 26%;
+}
+img.seasonalDevice4 {
+  right: 14%;
+  top: 26%;
+}
+.seasonal_section .ourproducts.with-bg {
+  background: #f7ead3;
+}
+.seasonal_section .ourProducts_section {
+  padding: 0 !important;
+}
+.seasonal_section .ourProducts_section .heading {
+  font-family: LondrinaSolid-Regular;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+/* Seasonal Edition Page Ends */
+/* Wholesale Page Starts */
+.wholesalerSection .contact_heading {
+  font-family: "Poppins-Bold" !important;
+  line-height: normal;
+  font-size: 100px !important;
+  top: 20% !important;
+}
+.wholesalerSection {
+  margin-bottom: 4rem;
+}
+.wholesaleForm {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.wholesaleForm .title {
+  text-align: start;
+  font-family: "Poppins-Medium";
+  font-size: 18px;
+}
+.wholesaleForm form {
+  margin: 10px 0 !important;
+}
+.wholesaleForm label {
+  font-size: 16px;
+}
+.wholesaleForm .cta {
+  width: 200px;
+  font-size: 16px;
+}
+.wholesalerSection .matrix-img {
+    height: 420px;
+    top: 10%;
+}
+/* Wholesale Page Ends */
+
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;

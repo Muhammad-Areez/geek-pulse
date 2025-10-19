@@ -30,29 +30,29 @@ import verified from "./verified.svg";
 import card1 from "./card1.svg";
 import card2 from "./card2.svg";
 import card3 from "./card3.svg";
-import retroMatrix from './retro-matrix.svg'
-import retroBanner1 from './retro-banner1.svg'
-import retroBanner2 from './retro-banner2.svg'
-import retroBanner3 from './retro-banner3.svg'
-import retroBanner4 from './retro-banner4.svg'
-import retroSec from './retro-sec.svg'
-import retroSec1 from './retro-sec1.png'
-import retroSec2 from './retro-sec2.png'
-import retroSec3 from './retro-sec3.png'
-import retroSecBg from './retro-sec-bg.svg'
-import starVector from './star-vector.svg'
-import retroProductsBg from './retro-product-bg.svg'
-import retroProduct1 from './retro-product1.svg'
-import retroProduct2 from './retro-product2.svg'
-import retroProduct3 from './retro-product3.svg'
-import retroProductVector1 from './retro-product-vector1.svg'
-import retroProductVector2 from './retro-product-vector2.svg'
-import retroProductVector3 from './retro-product-vector3.svg'
-import retroSimperBg from './retro-simper-bg.svg'
-import retroBox1 from './retro-box1.png'
-import retroBox2 from './retro-box2.png'
-import retroBox3 from './retro-box3.png'
-import pizzaIcon from './pizza-icon.png'
+import retroMatrix from "./retro-matrix.svg";
+import retroBanner1 from "./retro-banner1.svg";
+import retroBanner2 from "./retro-banner2.svg";
+import retroBanner3 from "./retro-banner3.svg";
+import retroBanner4 from "./retro-banner4.svg";
+import retroSec from "./retro-sec.svg";
+import retroSec1 from "./retro-sec1.png";
+import retroSec2 from "./retro-sec2.png";
+import retroSec3 from "./retro-sec3.png";
+import retroSecBg from "./retro-sec-bg.svg";
+import starVector from "./star-vector.svg";
+import retroProductsBg from "./retro-product-bg.svg";
+import retroProduct1 from "./retro-product1.svg";
+import retroProduct2 from "./retro-product2.svg";
+import retroProduct3 from "./retro-product3.svg";
+import retroProductVector1 from "./retro-product-vector1.svg";
+import retroProductVector2 from "./retro-product-vector2.svg";
+import retroProductVector3 from "./retro-product-vector3.svg";
+import retroSimperBg from "./retro-simper-bg.svg";
+import retroBox1 from "./retro-box1.png";
+import retroBox2 from "./retro-box2.png";
+import retroBox3 from "./retro-box3.png";
+import pizzaIcon from "./pizza-icon.png";
 
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
@@ -117,11 +117,11 @@ import frozendevice4 from "./frozendevice4.png";
 import frozendevice5 from "./frozendevice5.png";
 import frozendevice6 from "./frozendevice6.png";
 import frozenbox1 from "./frozenbox1.png";
-import frozenbox2 from "./frozenbox2.png";
-import frozenbox3 from "./frozenbox3.png";
-import frozenbox4 from "./frozenbox4.png";
-import frozenbox5 from "./frozenbox5.png";
-import frozenbox6 from "./frozenbox6.png";
+import frozenbox2 from "./frozenbox2.svg";
+import frozenbox3 from "./frozenbox3.svg";
+import frozenbox4 from "./frozenbox4.svg";
+import frozenbox5 from "./frozenbox5.svg";
+import frozenbox6 from "./frozenbox6.svg";
 import smoothiedevice1 from "./smoothiedevice1.svg";
 import smoothiedevice2 from "./smoothiedevice2.svg";
 import smoothiedevice3 from "./smoothiedevice3.svg";
@@ -138,6 +138,21 @@ import fruite1 from "./fruite1.svg";
 import fruite2 from "./fruite2.svg";
 import fruite3 from "./fruite3.svg";
 import fruite4 from "./fruite4.svg";
+import seasonalBg1 from "./seasonalBg1.svg";
+import seasonalBg2 from "./seasonalBg2.svg";
+import seasonalBg3 from "./seasonalBg3.svg";
+import seasonalBox1 from "./seasonalBox1.svg";
+import seasonalBox2 from "./seasonalBox2.svg";
+import seasonalBox3 from "./seasonalBox3.svg";
+import seasonalBox4 from "./seasonalBox4.svg";
+import seasonalDevice1 from "./seasonalDevice1.svg";
+import seasonalDevice2 from "./seasonalDevice2.svg";
+import seasonalDevice3 from "./seasonalDevice3.svg";
+import seasonalDevice4 from "./seasonalDevice4.svg";
+import flower1 from "./flower1.svg";
+import flower2 from "./flower2.svg";
+import flower3 from "./flower3.svg";
+import flower4 from "./flower4.svg";
 
 export const images = {
   aeroplane,
@@ -278,5 +293,19 @@ export const images = {
   fruite2,
   fruite3,
   fruite4,
-
+  seasonalBg1,
+  seasonalBg2,
+  seasonalBg3,
+  seasonalBox1,
+  seasonalBox2,
+  seasonalBox3,
+  seasonalBox4,
+  flower1,
+  flower2,
+  flower3,
+  flower4,
+  seasonalDevice1,
+  seasonalDevice2,
+  seasonalDevice3,
+  seasonalDevice4,
 };

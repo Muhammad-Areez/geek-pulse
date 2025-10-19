@@ -1,3 +1,4 @@
+import { images } from "../assets/images";
 const Version = ({
   featureColor = "#8085ff",
   showContext = true,
@@ -5,7 +6,7 @@ const Version = ({
     { icon: images.versionIcon1, text: "VPU Inside" },
     { icon: images.versionIcon2, text: "Dual Mesh Coil" },
     { icon: images.versionIcon3, text: "Dual Core" },
-    { icon: images.versionIcon4, text: "Regular 40K<br />Pulse Mode 30K" }, // 👈 line break directly added here
+    { icon: images.versionIcon4, text: "Regular 40K<br />Pulse Mode 30K" },
     { icon: images.versionIcon5, text: "50 ML" },
     { icon: images.versionIcon6, text: "5% Nicotine" },
     { icon: images.versionIcon7, text: "Quick Charge" },
