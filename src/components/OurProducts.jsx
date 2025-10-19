@@ -14,10 +14,11 @@ const OurProducts = ({
   showHeading = true,
   headingText = "Our Products",
   addBg = false,
+  color
 }) => {
   return (
     <div className= {`ourproducts ${addBg ? "with-bg" : ""}`}>
-      {showHeading && <h2 className="heading my-3">{headingText}</h2>}
+      {showHeading && <h2 className="heading my-3" style={{color: color ? color : ''}}>{headingText}</h2>}
 
       <Swiper
         className="mySwiper"

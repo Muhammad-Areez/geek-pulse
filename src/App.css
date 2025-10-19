@@ -1966,6 +1966,15 @@ img.seasonalDevice4 {
     top: 10%;
 }
 /* Wholesale Page Ends */
+/* Cosmos Edition Starts */
+.cosmos-edition-main{
+  width: 100vw;
+  background: url(./assets/images/cosmos-bg.webp);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/* Cosmos Edition Ends */
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {

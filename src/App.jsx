@@ -8,6 +8,7 @@ import FrozenEdition from "./pages/FrozenEdition";
 import SmoothieEdition from "./pages/SmoothieEdition";
 import SeasonalEdition from "./pages/SeasonalEdition";
 import Wholesaler from "./pages/Wholesaler";
+import CosmosEdition from "./pages/CosmosEdition";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/smoothie-edition" element={<SmoothieEdition />} />
         <Route path="/seasonal-edition" element={<SeasonalEdition />} />
         <Route path="/wholesaler" element={<Wholesaler />} />
+        <Route path="/cosmos-edition" element={<CosmosEdition />} />
       </Routes>
     </Router>
   );
