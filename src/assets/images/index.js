@@ -54,6 +54,10 @@ import retroBox2 from "./retro-box2.png";
 import retroBox3 from "./retro-box3.png";
 import pizzaIcon from "./pizza-icon.png";
 import cosmosBg from './cosmos-bg.webp'
+import astronaut from './astronaut.svg'
+import cosmosGalaxy from './cosmos-galaxy.svg'
+import cosmosDevice1 from './cosmos-device1.svg'
+import cosmosDevice2 from './cosmos-device2.svg'
 
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
@@ -308,6 +312,10 @@ export const images = {
   seasonalDevice1,
   seasonalDevice2,
   seasonalDevice3,
-  seasonalDevice4,  cosmosBg
-
+  seasonalDevice4,  
+  cosmosBg,
+  astronaut,
+  cosmosGalaxy,
+  cosmosDevice1,
+  cosmosDevice2,
 };
