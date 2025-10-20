@@ -40,7 +40,7 @@ const SmoothieProducts = () => {
       <Container>
         <Row className="justify-content-center p-5">
           {products.map((product, index) => (
-            <Col key={product.id} lg={4} md={6} sm={12} className="mb-5">
+            <Col key={product.id} lg={5} md={6} sm={12} className="mb-5">
               <motion.div
                 className={`smoothie-product-card text-center smoothie-card-${
                   index + 1

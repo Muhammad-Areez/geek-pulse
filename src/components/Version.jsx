@@ -1,5 +1,6 @@
 import { images } from "../assets/images";
 const Version = ({
+  cosmosEdition = false,
   featureColor = "#8085ff",
   showContext = true,
   features = [
@@ -23,6 +24,13 @@ const Version = ({
           </div>
         </div>
       )}
+      {
+        cosmosEdition && (
+          <div className="cosmos-version">
+            <h3>ULTRA <span>2.0</span> VERSION</h3>
+          </div>
+        )
+      }
 
       <div className="version_details">
         {features.map((item, index) => (

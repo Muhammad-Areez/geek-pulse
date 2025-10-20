@@ -58,6 +58,18 @@ import astronaut from './astronaut.svg'
 import cosmosGalaxy from './cosmos-galaxy.svg'
 import cosmosDevice1 from './cosmos-device1.svg'
 import cosmosDevice2 from './cosmos-device2.svg'
+import ourBg from './ourBg.svg'
+import cosmosStand from './cosmos-stand.svg'
+import cosmosProductDevice1 from './cosmos-product-device1.png'
+import cosmosProductDevice2 from './cosmos-product-device2.png'
+import cosmosProductDevice3 from './cosmos-product-device3.png'
+import cosmosProductDevice4 from './cosmos-product-device4.png'
+import cosmosProductDevice5 from './cosmos-product-device5.png'
+import cosmosProductBox1 from './cosmos-product-box1.png'
+import cosmosProductBox2 from './cosmos-product-box2.png'
+import cosmosProductBox3 from './cosmos-product-box3.png'
+import cosmosProductBox4 from './cosmos-product-box4.png'
+import cosmosProductBox5 from './cosmos-product-box5.png'
 
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
@@ -318,4 +330,16 @@ export const images = {
   cosmosGalaxy,
   cosmosDevice1,
   cosmosDevice2,
+  ourBg,
+  cosmosStand,
+  cosmosProductBox1,
+  cosmosProductBox2,
+  cosmosProductBox3,
+  cosmosProductBox4,
+  cosmosProductBox5,
+  cosmosProductDevice1,
+  cosmosProductDevice2,
+  cosmosProductDevice3,
+  cosmosProductDevice4,
+  cosmosProductDevice5,
 };

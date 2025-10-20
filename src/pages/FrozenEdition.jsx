@@ -10,6 +10,7 @@ import Version from "../components/Version";
 import BasicProducts from "../components/BasicProducts";
 import FrozenBanner from "../components/FrozenBanner";
 import FrozenProducts from "../components/FrozenProducts";
+import { images } from "../assets/images";
 // import bgImg from "../assets/images/bgImg.svg"
 function FrozenEdition() {
   return (
@@ -32,7 +33,8 @@ function FrozenEdition() {
         <section className="frozenProductsSection">
           <FrozenProducts />
         </section>
-        <section className="ourProducts_section">
+        <section className="ourProducts_section frozen-ourProducts">
+          <img src={images.ourBg} className="our-bg"/>
           <div className="position-relative">
             <OurProducts addBg={true} headingText="Simper Products" />
           </div>

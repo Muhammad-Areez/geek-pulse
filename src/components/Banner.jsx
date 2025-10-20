@@ -78,10 +78,10 @@ const Banner = () => {
     if (airplane) {
       gsap.set(airplane, {
         x: 600, 
-        y: -200, 
-        opacity: 0,
+        y: -300, 
+        opacity: 1,
         rotate: 20,
-        scale: 1.4,
+        scale: 1,
       });
 
       gsap.to(airplane, {

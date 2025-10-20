@@ -1672,11 +1672,14 @@ img.basic3-img {
   position: relative;
 }
 .ourproducts.with-bg {
-  background: url(../src/assets/images/ourBg.svg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
   position: relative;
+}
+.frozen-ourProducts .our-bg{
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 100px);
+  top: 0;
+  left: 0;
 }
 /* Frozen Edition Page Ends */
 /* Smoothie Edition Page Starts */
@@ -1800,7 +1803,7 @@ img.smoothiedevice4 {
 .smoothie-product-card {
   border-radius: 12px;
   width: 100%;
-  height: 600px;
+  height: auto;
   padding: 20px;
   overflow: hidden;
   cursor: pointer;
@@ -2076,20 +2079,22 @@ img.seasonalDevice4 {
 /* Cosmos Edition Starts */
 .cosmos-edition-main{
   width: 100%;
-  background: url(./assets/images/cosmos-bg.webp);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 5700px;
   background-color: #010206;
 }
+.cosmo-hero-bg{
+  width: 100%;
+  background: url(./assets/images/cosmo-bg1.svg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .cosmos-hero-main{
-  height: 1500px;
+  height: 1150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding:200px 0px;
+  padding:200px 0px 0px 0px;
   position: relative;
 }
 .cosmos-hero-main h1 {
@@ -2102,7 +2107,6 @@ img.seasonalDevice4 {
   letter-spacing: -3.5px;
   margin: 0;
 }
-
 .cosmos-hero-main .outline {
   position: absolute;
   top: 50%;
@@ -2119,26 +2123,131 @@ img.seasonalDevice4 {
 }
 .cosmos-hero-main .cosmos-galaxy{
   position: absolute;
-  top: 63%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 100%;
+  width: 75%;
 }
 .cosmos-hero-main .cosmos-device1 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 19%;
+  left: 29%;
   z-index: 3;
-
+  height: 630px;
 }
 .cosmos-hero-main .cosmos-device2 {
   position: absolute;
+  top: 35%;
+  left: 44.5%;
+  z-index: 4;
+  height: 630px;
+}
+.cosmos-hero-main .astronaut {
+  position: absolute;
+  top: 38%;
+  left: 16%;
+  z-index: 4;
+  width: 410px;
+}
+.cosmos-ultra{
+  padding-top: 70px;
+  position: relative;
+}
+.cosmos-aeroplane-img{
+  position: absolute;
+  top: -10%;
+  right: 10%;
+  height: 200px;
+}
+.cosmos-ultra-cont{
+  padding-inline: 10%;
+}
+.cosmos-ultra-cont h3{
+  font-size: 60px;
+  font-family: SpaceGrotesk-Bold;
+  line-height: 60px;
+  letter-spacing: 0px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.cosmos-ultra-cont h3 span{
+  line-height: 50px;
+  padding: 0px 10px;
+  background: #8186FF;
+  border-radius: 10px;
+}
+.cosmos-ultra .features {
+  color: #fff;
+}
+.cosmos-product-heading{
+  padding: 150px 0px;
+}
+.cosmos-product-heading h3{
+  color: #fff;
+  font-size: 60px;
+  font-family: SpaceGrotesk-Bold;
+  line-height: 66px;
+  letter-spacing: -2px;
+}
+.cosmos-product-main{
+  position: relative;
+  padding-bottom: 100px;
+}
+.cosmos-product-main .cosmos-matrix{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.cosmos-card-top{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.cosmos-card-top  .cosmos-device{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 91%;
+  object-fit: contain;
+}
+.cosmos-card-bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cosmos-card-bottom h5{
+  font-size: 38px;
+  color: #fff;
+  font-family: SpaceGrotesk-Medium;
+  position: relative;
+  width: fit-content;
+  text-align: center;
+}
+.cosmos-card-bottom h5:before{
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
+  transform: translateY(-50%);
+  left: -15px;
+}
+.cosmos-card-bottom h5:after{
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -15px;
 }
 /* Cosmos Edition Ends */
 
