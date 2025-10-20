@@ -578,13 +578,6 @@ p {
   left: 44%;
   background: #f16058;
 }
-.blogCard {
-  padding: 0;
-  border-radius: 16px;
-  background: #efede9;
-  border: none;
-  position: relative;
-}
 .blogCard .card-img-top {
   height: 250px;
   border-top-right-radius: 16px;
@@ -600,6 +593,12 @@ p {
   border: none;
   position: relative;
   padding: 0 !important;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: transform 0.8s ease;
+}
+.blogCard:hover {
+  transform: rotateY(5deg) translateY(-5px);
 }
 .blogCard .card-img-top {
   height: 250px;
@@ -622,6 +621,7 @@ p {
   font-family: "Poppins-Medium";
   font-size: 21px;
   color: #030303;
+
   margin-bottom: 0;
 }
 .blogCard .card-text {
@@ -1184,7 +1184,7 @@ img.basic3-img {
 }
 .basic-product-card {
   border-radius: 22px;
-  width: 280px;
+  width: 100%;
   height: 350px;
   border: 1px solid #eaeaea;
   padding: 10px;
@@ -1490,30 +1490,93 @@ img.basic3-img {
 /* Frozen Edition Page Starts */
 .slide-3 {
   padding-top: 150px;
-  background: url(../src/assets/images/banner-slide3.png);
+  background: url(./assets/images/banner-slide3.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   perspective: 1000px;
 }
-.FrozenBanner .logo {
-  filter: brightness(0) saturate(100%) invert(12%) sepia(63%) saturate(850%)
-    hue-rotate(179deg) brightness(92%) contrast(92%);
+
+/* ❄️ Snow Effect Container */
+.snow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* ❄️ Snowflake Animation */
+.snowflake {
+  position: absolute;
+  top: -10px;
+  color: white;
+  opacity: 0.8;
+  user-select: none;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(110vh);
+  }
+}
+.slide-3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  background-size: 110%;
+  filter: brightness(1.1) saturate(1);
+  transform: scale(1.05);
+  animation: bgMove 10s ease-in-out infinite alternate;
+  z-index: 1;
+}
+@keyframes bgMove {
+  0% {
+    transform: scale(1.05) translateX(0);
+  }
+  100% {
+    transform: scale(1.1) translateX(-30px);
+  }
 }
 .frozenLogo {
   width: 100%;
   height: 335px;
+  position: relative;
+  z-index: 3;
+  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.3));
 }
 .frozenImg {
   height: 600px !important;
   width: 600px !important;
   position: absolute;
-  right: 0px;
+  right: 0;
   bottom: 4%;
+  z-index: 3;
 }
+/* Extra Touch: Glowing snowflakes */
+.snowflake::before {
+  content: "❄";
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
 .FrozenBanner .nav-links a {
   color: #012243 !important;
+}
+.FrozenBanner .logo {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(63%) saturate(850%)
+    hue-rotate(179deg) brightness(92%) contrast(92%);
 }
 /* .frozen_section{
   background: #EAF5F7;

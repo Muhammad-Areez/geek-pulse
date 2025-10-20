@@ -49,7 +49,6 @@ const SmoothieProducts = () => {
                 initial="initial"
               >
                 <p className="smoothie-product-name mb-3">{product.name}</p>
-
                 <motion.img
                   src={product.fruiteImg}
                   alt=""
@@ -73,7 +72,6 @@ const SmoothieProducts = () => {
                     },
                   }}
                 />
-
                 <motion.img
                   src={product.deviceImg}
                   alt={product.name}
@@ -99,7 +97,7 @@ const SmoothieProducts = () => {
                     scale: [1, 1.02, 1, 1.01, 1],
                   }}
                   transition={{
-                    duration: 2,
+                    duration: 1,
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
