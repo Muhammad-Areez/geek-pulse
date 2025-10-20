@@ -1,14 +1,29 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { images } from "../assets/images";
 import { Link } from "react-router-dom";
-
-export const Footer = ({
-  isHomePage = false,
-  background = '#100a3e'
-}) => {
+import { motion } from "framer-motion";
+export const Footer = ({ isHomePage = false, background = "#100a3e" }) => {
   return (
-    <Container className={`footer-main ${!isHomePage &&'footer-main-sec'}`} style={{background: background }}>
-      <img src={images.matrix} className="matrix-img" />
+    <Container
+      className={`footer-main ${!isHomePage && "footer-main-sec"}`}
+      style={{ background: background }}
+    >
+      <motion.img
+        src={images.matrix}
+        className="matrix-img"
+        alt="Matrix lines"
+        initial={{ scale: 2 }}
+        animate={{
+          scale: [1, 1.4, 1],
+          opacity: [1, 1.2, 1.5],
+          rotate: [0, 0.2, 0],
+        }}
+        transition={{
+          duration: 6,
+          ease: "easeInOut",
+          repeat: Infinity,
+        }}
+      />
       <Row className="footer-row">
         <Col md={5} className="column">
           <div className="footer-logo-div">
@@ -106,15 +121,22 @@ export const Footer = ({
       </Row>
       <Row className="footer_bottom">
         <Col md={6}>
-            <h3>Subscribe to get 10% OFF on your first order!</h3>
+          <h3>Subscribe to get 10% OFF on your first order!</h3>
         </Col>
         <Col md={6}>
-            <div className="search-div">
-              <div className="searchField">
-                  <input type="search" placeholder="Enter your email" />
-                  <button className="cta" style={{background: background !== "#100a3e" ? '#55BD04' : '#8186FF'}}>Subscribe</button>
-              </div>
+          <div className="search-div">
+            <div className="searchField">
+              <input type="search" placeholder="Enter your email" />
+              <button
+                className="cta"
+                style={{
+                  background: background !== "#100a3e" ? "#55BD04" : "#8186FF",
+                }}
+              >
+                Subscribe
+              </button>
             </div>
+          </div>
         </Col>
       </Row>
     </Container>

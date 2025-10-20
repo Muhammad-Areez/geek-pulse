@@ -214,6 +214,7 @@ img {
 .slide-1 .matrix-img {
   position: absolute;
   width: 100%;
+  z-index: -1;
 }
 .banner-text-div div {
   display: flex;
@@ -270,6 +271,7 @@ img {
   width: 1450px !important;
   height: 1450px !important;
   object-fit: contain !important;
+
   z-index: 2;
 }
 .aeroplane-img {
@@ -324,13 +326,15 @@ img {
 /* Our Products ends */
 /* Logo Section starts */
 .logo-container {
+  position: relative; /* add this */
+
   background-color: #100a3e;
   height: 720px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  overflow: hidden;
+  overflow: hidden !important;
   width: 100%;
 }
 .logo-section h3 {
@@ -348,10 +352,10 @@ img {
 .logo-section .matrix-img {
   position: absolute;
   width: 100%;
-  height: 720px;
+  height: 100%;
 }
 .banner-logo {
-  width: 1000px;
+  width: 500px; /* smaller default, scales up via GSAP */
 }
 .content-text {
   color: #fff;
@@ -571,7 +575,7 @@ p {
   margin: 50px 0px;
 }
 .blog_section .bulletHeading .title:before {
-  left: 45%;
+  left: 44%;
   background: #f16058;
 }
 .blogCard {
@@ -635,6 +639,26 @@ p {
   margin: 50px auto;
   width: calc(100% - 150px);
 }
+.tags {
+  background: #e8fc56;
+  width: 70px;
+  height: 30px;
+  border-radius: 12px;
+  color: #030303;
+  font-size: 14px;
+  font-family: "Poppins-Medium";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2%;
+}
+.tag1 {
+  left: 3%;
+}
+.tag2 {
+  left: 24%;
+}
 /* Blogs Section ends */
 
 /* Footer Starts */
@@ -645,6 +669,7 @@ p {
   position: relative;
   padding: 90px 5%;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -657,6 +682,11 @@ p {
   height: 100%;
   top: 0;
   left: 0;
+  overflow: hidden;
+  z-index: 0;
+  opacity: 1;
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 8px rgba(0, 255, 204, 0.3));
 }
 .footer-row,
 .footer_bottom {
@@ -778,10 +808,6 @@ p {
 }
 /* Footer Ends */
 /* Contact Us Section starts */
-.contactus_section .matrix-img {
-  height: 420px;
-  top: 40%;
-}
 .contact_heading {
   font-size: 150px !important;
   z-index: 111;
@@ -932,7 +958,6 @@ p {
 }
 /* Contact Us Section ends */
 /*Basic Edition Section Starts*/
-
 .slide-2 {
   padding-top: 150px;
   background: url(../src/assets/images/banner-slide2.svg);
@@ -940,17 +965,16 @@ p {
   background-size: cover;
   position: relative;
   /* overflow: hidden; */
-  perspective: 1000px; /* Enables 3D depth for rotateY/rotateX animations */
+  perspective: 1000px;
 }
 .shiny-text {
   position: relative;
   display: inline-block;
-  color: #ffffff; /* solid white base */
+  color: #ffffff;
   font-weight: 700;
   overflow: hidden;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
-
 /* Blue shine overlay */
 .shiny-text::before {
   content: attr(data-text);
@@ -996,8 +1020,6 @@ p {
   position: absolute;
   will-change: transform, opacity;
 }
-
-/* Existing positioned images */
 img.basic4-img {
   left: 28%;
   height: 350px;
@@ -1005,14 +1027,12 @@ img.basic4-img {
   top: -12%;
   transform: rotate(5deg);
 }
-
 img.basic5-img {
   left: 0%;
   height: 300px;
   width: 300px;
   top: 0%;
 }
-
 img.basic6-img {
   left: 57%;
   height: 300px;
@@ -1020,15 +1040,12 @@ img.basic6-img {
   top: -5%;
   transform: rotate(5deg);
 }
-
 img.basic7-img {
   right: 0%;
   height: 300px;
   width: 300px;
   top: 0%;
 }
-
-/* Optional subtle infinite floating animation */
 @keyframes float {
   0% {
     transform: translateY(0px) rotate(0deg);
@@ -1071,7 +1088,7 @@ img.basic7-img {
   text-align: center;
 }
 .shiny-text {
-  color: #ffffffc9 !important; /* Adjust this color to change intensity/style */
+  color: #ffffffc9 !important;
   background: linear-gradient(
     120deg,
     rgba(255, 255, 255, 0) 40%,
@@ -1084,7 +1101,6 @@ img.basic7-img {
   display: inline-block;
   animation: shine 5s linear infinite;
 }
-
 @keyframes shine {
   0% {
     background-position: 100%;
@@ -1481,9 +1497,6 @@ img.basic3-img {
   /* overflow: hidden; */
   perspective: 1000px;
 }
-.FrozenBanner .nav-links a {
-  color: #012243 !important;
-}
 .FrozenBanner .logo {
   filter: brightness(0) saturate(100%) invert(12%) sepia(63%) saturate(850%)
     hue-rotate(179deg) brightness(92%) contrast(92%);
@@ -1498,6 +1511,9 @@ img.basic3-img {
   position: absolute;
   right: 0px;
   bottom: 4%;
+}
+.FrozenBanner .nav-links a {
+  color: #012243 !important;
 }
 /* .frozen_section{
   background: #EAF5F7;
@@ -1580,7 +1596,6 @@ img.basic3-img {
   top: -18%;
   z-index: 0;
 }
-
 .frozen_section .heading {
   font-family: "BERNIER Distressed";
   font-size: 115px;
@@ -1593,7 +1608,6 @@ img.basic3-img {
   text-align: center;
   position: relative;
 }
-
 .ourproducts.with-bg {
   background: url(../src/assets/images/ourBg.svg);
   background-repeat: repeat;
@@ -1936,7 +1950,32 @@ img.seasonalDevice4 {
   font-family: "Poppins-Bold" !important;
   line-height: normal;
   font-size: 100px !important;
-  top: 20% !important;
+  top: 16% !important;
+  color: #fff;
+  opacity: 0;
+  left: 5%;
+  transform: scale(0.95);
+  animation: smoothFadeIn 1.8s ease-out forwards;
+}
+.contact_heading {
+  opacity: 0;
+  left: 5% !important;
+  transform: scale(0.95);
+  animation: smoothFadeIn 1.8s ease-out forwards;
+}
+@keyframes smoothFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.02) translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 .wholesalerSection {
   margin-bottom: 4rem;
@@ -1961,13 +2000,18 @@ img.seasonalDevice4 {
   width: 200px;
   font-size: 16px;
 }
+.contactus_section .matrix-img {
+  position: unset;
+}
 .wholesalerSection .matrix-img {
-    height: 420px;
-    top: 10%;
+  z-index: 0;
+  opacity: 1;
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 8px rgba(0, 255, 204, 0.3));
 }
 /* Wholesale Page Ends */
 /* Cosmos Edition Starts */
-.cosmos-edition-main{
+.cosmos-edition-main {
   width: 100vw;
   background: url(./assets/images/cosmos-bg.webp);
   background-position: top;

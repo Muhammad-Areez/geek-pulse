@@ -39,6 +39,8 @@ const Blogs = () => {
           <Col md={4} key={blog.id}>
             <div className="blogCard card mt-3">
               <img src={blog.image} alt={blog.title} className="card-img-top" />
+              <span className="tags tag1">Trend</span>
+              <span className="tags tag2">Vaping</span>
               <div className="card-body">
                 <p className="date">{blog.date}</p>
                 <h5 className="card-title">{blog.title}</h5>
