@@ -80,7 +80,7 @@ const FrozenProducts = () => {
                     rotateZ: 30,
                     x: 0,
                     y: -100,
-                    scale: 1.3,
+                    scale: 1.5,
                     rotate: -10,
                     zIndex: 1,
                     filter: "blur(0px)",
@@ -91,7 +91,6 @@ const FrozenProducts = () => {
                   },
                 }}
               />
-
               {/* DEVICE IMAGE (floats + hover glow) */}
               <motion.img
                 src={product.deviceImg}
@@ -119,7 +118,6 @@ const FrozenProducts = () => {
                   transition: { duration: 0.4, ease: "easeOut" },
                 }}
               />
-
               {/* FLOATING SHADOW */}
               <motion.div
                 className="floatingShadow"

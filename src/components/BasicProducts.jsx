@@ -26,7 +26,7 @@ const BasicProducts = () => {
     {
       id: 4,
       name: "Berry Bliss",
-      deviceImg: images.basicdevice4,
+      deviceImg: images.basicdevice8,
       boxImg: images.basicbox4,
     },
     {
