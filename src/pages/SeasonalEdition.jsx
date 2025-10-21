@@ -8,7 +8,7 @@ import { Footer } from "../components/Footer";
 import FrozenProducts from "../components/FrozenProducts";
 import SeasonalBanner from "../components/SeasonalBanner";
 import { images } from "../assets/images";
-
+import SeasonalProducts from "../components/SeasonalProducts";
 
 function SeasonalEdition() {
   return (
@@ -25,7 +25,6 @@ function SeasonalEdition() {
             is a naturally Seasonal flavors that fills you with energy and
             health
           </h2>
-
           <img src={images.flower1} alt="" className="flower1" />
           <img src={images.flower2} alt="" className="flower2" />
           {/* <img src={images.flower3} alt="" className="flower3" />
@@ -54,7 +53,10 @@ function SeasonalEdition() {
               className="seasonalDevice4"
             />
           </div>
-
+        </section>
+        <section>
+          
+          <SeasonalProducts />
         </section>
 
         <section className="ourProducts_section">
