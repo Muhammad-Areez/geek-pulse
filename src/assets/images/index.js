@@ -53,7 +53,7 @@ import retroBox1 from "./retro-box1.png";
 import retroBox2 from "./retro-box2.png";
 import retroBox3 from "./retro-box3.png";
 import pizzaIcon from "./pizza-icon.png";
-import cosmosBg from './cosmos-bg.webp'
+import cosmosBg from "./cosmos-bg.webp";
 
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
@@ -154,6 +154,16 @@ import flower1 from "./flower1.svg";
 import flower2 from "./flower2.svg";
 import flower3 from "./flower3.svg";
 import flower4 from "./flower4.svg";
+import about1 from "./about1.svg";
+import about2 from "./about2.svg";
+import about3 from "./about3.svg";
+import about4 from "./about4.svg";
+import about5 from "./about5.svg";
+import aboutLogo1 from "./aboutLogo1.png";
+import aboutLogo2 from "./aboutLogo2.png";
+import aboutLogo3 from "./aboutLogo3.png";
+import aboutLogo4 from "./aboutLogo4.png";
+import aboutLogo5 from "./aboutLogo5.png";
 
 export const images = {
   aeroplane,
@@ -308,6 +318,17 @@ export const images = {
   seasonalDevice1,
   seasonalDevice2,
   seasonalDevice3,
-  seasonalDevice4,  cosmosBg
-
+  seasonalDevice4,
+  cosmosBg,
+  about1,
+  about2,
+  about3,
+  about4,
+  about5,
+  aboutLogo1,
+  aboutLogo2,
+  aboutLogo3,
+  aboutLogo4,
+  aboutLogo5,
+  
 };

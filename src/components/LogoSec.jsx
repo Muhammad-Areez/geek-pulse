@@ -24,9 +24,8 @@ const LogoSec = () => {
         },
       });
 
-      // Step 1: Logo smoothly scales in and becomes solid
       tl.to(logoRef.current, {
-        scale: 1.6, // slightly larger for impact
+        scale: 1.6, 
         opacity: 1,
         ease: "power3.out",
         duration: 2,
@@ -86,7 +85,7 @@ const LogoSec = () => {
           className="matrix-img"
           alt="Matrix lines"
           initial={{ scale: 1.2 }}
-          animate={{ scale: [1, 1.1, 1], opacity: [1, 0.8, 1] }}
+          animate={{ scale: [1, 1.1, 1], opacity: [1, 1, 1] }}
           transition={{ duration: 6, ease: "easeInOut", repeat: Infinity }}
         />
         <img

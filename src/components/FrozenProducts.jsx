@@ -43,6 +43,47 @@ const FrozenProducts = () => {
     },
   ];
 
+  const boxVariants = {
+    rest: {
+      opacity: 0,
+      rotateY: -50,
+      rotateZ: -8,
+      x: 100,
+      y: 10,
+      scale: 0.9,
+      zIndex: 0,
+      filter: "blur(8px)",
+      transition: { duration: 0.3 },
+    },
+    hover: {
+      opacity: 1,
+      rotateY: 0,
+      x: 40,
+      y: -110,
+      scale: 1.5,
+      rotate: 0,
+      zIndex: 1,
+      filter: "blur(0px)",
+      transition: { duration: 0.3, ease: [0.25, 1, 0.5, 1] },
+    },
+  };
+
+  const deviceVariants = {
+    rest: {
+      y: -80,
+      scale: 0.8,
+      filter: "drop-shadow(0 0 0 rgba(0,0,0,0))",
+      transition: { duration: 0.3 },
+    },
+    hover: {
+      scale: 0.6,
+      y: 0,
+      x: 30,
+      filter: "drop-shadow(0 0 18px rgba(173, 216, 230, 0.9))",
+      transition: { duration: 0.3, ease: "easeOut" },
+    },
+  };
+
   return (
     <div className="frozenBg py-5">
       <h2 className="heading mb-5 text-center">Our Products</h2>
@@ -58,66 +99,30 @@ const FrozenProducts = () => {
             >
               <p className="frozen-product-name mb-3">{product.name}</p>
 
-              {/* BOX IMAGE (comes from behind) */}
+              {/* BOX IMAGE */}
               <motion.img
                 src={product.boxImg}
                 alt=""
                 className="frozenBox"
-                variants={{
-                  rest: {
-                    opacity: 0,
-                    rotateY: -50,
-                    rotateZ: -8,
-                    x: -100,
-                    y: 10,
-                    scale: 0.9,
-                    zIndex: 0,
-                    filter: "blur(8px)",
-                  },
-                  hover: {
-                    opacity: 1,
-                    rotateY: 0,
-                    rotateZ: 30,
-                    x: 0,
-                    y: -100,
-                    scale: 1.5,
-                    rotate: -10,
-                    zIndex: 1,
-                    filter: "blur(0px)",
-                    transition: {
-                      duration: 0.9,
-                      ease: [0.25, 1, 0.5, 1],
-                    },
-                  },
-                }}
+                variants={boxVariants}
               />
-              {/* DEVICE IMAGE (floats + hover glow) */}
+
+              {/* DEVICE IMAGE */}
               <motion.img
                 src={product.deviceImg}
                 alt={product.name}
                 className="frozenDevice"
-                initial={{ opacity: 0, scale: 0.7, rotate: -15 }}
+                variants={deviceVariants}
+                initial={{ opacity: 0, scale: 0.6, rotate: -15 }}
                 whileInView={{
                   opacity: 1,
-                  scale: 1,
-                  rotate: 0,
-                  transition: { duration: 1, ease: "easeOut" },
-                }}
-                animate={{
-                  y: [0, -10, 0],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  repeatType: "mirror",
-                  ease: "easeInOut",
-                }}
-                whileHover={{
                   scale: 0.8,
-                  filter: "drop-shadow(0 0 18px rgba(173, 216, 230, 0.9))",
-                  transition: { duration: 0.4, ease: "easeOut" },
+                  rotate: 0,
+                  y: -80,
+                  transition: { duration: 2, ease: "easeOut" },
                 }}
               />
+
               {/* FLOATING SHADOW */}
               <motion.div
                 className="floatingShadow"
