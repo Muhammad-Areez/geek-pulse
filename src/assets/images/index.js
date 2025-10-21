@@ -70,6 +70,8 @@ import cosmosProductBox2 from './cosmos-product-box2.png'
 import cosmosProductBox3 from './cosmos-product-box3.png'
 import cosmosProductBox4 from './cosmos-product-box4.png'
 import cosmosProductBox5 from './cosmos-product-box5.png'
+import cosmosDeviceSec1 from './cosmo-device-sec1.svg'
+import cosmosDeviceSec2 from './cosmo-device-sec2.svg'
 
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
@@ -342,4 +344,6 @@ export const images = {
   cosmosProductDevice3,
   cosmosProductDevice4,
   cosmosProductDevice5,
+  cosmosDeviceSec1,
+  cosmosDeviceSec2,
 };

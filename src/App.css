@@ -2194,6 +2194,12 @@ img.seasonalDevice4 {
   position: relative;
   padding-bottom: 100px;
 }
+.cosmos-product-main .cosmos-moon{
+  position: absolute;
+  left: -180px;
+  bottom:-150px;
+  height: 350px;
+}
 .cosmos-product-main .cosmos-matrix{
   position: absolute;
   bottom: 0;
@@ -2248,6 +2254,37 @@ img.seasonalDevice4 {
   top: 50%;
   transform: translateY(-50%);
   right: -15px;
+}
+.cosmos-edition-bottom{
+  width: 100%;
+  background: url(./assets/images/cosmo-bg2.svg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cosmos-text-main{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 250px 0px 60px 0px;
+}
+.cosmos-text-main h3{
+  font-size: 48px;
+  font-family: SpaceGrotesk-Medium;
+  color: #fff;
+  text-align: left;
+  line-height: 60px;
+  letter-spacing: -1.44px;
+  padding: 0px 10%;
+}
+.cosmos-text-main .cosmos-device-sec1{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cosmos-text-main .cosmos-device-sec2{
+  position: absolute;
 }
 /* Cosmos Edition Ends */
 

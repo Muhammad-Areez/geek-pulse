@@ -332,7 +332,7 @@ function RetroEditionPage() {
                         transition={{ staggerChildren: 0.1 }}
                         style={{ display: 'inline-block' }}
                     >
-                        {"SIMPLER PRODUCTS".split("").map((char, index) => (
+                        {"SIMILAR PRODUCTS".split("").map((char, index) => (
                             <motion.span
                                 key={index}
                                 variants={{
