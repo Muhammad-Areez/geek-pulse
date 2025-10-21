@@ -43,7 +43,7 @@ function RetroEditionPage() {
                     transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
                 />
                 <GlitchText
-                    speed={2}
+                    speed={3}
                     enableShadows={true}
                     enableOnHover={false}
                     className='retro-heading'
@@ -51,7 +51,7 @@ function RetroEditionPage() {
                     RETRO
                 </GlitchText>
                 <GlitchText
-                    speed={2}
+                    speed={3}
                     enableShadows={true}
                     enableOnHover={false}
                     className='retro-heading'

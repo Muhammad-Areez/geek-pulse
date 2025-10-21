@@ -9,6 +9,7 @@ import SmoothieEdition from "./pages/SmoothieEdition";
 import SeasonalEdition from "./pages/SeasonalEdition";
 import Wholesaler from "./pages/Wholesaler";
 import CosmosEdition from "./pages/CosmosEdition";
+import Vpu from "./pages/Vpu";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/seasonal-edition" element={<SeasonalEdition />} />
         <Route path="/wholesaler" element={<Wholesaler />} />
         <Route path="/cosmos-edition" element={<CosmosEdition />} />
+        <Route path="/vpu" element={<Vpu />} />
       </Routes>
     </Router>
   );

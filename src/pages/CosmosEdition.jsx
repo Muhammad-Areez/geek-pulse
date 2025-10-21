@@ -5,31 +5,98 @@ import OurProducts from "../components/OurProducts";
 import { images } from "../assets/images";
 import { Col, Container, Row } from "react-bootstrap";
 import Version from "../components/Version";
+import { gsap } from "gsap";
+import { useEffect } from "react";
 
 const products = [
   {
     title: "SIRUS A",
     image: images.cosmosProductDevice2,
+    boxImage: images.cosmosProductBox2
   },
   {
     title: "URANUS",
     image: images.cosmosProductDevice3,
+    boxImage: images.cosmosProductBox3
   },
   {
     title: "THE MOON",
     image: images.cosmosProductDevice4,
+    boxImage: images.cosmosProductBox4
   },
   {
     title: "WHITE HOLE",
     image: images.cosmosProductDevice1,
+    boxImage: images.cosmosProductBox1
   },
   {
     title: "BLACK HOLE",
     image: images.cosmosProductDevice5,
+    boxImage: images.cosmosProductBox5
   },
 ];
 
 function CosmosEdition() {
+  useEffect(() => {
+    gsap.registerPlugin();
+  
+    gsap.to(".cosmos-device1", {
+      y: -30,
+      rotation: 1.5,
+      duration: 3,
+      yoyo: true,
+      repeat: -1,
+      ease: "sine.inOut",
+    });
+  
+    gsap.to(".cosmos-device2", {
+      y: -40,
+      rotation: -1.5,
+      duration: 4,
+      yoyo: true,
+      repeat: -1,
+      ease: "sine.inOut",
+    });
+
+    gsap.to(".cosmos-device-sec1", {
+      y: -30,
+      rotation: 1.5,
+      duration: 3,
+      yoyo: true,
+      repeat: -1,
+      ease: "sine.inOut",
+    });
+  
+    gsap.to(".cosmos-device-sec2", {
+      y: -40,
+      rotation: -1.5,
+      duration: 4,
+      yoyo: true,
+      repeat: -1,
+      ease: "sine.inOut",
+    });
+    
+    gsap.to(".astronaut", {
+      y: -40,
+      x: 20, 
+      rotation: 4, 
+      duration: 6,
+      yoyo: true,
+      repeat: -1,
+      ease: "sine.inOut",
+    });
+
+    gsap.to(".cosmos-moon", {
+      rotation: 360,
+      duration: 80,
+      ease: "none",
+      repeat: -1,
+      transformOrigin: "center center",
+    });
+  
+  }, []);
+  
+
   return (
     <div className="position-relative cosmos-edition-main">
       <Warning borderRadius={"0px"} />
@@ -94,7 +161,7 @@ function CosmosEdition() {
       <div className="cosmos-edition-bottom">
         <section className="cosmos-product-main">
           <img src={images.matrix} alt="martix" className="cosmos-matrix" />
-          <img src={images.moon} alt="moon" className="cosmos-moon"/>
+          <img src={images.moon} alt="moon" className="cosmos-moon" />
           <Container>
             <Row className="d_flex justify-content-center">
               {products.map((item, index) => (
@@ -104,9 +171,14 @@ function CosmosEdition() {
                       <img
                         src={item.image}
                         alt="Device"
-                        className="cosmos-device"
+                        className="cosmos-device device-front"
                       />
-                      <img src={images.cosmosStand} alt="Device" />
+                      <img
+                        src={item.boxImage}
+                        alt="Box"
+                        className="cosmos-device device-back"
+                      />
+                      <img src={images.cosmosStand} alt="Device Stand" className="cosmos-stand" />
                     </div>
                     <div className="cosmos-card-bottom">
                       <h5>{item.title}</h5>
@@ -118,9 +190,9 @@ function CosmosEdition() {
           </Container>
         </section>
         <section className="cosmos-text-main">
-            <img src={images.cosmosDeviceSec1} alt="device" className="cosmos-device-sec1"/>
-            <img src={images.cosmosDeviceSec2} alt="device" className="cosmos-device-sec2"/>
-            <h3>Where sophistication meets performance. The Platinum Edition represents the pinnacle of vaping excellence, engineered for those who demand the very best. Designed with a refined metallic finish and powered by cutting-edge airflow technology, every detail reflects precision and luxury.</h3>
+          <img src={images.cosmosDeviceSec1} alt="device" className="cosmos-device-sec1" />
+          <img src={images.cosmosDeviceSec2} alt="device" className="cosmos-device-sec2" />
+          <h3>Where sophistication meets performance. The Platinum Edition represents the pinnacle of vaping excellence, engineered for those who demand the very best. Designed with a refined metallic finish and powered by cutting-edge airflow technology, every detail reflects precision and luxury.</h3>
         </section>
         <section>
           <OurProducts headingText="SIMILAR PRODUCTS" color="#fff" />

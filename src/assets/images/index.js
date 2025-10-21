@@ -72,6 +72,14 @@ import cosmosProductBox4 from './cosmos-product-box4.png'
 import cosmosProductBox5 from './cosmos-product-box5.png'
 import cosmosDeviceSec1 from './cosmo-device-sec1.svg'
 import cosmosDeviceSec2 from './cosmo-device-sec2.svg'
+import vpuBannerBg from './vpu-banner-bg.svg'
+import vpuSecLeft from './vpu-sec-left.svg'
+import vapeExperience from './vape-experience.svg'
+import vpuSafety from './vpu-safety.svg'
+import vpuDevice1 from './vpu-device1.svg'
+import vpuDevice2 from './vpu-device2.svg'
+import vpuDevice3 from './vpu-device3.svg'
+import vpuDevice4 from './vpu-device4.svg'
 
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
@@ -346,4 +354,12 @@ export const images = {
   cosmosProductDevice5,
   cosmosDeviceSec1,
   cosmosDeviceSec2,
+  vpuBannerBg,
+  vpuSecLeft,
+  vapeExperience,
+  vpuSafety,
+  vpuDevice1,
+  vpuDevice2,
+  vpuDevice3,
+  vpuDevice4,
 };

@@ -29,9 +29,8 @@ function BasicEdition() {
         </Container>
       </section>
       <section className="ourProducts_section">
-        <h2 className="heading my-3">The Pulse Collection</h2>
         <Container className="position-relative">
-          <OurProducts />
+          <OurProducts headingText="Similar Products"/>
         </Container>
       </section>
 
