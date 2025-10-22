@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap"
-import Warning from "../components/warning"
+import Warning from "../components/Warning"
 import Header from "../components/Header"
 import BasicBanner from "../components/BasicBanner"
 import { images } from "../assets/images"

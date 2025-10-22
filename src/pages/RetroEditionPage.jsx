@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap"
 import { images } from "../assets/images"
 import GlitchText from "../components/GlitchText"
 import Header from "../components/Header"
-import Warning from "../components/warning"
+import Warning from "../components/Warning"
 import { Footer } from "../components/Footer"
 import { Swiper, SwiperSlide } from "swiper/react";
 import retro from "../assets/images/Retro-editions.png";

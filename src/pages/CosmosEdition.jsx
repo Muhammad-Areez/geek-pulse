@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import Warning from "../components/warning";
+import Warning from "../components/Warning";
 import { Footer } from "../components/Footer";
 import OurProducts from "../components/OurProducts";
 import { images } from "../assets/images";
