@@ -93,6 +93,41 @@ img {
   justify-content: space-around;
   width: 100%;
 }
+.header-products{
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 0px 0px 40px 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background: white;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  left: 0;
+  top: 80px;
+  height: 0px;
+  overflow: hidden ;
+  justify-content: center;
+  align-items: center;
+}
+.header-products .row{
+  width: 100%;
+}
+.header-products a{
+  width: 16%;
+}
+.header-products a img{
+  width: 100%;
+}
+.nav-links:has(a:nth-child(4):hover) ~ .header-products,
+.header-products:hover {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  height: 210px;
+}
 .ourProducts_section {
   width: 100%;
 }
@@ -135,7 +170,10 @@ img {
   width: 180px;
   height: 80px;
 }
-
+.nav-links{
+  height: 80px;
+  display: flex;
+}
 .nav-links a {
   color: white;
   margin-left: 2rem;
@@ -143,6 +181,9 @@ img {
   font-size: 18px;
   font-family: "BricolageGrotesque-Medium";
   transition: color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-links a:hover {
@@ -1145,10 +1186,11 @@ img.basic7-img {
 }
 .context .title {
   font-size: 45px;
-  letter-spacing: 4px;
+  letter-spacing: 14px;
   color: #fff;
-  font-family: "Inter-Bold";
+  font-family: "SpaceGrotesk-Bold";
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 .context .heading {
   font-size: 180px;
@@ -1777,6 +1819,7 @@ img.smootieBg1 {
   position: absolute;
   top: 9%;
   left: 0;
+  z-index: 2;
 }
 img.smootieBg2 {
   width: 120px;
@@ -1808,10 +1851,12 @@ img.smootieBg5 {
   right: 0;
 }
 img.smootieBg6 {
-  width: 1300px;
-  height: 240px;
   position: absolute;
-  bottom: 1%;
+  top: 5%;
+  left: 0;
+  height: 650px;
+  width: auto;
+  object-fit: contain;
 }
 img.smoothiedevice1 {
   width: 325px;
@@ -1819,6 +1864,7 @@ img.smoothiedevice1 {
   position: absolute;
   bottom: 3%;
   left: 8%;
+  object-fit: contain;
 }
 img.smoothiedevice2 {
   width: 325px;
@@ -1826,6 +1872,7 @@ img.smoothiedevice2 {
   position: absolute;
   bottom: 15%;
   left: 27%;
+  object-fit: contain;
 }
 img.smoothiedevice3 {
   width: 325px;
@@ -1833,6 +1880,7 @@ img.smoothiedevice3 {
   position: absolute;
   bottom: 15%;
   right: 26%;
+  object-fit: contain;
 }
 img.smoothiedevice4 {
   width: 325px;
@@ -1840,6 +1888,7 @@ img.smoothiedevice4 {
   position: absolute;
   bottom: 3%;
   right: 8%;
+  object-fit: contain;
 }
 .smoothieVersions {
   background: #fe3074;

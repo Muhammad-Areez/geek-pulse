@@ -37,7 +37,7 @@ const ScrollReveal = ({
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: el,
-        start: "top 80%", // when 80% of viewport height reached
+        start: "top 90%", // when 80% of viewport height reached
         toggleActions: "play none none none", // play once
       },
     });
@@ -46,7 +46,7 @@ const ScrollReveal = ({
     tl.fromTo(
       el,
       { rotate: baseRotation, transformOrigin: "0% 50%" },
-      { rotate: 0, ease: "power2.out", duration: 0.8 }
+      { rotate: 0, ease: "power2.out", duration: 0.2 }
     );
 
     // Word fade + blur reveal

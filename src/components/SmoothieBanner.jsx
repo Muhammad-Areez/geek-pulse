@@ -21,7 +21,7 @@ const SmoothieBanner = () => {
 
       /** 🌸 Left-side backgrounds */
       tl.from(
-        [".smootieBg1", ".smootieBg2"],
+        [".smootieBg1", ".smootieBg2", ".smootieBg6"],
         {
           x: -200,
           opacity: 0,
@@ -43,17 +43,6 @@ const SmoothieBanner = () => {
           duration: 1.2,
           stagger: 0.2,
           ease: "power3.out",
-        },
-        "-=1"
-      );
-
-      /** 🌸 Center background (fade in only) */
-      tl.from(
-        ".smootieBg6",
-        {
-          opacity: 0,
-          duration: 1.2,
-          ease: "power2.out",
         },
         "-=1"
       );
@@ -95,13 +84,13 @@ const SmoothieBanner = () => {
           <img src={images.smootieBg3} alt="" className="smootieBg3" />
           <img src={images.smootieBg4} alt="" className="smootieBg4" />
           <img src={images.smootieBg5} alt="" className="smootieBg5" />
-          <img src={images.smootieBg6} alt="" className="smootieBg6" />
+          <img src={images.smootieBg7} alt="" className="smootieBg6" />
 
           {/* Devices */}
-          <img src={images.smoothiedevice1} alt="" className="smoothiedevice1" />
-          <img src={images.smoothiedevice2} alt="" className="smoothiedevice2" />
-          <img src={images.smoothiedevice3} alt="" className="smoothiedevice3" />
-          <img src={images.smoothiedevice4} alt="" className="smoothiedevice4" />
+          <img src={images.smoothieDevicesStage1} alt="" className="smoothiedevice1" />
+          <img src={images.smoothieDevicesStage2} alt="" className="smoothiedevice2" />
+          <img src={images.smoothieDevicesStage3} alt="" className="smoothiedevice3" />
+          <img src={images.smoothieDevicesStage4} alt="" className="smoothiedevice4" />
         </SwiperSlide>
       </Swiper>
     </section>

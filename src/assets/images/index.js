@@ -80,6 +80,10 @@ import vpuDevice1 from './vpu-device1.svg'
 import vpuDevice2 from './vpu-device2.svg'
 import vpuDevice3 from './vpu-device3.svg'
 import vpuDevice4 from './vpu-device4.svg'
+import smoothieDevicesStage1 from './smoothie-stage1.png'
+import smoothieDevicesStage2 from './smoothie-stage2.png'
+import smoothieDevicesStage3 from './smoothie-stage3.png'
+import smoothieDevicesStage4 from './smoothie-stage4.png'
 
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
@@ -159,6 +163,7 @@ import smootieBg3 from "./smootieBg3.svg";
 import smootieBg4 from "./smootieBg4.svg";
 import smootieBg5 from "./smootieBg5.svg";
 import smootieBg6 from "./smootieBg6.svg";
+import smootieBg7 from "./smoothie-splash.svg";
 import bgFruite1 from "./bgFruite1.svg";
 import bgFruite2 from "./bgFruite2.svg";
 import fruite1 from "./fruite1.svg";
@@ -319,6 +324,7 @@ export const images = {
   smootieBg4,
   smootieBg5,
   smootieBg6,
+  smootieBg7,
   retroSimperBg,
   retroBox1,
   retroBox2,
@@ -384,5 +390,8 @@ export const images = {
   aboutLogo3,
   aboutLogo4,
   aboutLogo5,
-
+  smoothieDevicesStage1,
+  smoothieDevicesStage2,
+  smoothieDevicesStage3,
+  smoothieDevicesStage4,
 };

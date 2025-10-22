@@ -90,14 +90,14 @@ const SmoothieProducts = () => {
                       scale: 1.05,
                       y: -10,
                       filter: "drop-shadow(0 20px 25px rgba(255,182,193,0.6))",
-                      transition: { duration: 0.3, ease: "easeOut" },
+                      transition: { duration: 0.1, ease: "easeOut" },
                     },
                   }}
                   animate={{
                     y: [0, -6, 0, 4, 0],
                     scale: [1, 1.02, 1, 1.01, 1],
                   }}
-                  transition={{ duration: 0.3, ease: "easeOut" }} // ✅ ensures smooth return
+                  transition={{ duration: 0.1, ease: "easeOut" }}
                 />
 
                 {/* Floating Glow / Shadow */}
