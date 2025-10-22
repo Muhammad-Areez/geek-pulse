@@ -139,7 +139,7 @@ import basicbox19 from "./basicbox19.png";
 import basicbox20 from "./basicbox20.png";
 import basicbox21 from "./basicbox21.png";
 import arrow from "./arrow.svg";
-import frozenLogo from "./frozenLogo.svg";
+import frozenLogo from "./frozenlogo.svg";
 import frozenImg from "./frozenImg.svg";
 import frozendevice1 from "./frozendevice1.png";
 import frozendevice2 from "./frozendevice2.png";
