@@ -5,6 +5,8 @@ import BasicBanner from "../components/BasicBanner"
 import { images } from "../assets/images"
 import { Footer } from "../components/Footer"
 import { videos } from "../assets/videos"
+import { useEffect } from "react"
+import { gsap } from "gsap";
 
 function Vpu () {
     return(

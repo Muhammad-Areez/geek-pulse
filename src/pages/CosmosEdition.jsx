@@ -7,6 +7,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Version from "../components/Version";
 import { gsap } from "gsap";
 import { useEffect } from "react";
+import ScrollReveal from "../components/ScrollReveal";
 
 const products = [
   {
@@ -39,7 +40,7 @@ const products = [
 function CosmosEdition() {
   useEffect(() => {
     gsap.registerPlugin();
-  
+
     gsap.to(".cosmos-device1", {
       y: -30,
       rotation: 1.5,
@@ -48,7 +49,7 @@ function CosmosEdition() {
       repeat: -1,
       ease: "sine.inOut",
     });
-  
+
     gsap.to(".cosmos-device2", {
       y: -40,
       rotation: -1.5,
@@ -66,7 +67,7 @@ function CosmosEdition() {
       repeat: -1,
       ease: "sine.inOut",
     });
-  
+
     gsap.to(".cosmos-device-sec2", {
       y: -40,
       rotation: -1.5,
@@ -75,11 +76,11 @@ function CosmosEdition() {
       repeat: -1,
       ease: "sine.inOut",
     });
-    
+
     gsap.to(".astronaut", {
       y: -40,
-      x: 20, 
-      rotation: 4, 
+      x: 20,
+      rotation: 4,
       duration: 6,
       yoyo: true,
       repeat: -1,
@@ -93,9 +94,24 @@ function CosmosEdition() {
       repeat: -1,
       transformOrigin: "center center",
     });
-  
+
+    gsap.from(".cosmo-hero-bg", {
+      backgroundSize: "100%",
+      duration: 5,
+      ease: "power1.inOut",
+      repeat: -1,
+      yoyo: true, 
+    });
+    gsap.to(".cosmo-hero-bg", {
+      backgroundSize: "105%",
+      duration: 5,
+      ease: "power1.inOut",
+      repeat: -1,
+      yoyo: true,         
+    });
+
   }, []);
-  
+
 
   return (
     <div className="position-relative cosmos-edition-main">
@@ -192,7 +208,9 @@ function CosmosEdition() {
         <section className="cosmos-text-main">
           <img src={images.cosmosDeviceSec1} alt="device" className="cosmos-device-sec1" />
           <img src={images.cosmosDeviceSec2} alt="device" className="cosmos-device-sec2" />
-          <h3>Where sophistication meets performance. The Platinum Edition represents the pinnacle of vaping excellence, engineered for those who demand the very best. Designed with a refined metallic finish and powered by cutting-edge airflow technology, every detail reflects precision and luxury.</h3>
+          <ScrollReveal textClassName="cosmos-text-h3">
+            Where sophistication meets performance. The Platinum Edition represents the pinnacle of vaping excellence, engineered for those who demand the very best. Designed with a refined metallic finish and powered by cutting-edge airflow technology, every detail reflects precision and luxury.
+          </ScrollReveal>
         </section>
         <section>
           <OurProducts headingText="SIMILAR PRODUCTS" color="#fff" />

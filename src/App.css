@@ -115,11 +115,12 @@ img {
 .header-products .row{
   width: 100%;
 }
-.header-products a{
-  width: 16%;
-}
 .header-products a img{
   width: 100%;
+  transition: all 250ms ease-in-out;
+}
+.header-products a:hover img{
+  transform: translateY(-10px);
 }
 .nav-links:has(a:nth-child(4):hover) ~ .header-products,
 .header-products:hover {
@@ -2595,7 +2596,7 @@ img.flower4 {
   width: 100%;
   height: auto;
 }
-.cosmos-text-main h3 {
+.cosmos-text-main .cosmos-text-h3 {
   font-size: 48px;
   font-family: SpaceGrotesk-Medium;
   color: #fff;
