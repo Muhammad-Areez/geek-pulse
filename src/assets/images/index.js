@@ -53,33 +53,33 @@ import retroBox1 from "./retro-box1.png";
 import retroBox2 from "./retro-box2.png";
 import retroBox3 from "./retro-box3.png";
 import pizzaIcon from "./pizza-icon.png";
-import cosmosBg from './cosmos-bg.webp'
-import astronaut from './astronaut.svg'
-import cosmosGalaxy from './cosmos-galaxy.svg'
-import cosmosDevice1 from './cosmos-device1.svg'
-import cosmosDevice2 from './cosmos-device2.svg'
-import ourBg from './ourBg.svg'
-import cosmosStand from './cosmos-stand.svg'
-import cosmosProductDevice1 from './cosmos-product-device1.png'
-import cosmosProductDevice2 from './cosmos-product-device2.png'
-import cosmosProductDevice3 from './cosmos-product-device3.png'
-import cosmosProductDevice4 from './cosmos-product-device4.png'
-import cosmosProductDevice5 from './cosmos-product-device5.png'
-import cosmosProductBox1 from './cosmos-product-box1.png'
-import cosmosProductBox2 from './cosmos-product-box2.png'
-import cosmosProductBox3 from './cosmos-product-box3.png'
-import cosmosProductBox4 from './cosmos-product-box4.png'
-import cosmosProductBox5 from './cosmos-product-box5.png'
-import cosmosDeviceSec1 from './cosmo-device-sec1.svg'
-import cosmosDeviceSec2 from './cosmo-device-sec2.svg'
-import vpuBannerBg from './vpu-banner-bg.svg'
-import vpuSecLeft from './vpu-sec-left.svg'
-import vapeExperience from './vape-experience.svg'
-import vpuSafety from './vpu-safety.svg'
-import vpuDevice1 from './vpu-device1.svg'
-import vpuDevice2 from './vpu-device2.svg'
-import vpuDevice3 from './vpu-device3.svg'
-import vpuDevice4 from './vpu-device4.svg'
+import cosmosBg from "./cosmos-bg.webp";
+import astronaut from "./astronaut.svg";
+import cosmosGalaxy from "./cosmos-galaxy.svg";
+import cosmosDevice1 from "./cosmos-device1.svg";
+import cosmosDevice2 from "./cosmos-device2.svg";
+import ourBg from "./ourBg.svg";
+import cosmosStand from "./cosmos-stand.svg";
+import cosmosProductDevice1 from "./cosmos-product-device1.png";
+import cosmosProductDevice2 from "./cosmos-product-device2.png";
+import cosmosProductDevice3 from "./cosmos-product-device3.png";
+import cosmosProductDevice4 from "./cosmos-product-device4.png";
+import cosmosProductDevice5 from "./cosmos-product-device5.png";
+import cosmosProductBox1 from "./cosmos-product-box1.png";
+import cosmosProductBox2 from "./cosmos-product-box2.png";
+import cosmosProductBox3 from "./cosmos-product-box3.png";
+import cosmosProductBox4 from "./cosmos-product-box4.png";
+import cosmosProductBox5 from "./cosmos-product-box5.png";
+import cosmosDeviceSec1 from "./cosmo-device-sec1.svg";
+import cosmosDeviceSec2 from "./cosmo-device-sec2.svg";
+import vpuBannerBg from "./vpu-banner-bg.svg";
+import vpuSecLeft from "./vpu-sec-left.svg";
+import vapeExperience from "./vape-experience.svg";
+import vpuSafety from "./vpu-safety.svg";
+import vpuDevice1 from "./vpu-device1.svg";
+import vpuDevice2 from "./vpu-device2.svg";
+import vpuDevice3 from "./vpu-device3.svg";
+import vpuDevice4 from "./vpu-device4.svg";
 
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
@@ -190,6 +190,8 @@ import aboutLogo2 from "./aboutLogo2.png";
 import aboutLogo3 from "./aboutLogo3.png";
 import aboutLogo4 from "./aboutLogo4.png";
 import aboutLogo5 from "./aboutLogo5.png";
+import frozenImg2 from "./frozenLogo2.svg";
+import frozenImg3 from "./frozenLogo3.svg";
 
 export const images = {
   aeroplane,
@@ -344,7 +346,7 @@ export const images = {
   seasonalDevice1,
   seasonalDevice2,
   seasonalDevice3,
-  seasonalDevice4,  
+  seasonalDevice4,
   cosmosBg,
   astronaut,
   cosmosGalaxy,
@@ -384,5 +386,6 @@ export const images = {
   aboutLogo3,
   aboutLogo4,
   aboutLogo5,
-
+  frozenImg2,
+  frozenImg3,
 };

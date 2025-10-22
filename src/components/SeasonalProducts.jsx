@@ -35,9 +35,36 @@ const SeasonalProducts = () => {
   return (
     <div className="seasonalBg py-5">
       <h2 className="heading mb-3">Our Products</h2>
-      <img src={images.flower3} alt="" className="flower3" />
-      <img src={images.flower4} alt="" className="flower4" />
-      <img src={images.seasonalBg3} alt="" className="seasonalBg3" />
+      <motion.img
+        src={images.flower3}
+        alt=""
+        className="flower3"
+        initial={{ x: -150, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      />
+
+      {/* 🌼 Flower 4 — Right Side */}
+      <motion.img
+        src={images.flower4}
+        alt=""
+        className="flower4"
+        initial={{ x: 150, opacity: 0, rotate: 0 }}
+        whileInView={{ x: 0, opacity: 1, rotate: 360 }}
+        transition={{ duration: 2, ease: "easeInOut" }}
+        // viewport={{ once: true, amount: 0.3 }}
+      />
+
+      {/* 🌿 Background — Right Side */}
+      <motion.img
+        src={images.seasonalBg3}
+        alt=""
+        className="seasonalBg3"
+        initial={{ x: 200, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        // viewport={{ once: true, amount: 0.3 }}
+      />
       <Container>
         <Row className="justify-content-center p-5">
           {products.map((product, index) => (
