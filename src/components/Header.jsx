@@ -12,16 +12,14 @@ import { Col, Row } from "react-bootstrap";
 const Header = () => {
   return (
     <header className="main-header d_flex">
-      {/* <img src={shadow} alt="Shadow" className="header-shadow" />
-      <img src={matrix} alt="Matrix" className="header-matrix" /> */}
       <div className="header-content">
         <img src={logo} alt="logo" className="logo" />
         <nav className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#vpu">VPU</a>
-          <a href="#products">Products</a>
-          <a href="#wholesale">Wholesale</a>
+          <Link to="/">Home</Link>
+          <Link to="/about-us">About</Link>
+          <Link to="/vpu">VPU</Link>
+          <Link to="#products">Products</Link>
+          <Link to="/wholesaler">Wholesale</Link>
         </nav>
         <div className="header-products">
             <Row>

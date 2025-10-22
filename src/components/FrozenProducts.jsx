@@ -59,7 +59,7 @@ const FrozenProducts = () => {
       opacity: 1,
       rotateY: 0,
       x: 40,
-      y: -110,
+      y: -50,
       scale: 1.5,
       rotate: 0,
       zIndex: 1,
@@ -67,20 +67,20 @@ const FrozenProducts = () => {
       transition: { duration: 0.3, ease: [0.25, 1, 0.5, 1] },
     },
   };
-
   const deviceVariants = {
     rest: {
-      y: -80,
+      // y: 80,
+      x: 0,
       scale: 0.8,
       filter: "drop-shadow(0 0 0 rgba(0,0,0,0))",
-      transition: { duration: 0.3 },
+      transition: { duration: 0.2, ease: "easeOut" },
     },
     hover: {
       scale: 0.6,
-      y: 0,
+      y: 70,
       x: 30,
       filter: "drop-shadow(0 0 18px rgba(173, 216, 230, 0.9))",
-      transition: { duration: 0.3, ease: "easeOut" },
+      transition: { duration: 0.2, ease: "easeOut" },
     },
   };
 
@@ -118,24 +118,10 @@ const FrozenProducts = () => {
                   opacity: 1,
                   scale: 0.8,
                   rotate: 0,
-                  y: -80,
-                  transition: { duration: 2, ease: "easeOut" },
+                  y: 0,
+                  transition: { duration: 0.4, ease: "easeOut" },
                 }}
               />
-
-              {/* FLOATING SHADOW */}
-              <motion.div
-                className="floatingShadow"
-                animate={{
-                  x: [0, 10, 0, -10, 0],
-                  y: [0, 5, 0, -5, 0],
-                }}
-                transition={{
-                  duration: 6,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              ></motion.div>
             </motion.div>
           </Col>
         ))}

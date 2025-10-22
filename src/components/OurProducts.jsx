@@ -32,6 +32,8 @@ const OurProducts = ({
         modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
+        loop={true}
+        speed={1000}
       >
         {[retro, frozen, seasonal, basic, cosmo, smoothie].map((img, i) => (
           <SwiperSlide key={i}>
