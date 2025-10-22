@@ -43,7 +43,7 @@ function RetroEditionPage() {
                     transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
                 />
                 <GlitchText
-                    speed={2}
+                    speed={3}
                     enableShadows={true}
                     enableOnHover={false}
                     className='retro-heading'
@@ -51,7 +51,7 @@ function RetroEditionPage() {
                     RETRO
                 </GlitchText>
                 <GlitchText
-                    speed={2}
+                    speed={3}
                     enableShadows={true}
                     enableOnHover={false}
                     className='retro-heading'
@@ -332,7 +332,7 @@ function RetroEditionPage() {
                         transition={{ staggerChildren: 0.1 }}
                         style={{ display: 'inline-block' }}
                     >
-                        {"SIMPLER PRODUCTS".split("").map((char, index) => (
+                        {"SIMILAR PRODUCTS".split("").map((char, index) => (
                             <motion.span
                                 key={index}
                                 variants={{

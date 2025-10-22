@@ -39,13 +39,13 @@ function SmoothieEdition() {
           <SmoothieProducts />
         </section>
         <section className="ourProducts_section">
+          <div className="ourProducts-bg"></div>
           <div className="position-relative">
             <OurProducts addBg={true} headingText="Similar Products" />
           </div>
         </section>
+        <Footer />
       </div>
-
-      <Footer />
     </>
   );
 }

@@ -55,18 +55,17 @@ function SeasonalEdition() {
           </div>
         </section>
         <section>
-          
           <SeasonalProducts />
         </section>
 
-        <section className="ourProducts_section">
+        <section className="ourProducts_section seasonal-ourProducts">
+          <div className="our-bg" style={{background:"#f7ebd4"}}></div>
           <div className="position-relative">
             <OurProducts addBg={true} headingText="Similar Products" />
           </div>
         </section>
+        <Footer />
       </div>
-
-      <Footer />
     </>
   );
 }

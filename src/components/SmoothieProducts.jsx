@@ -40,13 +40,14 @@ const SmoothieProducts = () => {
       <Container>
         <Row className="justify-content-center p-5">
           {products.map((product, index) => (
-            <Col key={product.id} lg={4} md={6} sm={12} >
+            <Col key={product.id} lg={5} md={6} sm={12} className="mb-5">
               <motion.div
                 className={`smoothie-product-card text-center mb-3 smoothie-card-${
                   index + 1
                 }`}
                 whileHover="hover"
                 initial="initial"
+                transition={{ duration: 0.3, ease: "easeOut" }} // ✅ added this
               >
                 <p className="smoothie-product-name mb-3">{product.name}</p>
                 <motion.img
@@ -96,11 +97,7 @@ const SmoothieProducts = () => {
                     y: [0, -6, 0, 4, 0],
                     scale: [1, 1.02, 1, 1.01, 1],
                   }}
-                  transition={{
-                    duration: 1,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
+                  transition={{ duration: 0.3, ease: "easeOut" }} // ✅ ensures smooth return
                 />
 
                 {/* Floating Glow / Shadow */}

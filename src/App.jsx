@@ -10,6 +10,7 @@ import SeasonalEdition from "./pages/SeasonalEdition";
 import Wholesaler from "./pages/Wholesaler";
 import CosmosEdition from "./pages/CosmosEdition";
 import AboutUs from "./pages/AboutUs";
+import Vpu from "./pages/Vpu";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/wholesaler" element={<Wholesaler />} />
         <Route path="/cosmos-edition" element={<CosmosEdition />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/vpu" element={<Vpu />} />
       </Routes>
     </Router>
   );

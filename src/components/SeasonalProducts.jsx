@@ -79,7 +79,7 @@ const SeasonalProducts = () => {
                   alt={product.name}
                   className="seasonalDevice"
                   variants={{
-                    rest: { scale: 1.2, y: 40 },
+                    rest: { scale: 1.5, y: 40 },
                     hover: { scale: 1, y: 120, x: 90 },
                   }}
                   transition={{ duration: 0.1, ease: "easeOut" }}
