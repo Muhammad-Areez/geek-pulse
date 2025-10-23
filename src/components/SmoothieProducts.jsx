@@ -174,7 +174,7 @@ const SmoothieProducts = () => {
             </Col>
           ))}
         </Row>
-        <ScrollReveal textClassName="smoothie-text-h3">
+        <ScrollReveal textClassName="cosmos-text-h3">
           Dive into a world of flavor fusion. The Smoothie Edition blends creamy
           textures with vibrant fruit notes for a refreshingly smooth vaping
           experience. Each puff delivers the perfect balance of sweetness and
