@@ -1706,10 +1706,19 @@ img.basic3-img {
 .frozenBox {
   position: absolute;
   /* right: 0; */
-  bottom: 40%;
-  height: 350px;
+  /* bottom: 40%; */
+  height: auto;
   z-index: 2;
   filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.25));
+}
+.slide-3 .frozenBox {
+  position: absolute;
+  width: 70%;
+  max-width: 500px !important;
+  height: auto !important;
+  z-index: 1;
+  transform-origin: center;
+  /* perspective: 1000px; */
 }
 
 .frozenHat {
@@ -1720,16 +1729,17 @@ img.basic3-img {
   z-index: 4;
   transform-origin: bottom center;
 }
-/* 
-.frozenDevice {
+
+.slide-3 .frozenDevice3 {
   position: absolute;
-  right: -120px;
-  bottom: 40px;
-  height: 320px;
+  /* right: -120px; */
+  bottom: 20%;
+  height: auto;
+  max-height: 100%;
   z-index: 3;
   filter: drop-shadow(0px 8px 25px rgba(0, 0, 0, 0.35));
   transform-origin: center;
-} */
+}
 
 .frozenLogo {
   width: auto !important;
@@ -1798,8 +1808,11 @@ img.basic3-img {
 }
 .frozenDevice {
   width: 85%;
-  height: auto;
-  position: relative;
+  height: 100%;
+  /* max-height: ; */
+  right: 8%;
+  bottom: 0;
+  position: absolute;
   z-index: 2;
   transform-origin: center;
 }
@@ -1812,7 +1825,7 @@ img.basic3-img {
   height: auto;
   z-index: 1;
   transform-origin: center;
-  perspective: 1000px;
+  /* perspective: 1000px; */
 }
 
 .floatingShadow {

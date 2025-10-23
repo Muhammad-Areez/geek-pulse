@@ -76,8 +76,8 @@ const FrozenProducts = () => {
       transition: { duration: 0.2, ease: "easeOut" },
     },
     hover: {
-      scale: 0.6,
-      y: 70,
+      scale: 0.5,
+      y: 85,
       x: 30,
       filter: "drop-shadow(0 0 18px rgba(173, 216, 230, 0.9))",
       transition: { duration: 0.2, ease: "easeOut" },
@@ -119,6 +119,7 @@ const FrozenProducts = () => {
                   scale: 0.8,
                   rotate: 0,
                   y: 0,
+                  // x:200,
                   transition: { duration: 0.4, ease: "easeOut" },
                 }}
               />

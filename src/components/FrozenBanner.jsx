@@ -50,13 +50,14 @@ const FrozenBanner = () => {
                 src={images.frozenImg}
                 alt="Frozen Box"
                 className="frozenBox"
-                initial={{ opacity: 0, scale: 0.8, y: 100 }}
-                animate={{ opacity: 1, scale: 1, y: -300, x: 300 }}
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, scale:1.1, y: -300, x: 200 }}
                 transition={{
                   duration: 0.8,
                   ease: [0.45, 0, 0.55, 1],
                 }}
               />
+
 
               {/* Hat - drop from top */}
               <motion.img
@@ -65,16 +66,16 @@ const FrozenBanner = () => {
                 className="frozenHat"
                 initial={{
                   opacity: 0,
-                  y: -300, // start higher
+                  y: -300,
                   rotate: -20,
                   scale: 0.8,
                 }}
                 animate={{
                   opacity: 1,
-                  y: -460,
-                  x: -110,
+                  y: -480,
+                  x: -100,
                   rotate: 15,
-                  scale: 0.5,
+                  scale: 0.4,
                 }}
                 transition={{
                   delay: 1.5,
@@ -91,7 +92,7 @@ const FrozenBanner = () => {
                 alt="Frozen Device"
                 className="frozenDevice3"
                 initial={{ opacity: 0, x: 180, y: 40, scale: 0.9 }}
-                animate={{ opacity: 1, x: 130, y: 130, scale: 0.8 }}
+                animate={{ opacity: 1, x: 200, y: 100, scale: 0.5 }}
                 transition={{
                   delay: 1.3,
                   duration: 1.4,
@@ -100,6 +101,7 @@ const FrozenBanner = () => {
                   damping: 16,
                 }}
               />
+
             </Col>
           </Row>
         </SwiperSlide>
