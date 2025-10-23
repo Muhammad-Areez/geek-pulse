@@ -139,7 +139,7 @@ import basicbox19 from "./basicbox19.png";
 import basicbox20 from "./basicbox20.png";
 import basicbox21 from "./basicbox21.png";
 import arrow from "./arrow.svg";
-import frozenLogo from "./frozenLogo.svg";
+import frozenLogo from "./frozenlogo.svg";
 import frozenImg from "./frozenImg.svg";
 import frozendevice1 from "./frozendevice1.png";
 import frozendevice2 from "./frozendevice2.png";
@@ -197,6 +197,11 @@ import aboutLogo4 from "./aboutLogo4.png";
 import aboutLogo5 from "./aboutLogo5.png";
 import frozenImg2 from "./frozenLogo2.svg";
 import frozenImg3 from "./frozenLogo3.svg";
+import seasonal1 from "./seasonal1.svg";
+import seasonal2 from "./seasonal2.svg";
+import seasonal3 from "./seasonal3.svg";
+import seasonal4 from "./seasonal4.svg";
+
 
 export const images = {
   aeroplane,
@@ -397,4 +402,8 @@ export const images = {
   smoothieDevicesStage2,
   smoothieDevicesStage3,
   smoothieDevicesStage4,
+  seasonal1,
+  seasonal2,
+  seasonal3,
+  seasonal4,
 };

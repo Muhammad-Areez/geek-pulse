@@ -117,7 +117,13 @@ const SmoothieProducts = () => {
             </Col>
           ))}
         </Row>
-        <ScrollReveal
+        <ScrollReveal textClassName="smoothie-text-h3">
+          Dive into a world of flavor fusion. The Smoothie Edition blends creamy
+          textures with vibrant fruit notes for a refreshingly smooth vaping
+          experience. Each puff delivers the perfect balance of sweetness and
+          chill, crafted for those who crave taste as bold as their vibe.
+        </ScrollReveal>
+        {/* <ScrollReveal
           containerClassName="title"
           textClassName="smoothie-text"
           baseRotation={3}
@@ -129,7 +135,7 @@ const SmoothieProducts = () => {
           textures with vibrant fruit notes for a refreshingly smooth vaping
           experience. Each puff delivers the perfect balance of sweetness and
           chill, crafted for those who crave taste as bold as their vibe.
-        </ScrollReveal>
+        </ScrollReveal> */}
       </Container>
     </div>
   );

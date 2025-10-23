@@ -93,13 +93,14 @@ img {
   justify-content: space-around;
   width: 100%;
 }
-.header-products{
+.header-products {
   width: 100%;
   padding: 20px;
   position: absolute;
   border-radius: 0px 0px 40px 40px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  background: white;
+  background: transparent;
+  backdrop-filter: blur(10px);
   display: flex;
   opacity: 0;
   visibility: hidden;
@@ -108,18 +109,19 @@ img {
   left: 0;
   top: 80px;
   height: 0px;
-  overflow: hidden ;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
 }
-.header-products .row{
+.header-products .row {
   width: 100%;
 }
-.header-products a{
-  width: 16%;
-}
-.header-products a img{
+.header-products a img {
   width: 100%;
+  transition: all 250ms ease-in-out;
+}
+.header-products a:hover img {
+  transform: translateY(-10px);
 }
 .nav-links:has(a:nth-child(4):hover) ~ .header-products,
 .header-products:hover {
@@ -170,7 +172,7 @@ img {
   width: 180px;
   height: 80px;
 }
-.nav-links{
+.nav-links {
   height: 80px;
   display: flex;
 }
@@ -207,15 +209,17 @@ img {
   list-style: none;
   display: flex;
   gap: 40px;
+  align-items: flex-start;
   padding: 0;
 }
 .banner-list-main ul li {
   width: 120px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
+  text-align: start;
 }
 .banner-list-main ul li img {
   height: 35px;
@@ -1778,7 +1782,7 @@ img.basic3-img {
   width: 100% !important;
 }
 .frozen-product-name {
-  font-family: "BERNIER Distressed";
+  font-family: LondrinaSolid-Regular;
   color: #100a3e;
   font-size: 40px;
   z-index: 11111;
@@ -1845,7 +1849,7 @@ img.basic3-img {
   z-index: 0;
 }
 .frozen_section .heading {
-  font-family: "BERNIER Distressed";
+  font-family: LondrinaSolid-Regular;
   font-size: 115px;
   letter-spacing: 0px;
   font-weight: 400;
@@ -2015,6 +2019,9 @@ img.smoothiedevice4 {
   margin-top: 10px;
   text-align: center;
 }
+.smoothie-text{
+  color: #fff;
+}
 .bgFruite1 {
   position: absolute;
   left: 0;
@@ -2101,6 +2108,17 @@ img.smoothiedevice4 {
   text-transform: uppercase;
 }
 /* Seasonal Edition Page Starts */
+/* .slide-5 {
+  padding-top: 150px;
+  background: url(../src/assets/images/seasonalBg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 1050px !important;
+  position: relative;
+  border-radius: 0 !important;
+  overflow: hidden;
+} */
 .slide-5 {
   padding-top: 150px;
   background: url(../src/assets/images/seasonalBg.svg);
@@ -2111,6 +2129,24 @@ img.smoothiedevice4 {
   position: relative;
   border-radius: 0 !important;
   overflow: hidden;
+
+  /* 👇 Gentle one-time motion */
+  animation: bgFloat 6s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
+}
+
+@keyframes bgFloat {
+  0% {
+    background-position: center top;
+    transform: scale(1);
+  }
+  70% {
+    background-position: center bottom;
+    transform: scale(1.02);
+  }
+  100% {
+    background-position: center center;
+    transform: scale(1);
+  }
 }
 
 /* Add a soft fade overlay effect for depth */
@@ -2150,22 +2186,76 @@ img.seasonalBg2 {
   bottom: 8%;
   height: 340px;
   left: 0%;
-  /* animation: treeSwing 5s ease-in-out infinite; */
 }
+.product-swiper {
+  position: absolute !important;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: auto;
+  z-index: 111;
+  pointer-events: auto;
+}
+.device-box-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
+}
+/* Box */
 img.seasonalBox1 {
-  position: absolute;
-  height: 650px;
-  width: 400px;
-  left: 30%;
-  bottom: -5%;
+  position: relative;
+  height: 400px;
+  width: auto;
+  z-index: 2;
 }
+/* Device */
 img.seasonalBannerDevice1 {
-  position: absolute;
-  height: 380px;
-  width: 300px;
-  right: 36%;
-  bottom: -3%;
+  position: relative;
+  height: 350px;
+  width: auto;
+  z-index: 3;
+  margin-left: -80px;
 }
+/* .swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff !important;
+  font-weight: bold;
+  background: #7d5dfc !important;
+  border-radius: 50%;
+  width: 60px !important;
+  height: 60px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  z-index: 120;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #ffff !important;
+  color: #7d5dfc !important;
+  transform: translateY(-50%) scale(1.1) !important;
+} */
+
+.swiper-button-prev {
+  left: -60px;
+}
+.swiper-navigation-icon {
+  height: 30px !important;
+}
+.swiper-button-next {
+  right: -60px;
+}
+
 .seasonal_flavours {
   background: #f7ead3;
   position: relative;
@@ -2208,26 +2298,26 @@ img.flower2 {
   bottom: 3%;
 }
 .seasonalDevices img {
-  height: 560px;
+  height: auto;
   width: 400px;
   z-index: 111111;
   position: absolute;
 }
 img.seasonalDevice1 {
-  left: 15%;
-  top: 26%;
+  left: 14%;
+  top: 22%;
 }
 img.seasonalDevice2 {
-  left: 30%;
-  top: 26%;
+  left: 29%;
+  top: 24%;
 }
 img.seasonalDevice3 {
-  right: 31%;
-  top: 26%;
+  right: 28%;
+  top: 23%;
 }
 img.seasonalDevice4 {
-  right: 14%;
-  top: 26%;
+  right: 12%;
+  top: 27%;
 }
 .seasonal_section .ourproducts.with-bg {
   background: #f7ead3;
@@ -2608,7 +2698,7 @@ img.flower4 {
   width: 100%;
   height: auto;
 }
-.cosmos-text-main h3 {
+.cosmos-text-main .cosmos-text-h3 {
   font-size: 48px;
   font-family: SpaceGrotesk-Medium;
   color: #fff;
@@ -2665,21 +2755,38 @@ img.flower4 {
 /* VPU Starts */
 .vpu-hero {
   position: relative;
-  background: url(./assets/images/vpu-banner-bg.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  padding: 210px 0px 150px 0px;
-  border-radius: 0px 0px 40px 40px;
   width: 95vw;
+  padding: 210px 0 150px 0;
+  border-radius: 0 0 40px 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
 }
+
+/* Background wave layer */
+.vpu-bg-layer {
+  position: absolute;
+  inset: 0;
+  background-size: 150% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  will-change: background-position;
+}
+
+/* Text */
 .vpu-hero h1 {
   font-size: 170px;
   color: #fff;
   font-family: SpaceGrotesk-Bold;
   letter-spacing: -2px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
 }
+
 .vpu-sec {
   padding: 100px 0px;
 }
@@ -2756,24 +2863,24 @@ img.flower4 {
 }
 .vpu-standard {
   position: relative;
-  background: url(./assets/images/vpu-banner-bg.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
+  width: 95vw;
+  padding: 210px 0 150px 0;
   border-radius: 40px;
-  height: 700px;
   margin-top: 20px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: transparent;
 }
+
 .vpu-standard h3 {
   font-family: SpaceGrotesk-Bold;
   font-size: 55px;
   color: #fff;
   line-height: 62px;
   letter-spacing: -2px;
+  z-index: 1111;
 }
 .video-sec1 {
   margin-top: 20px;

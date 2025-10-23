@@ -1,4 +1,4 @@
-import Warning from "../components/warning";
+import Warning from "../components/Warning";
 import Header from "../components/Header";
 import OurProducts from "../components/OurProducts";
 import { Footer } from "../components/Footer";
@@ -8,8 +8,8 @@ import SeasonalProducts from "../components/SeasonalProducts";
 import { motion } from "framer-motion";
 
 function SeasonalEdition() {
-  const leftDevices = [images.seasonalDevice2, images.seasonalDevice1];
-  const rightDevices = [images.seasonalDevice3, images.seasonalDevice4];
+  const leftDevices = [images.seasonal1, images.seasonal2];
+  const rightDevices = [images.seasonal3, images.seasonal4];
   return (
     <>
       <div className="seasonal_section">
@@ -41,28 +41,40 @@ function SeasonalEdition() {
             is a naturally Seasonal flavors that fills you with energy and
             health
           </motion.h2>
-
-          {/* Flower 1 – subtle pop from right */}
-          {/* 🌸 Flower 1 — Slide in from Right on Scroll */}
-
           <motion.img
             src={images.flower1}
             alt=""
             className="flower1"
-            initial={{ x: -150, opacity: 0 }}
+            initial={{ x: 80, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            animate={{
+              y: [0, -6, 0, 6, 0],
+            }}
+            transition={{
+              duration: 1.2,
+              ease: "easeOut",
+              y: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+            }}
+            viewport={{ once: true, amount: 0.3 }}
           />
 
           <motion.img
             src={images.flower2}
             alt=""
             className="flower2"
-            initial={{ x: 150, opacity: 0, rotate: 0 }}
-            whileInView={{ x: 0, opacity: 1, rotate: 360 }}
-            transition={{ duration: 2, ease: "easeInOut" }}
+            initial={{ x: -80, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            animate={{
+              y: [0, 6, 0, -6, 0],
+            }}
+            transition={{
+              duration: 1.2,
+              ease: "easeOut",
+              y: { duration: 5, repeat: Infinity, ease: "easeInOut" },
+            }}
+            viewport={{ once: true, amount: 0.3 }}
           />
-          {/* Devices – entry from sides + hover pop */}
+
           <div className="seasonalDevices">
             {leftDevices.map((src, i) => (
               <motion.img
@@ -70,13 +82,12 @@ function SeasonalEdition() {
                 src={src}
                 alt=""
                 className={`seasonalDevice${i + 1}`}
-                initial={{ x: -200, opacity: 0 }}
+                initial={{ x: -200, opacity: 0, scale: 0.8 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1.5, delay: i * 0.3, ease: "easeOut" }}
+                transition={{ duration: 0.3, delay: i * 0.3, ease: "easeOut" }}
                 whileHover={{
-                  scale: 1.08,
-                  // rotate: 2,
-                  // boxShadow: "0px 25px 60px rgba(0, 0, 0, 0.3)",
+                  // scale: 0.9,
+                  y: -60,
                   transition: { duration: 0.4 },
                 }}
               />
@@ -88,13 +99,12 @@ function SeasonalEdition() {
                 src={src}
                 alt=""
                 className={`seasonalDevice${i + 3}`}
-                initial={{ x: 200, opacity: 0 }}
+                initial={{ x: 200, opacity: 0, scale: 0.8 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1.5, delay: i * 0.3, ease: "easeOut" }}
+                transition={{ duration: 0.3, delay: i * 0.3, ease: "easeOut" }}
                 whileHover={{
-                  scale: 1.08,
-                  // rotate: 2,
-                  // boxShadow: "0px 25px 60px rgba(0, 0, 0, 0.3)",
+                  // scale: 0.9,
+                  y: -60,
                   transition: { duration: 0.4 },
                 }}
               />
