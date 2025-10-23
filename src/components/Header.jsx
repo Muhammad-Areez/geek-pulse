@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/images/logo.svg";
 import { Link } from "react-router-dom";
 import retro from "../assets/images/Retro-editions.png";
@@ -10,17 +10,31 @@ import smoothie from "../assets/images/Smoothie-editions.png";
 import { Col, Row } from "react-bootstrap";
 
 const Header = () => {
+  const [hamburgerToggle, setHamburgerToggle] = useState(false)
+
+  const toggleMenu = () => {
+    setHamburgerToggle((prev)=>!prev)
+  }
+
+
   return (
     <header className="main-header d_flex">
       <div className="header-content">
         <img src={logo} alt="logo" className="logo" />
-        <nav className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/about-us">About</Link>
-          <Link to="/vpu">VPU</Link>
-          <Link to="#products">Products</Link>
-          <Link to="/wholesaler">Wholesale</Link>
-        </nav>
+        <div class={`menu-Bar ${hamburgerToggle ? 'open': ''}`} onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div className="nav-">
+          <nav className="nav-links">
+            <Link to="/">Home</Link>
+            <Link to="/about-us">About</Link>
+            <Link to="/vpu">VPU</Link>
+            <Link to="#products">Products</Link>
+            <Link to="/wholesaler">Wholesale</Link>
+          </nav>
+        </div>
         <div className="header-products">
           <Row>
             <Col md={2}>
