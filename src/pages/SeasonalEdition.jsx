@@ -37,7 +37,7 @@ function SeasonalEdition() {
               transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             >
               Ultra X
-            </motion.span>{" "}
+            </motion.span>
             is a naturally Seasonal flavors that fills you with energy and
             health
           </motion.h2>
