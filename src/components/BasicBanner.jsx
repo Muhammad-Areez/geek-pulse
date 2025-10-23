@@ -62,6 +62,15 @@ const BasicBanner = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
+              animate={{
+                y: [0, -12, 0],
+                rotate: [0, 2, -2, 0],
+                transition: {
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                },
+              }}
             />
 
             <motion.img
@@ -71,6 +80,15 @@ const BasicBanner = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
+              animate={{
+                y: [0, -15, 0],
+                rotate: [0, 1.5, -1.5, 0],
+                transition: {
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                },
+              }}
             />
 
             <motion.img
@@ -80,6 +98,15 @@ const BasicBanner = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
+              animate={{
+                y: [0, -10, 0],
+                rotate: [0, -2, 2, 0],
+                transition: {
+                  duration: 4.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                },
+              }}
             />
 
             {/* Normal fade + float for remaining */}

@@ -133,7 +133,7 @@ const BasicProducts = () => {
       rotate: 0,
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: 0.5, ease: "easeOut" },
     },
   };
   return (
@@ -145,11 +145,13 @@ const BasicProducts = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
+            whileHover="hover" // hover triggers the device animation
+            variants={{
+              hidden: {},
+              visible: {},
+              hover: {},
+            }}
           >
-            <span className="arrowIcon d_flex">
-              <img src={images.arrow} alt="arrow" />
-            </span>
-
             {/* BOX IMAGE */}
             <motion.img
               src={product.boxImg}
@@ -163,12 +165,14 @@ const BasicProducts = () => {
               src={product.deviceImg}
               alt={product.name}
               className="basicDevice"
-              initial={{ opacity: 0, y: 30, scale: 0.95 }}
-              whileHover={{
-                opacity: 1,
-                y: 0,
-                scale: 1,
-                transition: { duration: 0.4, ease: "easeOut" },
+              variants={{
+                hidden: { opacity: 0, y: 15, scale: 0.95 }, // hidden by default
+                hover: {
+                  opacity: 1,
+                  y: 0,
+                  scale: 1,
+                  transition: { duration: 0.3, ease: "easeOut" },
+                },
               }}
             />
 

@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 import bg from "../assets/images/vpu-banner-bg.svg";
 
 function Vpu() {
+    
   return (
     <>
       <Container className="position-relative">

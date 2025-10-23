@@ -22,7 +22,7 @@ function FrozenEdition() {
           <FrozenBanner />
         </section>
         <section>
-          <Container>
+          <Container className="cosmos-ultra-cont">
             <Version
               showContext={false}
               featureColor="#00B2FF"
@@ -36,7 +36,7 @@ function FrozenEdition() {
         <section className="ourProducts_section frozen-ourProducts">
           <img src={images.ourBg} className="our-bg"/>
           <div className="position-relative">
-            <OurProducts addBg={true} headingText="Simper Products" />
+            <OurProducts addBg={true} headingText="Similar Products" />
           </div>
         </section>
       </div>

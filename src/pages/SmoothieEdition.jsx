@@ -8,7 +8,6 @@ import SmoothieBanner from "../components/SmoothieBanner";
 import SmoothieProducts from "../components/SmoothieProducts";
 import { images } from "../assets/images";
 
-
 function SmoothieEdition() {
   return (
     <>
@@ -17,7 +16,7 @@ function SmoothieEdition() {
         <Header />
         <SmoothieBanner />
         <section className="smoothieVersions">
-          <Container>
+          <Container className="cosmos-ultra-cont">
             <Version
               showContext={false}
               features={[

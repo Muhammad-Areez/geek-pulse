@@ -34,9 +34,66 @@ const SmoothieProducts = () => {
 
   return (
     <div className="smoothieBg py-5">
-      <img src={images.bgFruite1} alt="" className="bgFruite1" />
-      <img src={images.bgFruite2} alt="" className="bgFruite2" />
-      <img src={images.smootieBg5} alt="" className="bgFruite3" />
+      <motion.img
+        src={images.bgFruite1}
+        alt=""
+        className="bgFruite1"
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        viewport={{ once: true }}
+      />
+
+      <motion.img
+        src={images.bgFruite2}
+        alt=""
+        className="bgFruite2"
+        initial={{ x: 100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        viewport={{ once: true }}
+      />
+
+      <motion.img
+        src={images.smootieBg5}
+        alt=""
+        className="bgFruite3"
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        viewport={{ once: true }}
+      />
+
+      <motion.img
+        src={images.smootieBg4}
+        alt=""
+        className="smootieBg4"
+        initial={{ x: 100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        viewport={{ once: true }}
+      />
+
+      <motion.img
+        src={images.smootieBg5}
+        alt=""
+        className="smootieBg5"
+        initial={{ x: 100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        viewport={{ once: true }}
+      />
+
+      <motion.img
+        src={images.smootieBg7}
+        alt=""
+        className="smootieBg6"
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        viewport={{ once: true }}
+      />
+
       <Container>
         <Row className="justify-content-center p-5">
           {products.map((product, index) => (

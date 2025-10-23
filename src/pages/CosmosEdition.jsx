@@ -139,8 +139,8 @@ function CosmosEdition() {
             <span className="outline">COSMOS</span>
           </div>
           <div className="position-relative">
-            <h1>EDITIONS</h1>
-            <span className="outline">EDITIONS</span>
+            <h1>EDITION</h1>
+            <span className="outline">EDITION</span>
           </div>
           <img
             src={images.cosmosGalaxy}

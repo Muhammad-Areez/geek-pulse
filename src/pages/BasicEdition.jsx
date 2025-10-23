@@ -18,19 +18,19 @@ function BasicEdition() {
         <BasicBanner />
       </Container>
       <section>
-        <Container>
+        <Container className="cosmos-ultra-cont">
           <Version />
         </Container>
       </section>
       <section className="basicProductsSection">
         <Container>
           <h2 className="heading mb-5">Basic Editions</h2>
-          <BasicProducts/>
+          <BasicProducts />
         </Container>
       </section>
       <section className="ourProducts_section">
         <Container className="position-relative">
-          <OurProducts headingText="Similar Products"/>
+          <OurProducts headingText="Similar Products" />
         </Container>
       </section>
 

@@ -11,7 +11,6 @@ const SmoothieBanner = () => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ delay: 0.4, ease: "power3.out" });
 
-      /** ✨ Heading animation */
       tl.from(".slide-4 .heading", {
         y: 120,
         opacity: 0,
@@ -19,7 +18,6 @@ const SmoothieBanner = () => {
         ease: "power4.out",
       });
 
-      /** 🌸 Left-side backgrounds */
       tl.from(
         [".smootieBg1", ".smootieBg2", ".smootieBg6"],
         {
@@ -33,7 +31,6 @@ const SmoothieBanner = () => {
         "-=0.8"
       );
 
-      /** 🌸 Right-side backgrounds */
       tl.from(
         [".smootieBg3", ".smootieBg4", ".smootieBg5"],
         {
@@ -47,7 +44,6 @@ const SmoothieBanner = () => {
         "-=1"
       );
 
-      /** 💫 Devices zoom-out appearance */
       tl.from(
         [".smoothiedevice1", ".smoothiedevice2", ".smoothiedevice3", ".smoothiedevice4"],
         {

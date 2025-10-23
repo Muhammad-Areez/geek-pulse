@@ -59,7 +59,7 @@ img {
   /* background: #f9f9ff; */
   position: relative;
   overflow: visible;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 .swiper-slide {
   text-align: center;
@@ -84,15 +84,55 @@ img {
   letter-spacing: 5px;
   line-height: 20px;
 }
-.menu-Bar{width:30px;height:20px;cursor:pointer;position:absolute;right:5%;top:0;bottom:0px;margin:auto;z-index:0;display:none; transition: all 250ms ease;}
-.menu-Bar span{display:block;height:4px;width:100%;background:#fff;position:absolute;transition:.6s all;border-radius:100px;}
-.menu-Bar span:nth-child(1){top:0;}
-.menu-Bar span:nth-child(2){top:8px;transform-origin:left;}
-.menu-Bar span:nth-child(3){top:16px;}
-.menu-Bar.open span{background:#b70404;}
-.menu-Bar.open span:nth-child(1){transform:rotate(45deg);top:12px;transform-origin:right-center;}
-.menu-Bar.open span:nth-child(2){width:0;opacity:0;}
-.menu-Bar.open span:nth-child(3){transform:rotate(-45deg);top:12px;transform-origin:right-center;}
+.menu-Bar {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  top: 0;
+  bottom: 0px;
+  margin: auto;
+  z-index: 0;
+  display: none;
+  transition: all 250ms ease;
+}
+.menu-Bar span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  transition: 0.6s all;
+  border-radius: 100px;
+}
+.menu-Bar span:nth-child(1) {
+  top: 0;
+}
+.menu-Bar span:nth-child(2) {
+  top: 8px;
+  transform-origin: left;
+}
+.menu-Bar span:nth-child(3) {
+  top: 16px;
+}
+.menu-Bar.open span {
+  background: #b70404;
+}
+.menu-Bar.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 12px;
+  transform-origin: right-center;
+}
+.menu-Bar.open span:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+.menu-Bar.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 12px;
+  transform-origin: right-center;
+}
 
 .main-header {
   position: absolute;
@@ -123,7 +163,7 @@ img {
   justify-content: center;
   align-items: center;
 }
-.product-edition-inner{
+.product-edition-inner {
   display: none;
 }
 .header-products .row {
@@ -397,9 +437,9 @@ img {
 .logo-section h3 {
   color: #ffffff60;
   font-family: BricolageGrotesque-Medium;
-  line-height: 60px;
-  letter-spacing: -1.44px;
-  font-size: 48px;
+  line-height: 65px;
+  letter-spacing: 3px;
+  font-size: 45px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1335,7 +1375,7 @@ img.basic3-img {
 }
 .version_details {
   display: flex;
-  align-items: center;
+  align-items: start;
   /* gap: 20px; */
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1548,8 +1588,8 @@ img.basic3-img {
 }
 .retro-products h3 {
   font-family: Rubik-ExtraBold;
-  font-size: 440px;
-  line-height: 420px;
+  font-size: 240px;
+  /* line-height: 420px; */
   color: #90b23e;
 }
 .retro-product-row {
@@ -1634,7 +1674,8 @@ img.basic3-img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  /* height: 800px; */
+  padding: 20px;
   position: relative;
   z-index: 2;
   border: 5px solid #000;
@@ -1995,6 +2036,7 @@ img.smoothiedevice4 {
   position: relative;
   background-position: center;
   /* overflow: hidden; */
+
   perspective: 1000px;
 }
 .smoothie-card-1 {
@@ -2032,7 +2074,7 @@ img.smoothiedevice4 {
   margin-top: 10px;
   text-align: center;
 }
-.smoothie-text{
+.smoothie-text {
   color: #fff;
 }
 .bgFruite1 {
@@ -2048,9 +2090,16 @@ img.smoothiedevice4 {
 }
 .bgFruite3 {
   position: absolute;
-  left: 10%;
-  bottom: 20%;
-  z-index: -11;
+  left: 0 !important;
+  bottom: 20% !important;
+  z-index: -1;
+}
+.smoothieProductsSection img.smootieBg6 {
+  top: 25%;
+}
+
+.smoothieProductsSection img.smootieBg4 {
+  top: -8%;
 }
 .floatingShadow {
   width: 350px;
@@ -2138,7 +2187,7 @@ img.smoothiedevice4 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 1050px !important;
+  min-height: 850px !important;
   position: relative;
   border-radius: 0 !important;
   overflow: hidden;
@@ -2176,7 +2225,7 @@ img.smoothiedevice4 {
 /* Subtle glowing effect on heading */
 .slide-5 .heading {
   color: #fff;
-  font-size: 218px;
+  font-size: 150px;
   font-family: LondrinaSolid-Regular;
   line-height: 189px;
   letter-spacing: -4.21px;
@@ -2188,15 +2237,15 @@ img.smoothiedevice4 {
 img.seasonalBg1 {
   width: 280px;
   position: absolute;
-  top: 40%;
-  height: 330px;
+  top: 30%;
+  height: 300px;
   right: 0%;
   /* animation: treeSwing 4s ease-in-out infinite; */
 }
 img.seasonalBg2 {
-  width: 265px;
+  width: 250px;
   position: absolute;
-  bottom: 8%;
+  bottom: 15%;
   height: 340px;
   left: 0%;
 }
@@ -2273,7 +2322,7 @@ img.seasonalBannerDevice1 {
   background: #f7ead3;
   position: relative;
   padding: 20px;
-  height: 900px;
+  height: 750px;
 }
 .seasonal_flavours .heading {
   font-family: "LondrinaSolid-Regular";
@@ -2299,38 +2348,38 @@ img.seasonalBannerDevice1 {
 img.flower1 {
   position: absolute;
   right: 0%;
-  height: 300px;
-  width: 200px;
-  top: 3%;
+  height: 200px;
+  width: 150px;
+  top: 20%;
 }
 img.flower2 {
   position: absolute;
   left: 0%;
-  height: 400px;
-  width: 400px;
-  bottom: 3%;
+  height: 300px;
+  width: 300px;
+  bottom: 10%;
 }
 .seasonalDevices img {
   height: auto;
-  width: 400px;
+  width: 300px;
   z-index: 111111;
   position: absolute;
 }
 img.seasonalDevice1 {
-  left: 14%;
+  left: 24%;
   top: 22%;
 }
 img.seasonalDevice2 {
-  left: 29%;
-  top: 24%;
+  left: 36%;
+  top: 25%;
 }
 img.seasonalDevice3 {
-  right: 28%;
-  top: 23%;
+  right: 32%;
+  top: 25%;
 }
 img.seasonalDevice4 {
-  right: 12%;
-  top: 27%;
+  right: 20%;
+  top: 28%;
 }
 .seasonal_section .ourproducts.with-bg {
   background: #f7ead3;
@@ -2528,18 +2577,18 @@ img.flower4 {
   background-size: cover;
 }
 .cosmos-hero-main {
-  height: 1150px;
+  height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 200px 0px 0px 0px;
+  padding: 150px 0px 0px 0px;
   position: relative;
 }
 .cosmos-hero-main h1 {
   position: relative;
   z-index: 1;
-  font-size: 270px;
+  font-size: 250px;
   font-family: SpaceGrotesk-Bold;
   color: #fff;
   line-height: 250px;
@@ -2551,7 +2600,7 @@ img.flower4 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 270px;
+  font-size: 250px;
   font-family: SpaceGrotesk-Bold;
   line-height: 250px;
   letter-spacing: -3.5px;
@@ -2566,28 +2615,28 @@ img.flower4 {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 75%;
+  width: 70%;
 }
 .cosmos-hero-main .cosmos-device1 {
   position: absolute;
-  top: 19%;
-  left: 29%;
+  top: 32%;
+  left: 32%;
   z-index: 3;
-  height: 630px;
+  height: 450px;
 }
 .cosmos-hero-main .cosmos-device2 {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 44.5%;
   z-index: 4;
-  height: 630px;
+  height: 450px;
 }
 .cosmos-hero-main .astronaut {
   position: absolute;
-  top: 38%;
+  top: 35%;
   left: 16%;
   z-index: 4;
-  width: 410px;
+  width: 350px;
 }
 .cosmos-ultra {
   padding-top: 70px;
