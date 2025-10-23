@@ -194,6 +194,11 @@ import aboutLogo4 from "./aboutLogo4.png";
 import aboutLogo5 from "./aboutLogo5.png";
 import frozenImg2 from "./frozenLogo2.svg";
 import frozenImg3 from "./frozenLogo3.svg";
+import seasonal1 from "./seasonal1.svg";
+import seasonal2 from "./seasonal2.svg";
+import seasonal3 from "./seasonal3.svg";
+import seasonal4 from "./seasonal4.svg";
+
 
 export const images = {
   aeroplane,
@@ -390,4 +395,8 @@ export const images = {
   smoothieDevicesStage2,
   smoothieDevicesStage3,
   smoothieDevicesStage4,
+  seasonal1,
+  seasonal2,
+  seasonal3,
+  seasonal4,
 };

@@ -39,36 +39,59 @@ const SeasonalProducts = () => {
         src={images.flower3}
         alt=""
         className="flower3"
-        initial={{ x: -150, opacity: 0 }}
+        initial={{ x: -80, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1, ease: "easeOut" }}
+        animate={{
+          y: [0, -6, 0, 6, 0],
+        }}
+        transition={{
+          duration: 1.2,
+          ease: "easeOut",
+          y: { duration: 2, repeat: Infinity, ease: "easeInOut" },
+        }}
+        viewport={{ once: true, amount: 0.3 }}
       />
 
-      {/* 🌼 Flower 4 — Right Side */}
       <motion.img
         src={images.flower4}
         alt=""
         className="flower4"
-        initial={{ x: 150, opacity: 0, rotate: 0 }}
-        whileInView={{ x: 0, opacity: 1, rotate: 360 }}
-        transition={{ duration: 2, ease: "easeInOut" }}
-        // viewport={{ once: true, amount: 0.3 }}
+        initial={{ x: 80, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        animate={{
+          y: [0, 6, 0, -6, 0],
+        }}
+        transition={{
+          duration: 1.2,
+          ease: "easeOut",
+          y: { duration: 2, repeat: Infinity, ease: "easeInOut" },
+        }}
+        viewport={{ once: true, amount: 0.3 }}
       />
 
-      {/* 🌿 Background — Right Side */}
       <motion.img
         src={images.seasonalBg3}
         alt=""
         className="seasonalBg3"
-        initial={{ x: 200, opacity: 0 }}
+        initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
-        // viewport={{ once: true, amount: 0.3 }}
+        animate={{
+          y: [0, -4, 0, 4, 0],
+          scale: [1, 1.01, 1, 1.01, 1],
+        }}
+        transition={{
+          duration: 1.2,
+          ease: "easeOut",
+          y: { duration: 2, repeat: Infinity, ease: "easeInOut" },
+          scale: { duration: 10, repeat: Infinity, ease: "easeInOut" },
+        }}
+        viewport={{ once: true, amount: 0.3 }}
       />
+
       <Container>
         <Row className="justify-content-center p-5">
           {products.map((product, index) => (
-            <Col key={product.id} lg={4} md={6} sm={12} className="mb-5">
+            <Col key={product.id} lg={6} md={6} sm={12} className="mb-5">
               <motion.div
                 className={`seasonal-product-card text-center seasonal-card-${
                   index + 1

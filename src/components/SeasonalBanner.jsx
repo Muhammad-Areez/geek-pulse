@@ -1,11 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
 import { motion } from "framer-motion";
 import { images } from "../assets/images";
 
 const SeasonalBanner = () => {
-  // Variants for entrance animations
   const containerVariants = {
     hidden: {},
     visible: {
@@ -26,56 +27,40 @@ const SeasonalBanner = () => {
     },
   };
 
-  const bg1Variants = {
-    hidden: { x: 300, y: 100, rotateY: 25 },
-    visible: {
-      x: 0,
-      y: 0,
-      rotateY: 0,
-      transition: { duration: 1.5, ease: "easeOut" },
+  const slides = [
+    {
+      id: 1,
+      boxImg: images.seasonalBox1,
+      deviceImg: images.seasonalDevice1,
     },
-  };
-
-  const bg2Variants = {
-    hidden: { x: -300, y: 80, rotateY: -25 },
-    visible: {
-      x: 0,
-      y: 0,
-      rotateY: 0,
-      transition: { duration: 1.5, ease: "easeOut" },
+    {
+      id: 2,
+      boxImg: images.seasonalBox2,
+      deviceImg: images.seasonalDevice2,
     },
-  };
-
-  const boxVariants = {
-    hidden: { y: 200, rotate: -8, scale: 0.9 },
-    visible: {
-      y: 0,
-      rotate: 0,
-      scale: 1,
-      transition: { duration: 1.5, ease: "easeOut" },
+    {
+      id: 3,
+      boxImg: images.seasonalBox3,
+      deviceImg: images.seasonalDevice3,
     },
-  };
-
-  const deviceVariants = {
-    hidden: { y: 300, rotate: 15, scale: 0.8 },
-    visible: {
-      y: 0,
-      rotate: 0,
-      scale: 1,
-      transition: { duration: 1.5, ease: "easeOut" },
+    {
+      id: 4,
+      boxImg: images.seasonalBox4,
+      deviceImg: images.seasonalDevice4,
     },
-  };
+  ];
 
-  // Floating loop motion
   const floatTransition = {
     y: {
       duration: 3,
-      yoyo: Infinity,
+      repeat: Infinity,
+      repeatType: "reverse",
       ease: "easeInOut",
     },
     rotate: {
-      duration: 3,
-      yoyo: Infinity,
+      duration: 3.5,
+      repeat: Infinity,
+      repeatType: "reverse",
       ease: "easeInOut",
     },
   };
@@ -92,7 +77,7 @@ const SeasonalBanner = () => {
             initial="hidden"
             animate="visible"
           >
-            {/* Heading */}
+            {/* Static heading */}
             <motion.h2 className="heading" variants={headingVariants}>
               Seasonal Edition
             </motion.h2>
@@ -102,52 +87,78 @@ const SeasonalBanner = () => {
               src={images.seasonalBg1}
               alt=""
               className="seasonalBg1"
-              variants={bg1Variants}
+              initial={{ x: 150, opacity: 0, scale: 0.95 }}
+              whileInView={{ x: 0, opacity: 1, scale: 1 }}
               animate={{
-                y: [0, 15, 0],
-                rotate: [0, 1.5, 0],
-                transition: floatTransition,
+                y: [0, 10, 0, -10, 0],
+                rotate: [0, 1.2, 0, -1.2, 0],
+              }}
+              transition={{
+                y: { duration: 6, repeat: Infinity, ease: "easeInOut" },
+                rotate: { duration: 8, repeat: Infinity, ease: "easeInOut" },
               }}
             />
 
-            {/* Background 2 */}
             <motion.img
               src={images.seasonalBg2}
               alt=""
               className="seasonalBg2"
-              variants={bg2Variants}
+              initial={{ x: -150, opacity: 0, scale: 0.95 }}
+              whileInView={{ x: 0, opacity: 1, scale: 1 }}
               animate={{
-                y: [0, -15, 0],
-                rotate: [0, -1.5, 0],
-                transition: { ...floatTransition, duration: 3.5 },
+                y: [0, -10, 0, 10, 0],
+                rotate: [0, -1.2, 0, 1.2, 0],
+              }}
+              transition={{
+                y: { duration: 7, repeat: Infinity, ease: "easeInOut" },
+                rotate: { duration: 9, repeat: Infinity, ease: "easeInOut" },
               }}
             />
 
-            {/* Box */}
-            <motion.img
-              src={images.seasonalBox1}
-              alt=""
-              className="seasonalBox1"
-              variants={boxVariants}
-              animate={{
-                y: [0, 10, 0],
-                rotate: [0, -1, 0],
-                transition: { ...floatTransition, duration: 4 },
+            <Swiper
+              className="product-swiper"
+              modules={[ Autoplay]}
+              navigation
+              spaceBetween={40}
+              slidesPerView={1}
+              loop
+              autoplay={{
+                delay: 2500, 
+                disableOnInteraction: false,
               }}
-            />
+              speed={800} 
+            >
+              {slides.map((slide) => (
+                <SwiperSlide key={slide.id}>
+                  <div className="device-box-wrapper">
+                    <motion.img
+                      src={slide.boxImg}
+                      alt=""
+                      className="seasonalBox1"
+                      initial={{ opacity: 0, x: 100, scale: 0.8 }}
+                      animate={{ opacity: 1, x: 60, scale: 1.4 }}
+                      transition={{
+                        duration: 1.2,
+                        ease: [0.25, 0.1, 0.25, 1],
+                      }}
+                    />
 
-            {/* Device */}
-            <motion.img
-              src={images.seasonalDevice1}
-              alt=""
-              className="seasonalBannerDevice1"
-              variants={deviceVariants}
-              animate={{
-                y: [0, 12, 0],
-                rotate: [0, 1.2, 0],
-                transition: { ...floatTransition, duration: 3.2 },
-              }}
-            />
+                    <motion.img
+                      src={slide.deviceImg}
+                      alt=""
+                      className="seasonalBannerDevice1"
+                      initial={{ opacity: 0, x: -100, scale: 0.8 }}
+                      animate={{ opacity: 1, x: -50, y: 30, scale: 0.9 }}
+                      transition={{
+                        duration: 1.2,
+                        ease: [0.25, 0.1, 0.25, 1],
+                        delay: 0.2,
+                      }}
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </motion.div>
         </SwiperSlide>
       </Swiper>
