@@ -96,13 +96,28 @@ function CosmosEdition() {
     });
 
     gsap.from(".cosmo-hero-bg", {
-      backgroundSize: "100%",
+      backgroundSize: "120%",
       duration: 5,
       ease: "power1.inOut",
       repeat: -1,
       yoyo: true, 
     });
     gsap.to(".cosmo-hero-bg", {
+      backgroundSize: "125%",
+      duration: 5,
+      ease: "power1.inOut",
+      repeat: -1,
+      yoyo: true,         
+    });
+
+    gsap.from(".cosmos-edition-bottom", {
+      backgroundSize: "100%",
+      duration: 5,
+      ease: "power1.inOut",
+      repeat: -1,
+      yoyo: true, 
+    });
+    gsap.to(".cosmos-edition-bottom", {
       backgroundSize: "105%",
       duration: 5,
       ease: "power1.inOut",

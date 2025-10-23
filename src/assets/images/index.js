@@ -5,7 +5,6 @@ import basicEditions from "./Basic-editions.png";
 import batteryCharging from "./battery-charging.png";
 import cosmoEditions from "./Cosmo-editions.png";
 import frozenEditions from "./Frozen-editions.png";
-import halfmoon from "./halfmoon.svg";
 import logo from "./logo.svg";
 import matrix from "./matrix.svg";
 import product1 from "./product1.svg";
@@ -16,7 +15,6 @@ import shadow from "./shadow.svg";
 import smokeBomb from "./smoke-bomb.png";
 import smoothieEditions from "./Smoothie-editions.png";
 import warnIcon from "./warnIcon.svg";
-import bannerSlide1 from "./banner-slide1.svg";
 import moon from "./moon.svg";
 import galaxy from "./galaxy.svg";
 import bannerDevice1 from "./banner-device1.svg";
@@ -53,7 +51,6 @@ import retroBox1 from "./retro-box1.png";
 import retroBox2 from "./retro-box2.png";
 import retroBox3 from "./retro-box3.png";
 import pizzaIcon from "./pizza-icon.png";
-import cosmosBg from "./cosmos-bg.webp";
 import astronaut from "./astronaut.svg";
 import cosmosGalaxy from "./cosmos-galaxy.svg";
 import cosmosDevice1 from "./cosmos-device1.svg";
@@ -206,7 +203,6 @@ export const images = {
   batteryCharging,
   cosmoEditions,
   frozenEditions,
-  halfmoon,
   logo,
   matrix,
   product1,
@@ -217,7 +213,6 @@ export const images = {
   smokeBomb,
   smoothieEditions,
   warnIcon,
-  bannerSlide1,
   moon,
   galaxy,
   bannerDevice1,
@@ -353,7 +348,6 @@ export const images = {
   seasonalDevice2,
   seasonalDevice3,
   seasonalDevice4,
-  cosmosBg,
   astronaut,
   cosmosGalaxy,
   cosmosDevice1,
@@ -381,7 +375,6 @@ export const images = {
   vpuDevice3,
   vpuDevice4,
   seasonalDevice4,
-  cosmosBg,
   about1,
   about2,
   about3,

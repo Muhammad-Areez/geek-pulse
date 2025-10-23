@@ -22,39 +22,63 @@ const Header = () => {
           <Link to="/wholesaler">Wholesale</Link>
         </nav>
         <div className="header-products">
-            <Row>
-              <Col md={2}>
-                <Link to="/retro-edition">
-                  <img src={retro} alt="product-card" className="header-product-img" />
-                </Link>
-              </Col>
-              <Col md={2}>
-                <Link to="/frozen-edition">
-                  <img src={frozen} alt="product-card" className="header-product-img" />
-                </Link>
-              </Col>
-              <Col md={2}>
-                <Link to="/seasonal-edition">
-                  <img src={seasonal} alt="product-card" className="header-product-img" />
-                </Link>
-              </Col>
-              <Col md={2}>
-                <Link to="/basic-edition">
-                  <img src={basic} alt="product-card" className="header-product-img" />
-                </Link>
-              </Col>
-              <Col md={2}>
-                <Link to="/cosmos-edition">
-                  <img src={cosmo} alt="product-card" className="header-product-img" />
-                </Link>
-              </Col>
-              <Col md={2}>
-                <Link to="/smoothie-edition">
-                  <img src={smoothie} alt="product-card" className="header-product-img" />
-                </Link>
-              </Col>
-            </Row>
-          </div>
+          <Row>
+            <Col md={2}>
+              <Link to="/retro-edition">
+                <img
+                  src={retro}
+                  alt="product-card"
+                  className="header-product-img"
+                />
+              </Link>
+            </Col>
+            <Col md={2}>
+              <Link to="/frozen-edition">
+                <img
+                  src={frozen}
+                  alt="product-card"
+                  className="header-product-img"
+                />
+              </Link>
+            </Col>
+            <Col md={2}>
+              <Link to="/seasonal-edition">
+                <img
+                  src={seasonal}
+                  alt="product-card"
+                  className="header-product-img"
+                />
+              </Link>
+            </Col>
+            <Col md={2}>
+              <Link to="/basic-edition">
+                <img
+                  src={basic}
+                  alt="product-card"
+                  className="header-product-img"
+                />
+              </Link>
+            </Col>
+            <Col md={2}>
+              <Link to="/cosmos-edition">
+                <img
+                  src={cosmo}
+                  alt="product-card"
+                  className="header-product-img"
+                />
+              </Link>
+            </Col>
+            <Col md={2}>
+              <Link to="/smoothie-edition">
+                <img
+                  src={smoothie}
+                  alt="product-card"
+                  className="header-product-img"
+                />
+              </Link>
+            </Col>
+          </Row>
+        </div>
       </div>
     </header>
   );

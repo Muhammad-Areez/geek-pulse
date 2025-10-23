@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import aeroplane from "../assets/images/aeroplane.svg";
-import halfmoon from "../assets/images/halfmoon.svg";
 import { Col } from "react-bootstrap";
 import { images } from "../assets/images";
 import { gsap } from "gsap";

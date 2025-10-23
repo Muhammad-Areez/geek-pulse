@@ -248,7 +248,7 @@ img {
 }
 .slide-1 {
   padding-top: 150px;
-  background: url(../src/assets/images/banner-slide1.svg);
+  background: url(../src/assets/images/banner-slide1.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -445,7 +445,7 @@ img {
   margin: 100px 0px;
 }
 .primeBox {
-  background: url(../src/assets/images/banner-slide1.svg);
+  background: url(../src/assets/images/banner-slide1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -2407,7 +2407,7 @@ img.flower4 {
 }
 .cosmo-hero-bg {
   width: 100%;
-  background: url(./assets/images/cosmo-bg1.svg);
+  background: url(./assets/images/cosmo-bg1.webp);
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2581,7 +2581,7 @@ img.flower4 {
 }
 .cosmos-edition-bottom {
   width: 100%;
-  background: url(./assets/images/cosmo-bg2.svg);
+  background: url(./assets/images/cosmo-bg2.webp);
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2891,34 +2891,35 @@ img.flower4 {
 
 .container {
   --bs-gutter-x: 0px;
+  max-width: 95vw;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 1400px) {
   .container {
-    max-width: 540px;
+    max-width: 95vw;
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1200px) {
   .container {
-    max-width: 720px;
+    max-width: 95vw;
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .container {
     max-width: 960px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 768px) {
   .container {
-    max-width: 95vw;
+    max-width: 720px;
   }
 }
 
-@media (min-width: 1400px) {
+@media (max-width: 576px) {
   .container {
-    max-width: 95vw;
+    max-width: 540px;
   }
 }
