@@ -11,9 +11,15 @@ import { Col, Row } from "react-bootstrap";
 
 const Header = () => {
   const [hamburgerToggle, setHamburgerToggle] = useState(false)
+  const [productToggle, setProductToggle] = useState(false)
 
   const toggleMenu = () => {
-    setHamburgerToggle((prev)=>!prev)
+    setHamburgerToggle((prev) => !prev)
+  }
+
+  const toggleProductMenu = (e) => {
+    e.preventDefault()
+    setProductToggle((prev) => !prev)
   }
 
 
@@ -21,77 +27,90 @@ const Header = () => {
     <header className="main-header d_flex">
       <div className="header-content">
         <img src={logo} alt="logo" className="logo" />
-        <div class={`menu-Bar ${hamburgerToggle ? 'open': ''}`} onClick={toggleMenu}>
+        <div class={`menu-Bar ${hamburgerToggle ? 'open' : ''}`} onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div className="nav-">
+        <div className={`menu-wrap ${hamburgerToggle ? 'open' : ''}`}>
+          {
+            hamburgerToggle && (
+              <img src={logo} alt="logo" className="logo" />
+            )
+          }
           <nav className="nav-links">
             <Link to="/">Home</Link>
             <Link to="/about-us">About</Link>
             <Link to="/vpu">VPU</Link>
-            <Link to="#products">Products</Link>
+            <Link to="#products" onClick={toggleProductMenu}>Products</Link>
+            <div className={`product-edition-inner ${productToggle ? 'open' : ''}`}>
+              <Link>-  Retro Edition</Link>
+              <Link>-  Frozen Edition</Link>
+              <Link>-  Seasonal Edition</Link>
+              <Link>-  Basic Edition</Link>
+              <Link>-  Cosmos Edition</Link>
+              <Link>-  Smoothie Edition</Link>
+            </div>
             <Link to="/wholesaler">Wholesale</Link>
           </nav>
-        </div>
-        <div className="header-products">
-          <Row>
-            <Col md={2}>
-              <Link to="/retro-edition">
-                <img
-                  src={retro}
-                  alt="product-card"
-                  className="header-product-img"
-                />
-              </Link>
-            </Col>
-            <Col md={2}>
-              <Link to="/frozen-edition">
-                <img
-                  src={frozen}
-                  alt="product-card"
-                  className="header-product-img"
-                />
-              </Link>
-            </Col>
-            <Col md={2}>
-              <Link to="/seasonal-edition">
-                <img
-                  src={seasonal}
-                  alt="product-card"
-                  className="header-product-img"
-                />
-              </Link>
-            </Col>
-            <Col md={2}>
-              <Link to="/basic-edition">
-                <img
-                  src={basic}
-                  alt="product-card"
-                  className="header-product-img"
-                />
-              </Link>
-            </Col>
-            <Col md={2}>
-              <Link to="/cosmos-edition">
-                <img
-                  src={cosmo}
-                  alt="product-card"
-                  className="header-product-img"
-                />
-              </Link>
-            </Col>
-            <Col md={2}>
-              <Link to="/smoothie-edition">
-                <img
-                  src={smoothie}
-                  alt="product-card"
-                  className="header-product-img"
-                />
-              </Link>
-            </Col>
-          </Row>
+          <div className="header-products">
+            <Row>
+              <Col md={2}>
+                <Link to="/retro-edition">
+                  <img
+                    src={retro}
+                    alt="product-card"
+                    className="header-product-img"
+                  />
+                </Link>
+              </Col>
+              <Col md={2}>
+                <Link to="/frozen-edition">
+                  <img
+                    src={frozen}
+                    alt="product-card"
+                    className="header-product-img"
+                  />
+                </Link>
+              </Col>
+              <Col md={2}>
+                <Link to="/seasonal-edition">
+                  <img
+                    src={seasonal}
+                    alt="product-card"
+                    className="header-product-img"
+                  />
+                </Link>
+              </Col>
+              <Col md={2}>
+                <Link to="/basic-edition">
+                  <img
+                    src={basic}
+                    alt="product-card"
+                    className="header-product-img"
+                  />
+                </Link>
+              </Col>
+              <Col md={2}>
+                <Link to="/cosmos-edition">
+                  <img
+                    src={cosmo}
+                    alt="product-card"
+                    className="header-product-img"
+                  />
+                </Link>
+              </Col>
+              <Col md={2}>
+                <Link to="/smoothie-edition">
+                  <img
+                    src={smoothie}
+                    alt="product-card"
+                    className="header-product-img"
+                  />
+                </Link>
+              </Col>
+            </Row>
+          </div>
         </div>
       </div>
     </header>
