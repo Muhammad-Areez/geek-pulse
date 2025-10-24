@@ -590,6 +590,10 @@
   .cosmos-ultra-cont{
     padding-inline: 0%;
   }
+
+  .cosmo-hero-bg{
+    background-position: top center;
+  }
   
 }
 
