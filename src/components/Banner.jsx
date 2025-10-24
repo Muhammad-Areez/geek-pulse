@@ -176,7 +176,7 @@ const Banner = () => {
           </div>
           <img src={images.bannerDevice1} className="banner-device-img1" />
           <img src={images.bannerDevice2} className="banner-device-img2" />
-          <Col md={6}>
+          <Col md={6} className="mt-2">
             <div className="banner-text-div">
               <div>
                 <h2>ULTRA </h2>

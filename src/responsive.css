@@ -1,104 +1,760 @@
 @media (prefers-reduced-motion: no-preference) {
-    a:nth-of-type(2) .logo {
-        animation: logo-spin infinite 20s linear;
-    }
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
 .card {
-    padding: 2em;
+  padding: 2em;
 }
 
 .read-the-docs {
-    color: #888;
+  color: #888;
 }
 
 .container {
-    --bs-gutter-x: 0px;
+  --bs-gutter-x: 0px;
+  max-width: 95vw;
+}
+@media (max-width: 1600px) {
+}
+@media (max-width: 1440px) {
+  .container {
     max-width: 95vw;
+  }
 }
-
-@media (max-width: 1400px) {
-    .container {
-        max-width: 95vw;
-    }
+@media (max-width: 1366px) {
+  .banner-slide {
+    min-height: 600px !important;
+  }
+  .banner-device-img1 {
+    height: 500px !important;
+    right: 22%;
+  }
+  .banner-device-img2 {
+    height: 500px !important;
+    right: 0%;
+  }
+  .galaxy-img {
+    width: 1350px !important;
+  }
+  .banner-text-div h1 {
+    font-size: 55px;
+  }
+  .logo-section h3 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .primeBox {
+    width: 100%;
+  }
+  .primeBox .banner-device-img2 {
+    right: 0%;
+    height: 450px !important;
+  }
+  .primeBox .banner-device-img1 {
+    height: 580px !important;
+    right: 0%;
+  }
+  .blog_section {
+    width: 100%;
+  }
+  .wholesalerSection .contact_heading {
+    font-size: 90px !important;
+  }
+  .retro-edition-hero img:nth-child(1) {
+    top: 8vh;
+    left: 12%;
+  }
 }
-
+@media (max-width: 1280px) {
+  .logo-container {
+    height: 550px;
+  }
+  .contact_form_section .heading {
+    font-size: 40px;
+  }
+  .contact_heading {
+    font-size: 125px !important;
+  }
+  .contactus_section .logo-container {
+    height: 400px;
+  }
+  .contactIcon {
+    width: 60px;
+    height: 60px;
+  }
+  .contact_form_section {
+    margin: 2rem 0;
+  }
+  .retro-edition-hero .retro-heading {
+    font-size: 240px;
+  }
+  .retro-edition-hero img:nth-child(3) {
+    right: 0%;
+    height: 650px;
+  }
+  .retro-edition-hero img:nth-child(2) {
+    bottom: -10%;
+    left: 0%;
+    height: 450px;
+  }
+  .retro-sec-right h3 {
+    font-size: 40px;
+  }
+  .retro-edition-hero img:nth-child(2) {
+    left: -4%;
+  }
+}
 @media (max-width: 1200px) {
-    .container {
-        max-width: 95vw;
-    }
-    .menu-Bar{
-        display: flex;
-    }
-    .menu-wrap{
-        position:fixed;
-        left:210%;
-        right:0;
-        top:0;
-        bottom:0;
-        margin:auto;
-        background:rgba(16, 10, 62, 0.8);
-        height:100vh;
-        display:flex;
-        align-items:center;
-        flex-flow:column;
-        transition:all 0.4s ease;
-        z-index:3;
-        width:100vw;
-        backdrop-filter: blur(10px);
-        padding: 15% 0px 0px 0px;
-    }
-    .menu-Bar.open{
-        top: -200px;
-        z-index: 100;
-    }
-    .menu-wrap.open{
-        display:flex;
-        left:0px;
-    }
-    .nav-links{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 100%;
-        height: auto;
-    }
-    .nav-links a{
-        padding: 10px 20px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-        width: 100%;
-        justify-content: flex-start;
-        margin: 0;
-    }
-    .header-products{
-        display: none !important;
-    }
-    .product-edition-inner{
-        display: none;
-        flex-direction: column;
-    }
-    .product-edition-inner.open{
-        display: flex;
-    }
-    .product-edition-inner a {
-        padding: 10px 40px;
-    }
+  .container {
+    max-width: 95vw;
+  }
+  .menu-Bar {
+    display: flex;
+  }
+  .menu-wrap {
+    position: fixed;
+    left: 210%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(16, 10, 62, 0.8);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    transition: all 0.4s ease;
+    z-index: 3;
+    width: 100vw;
+    backdrop-filter: blur(10px);
+    padding: 15% 0px 0px 0px;
+  }
+  .menu-Bar.open {
+    top: -200px;
+    z-index: 100;
+  }
+  .menu-wrap.open {
+    display: flex;
+    left: 0px;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+  }
+  .nav-links a {
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .header-products {
+    display: none !important;
+  }
+  .product-edition-inner {
+    display: none;
+    flex-direction: column;
+  }
+  .product-edition-inner.open {
+    display: flex;
+  }
+  .product-edition-inner a {
+    padding: 10px 40px;
+  }
+  .slide-1 {
+    padding-top: 85px;
+  }
+  .wholesalerSection .contact_heading {
+    font-size: 75px !important;
+  }
+  .retro-products h3 {
+    font-size: 200px;
+  }
+  .retro-edition-hero img:nth-child(1) {
+    top: 12vh;
+  }
+  .retro-sec-right h3 {
+    font-size: 35px;
+  }
+  .retro-edition-hero img:nth-child(2) {
+    left: 2%;
+  }
+}
+@media (max-width: 1140px) {
+  .banner-slide {
+    min-height: 550px !important;
+  }
+  .galaxy-img {
+    width: 1280px !important;
+  }
+
+  .banner-device-img2 {
+    height: 450px !important;
+    right: -3%;
+    bottom: -90px;
+  }
+  .banner-device-img1 {
+    height: 450px !important;
+    right: 21%;
+    bottom: 42px;
+  }
+  .banner-text-div h1 {
+    font-size: 42px;
+  }
+  .heading {
+    font-size: 50px;
+  }
+  .logo-section h3 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .logo-container {
+    height: 500px;
+  }
+  .primeBox .banner-device-img2 {
+    right: -2%;
+    height: 375px !important;
+  }
+  .primeBox .banner-device-img1 {
+    height: 500px !important;
+    right: 0%;
+    bottom: 0px;
+  }
+  .primeBox {
+    height: 430px;
+  }
+  .banner-text-div {
+    gap: 10px;
+  }
+  .banner-list-main ul {
+    gap: 15px;
+  }
+  .banner-list-main ul li div {
+    width: 60px;
+    height: 60px;
+  }
+  .banner-list-main ul li img {
+    height: 25px;
+  }
+  .banner-list-main ul li p {
+    font-size: 12px;
+  }
+  .testimonial_section .heading {
+    font-size: 35px;
+  }
+  .blog_section .heading {
+    font-size: 35px;
+  }
+  .blog_section .bulletHeading .title:before {
+    left: 43%;
+  }
+  .tag2 {
+    left: 28%;
+  }
+  .blog_section {
+    margin: 30px auto 50px;
+  }
+  .blogCard .card-img-top {
+    height: 220px;
+  }
+  .blogCard .card-body {
+    padding: 15px;
+    gap: 5px;
+  }
+  .blogCard .card-title {
+    font-size: 18px;
+  }
+  .review {
+    font-size: 14px;
+  }
+  .reviewBox {
+    min-height: 280px;
+  }
+  .contact_form_section .heading {
+    font-size: 32px;
+  }
+  .faqs_section .heading {
+    font-size: 35px;
+  }
+  .contactus_section .logo-container {
+    height: 350px;
+  }
+  .contact_heading {
+    font-size: 100px !important;
+  }
+  .faq_question h5 {
+    font-size: 18px;
+  }
+  .faq_answer p {
+    font-size: 16px;
+  }
+  .retro-edition-hero {
+    min-height: 700px;
+  }
+  .retro-edition-hero .retro-heading {
+    font-size: 165px;
+    line-height: 175px;
+  }
+  .retro-edition-hero img:nth-child(1) {
+    top: 10vh;
+    left: 12%;
+  }
+  .retro-edition-hero img:nth-child(3) {
+    right: 7%;
+    height: 550px;
+  }
+}
+@media (max-width: 1024px) {
+  .ourproducts {
+    padding: 0px 10px;
+  }
+  .wholesalerSection .contact_heading {
+    font-size: 65px !important;
+  }
 }
 
 @media (max-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
+  .container {
+    max-width: calc(100% - 20px) !important;
+  }
+  .banner-slide {
+    min-height: 500px !important;
+  }
+  .banner-text-div h1 {
+    font-size: 38px;
+    letter-spacing: 0;
+    line-height: 42px;
+  }
+  .galaxy-img {
+    width: 1175px !important;
+  }
+  .aeroplane-img {
+    top: 80px;
+    width: 200px !important;
+  }
+  .banner-device-img2 {
+    height: 400px !important;
+    right: -2%;
+    bottom: -70px;
+  }
+  .banner-device-img1 {
+    height: 400px !important;
+  }
+  .blogCard .card-title {
+    font-size: 16px;
+  }
+  .tags {
+    width: 65px;
+    height: 28px;
+    font-size: 12px;
+  }
+  .blogCard .card-img-top {
+    height: 180px;
+  }
+  .moon-img {
+    left: -140px;
+  }
+  .header-content {
+    padding: 2%;
+  }
+  .menu-Bar {
+    width: 25px;
+    height: 20px;
+    right: 2%;
+    top: -12px;
+  }
+  .banner-slide {
+    padding: 0px 3%;
+  }
+  .slide-1 {
+    padding-top: 100px;
+  }
+  .banner-text-div h1 {
+    font-size: 35px;
+  }
+  .logo-section h3 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .logo-container {
+    height: 450px;
+  }
+  .primeBox .banner-device-img1 {
+    height: 450px !important;
+    right: -2%;
+    width: 380px !important;
+    bottom: -12px;
+  }
+  .primeBox .banner-device-img2 {
+    height: 300px !important;
+  }
 }
-
+@media (max-width: 910px) {
+  .banner-device-img1 {
+    height: 350px !important;
+    bottom: 70px;
+    right: 23%;
+  }
+  .banner-device-img2 {
+    height: 350px !important;
+  }
+  .wholesalerSection .contact_heading {
+    font-size: 50px !important;
+  }
+}
 @media (max-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
+  .container {
+    max-width: 720px;
+  }
+  .galaxy-img {
+    width: 1100px !important;
+  }
+  .banner-device-img1 {
+    height: 280px !important;
+    bottom: -10px;
+    right: 20%;
+  }
+  .banner-device-img2 {
+    height: 280px !important;
+    right: 0%;
+  }
+  .banner-list-main ul li {
+    width: 100px;
+  }
+  .banner-list-main ul li div {
+    width: 55px;
+    height: 55px;
+  }
+  .logo-section h3 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .logo-container {
+    height: 400px;
+  }
+  .primeBox {
+    padding: 5px;
+  }
+  .primeBox .banner-device-img2 {
+    width: 200px !important;
+    height: 250px !important;
+  }
+  .primeBox .banner-device-img1 {
+    height: 350px !important;
+    /* right: -2%; */
+    width: 285px !important;
+    bottom: -8px;
+  }
+  .testimonial_section .heading {
+    font-size: 22px;
+  }
+  .blog_section .heading {
+    font-size: 22px;
+  }
+  .blog_section .bulletHeading .title:before {
+    left: 40%;
+  }
+  .tag2 {
+    left: 25%;
+  }
+  .heading {
+    font-size: 42px;
+  }
+  .contactus_section .logo-container {
+    height: 320px;
+  }
+  .contact_heading {
+    font-size: 75px !important;
+  }
+  .logo {
+    width: 150px;
+  }
+  .contact_form_section .heading {
+    font-size: 25px;
+  }
+  .contact_form_section {
+    margin: 1rem 0;
+  }
+  .contactIcon {
+    width: 50px;
+    height: 50px;
+  }
+  .contact_form_section .title {
+    font-size: 20px;
+  }
+  .contactText h5 {
+    font-size: 16px;
+  }
+  .contactText a {
+    font-size: 12px;
+  }
+  .contact-form {
+    margin: 20px 0 !important;
+  }
+  .wholesalerSection .contact_heading {
+    font-size: 40px !important;
+  }
+  .wholesalerSection {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
+  /* .container {
+    max-width: 540px;
+  } */
+  .banner-text-div h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .galaxy-img {
+    width: 1000px !important;
+  }
+
+  .aeroplane-img {
+    top: 34%;
+    width: 200px !important;
+    /* z-index: -1; */
+  }
+  .slide-1 {
+    padding-top: 50px;
+  }
+  .banner-device-img1 {
+    height: 250px !important;
+    bottom: 10px;
+    right: 18%;
+  }
+  .banner-slide {
+    min-height: 430px !important;
+  }
+  .banner-device-img2 {
+    height: 250px !important;
+    right: -4%;
+  }
+  .banner-list-main ul li {
+    width: 80px;
+  }
+  .primeBox .banner-device-img2 {
+    width: 150px !important;
+    height: 200px !important;
+    bottom: 0px;
+  }
+  .primeBox .banner-device-img1 {
+    height: 275px !important;
+    right: -7% !important;
+    width: 225px !important;
+    bottom: -8px;
+  }
+  .banner-list-main ul li img {
+    height: 25px;
+  }
+  .banner-list-main ul li div {
+    width: 48px;
+    height: 48px;
+  }
+  .banner-list-main ul li p {
+    font-size: 10px;
+  }
+  .banner-list-main ul li {
+    width: 65px;
+  }
+  .para {
+    font-size: 16px;
+  }
+  .primeBox {
+    height: 380px;
+  }
+  .blog_section .bulletHeading .title:before {
+    left: 37%;
+  }
+  .bulletHeading .title {
+    font-family: "Inter-bold";
+    font-size: 12px;
+  }
+  .tag2 {
+    left: 32%;
+  }
+  .heading {
+    font-size: 35px;
+  }
+  .logo {
+    width: 150px;
+    height: 70px;
+  }
+  .main-header {
+    height: 70px;
+  }
+  .warningText {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .warningSection img {
+    width: 40px;
+    height: 40px;
+  }
+  .warningSection {
+    height: 75px;
+  }
+  .main-header {
+    top: 75px;
+  }
+  .faq_question h5 {
+    font-size: 16px;
+  }
+  .faq_answer p {
+    font-size: 14px;
+  }
+  .faqs_section .heading {
+    font-size: 25px;
+  }
+  .wholesaleForm {
+    width: unset;
+    max-width: 100%;
+    margin: 0 15px;
+  }
+  .wholesaleForm .title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 426px) {
+  .logo {
+    width: 125px;
+  }
+  .banner-text-div h2 {
+    font-size: 20px;
+    letter-spacing: 6.6px;
+  }
+  .banner-text-div div div span {
+    font-size: 16px;
+  }
+  .banner-text-div h1 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .banner-slide {
+    min-height: 350px !important;
+  }
+
+  .banner-slide {
+    min-height: 350px !important;
+  }
+  .banner-device-img1 {
+    height: 200px !important;
+    bottom: 0px;
+    right: 15%;
+  }
+  .banner-device-img2 {
+    height: 200px !important;
+    bottom: -40px;
+  }
+  .galaxy-img {
+    width: 900px !important;
+  }
+
+  .aeroplane-img {
+    top: 40%;
+    width: 135px !important;
+  }
+  .heading {
+    font-size: 25px;
+  }
+  .banner-logo {
+    width: 300px;
+  }
+  .logo-section h3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .logo-container {
+    height: 320px;
+  }
+  .banner-list-main ul li div {
+    width: 45px;
+    height: 45px;
+  }
+  .banner-list-main ul li p {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .banner-list-main ul li {
+    width: 50px;
+  }
+  .primeBox .banner-device-img1 {
+    height: 200px !important;
+    right: -7% !important;
+    width: 200px !important;
+    bottom: 0px !important;
+  }
+  .primeBox .banner-device-img2 {
+    width: 100px !important;
+    height: 150px !important;
+    bottom: -11px;
+    right: 0%;
+  }
+  .testimonial_section .heading {
+    font-size: 18px;
+  }
+  .cta {
+    height: 30px;
+    padding: 15px;
+    font-size: 12px;
+  }
+  .blog_section .bulletHeading .title:before {
+    left: 35%;
+  }
+  .blog_section .heading {
+    font-size: 18px;
+  }
+  .tag2 {
+    left: 22%;
+  }
+  .blogCard .card-text {
+    font-size: 14px;
+  }
+  .blogCard .card-title {
+    font-size: 15px;
+  }
+  .blogCard .date {
+    color: #f16058;
+    font-size: 12px;
+  }
+  .contactText h5 {
+    font-size: 14px;
+  }
+  .contactText a {
+    font-size: 12px;
+  }
+  .faq_question h5 {
+    font-size: 14px;
+  }
+  .faq_question h5 {
+    font-size: 16px;
+  }
+
+  .contact_heading {
+    font-size: 50px !important;
+  }
+  .contactus_section .logo-container {
+    height: 280px;
+  }
+  .contact_form_section .heading {
+    font-size: 20px;
+    letter-spacing: 0px;
+  }
+  .contactIcon {
+    width: 45px;
+    height: 45px;
+  }
+  .faqs_section .heading {
+    font-size: 20px;
+  }
+  .wholesalerSection .contact_heading {
+    font-size: 28px !important;
+  }
 }

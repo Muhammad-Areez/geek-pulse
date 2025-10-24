@@ -10,8 +10,8 @@ import Faqs from "../components/Faqs";
 function ContactUs() {
   return (
     <>
-      <Container className="position-relative">
-        <Warning />
+      <section className="position-relative">
+        <Warning borderRadius="0px" />
         <Header />
         <section className="logo-section contactus_section">
           <div className="logo-container">
@@ -34,7 +34,7 @@ function ContactUs() {
             <h3 className="contact_heading">Contact Us</h3>
           </div>
         </section>
-      </Container>
+      </section>
       <Container>
         <ContactForm />
       </Container>

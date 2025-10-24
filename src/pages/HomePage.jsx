@@ -11,18 +11,16 @@ import Blogs from "../components/Blogs";
 import { Footer } from "../components/Footer";
 
 function HomePage() {
-    
   return (
     <>
-      <Container className="position-relative">
-        <Warning />
+      <section className=" position-relative">
+        <Warning borderRadius="0px" />
         <Header />
         <Banner />
-      </Container>
-
+      </section>
       <section className="ourProducts_section">
         <Container className="position-relative">
-          <OurProducts headingText="The Pulse Collection"/>
+          <OurProducts headingText="The Pulse Collection" />
         </Container>
       </section>
       <section className="mb-3">
@@ -45,7 +43,7 @@ function HomePage() {
           <Blogs />
         </Container>
       </section>
-      <Footer isHomePage/>
+      <Footer isHomePage />
     </>
   );
 }

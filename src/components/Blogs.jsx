@@ -49,7 +49,7 @@ const Blogs = () => {
 
       <Row>
         {blogData.map((blog, index) => (
-          <Col md={4} key={blog.id}>
+          <Col md={4} sm={6} key={blog.id} className="mb-3">
             <motion.div
               className="blogCard card mt-3"
               variants={cardVariants}
