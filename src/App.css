@@ -955,6 +955,7 @@ img.aboutbg {
   font-size: 18px;
   font-family: "BricolageGrotesque-Medium";
   color: #403b65;
+  outline: none;
   font-weight: 500;
 }
 .searchField input::placeholder {
@@ -1610,7 +1611,7 @@ img.basic3-img {
   position: relative;
   transition: all 250ms ease-in-out;
   overflow: hidden;
-  height: auto;
+  height: calc(100% - 50px);
 }
 .retro-product-card:hover {
   border-radius: 40px;

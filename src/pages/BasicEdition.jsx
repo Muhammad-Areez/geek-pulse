@@ -12,11 +12,11 @@ import BasicProducts from "../components/BasicProducts";
 function BasicEdition() {
   return (
     <>
-      <Container className="position-relative">
-        <Warning backgroundColor="#012243" />
+      <section className="position-relative">
+        <Warning backgroundColor="#012243" borderRadius={"0px"}/>
         <Header />
         <BasicBanner />
-      </Container>
+      </section>
       <section>
         <Container className="cosmos-ultra-cont">
           <Version />

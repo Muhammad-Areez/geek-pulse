@@ -53,18 +53,46 @@ export const Footer = ({ isHomePage = false, background = "#100a3e" }) => {
             </ul>
           </div>
         </Col>
-        <Col md={2}>
+        <Col md={2} xs={6}>
+          <div className="footer-links-div">
+            <h4>Product Links</h4>
+            <ul>
+              <li>
+                <Link to={"/retro-edition"}>Retro Edition</Link>
+              </li>
+              <li>
+                <Link to={"/smoothie-edition"}>Smoothie Edition</Link>
+              </li>
+              <li>
+                <Link to={"/frozen-edition"}>Frozen Edition</Link>
+              </li>
+              <li>
+                <Link to={"/cosmos-edition"}>Cosmo Edition</Link>
+              </li>
+              <li>
+                <Link to={"/basic-edition"}>Basic Edition</Link>
+              </li>
+              <li>
+                <Link to={"/seasonal-edition"}>Seasonal Edition</Link>
+              </li>
+            </ul>
+          </div>
+        </Col>
+        <Col md={2} xs={6}>
           <div className="footer-links-div">
             <h4>Quick Links</h4>
             <ul>
               <li>
-                <Link to={'/about-us'}>About Us</Link>
+                <Link to={"/about-us"}>About Us</Link>
               </li>
               <li>
-                <Link to={'/vpu'}>VPU</Link>
+                <Link to={"/vpu"}>VPU</Link>
               </li>
               <li>
-                <Link to={'/wholesaler'}>WholeSale</Link>
+                <Link to={"/wholesaler"}>WholeSale</Link>
+              </li>
+               <li>
+                <Link to={"/contact-us"}>Contact Us</Link>
               </li>
               {/* <li>
                 <Link>Products</Link>
@@ -78,31 +106,7 @@ export const Footer = ({ isHomePage = false, background = "#100a3e" }) => {
             </ul>
           </div>
         </Col>
-        <Col md={2}>
-          <div className="footer-links-div">
-            <h4>Product Links</h4>
-            <ul>
-              <li>
-                <Link to={'/retro-edition'}>Retro Edition</Link>
-              </li>
-              <li>
-                <Link to={'/smoothie-edition'}>Smoothie Edition</Link>
-              </li>
-              <li>
-                <Link to={'/frozen-edition'}>Frozen Edition</Link>
-              </li>
-              <li>
-                <Link to={'/cosmos-edition'}>Cosmo Edition</Link>
-              </li>
-              <li>
-                <Link to={'/basic-edition'}>Basic Edition</Link>
-              </li>
-              <li>
-                <Link to={'/seasonal-edition'}>Seasonal Edition</Link>
-              </li>
-            </ul>
-          </div>
-        </Col>
+
         <Col md={3}>
           <div className="footer-links-div">
             <h4>Contact us</h4>
