@@ -89,11 +89,52 @@
     .container {
         max-width: 960px;
     }
+    .footer-main{
+        height: auto;
+    }
+    .footer-logo-div .footer-logo{
+        width: 75%;
+    }
+    .footer-logo-div h5, .footer-links-div h4{
+        text-align: left;
+    }
+    .search-div{
+        justify-content: flex-start;
+    }
+    .footer_bottom{
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 768px) {
     .container {
         max-width: 720px;
+    }
+    .footer-links-div{
+        margin-top: 20px;
+    }
+    .footer-links-div ul{
+        gap:15px
+    }
+    .footer_bottom h3{
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .footer-main{
+        padding: 35px 5%;
+    }
+    .footer-links-div h4{
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    .footer-logo-div h5{
+        font-size: 16px;
+    }
+    .footer-main ul li, .footer-main ul li a, .footer-main ul li p{
+        font-size: 15px;
+    }
+    .searchField input{
+        font-size: 16px;
     }
 }
 

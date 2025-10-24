@@ -58,15 +58,15 @@ export const Footer = ({ isHomePage = false, background = "#100a3e" }) => {
             <h4>Quick Links</h4>
             <ul>
               <li>
-                <Link>About Us</Link>
+                <Link to={'/about-us'}>About Us</Link>
               </li>
               <li>
-                <Link>VPU</Link>
+                <Link to={'/vpu'}>VPU</Link>
               </li>
               <li>
-                <Link>WholeSale</Link>
+                <Link to={'/wholesaler'}>WholeSale</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link>Products</Link>
               </li>
               <li>
@@ -74,7 +74,7 @@ export const Footer = ({ isHomePage = false, background = "#100a3e" }) => {
               </li>
               <li>
                 <Link>Changelog</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </Col>
@@ -83,22 +83,22 @@ export const Footer = ({ isHomePage = false, background = "#100a3e" }) => {
             <h4>Product Links</h4>
             <ul>
               <li>
-                <Link>Retro Edition</Link>
+                <Link to={'/retro-edition'}>Retro Edition</Link>
               </li>
               <li>
-                <Link>Smoothie Edition</Link>
+                <Link to={'/smoothie-edition'}>Smoothie Edition</Link>
               </li>
               <li>
-                <Link>Frozen Edition</Link>
+                <Link to={'/frozen-edition'}>Frozen Edition</Link>
               </li>
               <li>
-                <Link>Cosmo Edition</Link>
+                <Link to={'/cosmos-edition'}>Cosmo Edition</Link>
               </li>
               <li>
-                <Link>Basic Edition</Link>
+                <Link to={'/basic-edition'}>Basic Edition</Link>
               </li>
               <li>
-                <Link>Seasonal Edition</Link>
+                <Link to={'/seasonal-edition'}>Seasonal Edition</Link>
               </li>
             </ul>
           </div>
@@ -120,10 +120,10 @@ export const Footer = ({ isHomePage = false, background = "#100a3e" }) => {
         </Col>
       </Row>
       <Row className="footer_bottom">
-        <Col md={6}>
+        <Col lg={6}>
           <h3>Subscribe to get 10% OFF on your first order!</h3>
         </Col>
-        <Col md={6}>
+        <Col lg={6}>
           <div className="search-div">
             <div className="searchField">
               <input type="search" placeholder="Enter your email" />
