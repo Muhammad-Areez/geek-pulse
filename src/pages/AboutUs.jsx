@@ -30,8 +30,8 @@ function AboutUs() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top top",
-          end: "bottom+=250% top",
+          start: "top",
+          end: "bottom+=200% top",
           scrub: true,
           pin: true,
           anticipatePin: 1,
@@ -69,7 +69,7 @@ function AboutUs() {
   return (
     <>
       <section className="aboutUs_section">
-        <section ref={sectionRef} className="position-relative">
+        <section ref={sectionRef}>
           <Warning borderRadius={"0px"} />
           <Header />
           {/* <LogoSec/> */}
@@ -96,14 +96,14 @@ function AboutUs() {
               <h3 ref={textRef}>{words}</h3>
             </div>
           </section>
-        </section>
-
-        <section className="about_section2">
+          <section className="about_section2">
           <h2 className="heading">
             FROM TECHNOLOGY DEVELOPMENT TO HEALTH APPLICATIONS
           </h2>
           <AboutCard />
         </section>
+        </section>
+
         <section className="registered_section">
           <div className="d_flex">
             <img src={images.aboutLogo1} alt="" className="aboutLogo" />
