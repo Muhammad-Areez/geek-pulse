@@ -16,110 +16,137 @@
   --bs-gutter-x: 0px;
   max-width: 95vw;
 }
-@media (max-width: 1600px) {
-}
+
+@media (max-width: 1600px) {}
+
 @media (max-width: 1440px) {
   .container {
     max-width: 95vw;
   }
 }
+
 @media (max-width: 1366px) {
   .banner-slide {
     min-height: 600px !important;
   }
+
   .banner-device-img1 {
     height: 500px !important;
     right: 22%;
   }
+
   .banner-device-img2 {
     height: 500px !important;
     right: 0%;
   }
+
   .galaxy-img {
     width: 1350px !important;
   }
+
   .banner-text-div h1 {
     font-size: 55px;
   }
+
   .logo-section h3 {
     font-size: 40px;
     line-height: 60px;
   }
+
   .primeBox {
     width: 100%;
   }
+
   .primeBox .banner-device-img2 {
     right: 0%;
     height: 450px !important;
   }
+
   .primeBox .banner-device-img1 {
     height: 580px !important;
     right: 0%;
   }
+
   .blog_section {
     width: 100%;
   }
+
   .wholesalerSection .contact_heading {
     font-size: 90px !important;
   }
+
   .retro-edition-hero img:nth-child(1) {
     top: 8vh;
     left: 12%;
   }
 }
+
 @media (max-width: 1280px) {
   .logo-container {
     height: 550px;
   }
+
   .contact_form_section .heading {
     font-size: 40px;
   }
+
   .contact_heading {
     font-size: 125px !important;
   }
+
   .contactus_section .logo-container {
     height: 400px;
   }
+
   .contactIcon {
     width: 60px;
     height: 60px;
   }
+
   .contact_form_section {
     margin: 2rem 0;
   }
+
   .retro-edition-hero .retro-heading {
     font-size: 240px;
   }
+
   .retro-edition-hero img:nth-child(3) {
     right: 0%;
     height: 650px;
   }
+
   .retro-edition-hero img:nth-child(2) {
     bottom: -10%;
     left: 0%;
     height: 450px;
   }
+
   .retro-sec-right h3 {
     font-size: 40px;
   }
+
   .retro-edition-hero img:nth-child(2) {
     left: -4%;
   }
 }
+
 @media (max-width: 1200px) {
   .container {
     max-width: 95vw;
   }
+
   .menu-Bar {
     display: flex;
   }
+
   .menu-wrap {
     position: fixed;
     left: 210%;
     right: 0;
     top: 0;
     bottom: 0;
-    margin: auto;
+    margin: 0;
     background: rgba(16, 10, 62, 0.8);
     height: 100vh;
     display: flex;
@@ -131,14 +158,17 @@
     backdrop-filter: blur(10px);
     padding: 15% 0px 0px 0px;
   }
+
   .menu-Bar.open {
-    top: -200px;
+    top: -150px;
     z-index: 100;
   }
+
   .menu-wrap.open {
     display: flex;
     left: 0px;
   }
+
   .nav-links {
     display: flex;
     flex-direction: column;
@@ -146,6 +176,7 @@
     width: 100%;
     height: auto;
   }
+
   .nav-links a {
     padding: 10px 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -153,42 +184,54 @@
     justify-content: flex-start;
     margin: 0;
   }
+
   .header-products {
     display: none !important;
   }
+
   .product-edition-inner {
     display: none;
     flex-direction: column;
   }
+
   .product-edition-inner.open {
     display: flex;
   }
+
   .product-edition-inner a {
     padding: 10px 40px;
   }
+
   .slide-1 {
     padding-top: 85px;
   }
+
   .wholesalerSection .contact_heading {
     font-size: 75px !important;
   }
+
   .retro-products h3 {
     font-size: 200px;
   }
+
   .retro-edition-hero img:nth-child(1) {
     top: 12vh;
   }
+
   .retro-sec-right h3 {
     font-size: 35px;
   }
+
   .retro-edition-hero img:nth-child(2) {
     left: 2%;
   }
 }
+
 @media (max-width: 1140px) {
   .banner-slide {
     min-height: 550px !important;
   }
+
   .galaxy-img {
     width: 1280px !important;
   }
@@ -198,354 +241,602 @@
     right: -3%;
     bottom: -90px;
   }
+
   .banner-device-img1 {
     height: 450px !important;
     right: 21%;
     bottom: 42px;
   }
+
   .banner-text-div h1 {
     font-size: 42px;
   }
+
   .heading {
     font-size: 50px;
   }
+
   .logo-section h3 {
     font-size: 35px;
     line-height: 50px;
   }
+
   .logo-container {
     height: 500px;
   }
+
   .primeBox .banner-device-img2 {
     right: -2%;
     height: 375px !important;
   }
+
   .primeBox .banner-device-img1 {
     height: 500px !important;
     right: 0%;
     bottom: 0px;
   }
+
   .primeBox {
     height: 430px;
   }
+
   .banner-text-div {
     gap: 10px;
   }
+
   .banner-list-main ul {
     gap: 15px;
   }
+
   .banner-list-main ul li div {
     width: 60px;
     height: 60px;
   }
+
   .banner-list-main ul li img {
     height: 25px;
   }
+
   .banner-list-main ul li p {
     font-size: 12px;
   }
+
   .testimonial_section .heading {
     font-size: 35px;
   }
+
   .blog_section .heading {
     font-size: 35px;
   }
+
   .blog_section .bulletHeading .title:before {
     left: 43%;
   }
+
   .tag2 {
     left: 28%;
   }
+
   .blog_section {
     margin: 30px auto 50px;
   }
+
   .blogCard .card-img-top {
     height: 220px;
   }
+
   .blogCard .card-body {
     padding: 15px;
     gap: 5px;
   }
+
   .blogCard .card-title {
     font-size: 18px;
   }
+
   .review {
     font-size: 14px;
   }
+
   .reviewBox {
     min-height: 280px;
   }
+
   .contact_form_section .heading {
     font-size: 32px;
   }
+
   .faqs_section .heading {
     font-size: 35px;
   }
+
   .contactus_section .logo-container {
     height: 350px;
   }
+
   .contact_heading {
     font-size: 100px !important;
   }
+
   .faq_question h5 {
     font-size: 18px;
   }
+
   .faq_answer p {
     font-size: 16px;
   }
+
   .retro-edition-hero {
     min-height: 700px;
   }
+
   .retro-edition-hero .retro-heading {
     font-size: 165px;
     line-height: 175px;
   }
+
   .retro-edition-hero img:nth-child(1) {
     top: 10vh;
     left: 12%;
   }
+
   .retro-edition-hero img:nth-child(3) {
     right: 7%;
     height: 550px;
   }
 }
+
 @media (max-width: 1024px) {
   .ourproducts {
     padding: 0px 10px;
   }
+
   .wholesalerSection .contact_heading {
     font-size: 65px !important;
+  }
+
+  .cosmos-hero-main .astronaut{
+    width: 300px;
+    left: 0;
+    top: 40%;
+  }
+
+  .cosmos-hero-main .cosmos-device1{
+    left: 20%;
+    top: 30%;
+  }
+
+  .cosmos-hero-main .cosmos-device2{
+    left: 45%;
+  }
+
+  .cosmos-product-heading {
+    padding: 50px 0px;
+  }
+
+  .cosmos-product-main .cosmos-moon {
+    width: 270px;
+    object-fit: contain;
+  }
+
+  .cosmos-text-main {
+    padding: 150px 0px 60px 0px;
+  }
+
+  .cosmos-text-h3 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  .cosmos-text-main .cosmos-device-sec2 {
+    height: 300px;
+    bottom: -95px;
+  }
+
+  .cosmos-text-main .cosmos-device-sec1 {
+    height: 300px;
+    right: -90px;
+  }
+  .cosmos-card-top{
+    height: 360px;
+  }
+  .cosmos-card-top .device-front, .cosmos-card-top .device-back{
+    height: 100%;
+  }
+  .cosmos-stand{
+    width: 100%;
   }
 }
 
 @media (max-width: 992px) {
-    .footer-main{
-        height: auto;
-    }
-    .footer-logo-div .footer-logo{
-        width: 75%;
-    }
-    .footer-logo-div h5, .footer-links-div h4{
-        text-align: left;
-    }
-    .search-div{
-        justify-content: flex-start;
-    }
-    .footer_bottom{
-        margin-top: 30px;
-    }
+  .footer-main {
+    height: auto;
+  }
+  .footer-main.container{
+    max-width: 100% !important;
+  }
+
+  .footer-logo-div .footer-logo {
+    width: 75%;
+  }
+
+  .footer-logo-div h5,
+  .footer-links-div h4 {
+    text-align: left;
+  }
+
+  .search-div {
+    justify-content: flex-start;
+  }
+
+  .footer_bottom {
+    margin-top: 30px;
+  }
+
   .container {
     max-width: calc(100% - 20px) !important;
   }
+
   .banner-slide {
     min-height: 500px !important;
   }
+
   .banner-text-div h1 {
     font-size: 38px;
     letter-spacing: 0;
     line-height: 42px;
   }
+
   .galaxy-img {
     width: 1175px !important;
   }
+
   .aeroplane-img {
     top: 80px;
     width: 200px !important;
   }
+
   .banner-device-img2 {
     height: 400px !important;
     right: -2%;
     bottom: -70px;
   }
+
   .banner-device-img1 {
     height: 400px !important;
   }
+
   .blogCard .card-title {
     font-size: 16px;
   }
+
   .tags {
     width: 65px;
     height: 28px;
     font-size: 12px;
   }
+
   .blogCard .card-img-top {
     height: 180px;
   }
+
   .moon-img {
     left: -140px;
   }
+
   .header-content {
     padding: 2%;
   }
+
   .menu-Bar {
     width: 25px;
     height: 20px;
     right: 2%;
     top: -12px;
   }
+
   .banner-slide {
     padding: 0px 3%;
   }
+
   .slide-1 {
     padding-top: 100px;
   }
+
   .banner-text-div h1 {
     font-size: 35px;
   }
+
   .logo-section h3 {
     font-size: 30px;
     line-height: 45px;
   }
+
   .logo-container {
     height: 450px;
   }
+
   .primeBox .banner-device-img1 {
     height: 450px !important;
     right: -2%;
     width: 380px !important;
     bottom: -12px;
   }
+
   .primeBox .banner-device-img2 {
     height: 300px !important;
   }
+  .cosmos-hero-main h1, .cosmos-hero-main .outline{
+    font-size: 190px;
+  }
+  .cosmos-hero-main .astronaut{
+    width: 250px;
+    top: 39%;
+    left: 0%;
+  }
+  .cosmos-hero-main .cosmos-device1{
+    height: 430px;
+    top: 29%;
+  }
+  .cosmos-hero-main .cosmos-device2{
+    height: 430px;
+    top: 42%;
+    left: 48%;
+  }
+  .version_details{
+    justify-content: center;
+    gap: 15px;
+  }
+  .cosmos-ultra-cont{
+    padding-inline: 0%;
+  }
+  
 }
+
 @media (max-width: 910px) {
   .banner-device-img1 {
     height: 350px !important;
     bottom: 70px;
     right: 23%;
   }
+
   .banner-device-img2 {
     height: 350px !important;
   }
+
   .wholesalerSection .contact_heading {
     font-size: 50px !important;
   }
 }
+
 @media (max-width: 768px) {
-    .footer-links-div{
-        margin-top: 20px;
-    }
-    .footer-links-div ul{
-        gap:15px
-    }
-    .footer_bottom h3{
-        font-size: 32px;
-        margin-bottom: 15px;
-    }
-    .footer-main{
-        padding: 35px 5%;
-    }
-    .footer-links-div h4{
-        margin-bottom: 20px;
-        font-size: 22px;
-    }
-    .footer-logo-div h5{
-        font-size: 16px;
-    }
-    .footer-main ul li, .footer-main ul li a, .footer-main ul li p{
-        font-size: 15px;
-    }
-    .searchField input{
-        font-size: 16px;
-    }
+  .footer-links-div {
+    margin-top: 20px;
+  }
+
+  .footer-links-div ul {
+    gap: 15px
+  }
+
+  .footer_bottom h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .footer-main {
+    padding: 35px 5%;
+  }
+
+  .footer-links-div h4 {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+
+  .footer-logo-div h5 {
+    font-size: 16px;
+  }
+
+  .footer-main ul li,
+  .footer-main ul li a,
+  .footer-main ul li p {
+    font-size: 15px;
+  }
+
+  .searchField input {
+    font-size: 16px;
+  }
+
   .container {
     max-width: 720px;
   }
+
   .galaxy-img {
     width: 1100px !important;
   }
+
   .banner-device-img1 {
     height: 280px !important;
     bottom: -10px;
     right: 20%;
   }
+
   .banner-device-img2 {
     height: 280px !important;
     right: 0%;
   }
+
   .banner-list-main ul li {
     width: 100px;
   }
+
   .banner-list-main ul li div {
     width: 55px;
     height: 55px;
   }
+
   .logo-section h3 {
     font-size: 25px;
     line-height: 35px;
   }
+
   .logo-container {
     height: 400px;
   }
+
   .primeBox {
     padding: 5px;
   }
+
   .primeBox .banner-device-img2 {
     width: 200px !important;
     height: 250px !important;
   }
+
   .primeBox .banner-device-img1 {
     height: 350px !important;
     /* right: -2%; */
     width: 285px !important;
     bottom: -8px;
   }
+
   .testimonial_section .heading {
     font-size: 22px;
   }
+
   .blog_section .heading {
     font-size: 22px;
   }
+
   .blog_section .bulletHeading .title:before {
     left: 40%;
   }
+
   .tag2 {
     left: 25%;
   }
+
   .heading {
     font-size: 42px;
   }
+
   .contactus_section .logo-container {
     height: 320px;
   }
+
   .contact_heading {
     font-size: 75px !important;
   }
+
   .logo {
     width: 150px;
   }
+
   .contact_form_section .heading {
     font-size: 25px;
   }
+
   .contact_form_section {
     margin: 1rem 0;
   }
+
   .contactIcon {
     width: 50px;
     height: 50px;
   }
+
   .contact_form_section .title {
     font-size: 20px;
   }
+
   .contactText h5 {
     font-size: 16px;
   }
+
   .contactText a {
     font-size: 12px;
   }
+
   .contact-form {
     margin: 20px 0 !important;
   }
+
   .wholesalerSection .contact_heading {
     font-size: 40px !important;
   }
+
   .wholesalerSection {
     margin-bottom: 2rem;
+  }
+  .cosmos-hero-main h1, .cosmos-hero-main .outline{
+    font-size: 140px;
+  }
+  .cosmos-hero-main{
+    height: 800px;
+    padding:100px 0px 0px 0px
+  }
+  .cosmos-hero-main .astronaut{
+    width: 220px;
+    top: 43%;
+  }
+  .cosmos-hero-main .cosmos-device1{
+    height: 350px;
+    left: 24%;
+    top: 26%;
+  }
+  .cosmos-hero-main .cosmos-device2{
+    height: 350px;
+    left: 47%;
+  }
+  .cosmos-aeroplane-img{
+    height: 150px;
+  }
+  .cosmos-ultra-cont h3{
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .cosmos-product-heading{
+    padding: 30px 0px;
+  }
+  .cosmos-product-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cosmos-card-top{
+    height: 490px;
+    width: 400px;
+  }
+  .cosmos-stand{
+    width: 400px;
+  }
+  .cosmos-card-bottom h5{
+    font-size: 30px;
+  }
+  .cosmos-product-main .cosmos-moon{
+    width: 200px;
+    left: -120px;
+  }
+  .cosmos-text-main{
+    padding: 100px 0px 60px 0px;
+  }
+  .cosmos-text-h3{
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .cosmos-text-main .cosmos-device-sec1{
+    height: 180px;
+    right: -60px;
+  }
+  .cosmos-text-main .cosmos-device-sec2{
+    height: 180px;
+    left: -40px;
+    bottom: -30px;
   }
 }
 
 @media (max-width: 576px) {
+
   /* .container {
     max-width: 540px;
   } */
@@ -553,6 +844,7 @@
     font-size: 28px;
     line-height: 38px;
   }
+
   .galaxy-img {
     width: 1000px !important;
   }
@@ -562,117 +854,195 @@
     width: 200px !important;
     /* z-index: -1; */
   }
+
   .slide-1 {
     padding-top: 50px;
   }
+
   .banner-device-img1 {
     height: 250px !important;
     bottom: 10px;
     right: 18%;
   }
+
   .banner-slide {
     min-height: 430px !important;
   }
+
   .banner-device-img2 {
     height: 250px !important;
     right: -4%;
   }
+
   .banner-list-main ul li {
     width: 80px;
   }
+
   .primeBox .banner-device-img2 {
     width: 150px !important;
     height: 200px !important;
     bottom: 0px;
   }
+
   .primeBox .banner-device-img1 {
     height: 275px !important;
     right: -7% !important;
     width: 225px !important;
     bottom: -8px;
   }
+
   .banner-list-main ul li img {
     height: 25px;
   }
+
   .banner-list-main ul li div {
     width: 48px;
     height: 48px;
   }
+
   .banner-list-main ul li p {
     font-size: 10px;
   }
+
   .banner-list-main ul li {
     width: 65px;
   }
+
   .para {
     font-size: 16px;
   }
+
   .primeBox {
     height: 380px;
   }
+
   .blog_section .bulletHeading .title:before {
     left: 37%;
   }
+
   .bulletHeading .title {
     font-family: "Inter-bold";
     font-size: 12px;
   }
+
   .tag2 {
     left: 32%;
   }
+
   .heading {
     font-size: 35px;
   }
+
   .logo {
     width: 150px;
     height: 70px;
   }
+
   .main-header {
     height: 70px;
   }
+
   .warningText {
     font-size: 14px;
     letter-spacing: 2px;
   }
+
   .warningSection img {
     width: 40px;
     height: 40px;
   }
+
   .warningSection {
     height: 75px;
   }
+
   .main-header {
     top: 75px;
   }
+
   .faq_question h5 {
     font-size: 16px;
   }
+
   .faq_answer p {
     font-size: 14px;
   }
+
   .faqs_section .heading {
     font-size: 25px;
   }
+
   .wholesaleForm {
     width: unset;
     max-width: 100%;
     margin: 0 15px;
   }
+
   .wholesaleForm .title {
     font-size: 16px;
   }
+  .cosmos-hero-main h1, .cosmos-hero-main .outline{
+    font-size: 100px;
+    letter-spacing: -1px;
+  }
+  .cosmos-hero-main .astronaut{
+    width: 130px;
+  }
+  .cosmos-hero-main .cosmos-device1{
+    height: 280px;
+    left: 15%;
+  }
+  .cosmos-hero-main .cosmos-device2{
+    height: 280px;
+    left: 42%;
+  }
+  .cosmos-hero-main{
+    padding: 70px 0px 0px 0px;
+    height: 700px;
+  }
+  .cosmos-hero-main .cosmos-galaxy{
+    top:60%;
+    width: 100%;
+  }
+  .cosmos-aeroplane-img{
+    height: 120px;
+  }
+  .cosmos-ultra{
+    padding-top: 30px;
+  }
+  .cosmos-ultra-cont h3{
+    font-size: 35px;
+  }
+  .cosmos-product-heading h3{
+    font-size: 45px;
+  }
+  .cosmos-text-main{
+    padding: 70px 0px 60px 0px;
+  }
+  .cosmos-product-main .cosmos-moon{
+    width: 150px;
+    left: -85px;
+  }
+  .cosmos-text-h3{
+    font-size: 25px;
+    line-height: 40px;
+  }
 }
+
 @media (max-width: 426px) {
   .logo {
     width: 125px;
   }
+
   .banner-text-div h2 {
     font-size: 20px;
     letter-spacing: 6.6px;
   }
+
   .banner-text-div div div span {
     font-size: 16px;
   }
+
   .banner-text-div h1 {
     font-size: 22px;
     line-height: 30px;
@@ -685,15 +1055,18 @@
   .banner-slide {
     min-height: 350px !important;
   }
+
   .banner-device-img1 {
     height: 200px !important;
     bottom: 0px;
     right: 15%;
   }
+
   .banner-device-img2 {
     height: 200px !important;
     bottom: -40px;
   }
+
   .galaxy-img {
     width: 900px !important;
   }
@@ -702,78 +1075,99 @@
     top: 40%;
     width: 135px !important;
   }
+
   .heading {
     font-size: 25px;
   }
+
   .banner-logo {
     width: 300px;
   }
+
   .logo-section h3 {
     font-size: 18px;
     line-height: 25px;
   }
+
   .logo-container {
     height: 320px;
   }
+
   .banner-list-main ul li div {
     width: 45px;
     height: 45px;
   }
+
   .banner-list-main ul li p {
     font-size: 10px;
     line-height: 15px;
   }
+
   .banner-list-main ul li {
     width: 50px;
   }
+
   .primeBox .banner-device-img1 {
     height: 200px !important;
     right: -7% !important;
     width: 200px !important;
     bottom: 0px !important;
   }
+
   .primeBox .banner-device-img2 {
     width: 100px !important;
     height: 150px !important;
     bottom: -11px;
     right: 0%;
   }
+
   .testimonial_section .heading {
     font-size: 18px;
   }
+
   .cta {
     height: 30px;
     padding: 15px;
     font-size: 12px;
   }
+
   .blog_section .bulletHeading .title:before {
     left: 35%;
   }
+
   .blog_section .heading {
     font-size: 18px;
   }
+
   .tag2 {
     left: 22%;
   }
+
   .blogCard .card-text {
     font-size: 14px;
   }
+
   .blogCard .card-title {
     font-size: 15px;
   }
+
   .blogCard .date {
     color: #f16058;
     font-size: 12px;
   }
+
   .contactText h5 {
     font-size: 14px;
   }
+
   .contactText a {
     font-size: 12px;
   }
+
   .faq_question h5 {
     font-size: 14px;
   }
+
   .faq_question h5 {
     font-size: 16px;
   }
@@ -781,21 +1175,65 @@
   .contact_heading {
     font-size: 50px !important;
   }
+
   .contactus_section .logo-container {
     height: 280px;
   }
+
   .contact_form_section .heading {
     font-size: 20px;
     letter-spacing: 0px;
   }
+
   .contactIcon {
     width: 45px;
     height: 45px;
   }
+
   .faqs_section .heading {
     font-size: 20px;
   }
+
   .wholesalerSection .contact_heading {
     font-size: 28px !important;
+  }
+  .cosmos-hero-main{
+    padding:20px 0px 0px 0px;
+    height: 650px;
+  }
+  .cosmos-hero-main h1, .cosmos-hero-main .outline{
+    font-size: 90px
+  }
+  .cosmos-hero-main .astronaut{
+    width: 110px;
+  }
+  .cosmos-hero-main .cosmos-device1{
+    height: 260px;
+    top: 22%;
+  }
+  .cosmos-hero-main .cosmos-device2{
+    height: 260px;
+  }
+  .cosmos-aeroplane-img{
+    height: 100px;
+    top: -20%;
+  }
+  .cosmos-ultra{
+    padding-top: 0px;
+  }
+  .cosmos-text-h3{
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .cosmos-product-main .cosmos-moon{
+    width:130px ;
+    left: -75px;
+  }
+  .cosmos-text-main .cosmos-device-sec1{
+    height: 120px;
+    right: -40px;
+  }
+  .cosmos-text-main .cosmos-device-sec2{
+    height: 120px;
   }
 }
