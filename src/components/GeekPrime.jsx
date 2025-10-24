@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Col } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { images } from "../assets/images";
 
@@ -23,25 +23,8 @@ const GeekPrime = () => {
         // onSlideChange={() => console.log('slide change')}
         // onSwiper={(swiper) => console.log(swiper)}
       > */}
-      <div className="primeBox">
-        <motion.img
-          src={images.primeImage2}
-          className="banner-device-img1"
-          variants={slideUpVariant}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        />
-        <motion.img
-          src={images.primeImage1}
-          className="banner-device-img2"
-          variants={slideUpVariant}
-          initial="hidden"
-          whileInView="visible"
-          custom={0.2}
-          viewport={{ once: true }}
-        />
-        <Col md={6}>
+      <Row className="primeBox">
+        <Col lg={6} md={8} sm={9} >
           <div className="banner-text-div">
             <div>
               <h2>ULTRA </h2>
@@ -85,8 +68,26 @@ const GeekPrime = () => {
             </ul>
           </div>
         </Col>
-        <Col md={6}></Col>
-      </div>
+        <Col lg={6} md={4} sm={3}>
+          <motion.img
+            src={images.primeImage2}
+            className="banner-device-img1"
+            variants={slideUpVariant}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          />
+          <motion.img
+            src={images.primeImage1}
+            className="banner-device-img2"
+            variants={slideUpVariant}
+            initial="hidden"
+            whileInView="visible"
+            custom={0.2}
+            viewport={{ once: true }}
+          />
+        </Col>
+      </Row>
     </section>
   );
 };

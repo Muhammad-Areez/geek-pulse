@@ -38,6 +38,7 @@
   justify-content: center;
   height: 85px;
   gap: 15px;
+  padding: 0px 10px;
 }
 
 .warningSection img {
@@ -256,7 +257,7 @@ img {
   display: flex !important;
   justify-content: center;
   padding: 0px 5%;
-  border-radius: 0px 0px 40px 40px;
+  border-radius: 0px;
 }
 .banner-list-main ul {
   list-style: none;
@@ -264,6 +265,7 @@ img {
   gap: 40px;
   align-items: flex-start;
   padding: 0;
+  flex-wrap: wrap;
 }
 .banner-list-main ul li {
   width: 120px;
@@ -340,6 +342,7 @@ img {
   line-height: 54px;
   font-family: Geist-SemiBold;
   color: #fff;
+  text-transform: capitalize;
 }
 .banner-vectors {
   width: 100%;
@@ -347,7 +350,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 0px 0px 40px 40px;
+  border-radius: 0px;
 }
 .banner-overflow {
   overflow: hidden;
@@ -452,7 +455,7 @@ img {
   height: 100%;
 }
 .banner-logo {
-  width: 500px; /* smaller default, scales up via GSAP */
+  width: 500px;
 }
 .content-text {
   color: #fff;
@@ -506,11 +509,11 @@ img {
   background-size: cover;
   height: 500px;
   width: calc(100% - 150px);
-  padding: 50px;
+  padding: 50px 20px;
   margin: 0 auto;
   display: flex !important;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   border-radius: 40px !important;
   position: relative;
 }
@@ -579,11 +582,7 @@ img {
   font-family: "Geist-Medium";
   font-size: 45px;
   color: #030303;
-}
-.testimonial_section .heading {
-  font-family: "Geist-Medium";
-  font-size: 45px;
-  color: #030303;
+  letter-spacing: 1px;
 }
 .cta {
   width: fit-content;
@@ -593,6 +592,9 @@ img {
   border-radius: 32px;
   cursor: pointer;
   transition: 0.05s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cta:hover {
   background: #fff;
@@ -622,7 +624,8 @@ img {
   width: 100%;
   border: 1px solid #1717172b;
   padding: 15px;
-  height: 300px;
+  min-height: 300px;
+  height: auto;
   border-radius: 18px;
   display: flex;
   flex-direction: column;
@@ -689,6 +692,7 @@ p {
   transform-style: preserve-3d;
   perspective: 1000px;
   transition: transform 0.8s ease;
+  height: 100%;
 }
 .blogCard:hover {
   transform: rotateY(5deg) translateY(-5px);
@@ -714,6 +718,7 @@ p {
   font-family: "Poppins-Medium";
   font-size: 21px;
   color: #030303;
+  text-align: start;
 
   margin-bottom: 0;
 }
@@ -727,6 +732,7 @@ p {
   font-family: "Geist-Medium";
   font-size: 45px;
   color: #030303;
+  letter-spacing: 1px;
 }
 .blog_section {
   margin: 50px auto;
@@ -978,13 +984,14 @@ img.aboutbg {
   z-index: 111;
   color: #fff !important;
   font-family: SpaceGrotesk-Bold !important;
+  top: 46% !important;
 }
 .contact_form_section {
   margin: 5rem 0;
 }
 .contactus_section .logo-container {
   height: 450px;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0px !important;
 }
 .contact_form_section .heading {
   font-size: 45px;
@@ -1464,7 +1471,7 @@ img.basic3-img {
 .retro-edition-hero {
   background: #8c03a1;
   max-height: 92vh;
-  min-height: 900px;
+  min-height: 850px;
   background-image: url(./assets/images/retro-matrix.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1490,17 +1497,17 @@ img.basic3-img {
 }
 .retro-edition-hero img:nth-child(2) {
   position: absolute;
-  bottom: -14vh;
-  left: 16%;
-  height: 550px;
+  bottom: -14%;
+  left: 10%;
+  height: 520px;
   width: auto;
   z-index: 3;
 }
 .retro-edition-hero img:nth-child(3) {
   position: absolute;
-  top: 0vh;
-  right: 16%;
-  height: 870px;
+  top: 0%;
+  right: 6%;
+  height: 750px;
   width: auto;
   z-index: 3;
 }
@@ -1556,7 +1563,7 @@ img.basic3-img {
   width: 100%;
   height: 100%;
   text-align: left;
-  padding-inline: 7%;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -1603,7 +1610,7 @@ img.basic3-img {
   position: relative;
   transition: all 250ms ease-in-out;
   overflow: hidden;
-  height: 600px;
+  height: auto;
 }
 .retro-product-card:hover {
   border-radius: 40px;
@@ -2551,7 +2558,8 @@ img.flower4 {
   font-size: 16px;
 }
 .wholesaleForm .cta {
-  width: 200px;
+  height: 40px;
+  width: 165px;
   font-size: 16px;
 }
 .contactus_section .matrix-img {

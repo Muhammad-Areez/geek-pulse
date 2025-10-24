@@ -9,8 +9,8 @@ import { motion } from "framer-motion";
 function Wholesaler() {
   return (
     <>
-      <Container className="position-relative">
-        <Warning />
+      <section className=" position-relative">
+        <Warning borderRadius="0px"/>
         <Header />
         <section className="logo-section contactus_section wholesalerSection">
           <div className="logo-container">
@@ -22,7 +22,7 @@ function Wholesaler() {
               animate={{
                 scale: [1, 1.4, 1],
                 opacity: [0.8, 0.8, 0.6],
-                rotate: [0, 0.2, 0], 
+                rotate: [0, 0.2, 0],
               }}
               transition={{
                 duration: 6,
@@ -91,7 +91,7 @@ function Wholesaler() {
             <button className="cta mb-3">Submit</button>
           </form>
         </div>
-      </Container>
+      </section>
       <Container>{/* <ContactForm /> */}</Container>
 
       <Footer />
