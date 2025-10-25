@@ -775,6 +775,11 @@ img.aboutbg {
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
+  padding: 10px;
+}
+.aboutUs_section .logo-section h3{
+  width: 100%;
+  padding: 10px;
 }
 .aboutCard .title {
   position: absolute;
@@ -812,7 +817,7 @@ img.aboutbg {
   margin: 4rem 0;
 }
 .aboutUs_section .logo-container {
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0px;
 }
 .registered_section {
   border: 1px solid #ccc;

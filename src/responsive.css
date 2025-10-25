@@ -196,6 +196,13 @@
   .context .heading {
     font-size: 150px;
   }
+  .aboutCard {
+    width: 250px;
+    height: 350px;
+  }
+  .aboutWrapper {
+    justify-content: start;
+  }
 }
 @media (max-width: 1280px) {
   .logo-container {
@@ -312,6 +319,13 @@
   }
   img.seasonalDevice2 {
     left: 33%;
+  }
+  .about_section2 .heading {
+    font-size: 35px;
+  }
+  .aboutLogo {
+    width: 130px;
+    height: 75px;
   }
 }
 
@@ -500,6 +514,9 @@
   }
   img.seasonalDevice4 {
     right: 14%;
+  }
+  .about_section2 .heading {
+    font-size: 23px;
   }
 }
 
@@ -1225,6 +1242,22 @@
     height: 200px;
     width: 200px;
   }
+  .aboutCard {
+    width: 230px;
+    height: 300px;
+  }
+  .aboutCard .title {
+    bottom: 35%;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .aboutCard .para {
+    bottom: 25%;
+  }
+  .aboutLogo {
+    width: 100px;
+    height: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1567,6 +1600,26 @@
   .seasonal_flavours .heading {
     font-size: 32px;
     line-height: 40px;
+  }
+  .aboutUs_section .logo-section h3 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 20px;
+  }
+  .logo-container {
+    height: 350px;
+  }
+  .aboutCard {
+    width: 170px;
+    height: 250px;
+  }
+  .about_section2 .heading {
+    font-size: 20px;
+    width: 100%;
+    margin: 10px auto;
+  }
+  .registered_section .d_flex {
+    margin: 0px 20px;
   }
 }
 
@@ -1953,6 +2006,33 @@
   .seasonalBg {
     padding: 0 !important;
   }
+  .aboutUs_section .logo-section h3 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 15px;
+  }
+  .logo-container {
+    height: 320px;
+  }
+  .aboutLogo {
+    width: 65px;
+    height: 40px;
+  }
+  .registered_section .d_flex {
+    margin: 0px 10px;
+  }
+  .aboutCard .title {
+    bottom: 42%;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .aboutCard .para {
+    bottom: 30%;
+  }
+  .aboutCard {
+    width: 180px;
+    height: 210px;
+  }
 }
 
 @media (max-width: 426px) {
@@ -2188,5 +2268,12 @@
   }
   .warningSection {
     height: 65px;
+  }
+  .aboutCard {
+    width: 160px;
+  }
+  .aboutUs_section .logo-section h3 {
+    font-size: 15px;
+    line-height: 20px;
   }
 }
