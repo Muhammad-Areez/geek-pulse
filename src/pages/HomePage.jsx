@@ -74,36 +74,38 @@ function HomePage() {
         <Header />
         <Banner />
       </section>
-      <section ref={sectionRef} className="pin-section-main">
-        <section className="ourProducts_section">
-          <Container className="position-relative">
-            <OurProducts headingText="The Pulse Collection" />
-          </Container>
-        </section>
-        <section className="mb-3">
-          <Container className="position-relative">
-            {/* <LogoSec /> */}
-            <section className="logo-section">
-              <div className="logo-container">
-                <motion.img
-                  src={images.matrix}
-                  className="matrix-img"
-                  alt="Matrix lines"
-                  initial={{ scale: 1.2 }}
-                  animate={{ scale: [1, 1.1, 1], opacity: [1, 0.8, 1] }}
-                  transition={{ duration: 6, ease: "easeInOut", repeat: Infinity }}
-                />
-                <img ref={logoRef} src={images.logo} alt="Logo" className="banner-logo" />
-                <h3 ref={textRef}>{words}</h3>
-              </div>
-            </section>
-          </Container>
-        </section>
-        <section>
-          <Container className="position-relative">
-            <GeekPrime />
-          </Container>
-        </section>
+      <section className="pin-section-main">
+        <div ref={sectionRef}>
+          <section className="ourProducts_section">
+            <Container className="position-relative">
+              <OurProducts headingText="The Pulse Collection" />
+            </Container>
+          </section>
+          <section className="mb-3">
+            <Container className="position-relative">
+              {/* <LogoSec /> */}
+              <section className="logo-section">
+                <div className="logo-container">
+                  <motion.img
+                    src={images.matrix}
+                    className="matrix-img"
+                    alt="Matrix lines"
+                    initial={{ scale: 1.2 }}
+                    animate={{ scale: [1, 1.1, 1], opacity: [1, 0.8, 1] }}
+                    transition={{ duration: 6, ease: "easeInOut", repeat: Infinity }}
+                  />
+                  <img ref={logoRef} src={images.logo} alt="Logo" className="banner-logo" />
+                  <h3 ref={textRef}>{words}</h3>
+                </div>
+              </section>
+            </Container>
+          </section>
+          <section>
+            <Container className="position-relative">
+              <GeekPrime />
+            </Container>
+          </section>
+        </div>
       </section>
       <section className="testimonial_section">
         {/* <Container>
