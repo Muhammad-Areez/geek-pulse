@@ -117,7 +117,7 @@ const SeasonalBanner = () => {
 
             <Swiper
               className="product-swiper"
-              // modules={[ Autoplay]}
+              modules={[ Autoplay]}
               navigation
               spaceBetween={40}
               slidesPerView={1}

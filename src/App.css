@@ -1840,8 +1840,8 @@ img.basic3-img {
 }
 .snowflake::before {
   content: ".";
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 

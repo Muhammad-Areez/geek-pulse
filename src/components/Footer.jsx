@@ -91,18 +91,9 @@ export const Footer = ({ isHomePage = false, background = "#100a3e" }) => {
               <li>
                 <Link to={"/wholesaler"}>WholeSale</Link>
               </li>
-               <li>
+              <li>
                 <Link to={"/contact-us"}>Contact Us</Link>
               </li>
-              {/* <li>
-                <Link>Products</Link>
-              </li>
-              <li>
-                <Link>Licenses</Link>
-              </li>
-              <li>
-                <Link>Changelog</Link>
-              </li> */}
             </ul>
           </div>
         </Col>
@@ -113,11 +104,11 @@ export const Footer = ({ isHomePage = false, background = "#100a3e" }) => {
             <ul>
               <li>
                 <p>Write us an email</p>
-                <a href="#">contact@geekpulse.com</a>
+                <a href="mailto:contact@geekpulse.com">contact@geekpulse.com</a>
               </li>
               <li>
                 <p>Give us a call</p>
-                <a href="#">(123) 456 - 7890</a>
+                <a href="tel:1234567890">(123) 456 - 7890</a>
               </li>
             </ul>
           </div>

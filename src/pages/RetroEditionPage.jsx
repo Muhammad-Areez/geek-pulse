@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Warning from "../components/Warning";
 import { Footer } from "../components/Footer";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useNavigate } from "react-router-dom";
 import retro from "../assets/images/Retro-editions.png";
 import frozen from "../assets/images/Frozen-editions.png";
 import seasonal from "../assets/images/Seasonal-editions.png";
@@ -17,6 +18,17 @@ import { Pagination, Autoplay, EffectCoverflow } from "swiper/modules";
 import { motion } from "framer-motion";
 
 function RetroEditionPage() {
+  const navigate = useNavigate();
+
+  const products = [
+    { img: retro, path: "/retro-edition" },
+    { img: frozen, path: "/frozen-edition" },
+    { img: seasonal, path: "/seasonal-edition" },
+    { img: basic, path: "/basic-edition" },
+    { img: cosmo, path: "/cosmos-edition" },
+    { img: smoothie, path: "/smoothie-edition" },
+  ];
+
   return (
     <div className="position-relative retro-edition-main">
       <Warning backgroundColor="#F46CFE" borderRadius="0px" />
@@ -427,9 +439,14 @@ function RetroEditionPage() {
             pagination={{ clickable: true }}
             autoplay={{ delay: 2500, disableOnInteraction: false }}
           >
-            {[retro, frozen, seasonal, basic, cosmo, smoothie].map((img, i) => (
+            {products.map((product, i) => (
               <SwiperSlide key={i}>
-                <img src={img} alt={`Product ${i + 1}`} />
+                <div
+                  onClick={() => navigate(product.path)}
+                  style={{ cursor: "pointer" }}
+                >
+                  <img src={product.img} alt={`Product ${i + 1}`} />
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
