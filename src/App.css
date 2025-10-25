@@ -775,6 +775,11 @@ img.aboutbg {
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
+  padding: 10px;
+}
+.aboutUs_section .logo-section h3{
+  width: 100%;
+  padding: 10px;
 }
 .aboutCard .title {
   position: absolute;
@@ -812,7 +817,7 @@ img.aboutbg {
   margin: 4rem 0;
 }
 .aboutUs_section .logo-container {
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0px;
 }
 .registered_section {
   border: 1px solid #ccc;
@@ -955,6 +960,7 @@ img.aboutbg {
   font-size: 18px;
   font-family: "BricolageGrotesque-Medium";
   color: #403b65;
+  outline: none;
   font-weight: 500;
 }
 .searchField input:focus-visible{
@@ -1386,7 +1392,7 @@ img.basic3-img {
 .version_details {
   display: flex;
   align-items: start;
-  /* gap: 20px; */
+  gap: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 20px;
@@ -1613,7 +1619,7 @@ img.basic3-img {
   position: relative;
   transition: all 250ms ease-in-out;
   overflow: hidden;
-  height: auto;
+  height: calc(100% - 50px);
 }
 .retro-product-card:hover {
   border-radius: 40px;
@@ -2394,9 +2400,9 @@ img.seasonalDevice4 {
 .seasonal_section .ourproducts.with-bg {
   background: #f7ead3;
 }
-.seasonal_section .ourProducts_section {
+/* .seasonal_section .ourProducts_section {
   padding: 0 !important;
-}
+} */
 .seasonal_section .ourProducts_section .heading {
   font-family: LondrinaSolid-Regular;
   text-transform: uppercase;

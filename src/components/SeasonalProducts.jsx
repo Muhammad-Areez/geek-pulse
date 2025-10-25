@@ -91,7 +91,7 @@ const SeasonalProducts = () => {
       <Container>
         <Row className="justify-content-center p-5">
           {products.map((product, index) => (
-            <Col key={product.id} lg={6} md={6} sm={12} className="mb-5">
+            <Col key={product.id} lg={6} md={6} sm={6} className="mb-5">
               <motion.div
                 className={`seasonal-product-card text-center seasonal-card-${
                   index + 1

@@ -30,11 +30,11 @@ function AboutUs() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top",
-          end: "bottom+=200% top",
+          // start: "top",
+          // end: "bottom+=200% top",
           scrub: true,
           pin: true,
-          anticipatePin: 1,
+          // anticipatePin: 1,
         },
       });
 

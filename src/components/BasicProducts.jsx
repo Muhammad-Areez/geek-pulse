@@ -139,7 +139,7 @@ const BasicProducts = () => {
   return (
     <Row>
       {products.map((product) => (
-        <Col key={product.id} lg={3} md={4} sm={6} className="mb-4">
+        <Col key={product.id} lg={3} md={4} sm={6} xs={6} className="mb-4">
           <motion.div
             className="basic-product-card"
             initial="hidden"
