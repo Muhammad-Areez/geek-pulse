@@ -143,6 +143,7 @@ img {
   background: transparent;
   justify-content: space-around;
   width: 100%;
+  left: 0;
 }
 .header-products {
   width: 100%;
@@ -2832,11 +2833,13 @@ img.flower4 {
 
 /* Cosmos Edition Ends */
 /* VPU Starts */
+.vpu-banner-main{
+  width: 100vw;
+}
 .vpu-hero {
   position: relative;
-  width: 95vw;
+  width: 100%;
   padding: 210px 0 150px 0;
-  border-radius: 0 0 40px 40px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -2848,7 +2851,7 @@ img.flower4 {
 .vpu-bg-layer {
   position: absolute;
   inset: 0;
-  background-size: 150% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
@@ -2942,7 +2945,7 @@ img.flower4 {
 }
 .vpu-standard {
   position: relative;
-  width: 95vw;
+  width: 100%;
   padding: 210px 0 150px 0;
   border-radius: 40px;
   margin-top: 20px;
@@ -2964,6 +2967,12 @@ img.flower4 {
 .video-sec1 {
   margin-top: 20px;
   height: 700px;
+}
+.video-playback{
+  width: 100%;
+  height:  700px;
+  object-fit: cover;
+  border-radius: 40px;
 }
 .vpu-safety {
   width: 100%;
@@ -3087,4 +3096,82 @@ img.flower4 {
   align-items: center;
   z-index: 1050;
   backdrop-filter: blur(10px)
+}
+.modal-wrapper{
+  background-color: #100A3E;
+  color: #fff;
+  border-radius: 40px;
+  padding: 50px;
+  width: 1000px ;
+  max-width: 90%;
+  position: relative;
+  overflow: hidden;
+}
+.popup-main{
+  display: flex;
+  flex-direction: column;
+}
+.popup-logo{
+  width: 250px;
+}
+.popup-main h4{
+  font-family: Geist-SemiBold;
+  color: #fff;
+  font-size: 45px;
+  letter-spacing: -2px;
+  text-align: left;
+  margin-top: 80px;
+}
+.pop-para{
+  width: 60%;
+}
+.popup-main p{
+  font-size: 20px;
+  font-family: Geist-Medium;
+  line-height: 25px;
+  letter-spacing: -1.4px;
+  text-align: left;
+  margin-bottom: 150px
+}
+.pop-btn-main{
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 5;
+}
+.pop-btn-main button{
+  transition: all 250ms ease-in-out;
+  border-radius: 40px;
+  padding: 12px 30px;
+  margin: 20px 0px ;
+}
+.pop-btn-main button:first-child{
+  background: #8186FF;
+  border: 2px solid #8186FF
+}
+.pop-btn-main button:first-child:hover{
+  background: transparent;
+  color: #8186FF;
+}
+.pop-btn-main button:last-child{
+  background: transparent;
+  border: 2px solid white;
+}
+.pop-btn-main button:last-child:hover{
+  background: white;
+  color: black;
+}
+.pop-warn-icon{
+  width: 275px;
+  height: auto;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+.popup-main .matrix-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
 }

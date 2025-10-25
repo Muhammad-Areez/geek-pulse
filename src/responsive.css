@@ -760,6 +760,47 @@
     right: 0;
     top: 5%;
   }
+  .vpu-hero{
+    height: 500px;
+  }
+  .vpu-sec-left h3{
+    font-size: 50px;
+    line-height: 44px;
+  }
+  .vpu-sec-left h6{
+    font-size: 27px;
+    line-height: 30px;
+  }
+  .experience-left img{
+    height: 100%;
+    width: 100%;
+  }
+  .experience-right h3{
+    font-size: 55px;
+    line-height: 48px;
+  }
+  .experience-right h6{
+    font-size: 25px;
+    line-height: 27px;
+  }
+  .vpu-standard h3{
+    font-size: 45px;
+    line-height: 52px;
+  }
+  
+  .video-sec1,.vpu-safety,.vpu-safety-left{
+    height: 500px;
+  }
+  .vpu-safety-left h3{
+    font-size: 45px;
+    line-height: 48px;
+  }
+  .vpu-safety-left h6{
+    font-size: 19px;
+    line-height: 25px;
+    letter-spacing: -1px;
+  }
+
 }
 
 @media (max-width: 1024px) {
@@ -1621,6 +1662,24 @@
   .registered_section .d_flex {
     margin: 0px 20px;
   }
+  .popup-logo{
+    width: 220px;
+  }
+  .pop-btn-main button{
+    padding: 10px 30px;
+  }
+  .popup-main h4{
+    margin-top: 40px;
+    font-size: 30px;
+  }
+  .popup-main p{
+    font-size: 16px;
+    list-style: 21px;
+    margin-bottom: 100px;
+  }
+  .pop-warn-icon{
+    width: 150px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2032,6 +2091,27 @@
   .aboutCard {
     width: 180px;
     height: 210px;
+  }
+  .modal-wrapper{
+    padding: 30px;
+  }
+  .popup-logo{
+    width: 200px;
+  }
+  .popup-main h4{
+    font-size: 25px;
+    margin-top: 30px;
+  }
+  .pop-warn-icon{
+    width: 100px;
+    right: 30px;
+    bottom: 30px;
+  }
+  .pop-para{
+    width: 80%;
+  }
+  .pop-para p{
+    margin-bottom: 80px;
   }
 }
 

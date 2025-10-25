@@ -15,8 +15,9 @@ function Vpu() {
     
   return (
     <>
-      <Container className="position-relative">
-        <Warning />
+      
+        <div className="postion-relative vpu-banner-main">
+        <Warning borderRadius="0px"/>
         <Header />
         <section className="vpu-hero">
           <motion.div
@@ -45,6 +46,8 @@ function Vpu() {
             VPU
           </motion.h1>
         </section>
+        </div>
+        <Container className="position-relative">
         <section className="vpu-sec">
           <Row className="px-5">
             <Col md={6}>
@@ -115,12 +118,7 @@ function Vpu() {
             loop
             muted
             playsInline
-            style={{
-              width: "100%",
-              height: "700px",
-              objectFit: "cover",
-              borderRadius: "40px",
-            }}
+            className="video-playback"
           />
         </section>
         <section className="vpu-safety">
@@ -148,12 +146,7 @@ function Vpu() {
             loop
             muted
             playsInline
-            style={{
-              width: "100%",
-              height: "700px",
-              objectFit: "cover",
-              borderRadius: "40px",
-            }}
+            className="video-playback"
           />
         </section>
         <section className="vpu-future">
