@@ -406,6 +406,9 @@ img {
 /* Banner ends */
 
 /* Our Products starts */
+.pin-section-main{
+  margin-bottom: 100px;
+}
 .product-swiper {
   position: relative;
   padding-bottom: 40px;

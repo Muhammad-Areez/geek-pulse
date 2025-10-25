@@ -1142,6 +1142,16 @@
   .context .heading {
     font-size: 110px;
   }
+
+  .aeroplane-img{
+    width: 150px !important;
+  }
+  .banner-list-main ul li{
+    width: 90px;
+  }
+  .banner-text-div h1{
+    font-size: 38px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1189,7 +1199,7 @@
 
   .aeroplane-img {
     top: 80px;
-    width: 200px !important;
+    width: 120px !important;
   }
 
   .banner-device-img2 {
@@ -2173,11 +2183,29 @@
   }
 
   .aeroplane-img {
-    top: 34%;
-    width: 200px !important;
-    /* z-index: -1; */
+    display: none !important;
   }
-
+  .moon-img{
+    width: 140px !important;
+    height: 140px !important;
+    left: -100px;
+  }
+  .logo-section h3{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .banner-logo{
+    width: 300px;
+  }
+  .prime_section {
+    margin: 25px 0px;
+  }
+  .pin-section-main{
+    margin-bottom: 25px;
+  }
+  .primeBox{
+    border-radius: 20px !important;
+  }
   .slide-1 {
     padding-top: 50px;
   }
@@ -2775,8 +2803,7 @@
   }
 
   .aeroplane-img {
-    top: 40%;
-    width: 135px !important;
+    display: none !important;
   }
 
   .heading {
