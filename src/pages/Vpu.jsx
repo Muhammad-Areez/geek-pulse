@@ -49,8 +49,8 @@ function Vpu() {
         </div>
         <Container className="position-relative">
         <section className="vpu-sec">
-          <Row className="px-5">
-            <Col md={6}>
+          <Row className="px-3 px-md-5">
+            <Col lg={6}>
               <div className="vpu-sec-left">
                 <h3>
                   As CPU for computer, VPU stands for Vaping Processing Unit.
@@ -62,7 +62,7 @@ function Vpu() {
                 </h6>
               </div>
             </Col>
-            <Col md={6}>
+            <Col lg={6}>
               <div className="vpu-sec-right">
                 <img src={images.vpuSecLeft} alt="vpu" />
               </div>
@@ -70,13 +70,13 @@ function Vpu() {
           </Row>
         </section>
         <section className="vpu-experience">
-          <Row className="px-5">
-            <Col md={6}>
+          <Row className="px-3 px-md-5">
+            <Col lg={6}>
               <div className="experience-left">
                 <img src={images.vapeExperience} alt="vape" />
               </div>
             </Col>
-            <Col md={6}>
+            <Col lg={6}>
               <div className="experience-right">
                 <h3>
                   VAPE EXPERIENCE <br />
@@ -122,7 +122,7 @@ function Vpu() {
           />
         </section>
         <section className="vpu-safety">
-          <Row className="px-5">
+          <Row className="px-3 px-md-5">
             <Col md={5}>
               <div className="vpu-safety-left">
                 <h3>Safety Performance</h3>
