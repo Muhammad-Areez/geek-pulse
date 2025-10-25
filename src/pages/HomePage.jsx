@@ -29,7 +29,7 @@ function HomePage() {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "center center",
-          end: "bottom top",
+          end: "bottom+=50% top",
           scrub: true,
           pin: true,
           anticipatePin: 1,
