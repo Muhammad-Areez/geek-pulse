@@ -30,11 +30,12 @@ function AboutUs() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          // start: "top",
+          start: "top",
           // end: "bottom+=200% top",
+          end: "+=200%",
           scrub: true,
           pin: true,
-          // anticipatePin: 1,
+          anticipatePin: 1,
         },
       });
 
@@ -72,7 +73,6 @@ function AboutUs() {
         <section ref={sectionRef}>
           <Warning borderRadius={"0px"} />
           <Header />
-          {/* <LogoSec/> */}
           <section className="logo-section">
             <div className="logo-container">
               <motion.img
@@ -97,11 +97,11 @@ function AboutUs() {
             </div>
           </section>
           <section className="about_section2">
-          <h2 className="heading">
-            FROM TECHNOLOGY DEVELOPMENT TO HEALTH APPLICATIONS
-          </h2>
-          <AboutCard />
-        </section>
+            <h2 className="heading">
+              FROM TECHNOLOGY DEVELOPMENT TO HEALTH APPLICATIONS
+            </h2>
+            <AboutCard />
+          </section>
         </section>
 
         <section className="registered_section">
