@@ -20,39 +20,39 @@ const FrozenProducts = () => {
   const products = [
     {
       id: 1,
-      name: "Blue Razz Ice",
-      deviceImg: images.frozendevice1,
+      name: "Frozen Strawberry",
+      deviceImg: images.frozendevice4,
       boxImg: images.frozenbox2,
     },
     {
       id: 2,
-      name: "Miami Mint",
+      name: "Pina Colada",
       deviceImg: images.frozendevice2,
       boxImg: images.frozenbox3,
     },
     {
       id: 3,
-      name: "Banana Taffy Freeze",
+      name: "White Grape",
       deviceImg: images.frozendevice3,
-      boxImg: images.frozenbox4,
+      boxImg: images.frozenbox1,
     },
     {
       id: 4,
-      name: "Berry Bliss",
-      deviceImg: images.frozendevice4,
-      boxImg: images.frozenbox5,
+      name: "Peach Raspberry",
+      deviceImg: images.frozendevice1,
+      boxImg: images.frozenbox4,
     },
     {
       id: 5,
-      name: "Blue Rancher",
+      name: "Frozen Mango",
       deviceImg: images.frozendevice5,
       boxImg: images.frozenbox6,
     },
     {
       id: 6,
-      name: "Blueberry Watermelon",
+      name: "Frozen Watermelon",
       deviceImg: images.frozendevice6,
-      boxImg: images.frozenbox2,
+      boxImg: images.frozenbox5,
     },
   ];
 

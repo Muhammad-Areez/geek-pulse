@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import retro from "../assets/images/Retro-editions.png";
 import frozen from "../assets/images/Frozen-editions.png";
@@ -16,6 +17,17 @@ const OurProducts = ({
   addBg = false,
   color
 }) => {
+  const navigate = useNavigate();
+
+  const products = [
+    { img: retro, path: "/retro-edition" },
+    { img: frozen, path: "/frozen-edition" },
+    { img: seasonal, path: "/seasonal-edition" },
+    { img: basic, path: "/basic-edition" },
+    { img: cosmo, path: "/cosmos-edition" },
+    { img: smoothie, path: "/smoothie-edition" },
+  ];
+
   return (
     <div className= {`ourproducts ${addBg ? "with-bg" : ""}`}>
       {showHeading && <h2 className="heading my-3" style={{color: color ? color : ''}}>{headingText}</h2>}
@@ -35,9 +47,17 @@ const OurProducts = ({
         loop={true}
         speed={1000}
       >
-        {[retro, frozen, seasonal, basic, cosmo, smoothie].map((img, i) => (
+        {products.map((product, i) => (
           <SwiperSlide key={i}>
-            <img src={img} alt={`Product ${i + 1}`} />
+            <div
+              onClick={() => navigate(product.path)}
+              style={{ cursor: "pointer" }}
+            >
+              <img
+                src={product.img}
+                alt={`Product ${i + 1}`}
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

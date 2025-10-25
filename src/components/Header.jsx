@@ -46,14 +46,15 @@ const Header = () => {
             <Link to="/vpu">VPU</Link>
             <Link to="#products" onClick={toggleProductMenu}>Products</Link>
             <div className={`product-edition-inner ${productToggle ? 'open' : ''}`}>
-              <Link to={'/retro-edition'}>-  Retro Edition</Link>
-              <Link to={'/frozen-edition'}>-  Frozen Edition</Link>
-              <Link to={'/seasonal-edition'}>-  Seasonal Edition</Link>
-              <Link to={'/basic-edition'}>-  Basic Edition</Link>
-              <Link to={'/cosmos-edition'}>-  Cosmos Edition</Link>
-              <Link to={'/smoothie-edition'}>-  Smoothie Edition</Link>
+              <Link to="/retro-edition">-  Retro Edition</Link>
+              <Link to="/frozen-edition">-  Frozen Edition</Link>
+              <Link to="/seasonal-edition">-  Seasonal Edition</Link>
+              <Link to="/basic-edition">-  Basic Edition</Link>
+              <Link to="/cosmos-edition">-  Cosmos Edition</Link>
+              <Link to="/smoothie-edition">-  Smoothie Edition</Link>
             </div>
             <Link to="/wholesaler">Wholesale</Link>
+            <Link to="/contact-us">Contact Us</Link>
           </nav>
           <div className="header-products">
             <Row>

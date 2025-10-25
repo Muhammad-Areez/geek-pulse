@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
+import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import ContactUs from "./pages/ContactUs";
 import BasicEdition from "./pages/BasicEdition";
@@ -37,6 +38,7 @@ function App() {
     <>
     <WarningPopUp show={showPopup} onYes={handleYes} onNo={handleNo}/>
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contact-us" element={<ContactUs />} />
