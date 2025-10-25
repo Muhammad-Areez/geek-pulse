@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { images } from "../assets/images";
 import ScrollReveal from "./ScrollReveal";
 
 const SeasonalProducts = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [isXS, setIsXS] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const products = [
     {
       id: 1,
@@ -25,8 +35,8 @@ const SeasonalProducts = () => {
       boxImg: images.seasonalBox2,
     },
     {
-      id: 3,
-      name: "bloom berry bleez ",
+      id: 4,
+      name: "bloom berry bleez",
       deviceImg: images.seasonalDevice4,
       boxImg: images.seasonalBox4,
     },
@@ -35,18 +45,17 @@ const SeasonalProducts = () => {
   return (
     <div className="seasonalBg py-5">
       <h2 className="heading mb-3">Our Products</h2>
+
+      {/* Floating background images */}
       <motion.img
         src={images.flower3}
         alt=""
         className="flower3"
         initial={{ x: -80, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        animate={{
-          y: [0, -6, 0, 6, 0],
-        }}
+        animate={{ y: [0, -6, 0, 6, 0] }}
         transition={{
           duration: 1.2,
-          ease: "easeOut",
           y: { duration: 2, repeat: Infinity, ease: "easeInOut" },
         }}
         viewport={{ once: true, amount: 0.3 }}
@@ -58,49 +67,28 @@ const SeasonalProducts = () => {
         className="flower4"
         initial={{ x: 80, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        animate={{
-          y: [0, 6, 0, -6, 0],
-        }}
+        animate={{ y: [0, 6, 0, -6, 0] }}
         transition={{
           duration: 1.2,
-          ease: "easeOut",
           y: { duration: 2, repeat: Infinity, ease: "easeInOut" },
-        }}
-        viewport={{ once: true, amount: 0.3 }}
-      />
-
-      <motion.img
-        src={images.seasonalBg3}
-        alt=""
-        className="seasonalBg3"
-        initial={{ x: 100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        animate={{
-          y: [0, -4, 0, 4, 0],
-          scale: [1, 1.01, 1, 1.01, 1],
-        }}
-        transition={{
-          duration: 1.2,
-          ease: "easeOut",
-          y: { duration: 2, repeat: Infinity, ease: "easeInOut" },
-          scale: { duration: 10, repeat: Infinity, ease: "easeInOut" },
         }}
         viewport={{ once: true, amount: 0.3 }}
       />
 
       <Container>
-        <Row className="justify-content-center p-5">
+        <Row className="justify-content-center p-">
           {products.map((product, index) => (
-            <Col key={product.id} lg={6} md={6} sm={6} className="mb-5">
+            <Col key={product.id} lg={6} md={6} sm={6} xs={12} className="mb-5">
               <motion.div
                 className={`seasonal-product-card text-center seasonal-card-${
                   index + 1
                 }`}
                 initial="rest"
+                whileTap="hover"
                 whileHover="hover"
                 animate="rest"
               >
-                {/* Box Animation */}
+                {/* Box */}
                 <motion.img
                   src={product.boxImg}
                   alt=""
@@ -108,29 +96,36 @@ const SeasonalProducts = () => {
                   variants={{
                     rest: {
                       opacity: 0,
-                      x: -90,
+                      x: isMobile ? -30 : -90,
                       scale: 1,
                       rotate: -5,
                     },
                     hover: {
                       opacity: 1,
-                      x: 50,
-                      y: -60,
-                      scale: 1.3,
+                      x: isMobile ? 10 : 50,
+                      y: isMobile ? -50 : -60,
+                      scale: isXS ? 1.3 : isMobile ? 1.4 : 1.3, 
                       rotate: 0,
                     },
                   }}
                   transition={{ duration: 0.3, ease: "easeOut" }}
                 />
 
-                {/* Device Animation */}
+                {/* Device */}
                 <motion.img
                   src={product.deviceImg}
                   alt={product.name}
                   className="seasonalDevice"
                   variants={{
-                    rest: { scale: 1.5, y: 40 },
-                    hover: { scale: 1, y: 120, x: 90 },
+                    rest: {
+                      scale: isXS ? 1.5 : isMobile ? 1.3 : 1.5, 
+                      y: 40,
+                    },
+                    hover: {
+                      scale: isXS ? 1.3 : 1, 
+                      y: isMobile ? 90 : 100,
+                      x: isMobile ? 70 : 130,
+                    },
                   }}
                   transition={{ duration: 0.1, ease: "easeOut" }}
                 />
@@ -140,9 +135,7 @@ const SeasonalProducts = () => {
                   className="seasonal-product-name mb-3"
                   variants={{
                     rest: { opacity: 1, y: 50 },
-                    // hover: { opacity: 1, y: 50 },
                   }}
-                  // transition={{ duration: 0.3 }}
                 >
                   {product.name}
                 </motion.p>
