@@ -54,7 +54,10 @@ function HomePage() {
       );
     }, sectionRef);
 
-    return () => ctx.revert();
+    return () => {
+      ctx.revert();
+      ScrollTrigger.killAll();
+    };
   }, []);
 
   const textContent =
