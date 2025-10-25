@@ -1715,10 +1715,11 @@ img.basic3-img {
   background-position: center;
   position: relative;
   overflow: hidden;
-  perspective: 1000px;
+  perspective: 800px;
+  min-height: 900px !important;
+  height: 100%;
 }
 
-/* ❄️ Snow Effect Container */
 .snow-container {
   position: absolute;
   top: 0;
@@ -1729,8 +1730,6 @@ img.basic3-img {
   overflow: hidden;
   z-index: 2;
 }
-
-/* ❄️ Snowflake Animation */
 .snowflake {
   position: absolute;
   top: -10px;
@@ -1755,7 +1754,7 @@ img.basic3-img {
   position: absolute;
   inset: 0;
   background: inherit;
-  background-size: 110%;
+  /* background-size: 110%; */
   filter: brightness(1.1) saturate(1);
   transform: scale(1.05);
   animation: bgMove 10s ease-in-out infinite alternate;
@@ -1766,14 +1765,9 @@ img.basic3-img {
     transform: scale(1.05) translateX(0);
   }
   100% {
-    transform: scale(1.1) translateX(-30px);
+    transform: scale(1.1) translateX(0px);
   }
 }
-.frozenWrapper {
-  position: relative;
-  height: 600px;
-}
-
 .frozenBox {
   position: absolute;
   /* right: 0; */
@@ -1782,36 +1776,68 @@ img.basic3-img {
   z-index: 2;
   filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.25));
 }
-.slide-3 .frozenBox {
-  bottom: 0 !important;
-  right: 16%;
+/* Frozen Logo — fixed placement */
+.slide-3 .frozenLogo {
   position: absolute;
+  left: -3%;
+  top: 22%;
+  width: auto !important;
+  height: 250px !important;
+  z-index: 3;
+  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.3));
+}
+
+.slide-3 .frozenBox {
+  position: absolute;
+  bottom: 30%;
+  right: 17%;
   width: auto;
-  height: 360px !important;
-  z-index: 1;
+  height: 500px !important;
+  z-index: 2;
   transform-origin: center;
   perspective: 1000px;
 }
+
+
 .slide-3 .frozenDevice3 {
   position: absolute;
-  bottom: 0%;
-  right: 0% !important;
-  z-index: 3;
+  bottom: 0;
+  right: 0; 
+  width: auto;
+  height: 380px;
   object-fit: contain;
+  z-index: 3;
   filter: drop-shadow(0px 8px 25px rgba(0, 0, 0, 0.35));
   transform-origin: center;
 }
 
-.frozenLogo {
-  width: auto !important;
-  height: 300px !important;
+.frozenFeatures {
   position: absolute;
-  left: -1%;
-  top: 20%;
-  z-index: 3;
-  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.3));
+  bottom: 10%;
+  left: 2%;
+  /* bottom: -12%; */
 }
-/* Extra Touch: Glowing snowflakes */
+.frozenBanner_text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* flex-direction: column; */
+  gap: 20px;
+}
+.frozenBanner_text .title {
+  color: #00b2ff;
+  z-index: 111111;
+  font-size: 40px;
+  margin-bottom: 0 !important;
+  font-family: "Geist-SemiBold";
+}
+.frozenBanner_text .text {
+  font-family: SpaceGrotesk-Bold;
+  font-size: 60px;
+  letter-spacing: -4px;
+  color: #100a3e;
+  z-index: 111;
+}
 .snowflake::before {
   content: ".";
   width: 20px;

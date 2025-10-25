@@ -263,6 +263,12 @@
     font-size: 80px;
     line-height: 40.1px;
   }
+  .slide-3 .frozenBox {
+    height: 380px !important;
+  }
+  .slide-3 {
+    min-height: 780px !important;
+  }
 }
 @media (max-width: 1280px) {
   .logo-container {
@@ -660,6 +666,9 @@
   .frozenDevice {
     bottom: 10%;
   }
+  .slide-3 .frozenLogo {
+    height: 220px !important;
+  }
 }
 
 @media (max-width: 1140px) {
@@ -970,6 +979,25 @@
   }
   .frozen_section .heading {
     font-size: 50px;
+  }
+  .slide-3 .frozenLogo {
+    height: 200px !important;
+  }
+  .slide-3 .frozenBox {
+    height: 300px !important;
+  }
+  .slide-3 .frozenDevice3 {
+    height: 300px;
+    right: 2%;
+  }
+  .slide-3 {
+    min-height: 680px !important;
+  }
+  .frozenBanner_text .title {
+    font-size: 32px;
+  }
+  .frozenBanner_text .text {
+    font-size: 40px;
   }
 }
 
@@ -1563,6 +1591,21 @@
   .frozenBox {
     top: 45%;
   }
+  .slide-3 .frozenLogo {
+    height: 160px !important;
+  }
+  .slide-3 .frozenBox {
+    height: 260px !important;
+    right: 30%;
+  }
+  .slide-3 .frozenDevice3 {
+    height: 275px;
+    right: 6%;
+    bottom: 0%;
+  }
+  .slide-3 {
+    min-height: 630px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2013,6 +2056,26 @@
   }
   .frozen_section .heading {
     font-size: 40px;
+  }
+  .slide-3 .frozenLogo {
+    height: 150px !important;
+  }
+  .slide-3 .frozenBox {
+    height: 200px !important;
+  }
+  .slide-3 {
+    min-height: 575px !important;
+  }
+  .slide-3 .frozenDevice3 {
+    height: 200px;
+    right: 8%;
+    bottom: 3%;
+  }
+  .frozenBanner_text .text {
+    font-size: 30px;
+  }
+  .frozenBanner_text .title {
+    font-size: 20px;
   }
 }
 
@@ -2525,6 +2588,17 @@
     width: 55%;
     right: 22%;
   }
+  .slide-3 .frozenLogo {
+    height: 100px !important;
+  }
+  .slide-3 {
+    min-height: 470px !important;
+  }
+  .slide-3 .frozenDevice3 {
+    height: 150px;
+    right: 14%;
+    bottom: 5%;
+  }
 }
 
 @media (max-width: 426px) {
@@ -2787,9 +2861,28 @@
   .frozenBox {
     top: 55%;
   }
-  /* .frozenDevice {
-    bottom: 19%;
-  } */
+  .slide-3 .frozenLogo {
+    height: 80px !important;
+  }
+  .slide-3 .frozenBox {
+    height: 150px !important;
+    right: 48%;
+  }
+  .slide-3 .frozenDevice3 {
+    height: 120px;
+    right: 20%;
+    bottom: 10%;
+  }
+  .slide-3 {
+    min-height: 425px !important;
+  }
+  .frozenBanner_text .text {
+    font-size: 22px;
+    letter-spacing: -1px;
+  }
+  .frozenBanner_text .title {
+    font-size: 14px;
+  }
 }
 @media (max-width: 400px) {
   .frozenBox {
