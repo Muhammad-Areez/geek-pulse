@@ -24,6 +24,67 @@
   .container {
     max-width: 95vw;
   }
+
+  img.basicEdition_section .banner-slide {
+    min-height: 650px !important;
+  }
+
+  img.basic1-img {
+    height: 580px;
+    width: 550px;
+    left: 3%;
+    bottom: -10%;
+  }
+
+  img.basic2-img {
+    height: 580px;
+    width: 550px;
+    left: 30%;
+    bottom: -10%;
+  }
+
+  img.basic3-img {
+    height: 580px;
+    width: 550px;
+    right: 2%;
+    bottom: -11%;
+  }
+
+  img.basic4-img {
+    height: 320px;
+    width: 280px;
+    left: 30%;
+    top: -10%;
+  }
+
+  img.basic5-img {
+    height: 280px;
+    width: 280px;
+    left: 2%;
+    top: 5%;
+  }
+
+  img.basic6-img {
+    height: 280px;
+    width: 280px;
+    left: 60%;
+    top: -3%;
+  }
+
+  img.basic7-img {
+    height: 280px;
+    width: 280px;
+    right: 2%;
+    top: 5%;
+  }
+
+  .context .title {
+    font-size: 40px;
+  }
+
+  .context .heading {
+    font-size: 160px;
+  }
 }
 
 @media (max-width: 1366px) {
@@ -36,6 +97,9 @@
     right: 22%;
   }
 
+  .seasonal_flavours .heading {
+    font-size: 55px;
+  }
   .banner-device-img2 {
     height: 500px !important;
     right: 0%;
@@ -71,17 +135,68 @@
   .blog_section {
     width: 100%;
   }
-
   .wholesalerSection .contact_heading {
     font-size: 90px !important;
   }
-
   .retro-edition-hero img:nth-child(1) {
     top: 8vh;
     left: 12%;
   }
-}
+  img.basicEdition_section .banner-slide {
+    min-height: 600px !important;
+  }
+  img.basic1-img {
+    height: 500px;
+    width: 520px;
+    left: -2%;
+    bottom: -14%;
+  }
+  img.basic2-img {
+    height: 500px;
+    width: 520px;
+    left: 30%;
+    bottom: -16%;
+  }
+  img.basic3-img {
+    height: 500px;
+    width: 520px;
+    right: 1%;
+    bottom: -19%;
+  }
+  img.basic4-img {
+    height: 250px;
+    width: 260px;
+    left: 32%;
+    top: -8%;
+  }
+  img.basic5-img {
+    height: 260px;
+    width: 260px;
+    left: 1%;
+    top: 8%;
+  }
+  img.basic6-img {
+    height: 260px;
+    width: 260px;
+    left: 62%;
+    top: -2%;
+  }
 
+  img.basic7-img {
+    height: 260px;
+    width: 260px;
+    right: 1%;
+    top: 8%;
+  }
+
+  .context .title {
+    font-size: 38px;
+  }
+
+  .context .heading {
+    font-size: 150px;
+  }
+}
 @media (max-width: 1280px) {
   .logo-container {
     height: 550px;
@@ -129,6 +244,74 @@
 
   .retro-edition-hero img:nth-child(2) {
     left: -4%;
+  }
+
+  img.basicEdition_section .banner-slide {
+    min-height: 550px !important;
+  }
+  img.basic1-img {
+    left: -2%;
+    bottom: -12%;
+  }
+  img.basic2-img {
+    left: 30%;
+    bottom: -14%;
+  }
+  img.basic3-img {
+    right: -0%;
+    bottom: -15%;
+  }
+  img.basic4-img {
+    height: 280px;
+    width: 240px;
+    left: 34%;
+    top: -6%;
+  }
+
+  img.basic5-img {
+    height: 240px;
+    width: 240px;
+    left: 0%;
+    top: 10%;
+  }
+
+  img.basic6-img {
+    height: 240px;
+    width: 240px;
+    left: 64%;
+    top: -1%;
+  }
+
+  img.basic7-img {
+    height: 240px;
+    width: 240px;
+    right: 0%;
+    top: 10%;
+  }
+
+  .context .title {
+    font-size: 36px;
+  }
+
+  .context .heading {
+    font-size: 140px;
+  }
+  .version_section .context .heading {
+    font-size: 45px;
+  }
+  .version_section .context img {
+    width: 57px;
+    height: 55px;
+  }
+  .icons {
+    width: 80px;
+    height: 80px;
+  }
+  img.seasonalDevice1 {
+    left: 20%;
+  }
+  img.seasonalDevice2 {
+    left: 33%;
   }
 }
 
@@ -262,6 +445,61 @@
   }
   .retro-sec-left {
     height: 600px;
+  }
+
+  img.basicEdition_section .banner-slide {
+    min-height: 500px !important;
+  }
+
+  img.basic1-img {
+    left: -2%;
+  }
+  img.basic4-img {
+    height: 260px;
+    width: 220px;
+    left: 36%;
+    top: -4%;
+  }
+
+  img.basic5-img {
+    height: 220px;
+    width: 220px;
+    left: -1%;
+    top: 12%;
+  }
+
+  img.basic6-img {
+    height: 220px;
+    width: 220px;
+    left: 66%;
+    top: 0%;
+  }
+
+  img.basic7-img {
+    height: 220px;
+    width: 220px;
+    right: -1%;
+    top: 12%;
+  }
+
+  .context .title {
+    font-size: 34px;
+  }
+
+  .context .heading {
+    font-size: 130px;
+  }
+  img.seasonalDevice1 {
+    left: 18%;
+  }
+  img.seasonalDevice2 {
+    left: 32%;
+  }
+  img.seasonalDevice3 {
+    right: 28%;
+  }
+  img.seasonalDevice4 {
+    right: 14%;
   }
 }
 
@@ -422,6 +660,89 @@
     right: 7%;
     height: 550px;
   }
+
+  img.basicEdition_section .banner-slide {
+    min-height: 480px !important;
+  }
+
+  img.basic1-img {
+    height: 420px;
+    width: 400px;
+    bottom: -10%;
+  }
+
+  img.basic2-img {
+    height: 420px;
+    width: 400px;
+    bottom: -10%;
+  }
+  img.basic3-img {
+    height: 420px;
+    width: 400px;
+    bottom: -10%;
+  }
+  img.basic4-img {
+    height: 240px;
+    width: 200px;
+    left: 38%;
+    top: -3%;
+  }
+
+  img.basic5-img {
+    height: 200px;
+    width: 200px;
+    left: -2%;
+    top: 14%;
+  }
+
+  img.basic6-img {
+    height: 200px;
+    width: 200px;
+    left: 68%;
+    top: 1%;
+  }
+
+  img.basic7-img {
+    height: 200px;
+    width: 200px;
+    right: -2%;
+    top: 14%;
+  }
+
+  .context .title {
+    font-size: 32px;
+  }
+
+  .context .heading {
+    font-size: 120px;
+  }
+
+  .slide-5 .heading {
+    font-size: 150px;
+  }
+
+  .slide-5 .heading {
+    color: #fff;
+    font-size: 150px;
+  }
+
+  img.seasonalBg2 {
+    width: 200px;
+  }
+  .slide-5 {
+    padding-top: 120px;
+    min-height: 750px !important;
+  }
+  .seasonalDevices img {
+    height: auto;
+    width: 260px;
+  }
+
+  img.flower4 {
+    position: absolute;
+    right: 0;
+    top: 5%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -505,6 +826,45 @@
   }
   .retro-simper-main {
     padding: 30px 0px;
+  }
+
+  img.basicEdition_section .banner-slide {
+    min-height: 450px !important;
+  }
+  img.basic4-img {
+    height: 220px;
+    width: 180px;
+    left: 40%;
+    top: -2%;
+  }
+
+  img.basic5-img {
+    height: 180px;
+    width: 180px;
+    left: -3%;
+    top: 16%;
+  }
+
+  img.basic6-img {
+    height: 180px;
+    width: 180px;
+    left: 70%;
+    top: 2%;
+  }
+
+  img.basic7-img {
+    height: 180px;
+    width: 180px;
+    right: -3%;
+    top: 16%;
+  }
+
+  .context .title {
+    font-size: 30px;
+  }
+
+  .context .heading {
+    font-size: 110px;
   }
 }
 
@@ -595,9 +955,9 @@
     top: -12px;
   }
 
-  .banner-slide {
+  /* .banner-slide {
     padding: 0px 3%;
-  }
+  } */
 
   .slide-1 {
     padding-top: 100px;
@@ -658,6 +1018,107 @@
   .retro-products {
     padding: 30px 0px;
   }
+
+  img.basicEdition_section .banner-slide {
+    min-height: 420px !important;
+  }
+  img.basic4-img {
+    height: 200px;
+    width: 160px;
+    left: 42%;
+    top: -1%;
+  }
+
+  img.basic5-img {
+    height: 160px;
+    width: 160px;
+    left: -4%;
+    top: 18%;
+  }
+
+  img.basic6-img {
+    height: 160px;
+    width: 160px;
+    left: 72%;
+    top: 3%;
+  }
+
+  img.basic7-img {
+    height: 160px;
+    width: 160px;
+    right: -4%;
+    top: 18%;
+  }
+
+  .context .title {
+    font-size: 28px;
+  }
+
+  .context .heading {
+    font-size: 100px;
+  }
+  .slide-5 .heading {
+    font-size: 100px;
+  }
+  img.seasonalBg1 {
+    width: 200px;
+    position: absolute;
+    top: 20%;
+    height: 220px;
+  }
+  img.seasonalBg2 {
+    width: 150px;
+  }
+  img.seasonalBox1 {
+    height: 300px;
+  }
+  img.seasonalBannerDevice1 {
+    height: 250px;
+  }
+  .slide-5 {
+    padding-top: 80px;
+    min-height: 600px !important;
+  }
+  .seasonal_flavours .heading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .seasonalBg .heading {
+    font-size: 80px;
+  }
+  .seasonalBg3 {
+    height: 300px;
+  }
+  img.flower4 {
+    height: 300px;
+  }
+  img.flower3 {
+    height: 300px;
+  }
+  img.flower1 {
+    height: 150px;
+    width: 100px;
+  }
+  img.flower2 {
+    height: 250px;
+    width: 250px;
+  }
+  .seasonal-product-card {
+    position: relative;
+    height: auto;
+  }
+  .seasonalbox {
+    bottom: 8%;
+    right: 20%;
+    height: 350px;
+  }
+  /* .seasonalDevices img {
+    width: 195px;
+  } */
+  .seasonal_flavours {
+    height: 600px;
+  }
 }
 
 @media (max-width: 910px) {
@@ -708,6 +1169,61 @@
   }
   .retro-products h3 {
     font-size: 125px;
+  }
+
+  img.basicEdition_section .banner-slide {
+    min-height: 400px !important;
+  }
+  img.basic4-img {
+    height: 180px;
+    width: 140px;
+    left: 30%;
+    top: 0%;
+  }
+
+  img.basic5-img {
+    height: 140px;
+    width: 140px;
+    left: 0%;
+    top: 20%;
+  }
+
+  img.basic6-img {
+    height: 140px;
+    width: 140px;
+    left: 74%;
+    top: 4%;
+  }
+
+  img.basic7-img {
+    height: 140px;
+    width: 140px;
+    right: 0%;
+    top: 20%;
+  }
+
+  .context .title {
+    font-size: 26px;
+  }
+
+  .context .heading {
+    font-size: 90px;
+  }
+  .seasonalBg .heading {
+    font-size: 60px;
+  }
+  .seasonalBg3 {
+    height: 250px;
+  }
+  img.flower4 {
+    height: 200px;
+  }
+  img.flower3 {
+    height: 200px;
+  }
+  img.flower2 {
+    height: 200px;
+    width: 200px;
   }
 }
 
@@ -780,11 +1296,25 @@
     font-size: 25px;
     line-height: 35px;
   }
-
+  .icons {
+    width: 70px;
+    height: 70px;
+  }
+  .icons img {
+    max-width: 35px;
+  }
   .logo-container {
     height: 400px;
   }
-
+  .basic-product-card {
+    height: auto;
+  }
+  .basicBox {
+    height: calc(100% - 50px);
+  }
+  .basicDevice {
+    height: auto;
+  }
   .primeBox {
     padding: 5px;
   }
@@ -957,6 +1487,86 @@
   }
   .retro-products h3 {
     font-size: 95px;
+  }
+
+  img.basicEdition_section .banner-slide {
+    min-height: 380px !important;
+  }
+  img.basic6-img {
+    height: 120px;
+    width: 120px;
+    left: 60%;
+    top: 5%;
+  }
+
+  img.basic1-img {
+    height: 300px;
+    width: 200px;
+    /* left: 3% !important; */
+    bottom: -10%;
+  }
+
+  img.basic2-img {
+    height: 300px;
+    width: 200px;
+    left: 34%;
+    bottom: -10%;
+  }
+
+  img.basic3-img {
+    height: 300px;
+    width: 200px;
+    right: 0%;
+    bottom: -10%;
+  }
+  .version_section .context .heading {
+    font-size: 35px;
+  }
+  .version_section .context img {
+    width: 42px;
+    height: 40px;
+  }
+  .version_details {
+    /* justify-content: space-between; */
+  }
+  .features {
+    font-size: 14px;
+  }
+
+  .slide-5 .heading {
+    font-size: 70px;
+  }
+
+  img.seasonalBg1 {
+    width: 140px;
+    position: absolute;
+    top: 20%;
+    height: 160px;
+  }
+  img.seasonalBg2 {
+    width: 100px;
+  }
+
+  .slide-5 {
+    padding-top: 40px;
+    min-height: 500px !important;
+  }
+  img.seasonalBox1 {
+    height: 220px;
+  }
+  img.seasonalBannerDevice1 {
+    height: 200px;
+    margin-left: -25px;
+  }
+  .seasonalDevices img {
+    width: 195px;
+  }
+  .seasonal_flavours {
+    height: 450px;
+  }
+  .seasonal_flavours .heading {
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 
@@ -1223,6 +1833,126 @@
   .retro-sec-right img {
     height: 25px;
   }
+
+  img.basicEdition_section .banner-slide {
+    min-height: 360px !important;
+  }
+
+  img.basic1-img {
+    height: 250px;
+    width: 200px;
+    left: -5%;
+    bottom: -10%;
+  }
+  .context img {
+    width: 30px;
+    height: 30px;
+  }
+  img.basic2-img {
+    height: 250px;
+    width: 200px;
+    left: 28%;
+    bottom: -10%;
+  }
+
+  img.basic3-img {
+    height: 250px;
+    width: 200px;
+    right: -5%;
+    bottom: -10%;
+  }
+
+  img.basic4-img {
+    height: 140px;
+    width: 100px;
+    left: 30%;
+    top: 0%;
+  }
+
+  img.basic5-img {
+    height: 100px;
+    width: 100px;
+    left: 0%;
+    top: 15%;
+  }
+
+  img.basic6-img {
+    height: 100px;
+    width: 100px;
+    left: 60%;
+    top: 6%;
+  }
+
+  img.basic7-img {
+    height: 100px;
+    width: 100px;
+    right: 0%;
+    top: 10%;
+  }
+
+  .context .title {
+    font-size: 22px;
+  }
+
+  .context .heading {
+    font-size: 50px;
+  }
+  .slide-2 {
+    padding: 120px 0;
+  }
+  .basic-product-name {
+    font-size: 16px;
+  }
+
+  .slide-5 .heading {
+    font-size: 60px;
+  }
+
+  .slide-5 {
+    padding-top: 20px;
+    min-height: 400px !important;
+  }
+  img.seasonalBox1 {
+    height: 180px;
+  }
+  img.seasonalBannerDevice1 {
+    height: 150px;
+    margin-left: -10px;
+  }
+  .seasonalDevices img {
+    width: 115px;
+  }
+  .seasonal_flavours {
+    height: 300px;
+  }
+  .seasonal_flavours .heading {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .seasonalBg3 {
+    height: 150px;
+  }
+  img.flower4 {
+    height: 150px;
+  }
+  img.flower3 {
+    height: 150px;
+  }
+  img.flower2 {
+    height: 100px;
+    width: 100px;
+  }
+
+  .seasonalBg .heading {
+    font-size: 40px;
+  }
+  img.flower1 {
+    height: 100px;
+    width: 80px;
+  }
+  .seasonalBg {
+    padding: 0 !important;
+  }
 }
 
 @media (max-width: 426px) {
@@ -1437,5 +2167,26 @@
     bottom: -5%;
     left: -8%;
     height: 250px;
+  }
+
+  img.basicEdition_section .banner-slide {
+    min-height: 320px !important;
+  }
+
+  .context .title {
+    font-size: 18px;
+  }
+
+  .context .heading {
+    font-size: 40px;
+  }
+  .basic-product-name {
+    font-size: 12px;
+  }
+  .warningText {
+    font-size: 10px;
+  }
+  .warningSection {
+    height: 65px;
   }
 }

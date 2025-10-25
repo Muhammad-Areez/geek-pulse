@@ -68,7 +68,7 @@ const SeasonalBanner = () => {
   return (
     <section className="basicEdition_section banner-section">
       <Swiper className="banner-swiper" spaceBetween={50} slidesPerView={1}>
-        <SwiperSlide className="banner-slide slide-5">
+        <SwiperSlide className=" slide-5">
           <div className="water-animation-layer"></div>
 
           <motion.div
@@ -117,7 +117,7 @@ const SeasonalBanner = () => {
 
             <Swiper
               className="product-swiper"
-              modules={[ Autoplay]}
+              // modules={[ Autoplay]}
               navigation
               spaceBetween={40}
               slidesPerView={1}

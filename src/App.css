@@ -1384,7 +1384,7 @@ img.basic3-img {
 .version_details {
   display: flex;
   align-items: start;
-  /* gap: 20px; */
+  gap: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 20px;
@@ -2392,9 +2392,9 @@ img.seasonalDevice4 {
 .seasonal_section .ourproducts.with-bg {
   background: #f7ead3;
 }
-.seasonal_section .ourProducts_section {
+/* .seasonal_section .ourProducts_section {
   padding: 0 !important;
-}
+} */
 .seasonal_section .ourProducts_section .heading {
   font-family: LondrinaSolid-Regular;
   text-transform: uppercase;

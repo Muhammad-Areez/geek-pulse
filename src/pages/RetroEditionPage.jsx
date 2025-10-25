@@ -64,7 +64,7 @@ function RetroEditionPage() {
           slidesPerView={1}
           spaceBetween={20}
           loop={true}
-          // modules={[Autoplay]}
+          modules={[Autoplay]}
           autoplay={{ delay: 2500, disableOnInteraction: false }}
           className="retro-sec-slider"
           speed={1000}
