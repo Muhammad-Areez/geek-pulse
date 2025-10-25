@@ -89,6 +89,12 @@
     font-size: 165px;
     line-height: 160px;
   }
+  .frozenBox,
+  .frozenDevice {
+    /* transform: none !important; */
+    /* width: auto !important; */
+    height: auto !important;
+  }
 }
 
 @media (max-width: 1366px) {
@@ -253,6 +259,10 @@
   .slide-4 {
     min-height: 980px !important;
   }
+  .frozen_section .heading {
+    font-size: 80px;
+    line-height: 40.1px;
+  }
 }
 @media (max-width: 1280px) {
   .logo-container {
@@ -345,7 +355,9 @@
     right: 0%;
     top: 10%;
   }
-
+  .frozen-product-name {
+    font-size: 30px;
+  }
   .context .title {
     font-size: 36px;
   }
@@ -379,6 +391,19 @@
   }
   .bgFruite2 {
     height: 200px;
+  }
+  .frozen-product-card {
+    height: 400px;
+  }
+  .frozenDevice {
+    width: 70%;
+    right: 16%;
+  }
+  .frozenBox {
+    top: 50%;
+  }
+  .frozenDevice {
+    bottom: 5%;
   }
 }
 
@@ -631,6 +656,9 @@
   }
   .seasonalBg .heading {
     font-size: 85px;
+  }
+  .frozenDevice {
+    bottom: 10%;
   }
 }
 
@@ -933,6 +961,15 @@
     right: 32%;
     height: 300px;
     width: 300px;
+  }
+  .frozenDevice {
+    bottom: 15%;
+  }
+  .frozenBox {
+    top: 55%;
+  }
+  .frozen_section .heading {
+    font-size: 50px;
   }
 }
 
@@ -1377,6 +1414,14 @@
     height: 180px;
     width: 260px;
   }
+  .frozenDevice {
+    bottom: 0%;
+    width: 65%;
+  }
+  .frozenBox {
+    top: 40%;
+    width: 65%;
+  }
 }
 
 @media (max-width: 910px) {
@@ -1511,6 +1556,12 @@
   }
   .seasonalDevice {
     width: 130px;
+  }
+  .frozenDevice {
+    bottom: 15%;
+  }
+  .frozenBox {
+    top: 45%;
   }
 }
 
@@ -1959,6 +2010,9 @@
     right: 35%;
     height: 150px;
     width: 200px;
+  }
+  .frozen_section .heading {
+    font-size: 40px;
   }
 }
 
@@ -2452,6 +2506,25 @@
   .bgFruite2 {
     height: 150px;
   }
+  .frozen-product-name {
+    font-size: 20px;
+  }
+  /* .frozen-product-card {
+    height: 300px;
+  }
+  .frozenBox {
+    top: 55%;
+  } */
+  .frozenDevice {
+    bottom: 0%;
+  }
+  .frozen-product-card {
+    height: 350px;
+  }
+  .frozenDevice {
+    width: 55%;
+    right: 22%;
+  }
 }
 
 @media (max-width: 426px) {
@@ -2531,7 +2604,10 @@
   .banner-list-main ul li {
     width: 50px;
   }
-
+  .frozen_section .heading {
+    font-size: 30px;
+    line-height: 20px;
+  }
   .primeBox .banner-device-img1 {
     height: 200px !important;
     right: -7% !important;
@@ -2701,5 +2777,22 @@
   }
   .primeBox .banner-device-img1 {
     display: none;
+  }
+  .frozenDevice {
+    bottom: 0%;
+  }
+  .frozen-product-card {
+    height: 300px;
+  }
+  .frozenBox {
+    top: 55%;
+  }
+  /* .frozenDevice {
+    bottom: 19%;
+  } */
+}
+@media (max-width: 400px) {
+  .frozenBox {
+    top: 70%;
   }
 }

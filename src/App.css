@@ -777,7 +777,7 @@ img.aboutbg {
   justify-content: center;
   padding: 10px;
 }
-.aboutUs_section .logo-section h3{
+.aboutUs_section .logo-section h3 {
   width: 100%;
   padding: 10px;
 }
@@ -1783,46 +1783,39 @@ img.basic3-img {
   filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.25));
 }
 .slide-3 .frozenBox {
+  bottom: 0 !important;
+  right: 16%;
   position: absolute;
-  width: 70%;
-  max-width: 500px !important;
-  height: auto !important;
+  width: auto;
+  height: 360px !important;
   z-index: 1;
   transform-origin: center;
-  /* perspective: 1000px; */
+  perspective: 1000px;
 }
-
-.frozenHat {
-  position: absolute;
-  top: 0px;
-  left: 30px;
-  height: 120px;
-  z-index: 4;
-  transform-origin: bottom center;
-}
-
 .slide-3 .frozenDevice3 {
   position: absolute;
-  /* right: -120px; */
-  bottom: 20%;
-  height: auto;
-  max-height: 100%;
+  bottom: 0%;
+  right: 0% !important;
   z-index: 3;
+  object-fit: contain;
   filter: drop-shadow(0px 8px 25px rgba(0, 0, 0, 0.35));
   transform-origin: center;
 }
 
 .frozenLogo {
   width: auto !important;
-  height: 400px !important;
-  position: relative;
+  height: 300px !important;
+  position: absolute;
+  left: -1%;
+  top: 20%;
   z-index: 3;
   filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.3));
 }
-
 /* Extra Touch: Glowing snowflakes */
 .snowflake::before {
-  content: "❄";
+  content: ".";
+  width: 20px;
+  height: 20px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
@@ -1845,9 +1838,9 @@ img.basic3-img {
   /* overflow: hidden; */
   perspective: 1000px;
 }
-.frozenBg .row {
+/* .frozenBg .row {
   width: 100% !important;
-}
+} */
 .frozen-product-name {
   font-family: LondrinaSolid-Regular;
   color: #100a3e;
@@ -1861,7 +1854,7 @@ img.basic3-img {
 .frozen-product-card {
   border-radius: 12px;
   width: 100%;
-  height: 600px;
+  height: 500px;
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 0 12px #cccc;
@@ -1879,7 +1872,7 @@ img.basic3-img {
 }
 .frozenDevice {
   width: 85%;
-  height: 100%;
+  height: auto;
   /* max-height: ; */
   right: 8%;
   bottom: 0;
