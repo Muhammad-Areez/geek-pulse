@@ -2,7 +2,29 @@ import { Col, Container, Row } from "react-bootstrap";
 import { images } from "../assets/images";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { apiHelper } from "../services";
+import { toast } from "react-toastify";
 export const Footer = ({ isHomePage = false, background = "#100a3e" }) => {
+  const [loading, setLoading] = useState(false)
+  const [email, setEmail] = useState('')
+
+  const submitNewsletter = async (e) => {
+    e.preventDefault()
+    setLoading(true)
+    const body = {
+      email: email
+    }
+    const {response, error} = await apiHelper('POST', '/newsletter/subscribe', {}, body)
+    if(response){
+      setLoading(false)
+      toast.success(response.data.message)
+    }else{
+      setLoading(false)
+      toast.error(error)
+    }
+  }
+
   return (
     <Container
       className={`footer-main ${!isHomePage && "footer-main-sec"}`}
@@ -124,19 +146,22 @@ export const Footer = ({ isHomePage = false, background = "#100a3e" }) => {
           <h3>Subscribe to get 10% OFF on your first order!</h3>
         </Col>
         <Col lg={6}>
-          <div className="search-div">
-            <div className="searchField">
-              <input type="search" placeholder="Enter your email" />
-              <button
-                className="cta"
-                style={{
-                  background: background !== "#100a3e" ? "#55BD04" : "#8186FF",
-                }}
-              >
-                Subscribe
-              </button>
+          <form onSubmit={submitNewsletter}>
+            <div className="search-div">
+              <div className="searchField">
+                <input type="search" placeholder="Enter your email" onChange={(e)=>setEmail(e.target.value)}/>
+                <button
+                  className="cta"
+                  style={{
+                    background: background !== "#100a3e" ? "#55BD04" : "#8186FF",
+                  }}
+                  disabled={loading}
+                >
+                  {loading ? "Subscribing..." : "Subscribe"}
+                </button>
+              </div>
             </div>
-          </div>
+          </form>
         </Col>
       </Row>
     </Container>

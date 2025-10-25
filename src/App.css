@@ -957,6 +957,9 @@ img.aboutbg {
   color: #403b65;
   font-weight: 500;
 }
+.searchField input:focus-visible{
+  outline: none;
+}
 .searchField input::placeholder {
   color: #403b65;
 }
@@ -3065,3 +3068,17 @@ img.flower4 {
   transform: translateX(-75%);
 }
 /* VPU Ends */
+
+.modal-main{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+  backdrop-filter: blur(10px)
+}

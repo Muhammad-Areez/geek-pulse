@@ -1,8 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import { images } from "../assets/images";
 import { Link } from "react-router-dom";
+import { apiHelper } from "../services";
+import { toast } from "react-toastify";
 const ContactForm = () => {
+  const [loading, setLoading] = useState(false)
+  const [values, setValues] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message:''
+  })
+
+  const submitContact = async (e) => {
+    e.preventDefault()
+    setLoading(true)
+    const body = {
+      name: values.name,
+      email: values.email,
+      subject: values.subject,
+      message: values.message
+    }
+    const {response, error} = await apiHelper('POST', "contact/contact-us", {}, body)
+    if(response){
+      setLoading(false)
+      toast.success(response.data.message)
+      console.log(response.data)
+    }else{
+      setLoading(false)
+      toast.error("Failed to send message")
+    }
+  }
+
+
   return (
     <section className="contact_form_section">
       <Row>
@@ -34,17 +65,17 @@ const ContactForm = () => {
           </div>
         </Col>
         <Col md={6}>
-          <form className="contact-form mx-5 my-3">
+          <form className="contact-form mx-5 my-3" onSubmit={submitContact}>
             <div className="form-floating mb-3">
-              <input type="text" className="form-control" id="floatingInput" />
+              <input type="text" className="form-control" id="floatingInput" value={values.name} onChange={(e) => setValues({...values, name: e.target.value})} required/>
               <label htmlFor="floatingInput">Your Name</label>
             </div>
             <div className="form-floating mb-3">
-              <input type="email" className="form-control" id="floatingInput" />
+              <input type="email" className="form-control" id="floatingInput" value={values.email} onChange={(e) => setValues({...values, email: e.target.value})} required/>
               <label htmlFor="floatingInput">Email</label>
             </div>
             <div className="form-floating mb-3">
-              <input type="text" className="form-control" id="floatingInput" />
+              <input type="text" className="form-control" id="floatingInput" value={values.subject} onChange={(e) => setValues({...values, subject: e.target.value})} required/>
               <label htmlFor="floatingInput">Subject</label>
             </div>
             <div className="form-floating mb-3">
@@ -52,10 +83,13 @@ const ContactForm = () => {
                 className="form-control"
                 id="floatingTextarea"
                 style={{ height: "120px" }}
+                value={values.message}
+                onChange={(e) => setValues({...values, message: e.target.value})}
+                required
               ></textarea>
               <label htmlFor="floatingTextarea">Message</label>
             </div>
-            <button className="cta">Send</button>
+            <button className="cta" disabled={loading}>{loading ? 'Sending...' : 'Send'}</button>
           </form>
         </Col>
       </Row>
