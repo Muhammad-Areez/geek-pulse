@@ -45,7 +45,12 @@ const SmoothieBanner = () => {
       );
 
       tl.from(
-        [".smoothiedevice1", ".smoothiedevice2", ".smoothiedevice3", ".smoothiedevice4"],
+        [
+          ".smoothiedevice1",
+          ".smoothiedevice2",
+          ".smoothiedevice3",
+          ".smoothiedevice4",
+        ],
         {
           scale: 1.6,
           opacity: 0,
@@ -64,7 +69,7 @@ const SmoothieBanner = () => {
   return (
     <section className="basicEdition_section banner-section" ref={slideRef}>
       <Swiper className="banner-swiper" spaceBetween={50} slidesPerView={1}>
-        <SwiperSlide className="banner-slide slide-4">
+        <SwiperSlide className=" slide-4">
           <div className="context">
             <div className="d_flex">
               <h4 className="title">Ultra</h4>
@@ -83,10 +88,26 @@ const SmoothieBanner = () => {
           <img src={images.smootieBg7} alt="" className="smootieBg6" />
 
           {/* Devices */}
-          <img src={images.smoothieDevicesStage1} alt="" className="smoothiedevice1" />
-          <img src={images.smoothieDevicesStage2} alt="" className="smoothiedevice2" />
-          <img src={images.smoothieDevicesStage3} alt="" className="smoothiedevice3" />
-          <img src={images.smoothieDevicesStage4} alt="" className="smoothiedevice4" />
+          <img
+            src={images.smoothieDevicesStage1}
+            alt=""
+            className="smoothiedevice1"
+          />
+          <img
+            src={images.smoothieDevicesStage2}
+            alt=""
+            className="smoothiedevice2"
+          />
+          <img
+            src={images.smoothieDevicesStage3}
+            alt=""
+            className="smoothiedevice3"
+          />
+          <img
+            src={images.smoothieDevicesStage4}
+            alt=""
+            className="smoothiedevice4"
+          />
         </SwiperSlide>
       </Swiper>
     </section>
