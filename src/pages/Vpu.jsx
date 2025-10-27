@@ -15,8 +15,9 @@ function Vpu() {
     
   return (
     <>
-      <Container className="position-relative">
-        <Warning />
+      
+        <div className="postion-relative vpu-banner-main">
+        <Warning borderRadius="0px"/>
         <Header />
         <section className="vpu-hero">
           <motion.div
@@ -45,9 +46,11 @@ function Vpu() {
             VPU
           </motion.h1>
         </section>
+        </div>
+        <Container className="position-relative">
         <section className="vpu-sec">
-          <Row className="px-5">
-            <Col md={6}>
+          <Row className="px-3 px-md-5">
+            <Col lg={6}>
               <div className="vpu-sec-left">
                 <h3>
                   As CPU for computer, VPU stands for Vaping Processing Unit.
@@ -59,7 +62,7 @@ function Vpu() {
                 </h6>
               </div>
             </Col>
-            <Col md={6}>
+            <Col lg={6}>
               <div className="vpu-sec-right">
                 <img src={images.vpuSecLeft} alt="vpu" />
               </div>
@@ -67,13 +70,13 @@ function Vpu() {
           </Row>
         </section>
         <section className="vpu-experience">
-          <Row className="px-5">
-            <Col md={6}>
+          <Row className="px-3 px-md-5">
+            <Col lg={6}>
               <div className="experience-left">
                 <img src={images.vapeExperience} alt="vape" />
               </div>
             </Col>
-            <Col md={6}>
+            <Col lg={6}>
               <div className="experience-right">
                 <h3>
                   VAPE EXPERIENCE <br />
@@ -115,16 +118,11 @@ function Vpu() {
             loop
             muted
             playsInline
-            style={{
-              width: "100%",
-              height: "700px",
-              objectFit: "cover",
-              borderRadius: "40px",
-            }}
+            className="video-playback"
           />
         </section>
         <section className="vpu-safety">
-          <Row className="px-5">
+          <Row className="px-3 px-md-5">
             <Col md={5}>
               <div className="vpu-safety-left">
                 <h3>Safety Performance</h3>
@@ -148,12 +146,7 @@ function Vpu() {
             loop
             muted
             playsInline
-            style={{
-              width: "100%",
-              height: "700px",
-              objectFit: "cover",
-              borderRadius: "40px",
-            }}
+            className="video-playback"
           />
         </section>
         <section className="vpu-future">

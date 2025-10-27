@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import ContactUs from "./pages/ContactUs";
@@ -12,9 +13,30 @@ import Wholesaler from "./pages/Wholesaler";
 import CosmosEdition from "./pages/CosmosEdition";
 import AboutUs from "./pages/AboutUs";
 import Vpu from "./pages/Vpu";
+import WarningPopUp from "./components/WarningPopUp";
 
 function App() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const confirmed = localStorage.getItem('ageConfirmed');
+    if (confirmed !== 'true') {
+      setShowPopup(true);
+    }
+  }, []);
+
+  const handleYes = () => {
+    localStorage.setItem('ageConfirmed', 'true');
+    setShowPopup(false);
+  };
+
+  const handleNo = () => {
+    window.location.href = 'https://www.google.com';
+  };
+
   return (
+    <>
+    <WarningPopUp show={showPopup} onYes={handleYes} onNo={handleNo}/>
     <Router>
       <ScrollToTop />
       <Routes>
@@ -31,6 +53,7 @@ function App() {
         <Route path="/vpu" element={<Vpu />} />
       </Routes>
     </Router>
+    </>
   );
 }
 

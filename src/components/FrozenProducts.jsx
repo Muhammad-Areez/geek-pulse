@@ -64,7 +64,7 @@ const FrozenProducts = () => {
       rotateZ: -8,
       x: isXS ? 60 : isSm ? 70 : 100,
       y: isXS ? 20 : isSm ? 10 : 10,
-      scale: isXS ? 0.9 : isSm ? 1 : 0.9,
+      scale: isXS ? 0.9 : isSm ? 1 : 1,
       zIndex: 0,
       filter: "blur(8px)",
       transition: { duration: 0.3 },

@@ -26,7 +26,9 @@ const Header = () => {
   return (
     <header className="main-header d_flex">
       <div className="header-content">
-        <img src={logo} alt="logo" className="logo" />
+        <Link to={'/'}>
+          <img src={logo} alt="logo" className="logo" />
+        </Link>
         <div class={`menu-Bar ${hamburgerToggle ? 'open' : ''}`} onClick={toggleMenu}>
           <span></span>
           <span></span>
