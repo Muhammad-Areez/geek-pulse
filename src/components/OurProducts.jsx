@@ -45,7 +45,9 @@ const OurProducts = ({
         pagination={{ clickable: true }}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
         loop={true}
-        speed={1000}
+        speed={800}
+        preloadImages={false}
+        watchSlidesProgress={true}
       >
         {products.map((product, i) => (
           <SwiperSlide key={i}>
@@ -56,6 +58,7 @@ const OurProducts = ({
               <img
                 src={product.img}
                 alt={`Product ${i + 1}`}
+                loading="lazy"
               />
             </div>
           </SwiperSlide>

@@ -62,7 +62,7 @@ const Blogs = () => {
               }}
               transition={{ delay: index * 0.2 }}
             >
-              <img src={blog.image} alt={blog.title} className="card-img-top" />
+              <img src={blog.image} alt={blog.title} className="card-img-top" loading="lazy" />
               <span className="tags tag1">Trend</span>
               <span className="tags tag2">Vaping</span>
               <div className="card-body">

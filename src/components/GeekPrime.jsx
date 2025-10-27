@@ -43,25 +43,25 @@ const GeekPrime = () => {
             <ul>
               <li>
                 <div>
-                  <img src={images.bannerIcon1} />
+                  <img src={images.bannerIcon1} loading="lazy" />
                 </div>
                 <p>Dynamic Display</p>
               </li>
               <li>
                 <div>
-                  <img src={images.bannerIcon2} />
+                  <img src={images.bannerIcon2} loading="lazy" />
                 </div>
                 <p>Dual Core</p>
               </li>
               <li>
                 <div>
-                  <img src={images.bannerIcon3} />
+                  <img src={images.bannerIcon3} loading="lazy" />
                 </div>
                 <p>Dual Mesh Coil</p>
               </li>
               <li>
                 <div>
-                  <img src={images.bannerIcon4} />
+                  <img src={images.bannerIcon4} loading="lazy" />
                 </div>
                 <p>Cosmos Ui</p>
               </li>
@@ -76,6 +76,7 @@ const GeekPrime = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
+            loading="lazy"
           />
           <motion.img
             src={images.primeImage1}
@@ -85,6 +86,7 @@ const GeekPrime = () => {
             whileInView="visible"
             custom={0.2}
             viewport={{ once: true }}
+            loading="lazy"
           />
         </Col>
       </Row>

@@ -31,6 +31,8 @@ const Banner = () => {
         ease: "sine.inOut",
         repeat: -1,
         yoyo: true,
+        force3D: true,
+        transformOrigin: "center center",
       });
     }
 
@@ -139,6 +141,7 @@ const Banner = () => {
         ease: "none",
         repeat: -1,
         transformOrigin: "center center",
+        force3D: true,
       });
     }
   }, []);
@@ -149,6 +152,8 @@ const Banner = () => {
         className="banner-swiper"
         spaceBetween={50}
         slidesPerView={1}
+        preloadImages={false}
+        watchSlidesProgress={true}
         // onSlideChange={() => console.log('slide change')}
         // onSwiper={(swiper) => console.log(swiper)}
       >

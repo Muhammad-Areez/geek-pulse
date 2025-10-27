@@ -404,7 +404,8 @@ a:hover {
 }
 
 html{
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 body {

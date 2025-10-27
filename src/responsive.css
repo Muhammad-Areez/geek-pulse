@@ -999,51 +999,56 @@
   .frozenBanner_text .text {
     font-size: 40px;
   }
-  .vpu-hero{
+  .vpu-hero {
     height: 500px;
   }
-  .vpu-sec-left h3{
+  .vpu-sec-left h3 {
     font-size: 50px;
     line-height: 44px;
   }
-  .vpu-sec-left h6{
+  .vpu-sec-left h6 {
     font-size: 27px;
     line-height: 30px;
   }
-  .experience-left img{
+  .experience-left img {
     height: 100%;
     width: 100%;
   }
-  .experience-right h3{
+  .experience-right h3 {
     font-size: 55px;
     line-height: 48px;
   }
-  .experience-right h6{
+  .experience-right h6 {
     font-size: 25px;
     line-height: 27px;
   }
-  .vpu-standard h3{
+  .vpu-standard h3 {
     font-size: 45px;
     line-height: 52px;
   }
-  
-  .video-sec1, .video-sec2, .video-playback,.vpu-safety,.vpu-safety-left, .vpu-future{
+
+  .video-sec1,
+  .video-sec2,
+  .video-playback,
+  .vpu-safety,
+  .vpu-safety-left,
+  .vpu-future {
     height: 500px;
   }
-  .vpu-safety-left h3{
+  .vpu-safety-left h3 {
     font-size: 45px;
     line-height: 48px;
   }
-  .vpu-safety-left h6{
+  .vpu-safety-left h6 {
     font-size: 19px;
     line-height: 25px;
     letter-spacing: -1px;
   }
-  .vpu-future h3{
+  .vpu-future h3 {
     font-size: 45px;
     line-height: 50px;
   }
-  .vpu-future h6{
+  .vpu-future h6 {
     font-size: 20px;
     line-height: 23px;
   }
@@ -1171,13 +1176,13 @@
     font-size: 110px;
   }
 
-  .aeroplane-img{
+  .aeroplane-img {
     width: 150px !important;
   }
-  .banner-list-main ul li{
+  .banner-list-main ul li {
     width: 90px;
   }
-  .banner-text-div h1{
+  .banner-text-div h1 {
     font-size: 38px;
   }
 }
@@ -1508,29 +1513,29 @@
     top: 40%;
     width: 65%;
   }
-  .vpu-hero{
+  .vpu-hero {
     height: 450px;
     padding: 200px 0px 140px 0px;
   }
-  .vpu-hero h1{
+  .vpu-hero h1 {
     font-size: 130px;
   }
-  .vpu-sec{
+  .vpu-sec {
     padding: 60px 0px;
   }
-  .vpu-sec-right{
+  .vpu-sec-right {
     margin-top: 20px;
   }
-  .vpu-experience{
-    padding:60px 0px
+  .vpu-experience {
+    padding: 60px 0px;
   }
-  .experience-left{
+  .experience-left {
     width: 100%;
   }
-  .experience-left img{
+  .experience-left img {
     width: 400px;
   }
-  .experience-right{
+  .experience-right {
     padding-right: 0;
   }
 }
@@ -2160,73 +2165,79 @@
   .frozenBanner_text .title {
     font-size: 20px;
   }
-  .popup-logo{
+  .popup-logo {
     width: 220px;
   }
-  .pop-btn-main button{
+  .pop-btn-main button {
     padding: 10px 30px;
   }
-  .popup-main h4{
+  .popup-main h4 {
     margin-top: 40px;
     font-size: 30px;
   }
-  .popup-main p{
+  .popup-main p {
     font-size: 16px;
     list-style: 21px;
     margin-bottom: 100px;
   }
-  .pop-warn-icon{
+  .pop-warn-icon {
     width: 150px;
   }
-  .vpu-hero{
+  .vpu-hero {
     height: 350px;
   }
-  .vpu-hero h1{
+  .vpu-hero h1 {
     font-size: 100px;
   }
-  .vpu-sec, .vpu-experience{
+  .vpu-sec,
+  .vpu-experience {
     padding: 40px 0px;
   }
-  .vpu-sec-left h3{
+  .vpu-sec-left h3 {
     font-size: 40px;
-    line-height: 34px
+    line-height: 34px;
   }
-  .vpu-sec-left h6{
+  .vpu-sec-left h6 {
     font-size: 20px;
     line-height: 23px;
   }
-  .vpu-sec-right img{
+  .vpu-sec-right img {
     height: 100px;
   }
-  .experience-left img{
+  .experience-left img {
     width: 300px;
   }
-  .experience-right h3{
+  .experience-right h3 {
     font-size: 45px;
     line-height: 40px;
   }
-  .experience-right h6{
+  .experience-right h6 {
     font-size: 19px;
     line-height: 21px;
   }
-  .vpu-standard h3{
+  .vpu-standard h3 {
     font-size: 35px;
     line-height: 42px;
   }
-  .video-sec1, .video-sec2, .video-playback, .vpu-safety, .vpu-safety-left, .vpu-future{
+  .video-sec1,
+  .video-sec2,
+  .video-playback,
+  .vpu-safety,
+  .vpu-safety-left,
+  .vpu-future {
     height: 400px;
   }
-  .vpu-safety img{
+  .vpu-safety img {
     display: none;
   }
-  .vpu-future{
-    padding:40px 0px 0px 0px
+  .vpu-future {
+    padding: 40px 0px 0px 0px;
   }
-  .vpu-future h3{
+  .vpu-future h3 {
     font-size: 35px;
     line-height: 40px;
   }
-  .vpu-future h6{
+  .vpu-future h6 {
     font-size: 17px;
     line-height: 20px;
   }
@@ -2248,25 +2259,25 @@
   .aeroplane-img {
     display: none !important;
   }
-  .moon-img{
+  .moon-img {
     width: 140px !important;
     height: 140px !important;
     left: -100px;
   }
-  .logo-section h3{
+  .logo-section h3 {
     font-size: 20px;
     line-height: 25px;
   }
-  .banner-logo{
+  .banner-logo {
     width: 300px;
   }
   .prime_section {
     margin: 25px 0px;
   }
-  .pin-section-main{
+  .pin-section-main {
     margin-bottom: 25px;
   }
-  .primeBox{
+  .primeBox {
     border-radius: 20px !important;
   }
   .slide-1 {
@@ -2770,65 +2781,72 @@
     right: 14%;
     bottom: 5%;
   }
-  .modal-wrapper{
+  .modal-wrapper {
     padding: 30px;
   }
-  .popup-logo{
+  .popup-logo {
     width: 200px;
   }
-  .popup-main h4{
+  .popup-main h4 {
     font-size: 25px;
     margin-top: 30px;
   }
-  .pop-warn-icon{
+  .pop-warn-icon {
     width: 100px;
     right: 30px;
     bottom: 30px;
   }
-  .pop-para{
+  .pop-para {
     width: 80%;
   }
-  .pop-para p{
+  .pop-para p {
     margin-bottom: 80px;
   }
-  .logo-container{
+  .logo-container {
     height: 320px;
   }
-  .vpu-sec-left{
+  .vpu-sec-left {
     gap: 15px;
   }
-  .vpu-hero h1{
-    font-size: 80px
+  .vpu-hero h1 {
+    font-size: 80px;
   }
-  .vpu-sec-left h3{
+  .vpu-sec-left h3 {
     font-size: 34px;
     line-height: 28px;
   }
-  .vpu-sec, .vpu-experience{
+  .vpu-sec,
+  .vpu-experience {
     padding: 30px 0px;
   }
-  .vpu-experience,.vpu-standard, .video-sec1, .video-sec2, .video-playback, .vpu-safety, .vpu-future{
+  .vpu-experience,
+  .vpu-standard,
+  .video-sec1,
+  .video-sec2,
+  .video-playback,
+  .vpu-safety,
+  .vpu-future {
     border-radius: 25px;
   }
-  .experience-right h3{
+  .experience-right h3 {
     font-size: 35px;
     line-height: 30px;
   }
-  .experience-right h6{
+  .experience-right h6 {
     font-size: 17px;
   }
-  .experience-right{
+  .experience-right {
     gap: 15px;
   }
-  .vpu-standard h3{
+  .vpu-standard h3 {
     font-size: 30px;
     line-height: 37px;
   }
-  .vpu-safety-left h3{
+  .vpu-safety-left h3 {
     font-size: 35px;
     line-height: 43px;
   }
-  .vpu-safety-left h6{
+  .vpu-safety-left h6 {
     font-size: 17px;
     line-height: 23px;
   }
@@ -3114,6 +3132,9 @@
   }
   .frozenBanner_text .title {
     font-size: 15px;
+  }
+  .main-header {
+    top: 55px;
   }
 }
 @media (max-width: 400px) {
