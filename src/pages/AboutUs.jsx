@@ -73,29 +73,31 @@ function AboutUs() {
         <section ref={sectionRef}>
           <Warning borderRadius={"0px"} />
           <Header />
-          <section className="logo-section">
-            <div className="logo-container">
-              <motion.img
-                src={images.matrix}
-                className="matrix-img"
-                alt="Matrix lines"
-                initial={{ scale: 1.2 }}
-                animate={{ scale: [1, 1.1, 1], opacity: [1, 0.8, 1] }}
-                transition={{
-                  duration: 6,
-                  ease: "easeInOut",
-                  repeat: Infinity,
-                }}
-              />
-              <img
-                ref={logoRef}
-                src={images.logo}
-                alt="Logo"
-                className="banner-logo"
-              />
-              <h3 ref={textRef}>{words}</h3>
-            </div>
-          </section>
+          <div className="homePage">
+            <section className="logo-section">
+              <div className="logo-container">
+                <motion.img
+                  src={images.matrix}
+                  className="matrix-img"
+                  alt="Matrix lines"
+                  initial={{ scale: 1.2 }}
+                  animate={{ scale: [1, 1.1, 1], opacity: [1, 0.8, 1] }}
+                  transition={{
+                    duration: 6,
+                    ease: "easeInOut",
+                    repeat: Infinity,
+                  }}
+                />
+                <img
+                  ref={logoRef}
+                  src={images.logo}
+                  alt="Logo"
+                  className="banner-logo"
+                />
+                <h3 ref={textRef}>{words}</h3>
+              </div>
+            </section>
+          </div>
           <section className="about_section2">
             <h2 className="heading">
               FROM TECHNOLOGY DEVELOPMENT TO HEALTH APPLICATIONS

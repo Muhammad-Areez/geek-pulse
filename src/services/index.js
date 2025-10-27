@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://72.61.1.47:3000/api/v1/",
+  baseURL: "https://geekultrastore.com/api/v1/",
   timeout: 20000,
 });
 
