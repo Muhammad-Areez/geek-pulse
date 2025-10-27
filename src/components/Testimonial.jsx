@@ -62,7 +62,7 @@ const Testimonial = () => {
           spaceBetween={20}
           loop={true}
           autoplay={{
-            delay: 2500,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           breakpoints={{
@@ -81,18 +81,21 @@ const Testimonial = () => {
           }}
           modules={[Autoplay]}
           className="testimonialSwiper"
+          preloadImages={false}
+          watchSlidesProgress={true}
+          speed={600}
         >
           {reviews.map((item, index) => (
             <SwiperSlide key={index} className="testimonial-slide">
               <div className="reviewBox">
                 <div className="rattings d_flex">
                   {[...Array(5)].map((_, i) => (
-                    <img key={i} src={images.star} alt="star" />
+                    <img key={i} src={images.star} alt="star" loading="lazy" />
                   ))}
                 </div>
                 <div className="d_flex name">
                   <p>{item.name}</p>
-                  <img src={images.verified} alt="verified" />
+                  <img src={images.verified} alt="verified" loading="lazy" />
                 </div>
                 <p className="review">"{item.review}"</p>
               </div>

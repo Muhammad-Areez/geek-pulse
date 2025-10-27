@@ -430,7 +430,7 @@ img {
 }
 /* Our Products ends */
 /* Logo Section starts */
-.logo-section {
+.homePage .logo-section {
   height: 100vh; /* Full screen height */
   width: 100%;
   overflow: hidden;
@@ -3247,4 +3247,237 @@ img.flower4 {
   width: 100%;
   height: 100%;
   left: 0;
+}
+
+/* Image Placeholder Styles */
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-shimmer {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Responsive styles for mobile and tablet */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+
+  .logo-section {
+    height: 50vh;
+  }
+
+  .banner-slide {
+    min-height: 400px !important;
+    padding: 0px 2%;
+  }
+
+  .banner-text-div h1 {
+    font-size: 40px;
+    line-height: 35px;
+  }
+
+  .banner-text-div h2 {
+    font-size: 18px;
+  }
+
+  .banner-list-main ul {
+    gap: 20px;
+  }
+
+  .banner-list-main ul li {
+    width: 80px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu-Bar {
+    display: flex;
+  }
+
+  .main-header {
+    top: 50px;
+    height: 60px;
+  }
+
+  .header-products {
+    top: 60px;
+  }
+
+  .ourProducts_section {
+    padding: 10px 0;
+  }
+
+  .prime_section h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .primeBox {
+    width: calc(100% - 20px);
+    padding: 30px 10px;
+    height: 350px;
+  }
+
+  .testimonial_section .heading {
+    font-size: 30px;
+  }
+
+  .blog_section .heading {
+    font-size: 30px;
+  }
+
+  .about_section2 .heading {
+    font-size: 30px;
+    width: 80%;
+  }
+
+  .contact_heading {
+    font-size: 100px !important;
+  }
+
+  .contact_form_section .heading {
+    font-size: 30px;
+  }
+
+  .faqs_section .heading {
+    font-size: 30px;
+  }
+
+  .version_section .context .heading {
+    font-size: 40px;
+  }
+
+  .retro-edition-hero .retro-heading {
+    font-size: 150px;
+    line-height: 130px;
+  }
+
+  .slide-3 .heading {
+    font-size: 100px;
+  }
+
+  .slide-4 .heading {
+    font-size: 120px;
+  }
+
+  .slide-5 .heading {
+    font-size: 80px;
+  }
+
+  .cosmos-hero-main h1 {
+    font-size: 150px;
+    line-height: 150px;
+  }
+
+  .cosmos-hero-main .outline {
+    font-size: 150px;
+    line-height: 150px;
+  }
+
+  .vpu-hero h1 {
+    font-size: 100px;
+  }
+
+  .vpu-sec-left h3 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .vpu-sec-left h6 {
+    font-size: 25px;
+    line-height: 27px;
+  }
+
+  .experience-right h3 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .experience-right h6 {
+    font-size: 23px;
+    line-height: 25px;
+  }
+
+  .vpu-safety-left h3 {
+    font-size: 35px;
+    line-height: 38px;
+  }
+
+  .vpu-safety-left h6 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .vpu-future h3 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .vpu-future h6 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .footer-main {
+    height: 500px;
+    padding: 60px 2%;
+  }
+
+  .footer-logo-div .footer-logo {
+    width: 300px;
+  }
+
+  .footer_bottom h3 {
+    font-size: 30px;
+  }
+
+  .searchField {
+    width: 300px;
+  }
+
+  /* Ensure scrolling works on mobile */
+  body {
+    overflow-y: auto;
+  }
+
+  #root {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .swiper {
+    touch-action: pan-y;
+  }
 }

@@ -23,7 +23,7 @@ function HomePage() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.set(textRef.current, { opacity: 0, y: 100 });
+      gsap.set(textRef.current, { opacity: 0, y: 100, force3D: true });
 
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -33,25 +33,27 @@ function HomePage() {
           scrub: true,
           pin: true,
           anticipatePin: 1,
+          invalidateOnRefresh: true,
         },
       });
 
       tl.fromTo(
         logoRef.current,
-        { scale: 1, opacity: 1 },
-        { scale: 5, opacity: 0, ease: "power2.out", duration: 2 }
+        { scale: 1, opacity: 1, force3D: true },
+        { scale: 5, opacity: 0, ease: "power2.out", duration: 2, force3D: true }
       );
 
       tl.fromTo(
         textRef.current,
-        { opacity: 0, y: 100 },
-        { opacity: 1, y: 0, ease: "power2.out" }
+        { opacity: 0, y: 100, force3D: true },
+        { opacity: 1, y: 0, ease: "power2.out", force3D: true }
       );
 
       tl.to(textRef.current.querySelectorAll("span"), {
         color: "white",
         stagger: 0.05,
         ease: "none",
+        force3D: true,
       });
     }, sectionRef);
 
@@ -82,7 +84,7 @@ function HomePage() {
               <OurProducts headingText="The Pulse Collection" />
             </Container>
           </section>
-          <section className="mb-3">
+          <section className="homePage mb-3">
             <div className="position-relative">
               {/* <LogoSec /> */}
               <section className="logo-section">
@@ -117,7 +119,7 @@ function HomePage() {
           </section>
         </div>
       </section>
-      <section className="testimonial_section">
+      <section className="position-relative testimonial_section">
         {/* <Container>
         </Container> */}
         <Testimonial />
