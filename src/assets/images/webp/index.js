@@ -37,7 +37,7 @@ import retroSec from "./retro-sec.svg";
 import retroSec1 from "./retro-sec1.png";
 import retroSec2 from "./retro-sec2.png";
 import retroSec3 from "./retro-sec3.png";
-import retroSecBg from "./retro-sec-bg.svg";
+import retroSecBg from "./retro-sec-bg.webp";
 import starVector from "./star-vector.svg";
 import retroProductsBg from "./retro-product-bg.svg";
 import retroProduct1 from "./retro-product1.svg";
