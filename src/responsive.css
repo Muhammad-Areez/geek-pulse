@@ -2859,29 +2859,29 @@
     height: 300px;
   }
   .frozenBox {
-    top: 55%;
+    top: 50%;
   }
   .slide-3 .frozenLogo {
     height: 80px !important;
   }
   .slide-3 .frozenBox {
     height: 150px !important;
-    right: 48%;
+    right: 50%;
   }
   .slide-3 .frozenDevice3 {
     height: 120px;
-    right: 20%;
+    right: 25%;
     bottom: 10%;
   }
   .slide-3 {
     min-height: 425px !important;
   }
   .frozenBanner_text .text {
-    font-size: 22px;
-    letter-spacing: -1px;
+    font-size: 15px;
+    letter-spacing: 0px;
   }
   .frozenBanner_text .title {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media (max-width: 400px) {

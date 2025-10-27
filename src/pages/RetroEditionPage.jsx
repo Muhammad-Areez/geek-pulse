@@ -312,7 +312,7 @@ function RetroEditionPage() {
                     className="retro-product-img"
                     initial={{ y: 100, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
                     viewport={{ once: true }}
                   />
                   <img
@@ -345,7 +345,7 @@ function RetroEditionPage() {
                     className="retro-product-img"
                     initial={{ y: 100, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                    transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
                     viewport={{ once: true }}
                   />
                   <img
@@ -361,7 +361,7 @@ function RetroEditionPage() {
                 <motion.h5
                   initial={{ x: -100, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+                  transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
                   viewport={{ once: true }}
                 >
                   Strawberry Rollerpink
@@ -378,7 +378,7 @@ function RetroEditionPage() {
                     className="retro-product-img"
                     initial={{ y: 100, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+                    transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
                     viewport={{ once: true }}
                   />
                   <img
