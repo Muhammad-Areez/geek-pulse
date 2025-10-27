@@ -1760,7 +1760,10 @@
     width: 55px;
     height: 55px;
   }
-
+  .homePage h3 {
+    font-size: 25px !important;
+    line-height: 35px !important;
+  }
   .logo-section h3 {
     font-size: 25px;
     line-height: 35px;

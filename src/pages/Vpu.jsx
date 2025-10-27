@@ -5,14 +5,45 @@ import BasicBanner from "../components/BasicBanner";
 import { images } from "../assets/images";
 import { Footer } from "../components/Footer";
 import { videos } from "../assets/videos";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { motion } from "framer-motion";
 // import "./VpuHero.css";
 import bg from "../assets/images/vpu-banner-bg.svg";
 
 function Vpu() {
-    
+  const video1Ref = useRef(null);
+  const video2Ref = useRef(null);
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    if (video1Ref.current) observer.observe(video1Ref.current);
+    if (video2Ref.current) observer.observe(video2Ref.current);
+
+    return () => {
+      if (video1Ref.current) observer.unobserve(video1Ref.current);
+      if (video2Ref.current) observer.unobserve(video2Ref.current);
+    };
+  }, []);
+
   return (
     <>
       
@@ -113,11 +144,13 @@ function Vpu() {
         </section>
         <section className="video-sec1">
           <video
+            ref={video1Ref}
             src={videos.vpu1}
-            autoPlay
+            autoPlay={false}
             loop
             muted
             playsInline
+            preload="metadata"
             className="video-playback"
           />
         </section>
@@ -141,11 +174,13 @@ function Vpu() {
         </section>
         <section className="video-sec1">
           <video
+            ref={video2Ref}
             src={videos.vpu2}
-            autoPlay
+            autoPlay={false}
             loop
             muted
             playsInline
+            preload="metadata"
             className="video-playback"
           />
         </section>
