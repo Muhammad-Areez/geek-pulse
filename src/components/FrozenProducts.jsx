@@ -64,7 +64,7 @@ const FrozenProducts = () => {
       rotateZ: -8,
       x: isXS ? 60 : isSm ? 70 : 100,
       y: isXS ? 20 : isSm ? 10 : 10,
-      scale: isXS ? 0.9 : isSm ? 1 : 1,
+      scale: isXS ? 0.9 : isSm ? 1 : 0.9,
       zIndex: 0,
       filter: "blur(8px)",
       transition: { duration: 0.3 },
@@ -73,8 +73,8 @@ const FrozenProducts = () => {
       opacity: 1,
       rotateY: 0,
       x: isXS ? 30 : isSm ? 40 : 40,
-      y: isXS ? -140 : isSm ? -100 : -50,
-      scale: isXS ? 0.8 : isSm ? 0.9 : 0.9,
+      y: isXS ? -130 : isSm ? -100 : -80,
+      scale: isXS ? 0.8 : isSm ? 0.9 : 1,
       rotate: 0,
       zIndex: 1,
       filter: "blur(0px)",
@@ -84,15 +84,15 @@ const FrozenProducts = () => {
 
   const deviceVariants = {
     rest: {
-      scale: isXS ? 0.7 : isSm ? 0.8 : 0.4,
+      scale: isXS ? 0.7 : isSm ? 0.8 : 0.6,
       x: 0,
-      y: 0,
+      y: isXS ? 10 : isSm ? 10 : window.innerWidth >= 992 ? 100 : 20,
       filter: "drop-shadow(0 0 0 rgba(0,0,0,0))",
       transition: { duration: 0.4, ease: "easeOut" },
     },
     hover: {
-      scale: isXS ? 0.2 : isSm ? 0.6 : 0.65, // smaller on hover
-      y: isXS ? 40 : isSm ? 60 : 85,
+      scale: isXS ? 0.4 : isSm ? 0.3 : 0.35,
+      y: isXS ? 0 : isSm ? 10 : window.innerWidth >= 992 ? 120 : 20,
       x: isXS ? 20 : isSm ? 25 : 30,
       filter: "drop-shadow(0 0 18px rgba(173,216,230,0.9))",
       transition: { duration: 0.4, ease: "easeOut" },
@@ -138,12 +138,29 @@ const FrozenProducts = () => {
                   alt={product.name}
                   className="frozenDevice"
                   variants={deviceVariants}
-                  initial={{ opacity: 0, scale: isXS ? 0.7 : 0.8, rotate: -15 }}
+                  initial={{
+                    opacity: 0,
+                    scale: isXS ? 0.4 : 0.5,
+                    rotate: -15,
+                    y: isXS
+                      ? 10
+                      : isSm
+                      ? 10
+                      : window.innerWidth >= 992
+                      ? 100
+                      : 20,
+                  }}
                   whileInView={{
                     opacity: 1,
-                    scale: isXS ? 0.7 : 0.9,
+                    scale: isXS ? 0.7 : 0.6,
                     rotate: 0,
-                    y: 0,
+                    y: isXS
+                      ? 10
+                      : isSm
+                      ? 10
+                      : window.innerWidth >= 992
+                      ? 100
+                      : 20,
                     transition: { duration: 0.5, ease: "easeOut" },
                   }}
                 />
