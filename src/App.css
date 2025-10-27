@@ -2454,7 +2454,7 @@ img.flower2 {
 .seasonalDevices img {
   height: auto;
   width: 300px;
-  z-index: 111111;
+  /* z-index: 111111; */
   position: absolute;
 }
 img.seasonalDevice1 {
