@@ -78,13 +78,13 @@ function HomePage() {
         <Banner />
       </section>
       <section className="pin-section-main">
-        <div ref={sectionRef}>
+        <div>
           <section className="ourProducts_section">
             <Container className="position-relative">
               <OurProducts headingText="The Pulse Collection" />
             </Container>
           </section>
-          <section className="homePage mb-3">
+          <section className="homePage mb-3" ref={sectionRef}>
             <div className="position-relative">
               {/* <LogoSec /> */}
               <section className="logo-section">
