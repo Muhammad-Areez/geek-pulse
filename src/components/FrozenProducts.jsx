@@ -6,6 +6,7 @@ import { images } from "../assets/images";
 const FrozenProducts = () => {
   const [isXS, setIsXS] = useState(false);
   const [isSm, setIsSm] = useState(false);
+  const [activeId, setActiveId] = useState(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -72,29 +73,35 @@ const FrozenProducts = () => {
       opacity: 1,
       rotateY: 0,
       x: isXS ? 30 : isSm ? 40 : 40,
-      y: isXS ? -130 : isSm ? -100 : -50,
-      scale: isXS ? 0.8 : isSm ? 0.9 : 0.7,
+      y: isXS ? -140 : isSm ? -100 : -50,
+      scale: isXS ? 0.8 : isSm ? 0.9 : 0.9,
       rotate: 0,
       zIndex: 1,
       filter: "blur(0px)",
-      transition: { duration: 0.3, ease: [0.25, 1, 0.5, 1] },
+      transition: { duration: 0.4, ease: [0.25, 1, 0.5, 1] },
     },
   };
 
   const deviceVariants = {
     rest: {
+      scale: isXS ? 0.7 : isSm ? 0.8 : 0.4,
       x: 0,
-      scale: isXS ? 0.55 : isSm ? 0.7 : 0.8,
+      y: 0,
       filter: "drop-shadow(0 0 0 rgba(0,0,0,0))",
-      transition: { duration: 0.2, ease: "easeOut" },
+      transition: { duration: 0.4, ease: "easeOut" },
     },
     hover: {
-      scale: isXS ? 0.5 : isSm ? 0.6 : 0.7,
-      y: isXS ? 40 : isSm ? 60 : 50,
-      x: isXS ? 20 : isSm ? 25 : 45,
-      filter: "drop-shadow(0 0 18px rgba(173, 216, 230, 0.9))",
-      transition: { duration: 0.2, ease: "easeOut" },
+      scale: isXS ? 0.2 : isSm ? 0.6 : 0.65, // smaller on hover
+      y: isXS ? 40 : isSm ? 60 : 85,
+      x: isXS ? 20 : isSm ? 25 : 30,
+      filter: "drop-shadow(0 0 18px rgba(173,216,230,0.9))",
+      transition: { duration: 0.4, ease: "easeOut" },
     },
+  };
+
+  const handleActivate = (id) => {
+    setActiveId(id);
+    setTimeout(() => setActiveId(null), 2000);
   };
 
   return (
@@ -102,43 +109,48 @@ const FrozenProducts = () => {
       <h2 className="heading mb-5 text-center">Our Products</h2>
 
       <Row className="justify-content-center p-2">
-        {products.map((product) => (
-          <Col key={product.id} lg={4} md={6} sm={6} xs={12} className="mb-5">
-            <motion.div
-              className="frozen-product-card text-center"
-              initial="rest"
-              whileTap="hover"
-              whileHover="hover"
-              animate="rest"
-            >
-              <p className="frozen-product-name mb-3">{product.name}</p>
+        {products.map((product) => {
+          const isActive = activeId === product.id;
+          const state = isActive ? "hover" : "rest";
 
-              {/* BOX IMAGE */}
-              <motion.img
-                src={product.boxImg}
-                alt=""
-                className="frozenBox"
-                variants={boxVariants}
-              />
+          return (
+            <Col key={product.id} lg={4} md={6} sm={6} xs={12} className="mb-5">
+              <motion.div
+                className="frozen-product-card text-center"
+                initial="rest"
+                whileHover="hover"
+                animate={state}
+                onClick={() => handleActivate(product.id)}
+              >
+                <p className="frozen-product-name mb-3">{product.name}</p>
 
-              {/* DEVICE IMAGE */}
-              <motion.img
-                src={product.deviceImg}
-                alt={product.name}
-                className="frozenDevice"
-                variants={deviceVariants}
-                initial={{ opacity: 0, scale: isXS ? 0.7 : 0.6, rotate: -15 }}
-                whileInView={{
-                  opacity: 1,
-                  scale: isXS ? 0.7 : 0.8,
-                  rotate: 0,
-                  y: 0,
-                  transition: { duration: 0.4, ease: "easeOut" },
-                }}
-              />
-            </motion.div>
-          </Col>
-        ))}
+                {/* BOX IMAGE */}
+                <motion.img
+                  src={product.boxImg}
+                  alt=""
+                  className="frozenBox"
+                  variants={boxVariants}
+                />
+
+                {/* DEVICE IMAGE */}
+                <motion.img
+                  src={product.deviceImg}
+                  alt={product.name}
+                  className="frozenDevice"
+                  variants={deviceVariants}
+                  initial={{ opacity: 0, scale: isXS ? 0.7 : 0.8, rotate: -15 }}
+                  whileInView={{
+                    opacity: 1,
+                    scale: isXS ? 0.7 : 0.9,
+                    rotate: 0,
+                    y: 0,
+                    transition: { duration: 0.5, ease: "easeOut" },
+                  }}
+                />
+              </motion.div>
+            </Col>
+          );
+        })}
       </Row>
     </div>
   );

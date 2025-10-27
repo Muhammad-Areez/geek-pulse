@@ -106,8 +106,18 @@ const SmoothieProducts = () => {
                 whileTap="hover"
                 initial="initial"
                 transition={{ duration: 0.3, ease: "easeOut" }}
+                onClick={(e) => {
+                  const card = e.currentTarget;
+                  card.classList.add("active");
+
+                  // Remove "active" after 2 seconds
+                  setTimeout(() => {
+                    card.classList.remove("active");
+                  }, 2000);
+                }}
               >
                 <p className="smoothie-product-name mb-3">{product.name}</p>
+
                 <motion.img
                   src={product.fruiteImg}
                   alt=""
@@ -131,6 +141,7 @@ const SmoothieProducts = () => {
                     },
                   }}
                 />
+
                 <motion.img
                   src={product.deviceImg}
                   alt={product.name}
@@ -158,7 +169,6 @@ const SmoothieProducts = () => {
                   transition={{ duration: 0.1, ease: "easeOut" }}
                 />
 
-                {/* Floating Glow / Shadow */}
                 <motion.div
                   className="floatingShadow"
                   animate={{

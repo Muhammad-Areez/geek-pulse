@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import { images } from "../assets/images";
 import { motion } from "framer-motion";
 
 const BasicProducts = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleTap = (index) => {
+    setActiveIndex(index);
+
+    // revert automatically after 2 seconds
+    setTimeout(() => {
+      setActiveIndex(null);
+    }, 2000);
+  };
   const products = [
     {
       id: 1,
@@ -133,23 +143,27 @@ const BasicProducts = () => {
       rotate: 0,
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: "easeOut" },
+      transition: { duration: 0.4, ease: "easeOut" },
     },
   };
+
   return (
     <Row>
-      {products.map((product) => (
+      {products.map((product, index) => (
         <Col key={product.id} lg={3} md={4} sm={6} xs={6} className="mb-4">
           <motion.div
             className="basic-product-card"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            whileHover="hover" // hover triggers the device animation
+            whileHover="hover"
+            animate={activeIndex === index ? "hover" : "rest"} // 👈 tap triggers hover state
+            onClick={() => handleTap(index)} // 👈 works on all devices
             variants={{
               hidden: {},
               visible: {},
               hover: {},
+              rest: {},
             }}
           >
             {/* BOX IMAGE */}
@@ -166,12 +180,17 @@ const BasicProducts = () => {
               alt={product.name}
               className="basicDevice"
               variants={{
-                hidden: { opacity: 0, y: 15, scale: 0.95 }, // hidden by default
+                hidden: { opacity: 0, y: 15, scale: 0.95 },
                 hover: {
                   opacity: 1,
                   y: 0,
                   scale: 1,
-                  transition: { duration: 0.3, ease: "easeOut" },
+                  transition: { duration: 0.4, ease: "easeOut" },
+                },
+                rest: {
+                  opacity: 0,
+                  y: 15,
+                  scale: 0.95,
                 },
               }}
             />

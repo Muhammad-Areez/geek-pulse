@@ -126,12 +126,12 @@ export const Footer = ({ isHomePage = false, background = "#100a3e" }) => {
             <ul>
               <li>
                 <p>Write us an email</p>
-                <a href="mailto:contact@geekpulse.com">contact@geekpulse.com</a>
+                <a href="mailto:contact@geekpulse.com">contact@geekultrastore.com</a>
               </li>
-              <li>
+              {/* <li>
                 <p>Give us a call</p>
                 <a href="tel:1234567890">(123) 456 - 7890</a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </Col>

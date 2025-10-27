@@ -48,10 +48,11 @@ function HomePage() {
         { opacity: 1, y: 0, ease: "power2.out" }
       );
 
-      tl.to(
-        textRef.current.querySelectorAll("span"),
-        { color: "white", stagger: 0.05, ease: "none" }
-      );
+      tl.to(textRef.current.querySelectorAll("span"), {
+        color: "white",
+        stagger: 0.05,
+        ease: "none",
+      });
     }, sectionRef);
 
     return () => {
@@ -63,9 +64,9 @@ function HomePage() {
   const textContent =
     "Geek Pulse is redefining disposables, merging futuristic technology, premium flavors, and sleek design to ignite the next era of vaping innovation. Driven by curiosity and crafted for those who crave more, our mission is to take vaping beyond the ordinary.";
 
-  const words = textContent.split(" ").map((word, index) => (
-    <span key={index}>{word} </span>
-  ));
+  const words = textContent
+    .split(" ")
+    .map((word, index) => <span key={index}>{word} </span>);
 
   return (
     <>
@@ -82,7 +83,7 @@ function HomePage() {
             </Container>
           </section>
           <section className="mb-3">
-            <Container className="position-relative">
+            <div className="position-relative">
               {/* <LogoSec /> */}
               <section className="logo-section">
                 <div className="logo-container">
@@ -92,13 +93,22 @@ function HomePage() {
                     alt="Matrix lines"
                     initial={{ scale: 1.2 }}
                     animate={{ scale: [1, 1.1, 1], opacity: [1, 0.8, 1] }}
-                    transition={{ duration: 6, ease: "easeInOut", repeat: Infinity }}
+                    transition={{
+                      duration: 6,
+                      ease: "easeInOut",
+                      repeat: Infinity,
+                    }}
                   />
-                  <img ref={logoRef} src={images.logo} alt="Logo" className="banner-logo" />
+                  <img
+                    ref={logoRef}
+                    src={images.logo}
+                    alt="Logo"
+                    className="banner-logo"
+                  />
                   <h3 ref={textRef}>{words}</h3>
                 </div>
               </section>
-            </Container>
+            </div>
           </section>
           <section>
             <Container className="position-relative">
