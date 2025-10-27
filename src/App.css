@@ -1876,6 +1876,8 @@ img.basic3-img {
   font-size: 40px;
   margin-bottom: 0 !important;
   font-family: "Geist-SemiBold";
+  width: 270px;
+  text-align: left;
 }
 .frozenBanner_text .text {
   font-family: SpaceGrotesk-Bold;

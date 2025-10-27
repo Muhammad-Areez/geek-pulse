@@ -995,6 +995,7 @@
   }
   .frozenBanner_text .title {
     font-size: 32px;
+    width: 220px;
   }
   .frozenBanner_text .text {
     font-size: 40px;
@@ -2153,6 +2154,7 @@
   }
   .slide-3 .frozenBox {
     height: 200px !important;
+    right: 36%;
   }
   .slide-3 {
     min-height: 575px !important;
@@ -2167,6 +2169,7 @@
   }
   .frozenBanner_text .title {
     font-size: 20px;
+    width: 135px;
   }
   .popup-logo {
     width: 220px;
@@ -2243,6 +2246,9 @@
   .vpu-future h6 {
     font-size: 17px;
     line-height: 20px;
+  }
+  .glitch::after, .glitch::before{
+    display: none;
   }
 }
 
@@ -2477,7 +2483,7 @@
 
   .retro-edition-hero .retro-heading {
     font-size: 85px;
-    line-height: 120px;
+    line-height: 110px;
   }
 
   .retro-edition-hero img:nth-child(3) {
@@ -3135,6 +3141,7 @@
   }
   .frozenBanner_text .title {
     font-size: 15px;
+    width: 101px;
   }
   .main-header {
     top: 55px;
