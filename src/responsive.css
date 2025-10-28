@@ -411,6 +411,9 @@
   .frozenDevice {
     bottom: 5%;
   }
+  .slide-2 {
+    min-height: 580px !important;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1382,13 +1385,14 @@
     font-size: 100px;
   }
   img.seasonalBg1 {
-    width: 200px;
+    width: auto;
     position: absolute;
     top: 20%;
     height: 220px;
   }
   img.seasonalBg2 {
     width: 150px;
+    height: auto;
   }
   img.seasonalBox1 {
     height: 300px;
@@ -1539,6 +1543,10 @@
   }
   .experience-right {
     padding-right: 0;
+  }
+  .slide-2 {
+    min-height: 515px !important;
+    margin-bottom: 10px;
   }
 }
 
@@ -1976,8 +1984,8 @@
   img.basic1-img {
     height: 300px;
     width: 200px;
-    /* left: 3% !important; */
-    bottom: -10%;
+    left: 0% !important;
+    bottom: -5%;
   }
 
   img.basic2-img {
@@ -1991,7 +1999,7 @@
     height: 300px;
     width: 200px;
     right: 0%;
-    bottom: -10%;
+    bottom: -5%;
   }
   .version_section .context .heading {
     font-size: 35px;
@@ -2015,7 +2023,7 @@
     width: 140px;
     position: absolute;
     top: 20%;
-    height: 160px;
+    height: auto;
   }
   img.seasonalBg2 {
     width: 100px;
@@ -2253,6 +2261,9 @@
   .glitch::after, .glitch::before{
     display: none;
   }
+  .slide-2 {
+    min-height: 450px !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2269,7 +2280,7 @@
   }
 
   .aeroplane-img {
-    display: none !important;
+    top: 95px;
   }
   .moon-img {
     width: 140px !important;
@@ -2403,8 +2414,8 @@
 
   .faq_answer p {
     font-size: 14px;
+    line-height: 20px;
   }
-
   .faqs_section .heading {
     font-size: 25px;
   }
@@ -2543,8 +2554,8 @@
 
   img.basic1-img {
     height: 250px;
-    width: 200px;
-    left: -5%;
+    width: 160px;
+    left: 2% !important;
     bottom: -10%;
   }
   .context img {
@@ -2553,15 +2564,15 @@
   }
   img.basic2-img {
     height: 250px;
-    width: 200px;
-    left: 28%;
+    width: 160px;
+    left: 34%;
     bottom: -10%;
   }
 
   img.basic3-img {
     height: 250px;
-    width: 200px;
-    right: -5%;
+    width: 160px;
+    right: 0%;
     bottom: -10%;
   }
 
@@ -2862,6 +2873,19 @@
     font-size: 17px;
     line-height: 23px;
   }
+  .wholesalerSection .contact_heading {
+    top: 15% !important;
+  }
+  .wholesalerSection {
+    margin-bottom: 1rem;
+  }
+  .aeroplane-img {
+    top: -2%;
+    right: 5%;
+  }
+  .slide-2 {
+    min-height: 350px !important;
+  }
 }
 
 @media (max-width: 426px) {
@@ -2906,9 +2930,9 @@
     width: 900px !important;
   }
 
-  .aeroplane-img {
+  /* .aeroplane-img {
     display: none !important;
-  }
+  } */
 
   .heading {
     font-size: 25px;
@@ -2950,7 +2974,9 @@
     width: 200px !important;
     bottom: 0px !important;
   }
-
+  .contactus_section h3 {
+    font-size: 40px !important;
+  }
   .primeBox .banner-device-img2 {
     width: 100px !important;
     height: 150px !important;
@@ -3149,9 +3175,77 @@
   .main-header {
     top: 55px;
   }
+  .wholesalerSection .contact_heading {
+    top: 14% !important;
+  }
+  .aeroplane-img {
+    top: -16%;
+    right: -15%;
+  }
+
+  img.basic1-img {
+    height: 200px;
+  }
+  img.basic2-img {
+    height: 200px;
+  }
+  img.basic3-img {
+    height: 200px;
+  }
+
+  .slide-2 {
+    min-height: 300px !important;
+  }
+  .icons {
+    width: 60px;
+    height: 60px;
+  }
+  .version_section .context .heading {
+    font-size: 30px;
+  }
+
+  .version_section .context img {
+    width: 37px;
+    height: 35px;
+  }
+
+  .features {
+    font-size: 12px;
+  }
+
+  img.seasonalBg2 {
+    width: 70px;
+  }
+  .icons img {
+    max-width: 30px;
+  }
+  img.seasonalBg1 {
+    width: 70px;
+    top: 30%;
+  }
 }
 @media (max-width: 400px) {
   .frozenBox {
     top: 70%;
+  }
+
+  img.basic7-img {
+    right: -6%;
+  }
+  img.basic1-img {
+    height: 170px;
+    width: 105px;
+  }
+  img.basic2-img {
+    height: 170px;
+    width: 105px;
+  }
+  img.basic3-img {
+    height: 170px;
+    width: 105px;
+  }
+
+  .slide-5 .heading {
+    font-size: 50px;
   }
 }

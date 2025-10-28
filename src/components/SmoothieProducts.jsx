@@ -5,6 +5,7 @@ import { images } from "../assets/images";
 import ScrollReveal from "./ScrollReveal";
 
 const SmoothieProducts = () => {
+  
   const products = [
     {
       id: 1,
@@ -95,7 +96,7 @@ const SmoothieProducts = () => {
       />
 
       <Container>
-        <Row className="justify-content-center p-5">
+        <Row className="justify-content-center p-2">
           {products.map((product, index) => (
             <Col key={product.id} lg={5} md={6} sm={6} className="mb-5">
               <motion.div
@@ -108,12 +109,16 @@ const SmoothieProducts = () => {
                 transition={{ duration: 0.3, ease: "easeOut" }}
                 onClick={(e) => {
                   const card = e.currentTarget;
-                  card.classList.add("active");
+                  const allCards = document.querySelectorAll(
+                    ".smoothie-product-card"
+                  );
 
-                  // Remove "active" after 2 seconds
-                  setTimeout(() => {
-                    card.classList.remove("active");
-                  }, 2000);
+                  if (card.classList.contains("active")) {
+                    card.classList.remove("active"); // toggle off if already active
+                  } else {
+                    allCards.forEach((c) => c.classList.remove("active"));
+                    card.classList.add("active");
+                  }
                 }}
               >
                 <p className="smoothie-product-name mb-3">{product.name}</p>
@@ -149,24 +154,24 @@ const SmoothieProducts = () => {
                   variants={{
                     initial: {
                       rotate: 0,
-                      scale: 1,
+                      scale: 1.3,
                       y: 0,
                       zIndex: 2,
                       filter: "drop-shadow(0 10px 10px rgba(0,0,0,0.2))",
                     },
                     hover: {
                       rotate: 12,
-                      scale: 1.05,
+                      scale: 1,
                       y: -10,
                       filter: "drop-shadow(0 20px 25px rgba(255,182,193,0.6))",
-                      transition: { duration: 0.1, ease: "easeOut" },
+                      transition: { duration: 0.3, ease: "easeOut" },
                     },
                   }}
                   animate={{
                     y: [0, -6, 0, 4, 0],
                     scale: [1, 1.02, 1, 1.01, 1],
                   }}
-                  transition={{ duration: 0.1, ease: "easeOut" }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
                 />
 
                 <motion.div

@@ -87,7 +87,7 @@ const SeasonalBanner = () => {
               src={images.seasonalBg1}
               alt=""
               className="seasonalBg1"
-              initial={{ x: 150, opacity: 0, scale: 0.95 }}
+              initial={{ x: 0, opacity: 0, scale: 0.95 }}
               whileInView={{ x: 0, opacity: 1, scale: 1 }}
               animate={{
                 y: [0, 10, 0, -10, 0],
@@ -103,7 +103,7 @@ const SeasonalBanner = () => {
               src={images.seasonalBg2}
               alt=""
               className="seasonalBg2"
-              initial={{ x: -150, opacity: 0, scale: 0.95 }}
+              initial={{ x: 0, opacity: 0, scale: 0.95 }}
               whileInView={{ x: 0, opacity: 1, scale: 1 }}
               animate={{
                 y: [0, -10, 0, 10, 0],

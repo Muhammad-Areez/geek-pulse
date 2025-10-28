@@ -7,7 +7,7 @@ import ShinyText from "./ShinyText";
 
 const BasicBanner = () => {
   const jumpInLeft = {
-    hidden: { opacity: 0, x: -200, rotateY: 60, scale: 0.8 },
+    hidden: { opacity: 0, x: 200, rotateY: 60, scale: 0.8 },
     visible: {
       opacity: 1,
       x: 0,
@@ -18,7 +18,7 @@ const BasicBanner = () => {
   };
 
   const jumpInRight = {
-    hidden: { opacity: 0, x: 200, rotateY: -60, scale: 0.8 },
+    hidden: { opacity: 0, x: -200, rotateY: -60, scale: 0.8 },
     visible: {
       opacity: 1,
       x: 0,
@@ -52,7 +52,7 @@ const BasicBanner = () => {
   return (
     <section className="basicEdition_section banner-section">
       <Swiper className="banner-swiper" spaceBetween={50} slidesPerView={1}>
-        <SwiperSlide className="banner-slide slide-2">
+        <SwiperSlide className=" slide-2">
           <div className="banner-vectors">
             {/* 3D Jump Animations */}
             <motion.img

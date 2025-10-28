@@ -11,7 +11,7 @@ const Faqs = () => {
       answer: (
         <>
           Please fill out our contact form or email{" "}
-          <a href="mailto:sales@geekPULSE.com">sales@geekPULSE.com</a>.
+          <a href="mailto:sales@geekultrastore.com">sales@geekultrastore.com</a>.
         </>
       ),
     },
