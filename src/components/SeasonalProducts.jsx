@@ -76,6 +76,19 @@ const SeasonalProducts = () => {
         }}
         viewport={{ once: true, amount: 0.3 }}
       />
+      <motion.img
+        src={images.seasonalBg3}
+        alt=""
+        className="seasonalBg3"
+        initial={{ x: 80, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        animate={{ y: [0, 6, 0, -6, 0] }}
+        transition={{
+          duration: 1.2,
+          y: { duration: 2, repeat: Infinity, ease: "easeInOut" },
+        }}
+        viewport={{ once: true, amount: 0.3 }}
+      />
 
       <Container>
         <Row className="justify-content-center">
