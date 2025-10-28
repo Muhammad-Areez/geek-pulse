@@ -3223,7 +3223,7 @@ img.flower4 {
   z-index: 5;
 }
 .pop-btn-main button {
-  transition: all 250ms ease-in-out;
+  transition: all 200ms ease-in-out !important;
   border-radius: 40px;
   padding: 12px 30px;
   margin: 20px 0px;
@@ -3243,7 +3243,7 @@ img.flower4 {
 }
 .pop-btn-main button:last-child:hover {
   background: white;
-  color: black;
+  color: black !important;
 }
 .pop-warn-icon {
   width: 275px;
