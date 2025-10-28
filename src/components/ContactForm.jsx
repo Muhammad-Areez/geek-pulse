@@ -44,7 +44,7 @@ const ContactForm = () => {
           <p className="title">Contact Info</p>
           <div className="border-bottom my-3"></div>
           <div className="contactBox">
-            <div className="contactInfo d_flex mb-4">
+            {/* <div className="contactInfo d_flex mb-4">
               <div className="contactIcon d_flex">
                 <img src={images.phoneIcon} />
               </div>
@@ -52,14 +52,14 @@ const ContactForm = () => {
                 <h5>Phone Number</h5>
                 <Link to="tel:8888416566">888-841-6566</Link>
               </div>
-            </div>
+            </div> */}
             <div className="contactInfo d_flex">
               <div className="contactIcon d_flex">
                 <img src={images.mailIcon} />
               </div>
               <div className="contactText">
                 <h5>Email Address</h5>
-                <Link to="mailto:test@example.com">test@example.com</Link>
+                <Link to="mailto:test@example.com">contact@geekultrastore.com</Link>
               </div>
             </div>
           </div>

@@ -383,7 +383,7 @@ img {
   width: 240px !important;
   height: auto !important;
   object-fit: contain !important;
-  z-index: 3;
+  z-index: -11;
 }
 .banner-device-img1 {
   height: 620px !important;
@@ -1114,6 +1114,7 @@ img.aboutbg {
   font-size: 22px;
   color: #000;
   font-family: "Poppins-SemiBold";
+  text-align: start;
 }
 
 .icon {
@@ -1159,7 +1160,10 @@ img.aboutbg {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  height: 100%;
   /* overflow: hidden; */
+  min-height: 700px !important;
+  margin-bottom: 20px;
   perspective: 1000px;
 }
 .shiny-text {
@@ -2250,7 +2254,7 @@ img.smoothiedevice4 {
   text-transform: uppercase;
 }
 /* Existing hover behavior preserved */
-.smoothie-product-card.active .fruiteImg {
+/* .smoothie-product-card.active .fruiteImg {
   opacity: 1 !important;
   transform: scale(1.05) !important;
   filter: blur(0px) !important;
@@ -2259,7 +2263,7 @@ img.smoothiedevice4 {
 .smoothie-product-card.active .smoothieDevice {
   transform: rotate(12deg) scale(1.05) translateY(-10px) !important;
   filter: drop-shadow(0 20px 25px rgba(255, 182, 193, 0.6)) !important;
-}
+} */
 
 /* Seasonal Edition Page Starts */
 /* .slide-5 {
@@ -2459,19 +2463,19 @@ img.flower2 {
 }
 img.seasonalDevice1 {
   left: 24%;
-  top: 22%;
+  top: 26%;
 }
 img.seasonalDevice2 {
   left: 36%;
-  top: 25%;
+  top: 29%;
 }
 img.seasonalDevice3 {
   right: 32%;
-  top: 25%;
+  top: 29%;
 }
 img.seasonalDevice4 {
   right: 20%;
-  top: 28%;
+  top: 32%;
 }
 .seasonal_section .ourproducts.with-bg {
   background: #f7ead3;
@@ -2624,7 +2628,7 @@ img.flower4 {
   }
 }
 .wholesalerSection {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .wholesaleForm {
   width: 100%;
@@ -2867,12 +2871,13 @@ img.flower4 {
   top: 10px;
   right: -120px;
   height: 400px;
+  z-index: 0;
 }
 .cosmos-text-main .cosmos-device-sec2 {
   position: absolute;
   bottom: -165px;
   left: -60px;
-  z-index: 100;
+  z-index: 0;
   height: 400px;
 }
 .cosmos-card-top {
@@ -3300,7 +3305,7 @@ img.flower4 {
 .seasonal-product-card img:active {
   outline: none !important;
   box-shadow: none !important;
-  -webkit-tap-highlight-color: transparent !important; 
+  -webkit-tap-highlight-color: transparent !important;
 }
 .retro-product-card,
 .retro-product-card * {
@@ -3317,7 +3322,7 @@ img.flower4 {
     letter-spacing: -1px;
   }
 
-  .logo-section {
+  .homePage .logo-section {
     height: 50vh;
   }
 
@@ -3352,7 +3357,7 @@ img.flower4 {
   }
 
   .main-header {
-    top: 50px;
+    /* top: 50px; */
     height: 60px;
   }
 

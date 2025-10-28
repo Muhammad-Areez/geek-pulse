@@ -42,8 +42,7 @@ const SeasonalProducts = () => {
   ];
 
   const handleTap = (index) => {
-    setActiveIndex(index);
-    setTimeout(() => setActiveIndex(null), 2000); 
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
   return (
@@ -88,7 +87,7 @@ const SeasonalProducts = () => {
                 }`}
                 initial="rest"
                 whileHover="hover"
-                animate={activeIndex === index ? "hover" : "rest"} 
+                animate={activeIndex === index ? "hover" : "rest"}
                 onClick={() => handleTap(index)}
               >
                 {/* Box Image */}
@@ -106,9 +105,9 @@ const SeasonalProducts = () => {
                     },
                     hover: {
                       opacity: 1,
-                      x: isMobile ? 20 : 50,
+                      x: isMobile ? 0 : 40,
                       y: isMobile ? -40 : -60,
-                      scale: 1.2,
+                      scale: isMobile ? 1.4 : 1.4,
                       rotate: 0,
                     },
                   }}
@@ -122,14 +121,14 @@ const SeasonalProducts = () => {
                   className="seasonalDevice"
                   variants={{
                     rest: {
-                      scale: isMobile ? 1.3 : 1.4,
+                      scale: isMobile ? 1.5 : 1.4,
                       y: 40,
                       x: 0,
                     },
                     hover: {
-                      scale: 1.1,
+                      scale: isMobile ? 1.3 : 1.3,
                       y: isMobile ? 80 : 100,
-                      x: isMobile ? 60 : 120,
+                      x: isMobile ? 50 : 130,
                     },
                   }}
                   transition={{ duration: 0.4, ease: "easeInOut" }}

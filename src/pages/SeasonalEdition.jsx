@@ -88,7 +88,11 @@ function SeasonalEdition() {
                 transition={{ duration: 0.3, delay: i * 0.3, ease: "easeOut" }}
                 whileHover={{
                   // scale: 0.9,
-                  y: -60,
+                  y: -40,
+                  transition: { duration: 0.4 },
+                }}
+                whileTap={{
+                  y: -20,
                   transition: { duration: 0.4 },
                 }}
               />
@@ -105,7 +109,11 @@ function SeasonalEdition() {
                 transition={{ duration: 0.3, delay: i * 0.3, ease: "easeOut" }}
                 whileHover={{
                   // scale: 0.9,
-                  y: -60,
+                  y: -40,
+                  transition: { duration: 0.4 },
+                }}
+                whileTap={{
+                  y: -20,
                   transition: { duration: 0.4 },
                 }}
               />

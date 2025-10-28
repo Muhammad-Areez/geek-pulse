@@ -100,10 +100,8 @@ const FrozenProducts = () => {
   };
 
   const handleActivate = (id) => {
-    setActiveId(id);
-    setTimeout(() => setActiveId(null), 2000);
+    setActiveId((prevId) => (prevId === id ? null : id));
   };
-
   return (
     <div className="frozenBg py-5">
       <h2 className="heading mb-5 text-center">Our Products</h2>
