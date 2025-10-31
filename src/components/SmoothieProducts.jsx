@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { images } from "../assets/images";
 import ScrollReveal from "./ScrollReveal";
 
 const SmoothieProducts = () => {
-  
+  const [activeId, setActiveId] = useState(null);
+  const [persistentHoverId, setPersistentHoverId] = useState(null);
+
   const products = [
     {
       id: 1,
@@ -102,23 +104,21 @@ const SmoothieProducts = () => {
               <motion.div
                 className={`smoothie-product-card text-center mb-3 smoothie-card-${
                   index + 1
-                }`}
-                whileHover="hover"
+                } ${activeId === product.id ? 'active' : ''}`}
+                whileHover={activeId === null || activeId === product.id ? "hover" : {}}
                 whileTap="hover"
                 initial="initial"
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                onClick={(e) => {
-                  const card = e.currentTarget;
-                  const allCards = document.querySelectorAll(
-                    ".smoothie-product-card"
-                  );
-
-                  if (card.classList.contains("active")) {
-                    card.classList.remove("active"); // toggle off if already active
-                  } else {
-                    allCards.forEach((c) => c.classList.remove("active"));
-                    card.classList.add("active");
+                onMouseEnter={() => {
+                  if (activeId === null || activeId === product.id) {
+                    setPersistentHoverId(product.id);
                   }
+                }}
+                onMouseLeave={() => {
+                  setPersistentHoverId(null);
+                }}
+                onClick={() => {
+                  setActiveId(activeId === product.id ? null : product.id);
                 }}
               >
                 <p className="smoothie-product-name mb-3">{product.name}</p>
@@ -140,7 +140,7 @@ const SmoothieProducts = () => {
                       y: 0,
                       filter: "blur(0px)",
                       transition: {
-                        duration: 0.3,
+                        // duration: 0.3,
                         ease: "easeOut",
                       },
                     },
@@ -167,7 +167,7 @@ const SmoothieProducts = () => {
                       transition: { duration: 0.3, ease: "easeOut" },
                     },
                   }}
-                  animate={{
+az1                  animate={{
                     y: [0, -6, 0, 4, 0],
                     scale: [1, 1.02, 1, 1.01, 1],
                   }}

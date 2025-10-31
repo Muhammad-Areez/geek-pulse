@@ -1865,28 +1865,35 @@ img.basic3-img {
   position: absolute;
   bottom: 10%;
   left: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   /* bottom: -12%; */
 }
 .frozenBanner_text {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  /* flex-direction: column; */
-  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
 }
 .frozenBanner_text .title {
   color: #00b2ff;
   z-index: 111111;
   font-size: 40px;
+  line-height: 35px;
   margin-bottom: 0 !important;
-  font-family: "Geist-SemiBold";
+  font-family: Geist-SemiBold;
+  text-align: left;
+  letter-spacing: -1.26px;
 }
 .frozenBanner_text .text {
   font-family: SpaceGrotesk-Bold;
-  font-size: 60px;
+  font-size: 70px;
+  line-height: 72px;
   letter-spacing: -4px;
   color: #100a3e;
   z-index: 111;
+  text-transform: uppercase;
 }
 .snowflake::before {
   content: ".";
@@ -3221,7 +3228,7 @@ img.flower4 {
   z-index: 5;
 }
 .pop-btn-main button {
-  transition: all 250ms ease-in-out;
+  transition: all 200ms ease-in-out !important;
   border-radius: 40px;
   padding: 12px 30px;
   margin: 20px 0px;
@@ -3241,7 +3248,7 @@ img.flower4 {
 }
 .pop-btn-main button:last-child:hover {
   background: white;
-  color: black;
+  color: black !important;
 }
 .pop-warn-icon {
   width: 275px;

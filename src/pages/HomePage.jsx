@@ -8,67 +8,8 @@ import GeekPrime from "../components/GeekPrime";
 import Testimonial from "../components/Testimonial";
 import Blogs from "../components/Blogs";
 import { Footer } from "../components/Footer";
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { motion } from "framer-motion";
-import { images } from "../assets/images";
-
-gsap.registerPlugin(ScrollTrigger);
 
 function HomePage() {
-  const sectionRef = useRef(null);
-  const logoRef = useRef(null);
-  const textRef = useRef(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.set(textRef.current, { opacity: 0, y: 100, force3D: true });
-
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "center center",
-          end: "bottom+=50% top",
-          scrub: true,
-          pin: true,
-          anticipatePin: 1,
-          invalidateOnRefresh: true,
-        },
-      });
-
-      tl.fromTo(
-        logoRef.current,
-        { scale: 1, opacity: 1, force3D: true },
-        { scale: 5, opacity: 0, ease: "power2.out", duration: 2, force3D: true }
-      );
-
-      tl.fromTo(
-        textRef.current,
-        { opacity: 0, y: 100, force3D: true },
-        { opacity: 1, y: 0, ease: "power2.out", force3D: true }
-      );
-
-      tl.to(textRef.current.querySelectorAll("span"), {
-        color: "white",
-        stagger: 0.05,
-        ease: "none",
-        force3D: true,
-      });
-    }, sectionRef);
-
-    return () => {
-      ctx.revert();
-      ScrollTrigger.killAll();
-    };
-  }, []);
-
-  const textContent =
-    "Geek Pulse is redefining disposables, merging futuristic technology, premium flavors, and sleek design to ignite the next era of vaping innovation. Driven by curiosity and crafted for those who crave more, our mission is to take vaping beyond the ordinary.";
-
-  const words = textContent
-    .split(" ")
-    .map((word, index) => <span key={index}>{word} </span>);
 
   return (
     <>
@@ -78,7 +19,7 @@ function HomePage() {
         <Banner />
       </section>
       <section className="pin-section-main">
-        <div ref={sectionRef}>
+        <div>
           <section className="ourProducts_section">
             <Container className="position-relative">
               <OurProducts headingText="The Pulse Collection" />
@@ -86,30 +27,7 @@ function HomePage() {
           </section>
           <section className="homePage mb-3">
             <div className="position-relative">
-              {/* <LogoSec /> */}
-              <section className="logo-section">
-                <div className="logo-container">
-                  <motion.img
-                    src={images.matrix}
-                    className="matrix-img"
-                    alt="Matrix lines"
-                    initial={{ scale: 1.2 }}
-                    animate={{ scale: [1, 1.1, 1], opacity: [1, 0.8, 1] }}
-                    transition={{
-                      duration: 6,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                    }}
-                  />
-                  <img
-                    ref={logoRef}
-                    src={images.logo}
-                    alt="Logo"
-                    className="banner-logo"
-                  />
-                  <h3 ref={textRef}>{words}</h3>
-                </div>
-              </section>
+              <LogoSec />
             </div>
           </section>
           <section>

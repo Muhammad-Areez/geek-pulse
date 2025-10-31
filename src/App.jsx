@@ -1,6 +1,9 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import ContactUs from "./pages/ContactUs";
@@ -15,6 +18,8 @@ import AboutUs from "./pages/AboutUs";
 import Vpu from "./pages/Vpu";
 import WarningPopUp from "./components/WarningPopUp";
 
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
 function App() {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -23,6 +28,14 @@ function App() {
     if (confirmed !== 'true') {
       setShowPopup(true);
     }
+
+    // Initialize ScrollSmoother for the entire app
+    ScrollSmoother.create({
+      wrapper: "#smooth-wrapper",
+      content: "#smooth-content",
+      smooth: 1.2,
+      effects: true,
+    });
   }, []);
 
   const handleYes = () => {
@@ -35,25 +48,27 @@ function App() {
   };
 
   return (
-    <>
-    <WarningPopUp show={showPopup} onYes={handleYes} onNo={handleNo}/>
-    <Router>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/basic-edition" element={<BasicEdition />} />
-        <Route path="/retro-edition" element={<RetroEditionPage />} />
-        <Route path="/frozen-edition" element={<FrozenEdition />} />
-        <Route path="/smoothie-edition" element={<SmoothieEdition />} />
-        <Route path="/seasonal-edition" element={<SeasonalEdition />} />
-        <Route path="/wholesaler" element={<Wholesaler />} />
-        <Route path="/cosmos-edition" element={<CosmosEdition />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/vpu" element={<Vpu />} />
-      </Routes>
-    </Router>
-    </>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <WarningPopUp show={showPopup} onYes={handleYes} onNo={handleNo}/>
+        <Router>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/basic-edition" element={<BasicEdition />} />
+            <Route path="/retro-edition" element={<RetroEditionPage />} />
+            <Route path="/frozen-edition" element={<FrozenEdition />} />
+            <Route path="/smoothie-edition" element={<SmoothieEdition />} />
+            <Route path="/seasonal-edition" element={<SeasonalEdition />} />
+            <Route path="/wholesaler" element={<Wholesaler />} />
+            <Route path="/cosmos-edition" element={<CosmosEdition />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/vpu" element={<Vpu />} />
+          </Routes>
+        </Router>
+      </div>
+    </div>
   );
 }
 
