@@ -409,6 +409,9 @@ img {
 .pin-section-main {
   margin-bottom: 100px;
 }
+.pin-section-main {
+  overflow: visible !important;
+}
 .product-swiper {
   position: relative;
   padding-bottom: 40px;
@@ -431,8 +434,8 @@ img {
 /* Our Products ends */
 /* Logo Section starts */
 .homePage .logo-section {
-  height: 100vh !important; /* Full screen height */
-  width: 100%;
+  height: 100vh !important;
+  width: 100vw !important;
   overflow: hidden;
   position: relative;
 }

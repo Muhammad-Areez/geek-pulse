@@ -1,63 +1,99 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { motion } from "framer-motion";
 import { images } from "../assets/images";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const LogoSec = () => {
   const sectionRef = useRef(null);
   const logoRef = useRef(null);
   const textRef = useRef(null);
+  useEffect(() => {
+    const smoother = ScrollSmoother.get();
+    if (smoother) {
+      smoother.scrollTop(0);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, []);
 
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.set(textRef.current, { opacity: 0, y: 100 });
+    let ctx;
+    let isMounted = true;
+    let retryTimer = null;
 
-      const tl = gsap.timeline({
-        scrollTrigger: {
+    const initWhenSmootherReady = () => {
+      const smoother = ScrollSmoother.get();
+
+      if (!smoother) {
+        retryTimer = setTimeout(initWhenSmootherReady, 50);
+        return;
+      }
+
+      if (!isMounted) return;
+
+      ctx = gsap.context(() => {
+        gsap.set(textRef.current, { opacity: 0, y: 100 });
+
+        const triggerCfg = {
           trigger: sectionRef.current,
-          start: "center center",
-          end: "bottom+=50% top",
+          start: "top top",
+          end: "+=200%",
           scrub: true,
           pin: true,
+          pinSpacing: true,
           anticipatePin: 1,
-        },
-      });
+          pinType: "transform",
+        };
 
-      tl.fromTo(
-        logoRef.current,
-        { scale: 1, opacity: 1 },
-        { scale: 5, opacity: 0, ease: "power2.out", duration:2 }
-      );
+        const tl = gsap.timeline({
+          scrollTrigger: triggerCfg,
+        });
 
-      tl.fromTo(
-        textRef.current,
-        { opacity: 0, y: 100 },
-        { opacity: 1, y: 0, ease: "power2.out"}
-      );
+        tl.fromTo(
+          logoRef.current,
+          { scale: 1, opacity: 1 },
+          { scale: 5, opacity: 0, ease: "power2.out" }
+        )
+          .fromTo(
+            textRef.current,
+            { opacity: 0, y: 100 },
+            { opacity: 1, y: 0, ease: "power2.out" },
+            "<"
+          )
+          .to(textRef.current.querySelectorAll("span"), {
+            color: "white",
+            stagger: 0.05,
+            ease: "none",
+          });
 
-      tl.to(
-        textRef.current.querySelectorAll("span"),
-        { color: "white", stagger: 0.05, ease: "none" }
-      );
-    }, sectionRef);
+        ScrollTrigger.refresh();
+      }, sectionRef);
+    };
 
-    return () => ctx.revert();
+    initWhenSmootherReady();
+
+    return () => {
+      isMounted = false;
+      if (retryTimer) clearTimeout(retryTimer);
+      if (ctx) ctx.revert();
+    };
   }, []);
 
   const textContent =
     "Geek Pulse is redefining disposables, merging futuristic technology, premium flavors, and sleek design to ignite the next era of vaping innovation. Driven by curiosity and crafted for those who crave more, our mission is to take vaping beyond the ordinary.";
 
-  const words = textContent.split(" ").map((word, index) => (
-    <span key={index}>{word} </span>
-  ));
+  const words = textContent
+    .split(" ")
+    .map((word, index) => <span key={index}>{word} </span>);
 
   return (
     <section ref={sectionRef} className="logo-section">
       <div className="logo-container">
-      <motion.img
+        <motion.img
           src={images.matrix}
           className="matrix-img"
           alt="Matrix lines"
@@ -65,7 +101,12 @@ const LogoSec = () => {
           animate={{ scale: [1, 1.1, 1], opacity: [1, 0.8, 1] }}
           transition={{ duration: 6, ease: "easeInOut", repeat: Infinity }}
         />
-        <img ref={logoRef} src={images.logo} alt="Logo" className="banner-logo" />
+        <img
+          ref={logoRef}
+          src={images.logo}
+          alt="Logo"
+          className="banner-logo"
+        />
         <h3 ref={textRef}>{words}</h3>
       </div>
     </section>
