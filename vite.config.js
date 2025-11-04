@@ -2,21 +2,32 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import imagemin from 'vite-plugin-imagemin'
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), imagemin({
-    mozjpeg: {
-      quality: 75,
-    },
-    pngquant: {
-      quality: [0.65, 0.90],
-      speed: 4,
-    },
-    webp: {
-      quality: 75,
-    },
-    svgo: false, // Disable SVG optimization to avoid errors
-  })],
+  plugins: [
+    react(),
+    imagemin({
+      // JPEG optimization – near-lossless
+      mozjpeg: {
+        quality: 95, 
+        progressive: true,
+      },
+
+      // PNG optimization – lossless
+      pngquant: {
+        quality: [0.95, 1],
+        speed: 1,     
+      },
+
+      // WebP optimization – high quality
+      webp: {
+        quality: 95, // visually lossless
+        lossless: true,
+      },
+
+      svgo: false,
+    }),
+  ],
+
   build: {
     rollupOptions: {
       output: {
@@ -28,6 +39,7 @@ export default defineConfig({
       },
     },
   },
+
   optimizeDeps: {
     include: ['react', 'react-dom'],
   },
