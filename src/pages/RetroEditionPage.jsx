@@ -6,7 +6,7 @@ import Warning from "../components/Warning";
 import { Footer } from "../components/Footer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useNavigate } from "react-router-dom";
-import retro from "../assets/images/Retro-editions.png";
+import retro from "../assets/images/Retro-editions.webp";
 import frozen from "../assets/images/Frozen-editions.png";
 import seasonal from "../assets/images/Seasonal-editions.png";
 import basic from "../assets/images/Basic-editions.png";

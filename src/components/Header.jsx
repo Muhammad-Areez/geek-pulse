@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/images/logo.svg";
 import { Link } from "react-router-dom";
-import retro from "../assets/images/Retro-editions.png";
+import retro from "../assets/images/Retro-editions.webp";
 import frozen from "../assets/images/Frozen-editions.png";
 import seasonal from "../assets/images/Seasonal-editions.png";
 import basic from "../assets/images/Basic-editions.png";

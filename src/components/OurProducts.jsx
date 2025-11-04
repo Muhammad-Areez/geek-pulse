@@ -1,12 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import retro from "../assets/images/Retro-editions.png";
-import frozen from "../assets/images/Frozen-editions.png";
-import seasonal from "../assets/images/Seasonal-editions.png";
-import basic from "../assets/images/Basic-editions.png";
-import cosmo from "../assets/images/Cosmo-editions.png";
-import smoothie from "../assets/images/Smoothie-editions.png";
+import retro from "../assets/images/Retro-editions.webp";
+import frozen from "../assets/images/Frozen-editions.webp";
+import seasonal from "../assets/images/Seasonal-editions.webp";
+import basic from "../assets/images/Basic-editions.webp";
+import cosmo from "../assets/images/Cosmo-editions.webp";
+import smoothie from "../assets/images/Smoothie-editions.webp";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";

@@ -9,7 +9,7 @@ import logo from "./logo.svg";
 import matrix from "./matrix.svg";
 import product1 from "./product1.svg";
 import product2 from "./product2.svg";
-import retroEditions from "./Retro-editions.png";
+import retroEditions from "./Retro-editions.webp";
 import seasonalEditions from "./Seasonal-editions.png";
 import shadow from "./shadow.svg";
 import smokeBomb from "./smoke-bomb.png";
