@@ -1,25 +1,75 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="preload" as="image" href="/src/assets/images/banner-slide1.webp" />
-    <link rel="preload" as="image" href="/src/assets/images/banner-device1.svg" />
-    <link rel="preload" as="image" href="/src/assets/images/banner-device2.svg" />
-    <link rel="preload" as="image" href="/src/assets/images/moon.webp" />
-    <link rel="preload" as="image" href="/src/assets/images/aeroplane.svg" />
-    <link rel="preload" as="image" href="/src/assets/images/shadow.svg" />
-    <link rel="preload" as="image" href="/src/assets/images/galaxy.svg" />
-    <link rel="preload" as="image" href="/src/assets/images/cosmos-galaxy.svg" />
-    <link rel="preload" as="image" href="/src/assets/images/warnIcon.svg" />
-    <link rel="preload" as="image" href="/src/assets/images/matrix.svg" />
-    <link rel="preload" as="image" href="/src/assets/images/matrix2.svg" />
-    <link rel="preload" as="image" href="/src/assets/images/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <title>geek-pulse</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="preload" href="/src/assets/fonts/BERNIERDistressedRegular.otf" as="font" type="font/otf" crossorigin>
+
+  <link rel="preload" href="/src/assets/fonts/BricolageGrotesque_SemiCondensed-Regular.ttf" as="font" type="font/ttf"
+    crossorigin>
+  <link rel="preload" href="/src/assets/fonts/BricolageGrotesque_SemiCondensed-SemiBold.ttf" as="font" type="font/ttf"
+    crossorigin>
+  <link rel="preload" href="/src/assets/fonts/BricolageGrotesque-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/BricolageGrotesque-ExtraBold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/BricolageGrotesque-Light.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/BricolageGrotesque-Medium.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/BricolageGrotesque-Regular.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link rel="preload" href="/src/assets/fonts/Geist-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/Geist-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/Geist-Medium.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/Geist-Light.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/Geist-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link rel="preload" href="/src/assets/fonts/Inter_18pt-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/Inter_18pt-Medium.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/Inter_18pt-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/Inter_18pt-Bold.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link rel="preload" href="/src/assets/fonts/LondrinaSolid-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/LondrinaSolid-Light.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/LondrinaSolid-Black.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link rel="preload" href="/src/assets/fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/Poppins-Medium.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/Poppins-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/Poppins-Bold.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link rel="preload" href="/src/assets/fonts/Rubik-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/Rubik-Medium.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/Rubik-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/Rubik-Bold.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link rel="preload" href="/src/assets/fonts/SpaceGrotesk-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/SpaceGrotesk-Medium.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/SpaceGrotesk-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/SpaceGrotesk-Bold.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link rel="preload" href="/src/assets/fonts/UbuntuSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/UbuntuSans-Medium.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/UbuntuSans-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/UbuntuSans-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/src/assets/fonts/UbuntuSans-ExtraBold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" as="image" href="/src/assets/images/banner-slide1.webp" />
+  <link rel="preload" as="image" href="/src/assets/images/banner-device1.svg" />
+  <link rel="preload" as="image" href="/src/assets/images/banner-device2.svg" />
+  <link rel="preload" as="image" href="/src/assets/images/moon.webp" />
+  <link rel="preload" as="image" href="/src/assets/images/aeroplane.svg" />
+  <link rel="preload" as="image" href="/src/assets/images/shadow.svg" />
+  <link rel="preload" as="image" href="/src/assets/images/galaxy.svg" />
+  <link rel="preload" as="image" href="/src/assets/images/cosmos-galaxy.svg" />
+  <link rel="preload" as="image" href="/src/assets/images/warnIcon.svg" />
+  <link rel="preload" as="image" href="/src/assets/images/matrix.svg" />
+  <link rel="preload" as="image" href="/src/assets/images/matrix2.svg" />
+  <link rel="preload" as="image" href="/src/assets/images/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>geek-pulse</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
