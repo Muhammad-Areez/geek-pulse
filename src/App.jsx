@@ -29,16 +29,16 @@ function App() {
       setShowPopup(true);
     }
 
-    ScrollSmoother.create({
-      wrapper: "#smooth-wrapper",
-      content: "#smooth-content",
-      smooth: 1.2,
-      effects: true,
-    });
+    // ScrollSmoother.create({
+    //   wrapper: "#smooth-wrapper",
+    //   content: "#smooth-content",
+    //   smooth: 1.2,
+    //   effects: true,
+    // });
 
-    setTimeout(() => {
-      ScrollTrigger.refresh();
-    }, 500);
+    // setTimeout(() => {
+    //   ScrollTrigger.refresh();
+    // }, 500);
   }, []);
 
   const handleYes = () => {

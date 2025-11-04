@@ -5,82 +5,47 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { motion } from "framer-motion";
 import { images } from "../assets/images";
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger);
 
 const LogoSec = () => {
   const sectionRef = useRef(null);
   const logoRef = useRef(null);
   const textRef = useRef(null);
-  useEffect(() => {
-    const smoother = ScrollSmoother.get();
-    if (smoother) {
-      smoother.scrollTop(0);
-    } else {
-      window.scrollTo(0, 0);
-    }
-  }, []);
 
   useEffect(() => {
-    let ctx;
-    let isMounted = true;
-    let retryTimer = null;
-
-    const initWhenSmootherReady = () => {
-      const smoother = ScrollSmoother.get();
-
-      if (!smoother) {
-        retryTimer = setTimeout(initWhenSmootherReady, 50);
-        return;
-      }
-
-      if (!isMounted) return;
-
-      ctx = gsap.context(() => {
-        gsap.set(textRef.current, { opacity: 0, y: 100 });
-
-        const triggerCfg = {
+    const ctx = gsap.context(() => {
+      gsap.set(textRef.current, { opacity: 0, y: 100 });
+      const tl = gsap.timeline({
+        scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top top",
-          end: "+=200%",
+          start: "top",
+          end: "+=300%",
           scrub: true,
           pin: true,
-          pinSpacing: true,
           anticipatePin: 1,
-          pinType: "transform",
-        };
+        },
+      });
 
-        const tl = gsap.timeline({
-          scrollTrigger: triggerCfg,
-        });
+      tl.fromTo(
+        logoRef.current,
+        { scale: 1, opacity: 1 },
+        { scale: 5, opacity: 0, ease: "power2.out", duration: 2 }
+      );
 
-        tl.fromTo(
-          logoRef.current,
-          { scale: 1, opacity: 1 },
-          { scale: 5, opacity: 0, ease: "power2.out" }
-        )
-          .fromTo(
-            textRef.current,
-            { opacity: 0, y: 100 },
-            { opacity: 1, y: 0, ease: "power2.out" },
-            "<"
-          )
-          .to(textRef.current.querySelectorAll("span"), {
-            color: "white",
-            stagger: 0.05,
-            ease: "none",
-          });
+      tl.fromTo(
+        textRef.current,
+        { opacity: 0, y: 100 },
+        { opacity: 1, y: 0, ease: "power2.out" }
+      );
 
-        ScrollTrigger.refresh();
-      }, sectionRef);
-    };
+      tl.to(textRef.current.querySelectorAll("span"), {
+        color: "white",
+        stagger: 0.05,
+        ease: "none",
+      });
+    }, sectionRef);
 
-    initWhenSmootherReady();
-
-    return () => {
-      isMounted = false;
-      if (retryTimer) clearTimeout(retryTimer);
-      if (ctx) ctx.revert();
-    };
+    return () => ctx.revert();
   }, []);
 
   const textContent =

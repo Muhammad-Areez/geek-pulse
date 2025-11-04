@@ -3108,7 +3108,7 @@ img.flower4 {
   z-index: 1;
 }
 .vpu-future {
-  background: url(./assets/images/vpu-future.svg);
+  background: url(./assets/images/vpu-future.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

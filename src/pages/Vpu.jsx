@@ -9,7 +9,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { motion } from "framer-motion";
 // import "./VpuHero.css";
-import bg from "../assets/images/vpu-banner-bg.svg";
+import bg from "../assets/images/vpu-banner-bg.webp";
 
 function Vpu() {
   const video1Ref = useRef(null);
