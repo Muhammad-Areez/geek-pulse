@@ -1,32 +1,11 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { images } from "../assets/images";
+import { useNavigate } from "react-router-dom";
+import blogData from "../data/blogData";
 
 const Blogs = () => {
-  const blogData = [
-    {
-      id: 1,
-      image: images.card1,
-      date: "December 17, 2022",
-      title: "Try these new fruit liquids",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec…",
-    },
-    {
-      id: 2,
-      image: images.card2,
-      date: "December 17, 2022",
-      title: "Weed vapes with vitamins E",
-      text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem…",
-    },
-    {
-      id: 3,
-      image: images.card3,
-      date: "December 17, 2022",
-      title: "FDA to fruit and mint flavor",
-      text: "Ut enim ad minima veniam, quis nostrum exercitationem ullam…",
-    },
-  ];
+  const navigate = useNavigate();
 
   const cardVariants = {
     hidden: { opacity: 0, rotateY: -90 },
@@ -35,7 +14,7 @@ const Blogs = () => {
       rotateY: 0,
       transition: {
         duration: 1,
-        ease: [0.25, 0.1, 0.25, 1], // smooth easing curve
+        ease: [0.25, 0.1, 0.25, 1], 
       },
     },
   };
@@ -61,6 +40,7 @@ const Blogs = () => {
                 perspective: "1000px",
               }}
               transition={{ delay: index * 0.2 }}
+              onClick={() => navigate(`/blogs/${blog.id}`)}
             >
               <img src={blog.image} alt={blog.title} className="card-img-top" loading="lazy" />
               <span className="tags tag1">Trend</span>

@@ -1917,7 +1917,7 @@ img.basic3-img {
 } */
 .frozenBg {
   padding-top: 150px;
-  background: url(../src/assets/images/frozenbg.png);
+  background: url(../src/assets/images/frozenbg.webp);
   background-repeat: repeat;
   background-size: contain;
   position: relative;
@@ -2666,7 +2666,7 @@ img.flower4 {
 }
 .wholesalerSection .matrix-img {
   z-index: 0;
-  opacity: 1;
+  opacity: 1 !important;
   mix-blend-mode: screen;
   filter: drop-shadow(0 0 8px rgba(0, 255, 204, 0.3));
 }
@@ -3325,6 +3325,40 @@ img.flower4 {
   -webkit-focus-ring-color: transparent !important;
 }
 
+/* Blog Details starts */
+.blog-title {
+    font-family: "Geist-Semibold";
+    color: #100A3E;
+    font-size: 60px;
+    text-align: start;
+    line-height: 60px;
+    letter-spacing: -2px;
+}
+.blogsContent {
+    margin: 5rem 0;
+}
+.blog-subheading {
+    font-family: 'Geist-Medium';
+    font-size: 28px;
+    color: #100A3E;
+}
+.blog-details-col {
+    text-align: start;
+}
+.blog-paragraph {
+    color: #100A3E;
+    line-height: 24px;
+    font-size: 18px;
+    font-family: 'Geist-Medium';
+    margin-bottom: 15px;
+}
+.blogCol_img {
+    height: 330px;
+    width: 100%;
+    border-radius: 12px;
+    
+}
+/* Blog Details ends */
 /* Responsive styles for mobile and tablet */
 @media (max-width: 768px) {
   .heading {

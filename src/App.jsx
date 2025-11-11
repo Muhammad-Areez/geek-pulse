@@ -17,6 +17,9 @@ import CosmosEdition from "./pages/CosmosEdition";
 import AboutUs from "./pages/AboutUs";
 import Vpu from "./pages/Vpu";
 import WarningPopUp from "./components/WarningPopUp";
+import Blogs from "./components/Blogs";
+import BlogsPage from "./pages/BlogsPage";
+import BlogDetails from "./pages/BlogDetails";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -68,6 +71,8 @@ function App() {
             <Route path="/cosmos-edition" element={<CosmosEdition />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/vpu" element={<Vpu />} />
+            <Route path="/blogs" element={<BlogsPage />} />
+            <Route path="/blogs/:id" element={<BlogDetails />} />
           </Routes>
         </Router>
       </div>
