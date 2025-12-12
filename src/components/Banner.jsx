@@ -7,6 +7,7 @@ import { images } from "../assets/images";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
+import GlitchText from "./GlitchText";
 
 const Banner = () => {
   useEffect(() => {
@@ -78,8 +79,8 @@ const Banner = () => {
     /** ✈️ AEROPLANE — fly on scroll **/
     if (airplane) {
       gsap.set(airplane, {
-        x: 600, 
-        y: -300, 
+        x: 600,
+        y: -300,
         opacity: 1,
         rotate: 20,
         scale: 1,
@@ -89,10 +90,10 @@ const Banner = () => {
         scrollTrigger: {
           trigger: ".banner-section",
           start: "top bottom",
-          end: "bottom top", 
-          scrub: true, 
+          end: "bottom top",
+          scrub: true,
         },
-        x: -200, 
+        x: -200,
         y: 200,
         opacity: 1,
         rotate: -15,
@@ -150,12 +151,10 @@ const Banner = () => {
     <section className="banner-section">
       <Swiper
         className="banner-swiper"
-        spaceBetween={50}
+        spaceBetween={0}
         slidesPerView={1}
         preloadImages={false}
         watchSlidesProgress={true}
-        // onSlideChange={() => console.log('slide change')}
-        // onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide className="banner-slide slide-1">
           <div className="banner-vectors banner-overflow">
@@ -217,6 +216,46 @@ const Banner = () => {
             </div>
           </Col>
           <Col md={6}></Col>
+        </SwiperSlide>
+        <SwiperSlide className="banner-slide slide-retro">
+          <img src={images.homeRetro1} className="banner-device-img3" />
+          <img src={images.homeRetro2} className="banner-device-img4" />
+          <Col md={6} className="mt-2">
+            <div className="banner-text-div2">
+              <div>
+                <h2>ULTRA </h2>
+                <div className="ultra-x">
+                  <span>X</span>
+                </div>
+              </div>
+              <div className="banner-retro-text">
+                <h4>Regular Mode</h4>
+                <h3>
+                  60X PUFFS
+                </h3>
+              </div>
+              <div className="banner-retro-text">
+                <h4>Pulse Mode</h4>
+                <h3>
+                  30X PUFFS
+                </h3>
+              </div>
+            </div>
+          </Col>
+          <Col md={6}></Col>
+        </SwiperSlide>
+        <SwiperSlide className="banner-slide slide-seasonal">
+          <Col md={12} className="mt-2">
+            <div className="banner-text-div3">
+              <h2>SEASONAL<br/>EDITION</h2>
+            </div>
+            <div className="banner-seasonal-devices">
+              <img src={images.vpuDevice1} alt="device" />
+              <img src={images.vpuDevice2} alt="device" />
+              <img src={images.vpuDevice3} alt="device" />
+              <img src={images.vpuDevice4} alt="device" />
+            </div>
+          </Col>
         </SwiperSlide>
       </Swiper>
     </section>
