@@ -198,6 +198,8 @@ import seasonal1 from "./seasonal1.svg";
 import seasonal2 from "./seasonal2.svg";
 import seasonal3 from "./seasonal3.svg";
 import seasonal4 from "./seasonal4.svg";
+import homeRetro1 from "./home-retro-1.webp";
+import homeRetro2 from "./home-retro-2.webp";
 
 
 export const images = {
@@ -399,4 +401,6 @@ export const images = {
   seasonal2,
   seasonal3,
   seasonal4,
+  homeRetro1,
+  homeRetro2,
 };

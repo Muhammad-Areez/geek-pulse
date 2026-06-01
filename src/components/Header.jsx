@@ -10,49 +10,53 @@ import smoothie from "../assets/images/Smoothie-editions.png";
 import { Col, Row } from "react-bootstrap";
 
 const Header = () => {
-  const [hamburgerToggle, setHamburgerToggle] = useState(false)
-  const [productToggle, setProductToggle] = useState(false)
+  const [hamburgerToggle, setHamburgerToggle] = useState(false);
+  const [productToggle, setProductToggle] = useState(false);
 
   const toggleMenu = () => {
-    setHamburgerToggle((prev) => !prev)
-  }
+    setHamburgerToggle((prev) => !prev);
+  };
 
   const toggleProductMenu = (e) => {
-    e.preventDefault()
-    setProductToggle((prev) => !prev)
-  }
-
+    e.preventDefault();
+    setProductToggle((prev) => !prev);
+  };
 
   return (
     <header className="main-header d_flex">
       <div className="header-content">
-        <Link to={'/'}>
+        <Link to={"/"}>
           <img src={logo} alt="logo" className="logo" />
         </Link>
-        <div class={`menu-Bar ${hamburgerToggle ? 'open' : ''}`} onClick={toggleMenu}>
+        <div
+          class={`menu-Bar ${hamburgerToggle ? "open" : ""}`}
+          onClick={toggleMenu}
+        >
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div className={`menu-wrap ${hamburgerToggle ? 'open' : ''}`}>
-          {
-            hamburgerToggle && (
-              <img src={logo} alt="logo" className="logo" />
-            )
-          }
+        <div className={`menu-wrap ${hamburgerToggle ? "open" : ""}`}>
+          {hamburgerToggle && <img src={logo} alt="logo" className="logo" />}
           <nav className="nav-links">
             <Link to="/">Home</Link>
             <Link to="/about-us">About</Link>
             <Link to="/vpu">VPU</Link>
-            <Link to="#products" onClick={toggleProductMenu}>Products</Link>
-            <div className={`product-edition-inner ${productToggle ? 'open' : ''}`}>
-              <Link to="/retro-edition">-  Retro Edition</Link>
-              <Link to="/frozen-edition">-  Frozen Edition</Link>
-              <Link to="/seasonal-edition">-  Seasonal Edition</Link>
-              <Link to="/basic-edition">-  Basic Edition</Link>
-              <Link to="/cosmos-edition">-  Cosmos Edition</Link>
-              <Link to="/smoothie-edition">-  Smoothie Edition</Link>
+            <Link to="#products" onClick={toggleProductMenu}>
+              Products
+            </Link>
+            <div
+              className={`product-edition-inner ${productToggle ? "open" : ""}`}
+            >
+              <Link to="/retro-edition">- Retro Edition</Link>
+              <Link to="/frozen-edition">- Frozen Edition</Link>
+              <Link to="/seasonal-edition">- Seasonal Edition</Link>
+              <Link to="/basic-edition">- Basic Edition</Link>
+              <Link to="/cosmos-edition">- Cosmos Edition</Link>
+              <Link to="/smoothie-edition">- Smoothie Edition</Link>
             </div>
+            <Link to="/blogs">Blogs</Link>
+
             <Link to="/wholesaler">Wholesale</Link>
             <Link to="/contact-us">Contact Us</Link>
           </nav>
